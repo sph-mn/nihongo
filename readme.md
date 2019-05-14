@@ -4,7 +4,7 @@ the kanji and components are sorted by component dependency and a list of the mo
 downloads/kanji.csv contains the data for flashcards and downloads/topokanji.apkg is the anki deck
 
 # features
-* the most common kanji and components sorted by [topokanji](https://github.com/scriptin/topokanji). "Kanji list covers about 95-99% of kanji found in various Japanese texts. Generally, the goal is provide something similar to Jōyō kanji, but based on actual data."
+* the most common kanji and components sorted by topokanji. "Kanji list covers about 95-99% of kanji found in various Japanese texts. Generally, the goal is provide something similar to Jōyō kanji, but based on actual data."
 * kanji and component kana translation and meaning in english
 * top n example words that use a kanji sorted by frequency in the 2015 japanese wikipedia, with kana translation
 * sensitive words and kana only words are excluded
@@ -15,7 +15,7 @@ downloads/kanji.csv contains the data for flashcards and downloads/topokanji.apk
 * translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0) via [jmdict-simplified](https://github.com/scriptin/jmdict-simplified) (cc-by-sa-4.0)
 * word frequency: [wiktionary japanese wikipedia 2015](https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/Japanese2015_10000) (cc-by-sa-3.0)
 * component names: [kanji alive](https://github.com/kanjialive/kanji-data-media) language data (cc-by-4.0)
-* unicode kanji to radical mapping from https://stackoverflow.com/questions/44806304/japanese-unicode-convert-radical-to-regular-character-code/44806306#44806306
+* unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
 
 some data sources are included and all other data of this project is cc-by-sa-4.0.
 

@@ -6,10 +6,10 @@ $config = [
   "jmdict_path" => "data/jmdict-translations.json",
   "word_frequency_path" => "data/wikipedia-20150422-lemmas.tsv",
   "components_path" => "data/japanese-radicals-513ba7a.csv",
-  "example_limit" => 10,
+  "example_limit" => 15,
   "example_translation_limit" => 3,
   "example_translation_word_limit" => 3,
-  "limit" => 300,
+  "limit" => 3000,
   "word_separator" => "\n"
 ];
 
@@ -148,7 +148,8 @@ function main($c) {
   $word_frequencies = get_word_frequencies($c["word_frequency_path"]);
   $limit = $c["limit"];
   $out = fopen("php://output", "w");
-  fputcsv($out, ["kanji", "kana", "meaning", "example words"]);
+  # anki doesnt skip the csv header so it isnt included for now
+  #fputcsv($out, ["kanji", "kana", "meaning", "example words"]);
   foreach($kanji_list as $index => $kanji) {
     if($limit <= $index) break;
     $example_words = get_example_words($word_frequencies, $jmdict, $kanji, $c["example_limit"]);
