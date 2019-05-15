@@ -1,2 +1,4 @@
-data/jmdict-*.json
-data/wikipedia-*.tsv
+data/jmdict-eng.json
+data/jmdict-translations.json
+data/kanjidic2.xml
+data/wikipedia-20150422-lemmas.tsv

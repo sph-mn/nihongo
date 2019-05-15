@@ -1,10 +1,10 @@
 <?php
 
 # extract and filter kanji words and translations from jmdict and write the result to a json file.
-# output file format is {word: [[kana, ...], [translation, ...]]}
+# output file format is {word: [[kana, ...], [[translation, ...], ...]]}
 
 $config = [
-  "jmdict_path" => "data/jmdict-eng-3.0.1.json",
+  "jmdict_path" => "data/jmdict-eng.json",
   "misc_tag_exclusions" => [
     # uk: usually written using kana alone
     # x: rude or x-rated terms
@@ -21,6 +21,10 @@ $config = [
     "work",
     "x"]];
 
+function string_contains($a, $b) {
+  return false !== mb_strpos($a, $b);
+}
+
 function get_text($a) {
   $result = [];
   foreach($a as $b) {
@@ -34,8 +38,24 @@ function is_component($gloss) {
   # "kanji "dotted cliff" radical (radical 53)"
   # "kanji "ice" radical"
   # "kanji radical 79 at right"
+  # "top component of the kanji \"thread\" radical"
   foreach($gloss as $a) {
-    if(preg_match("/^kanji \".*\" radical/", $a) || preg_match("/kanji radical \d+/", $a)) return true;
+    if(preg_match("/kanji \".*\" radical/", $a)
+      || preg_match("/kanji \".*radical\"/", $a)
+      || preg_match("/kanji radical \d+/", $a)
+      || string_contains($a, "grain stalk radical")
+      || string_contains($a, "illness radical")
+      || string_contains($a, "insect radical")
+      || string_contains($a, "radical leaf")
+      || string_contains($a, "kanji \"crooked-leg\" dai radical")
+      || string_contains($a, "kanji radical \"wa\"")
+      || string_contains($a, "\"roof\" kanji radical")
+      || string_contains($a, "two-branch tree radical")
+      || string_contains($a, "water radical")
+      || string_contains($a, "worm radical"))
+    {
+      return true;
+    }
   }
   return false;
 }

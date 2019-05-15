@@ -4,6 +4,7 @@ $config = [
   "kanji_path" => "data/aozora-694107d.txt",
   "kanji_to_radical_path" => "data/kanji-to-radical.csv",
   "jmdict_path" => "data/jmdict-translations.json",
+  "kanjidic_path" => "data/kanjidic2-translations.json",
   "word_frequency_path" => "data/wikipedia-20150422-lemmas.tsv",
   "components_path" => "data/japanese-radicals-513ba7a.csv",
   "example_limit" => 15,
@@ -70,6 +71,14 @@ function get_components($path, $kanji_to_radical_path) {
   $result["⼌"] = ["to enclose", "けいがまえ"];
   $result["冂"] = ["to enclose", "けいがまえ"];
   $result["⼳"] = ["short thread", "いとがしら"];
+  $result["攵"] = ["strike", "のぶん"];
+  $result["幺"] = ["short thread", "いとがしら"];
+  $result["辶"] = ["walk. variant of ⻌", "チャク"];
+  $result["罒"] = ["net", "あみがしら"];
+  $result["飠"] = ["eat, food", "しょくへん"];
+  $result["尢"] = ["lame leg", "だいのまげあし"];
+  $result["彑"] = ["pig head. variant of 彐", "けいがしら"];
+  $result["旡"] = ["crooked heaven", ""];
   return $result;
 }
 
@@ -114,7 +123,7 @@ function get_example_words_string($words, $config) {
   return join($separator, $result);
 }
 
-function get_kanji_info($jmdict, $components, $kanji, $config) {
+function get_kanji_info($jmdict, $components, $kanjidic, $kanji, $config) {
   # get details for a single kanji or component
   $translation = null;
   $kana = null;
@@ -124,8 +133,15 @@ function get_kanji_info($jmdict, $components, $kanji, $config) {
     $translation = "kanji component: " . $info[0];
     if(isset($info[1])) $kana = $info[1];
   }
+  $entry = false;
   if(isset($jmdict[$kanji])) {
     $entry = $jmdict[$kanji];
+  }
+  else if (!$translation && isset($kanjidic[$kanji])) {
+    # kanjidic is only used if no jmdict entry and not a component
+    $entry = $kanjidic[$kanji];
+  }
+  if($entry) {
     # if translation already set for component
     if($translation) {
       $word = [];
@@ -145,6 +161,7 @@ function main($c) {
   $components = get_components($c["components_path"], $c["kanji_to_radical_path"]);
   $kanji_list = file($c["kanji_path"], FILE_IGNORE_NEW_LINES);
   $jmdict = json_decode(file_get_contents($c["jmdict_path"]), true);
+  $kanjidic = json_decode(file_get_contents($c["kanjidic_path"]), true);
   $word_frequencies = get_word_frequencies($c["word_frequency_path"]);
   $limit = $c["limit"];
   $out = fopen("php://output", "w");
@@ -153,7 +170,7 @@ function main($c) {
   foreach($kanji_list as $index => $kanji) {
     if($limit <= $index) break;
     $example_words = get_example_words($word_frequencies, $jmdict, $kanji, $c["example_limit"]);
-    $kanji_info = get_kanji_info($jmdict, $components, $kanji, $c);
+    $kanji_info = get_kanji_info($jmdict, $components, $kanjidic, $kanji, $c);
     if($kanji_info[2]) $example_words = $kanji_info[2] + $example_words;
     $example_words_string = get_example_words_string($example_words, $c);
     fputcsv($out, [$kanji, $kanji_info[0], $kanji_info[1], $example_words_string]);
