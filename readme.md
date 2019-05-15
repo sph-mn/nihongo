@@ -1,13 +1,13 @@
 a csv file and anki deck to study basic information about kanji in [topokanji](https://github.com/scriptin/topokanji) order.
 the kanji and components are sorted by component dependency and a list of the most frequent words that include a kanji is given.
 
-downloads/kanji.csv contains the data for flashcards and downloads/topokanji.apkg is the anki deck. [ankiweb page](https://ankiweb.net/shared/info/211883411)
+download/kanji.csv contains the data for flashcards and download/topokanji.apkg is the anki deck. [ankiweb page](https://ankiweb.net/shared/info/211883411)
 
 # features
 * the most common kanji and components sorted by topokanji. "Kanji list covers about 95-99% of kanji found in various Japanese texts. Generally, the goal is provide something similar to Jōyō kanji, but based on actual data."
 * kanji and component kana translation and meaning in english
 * top n example words that use a kanji sorted by frequency in the 2015 japanese wikipedia, with kana translation
-* sensitive words and kana only words are excluded
+* sensitive words and kana-only words are excluded
 * files are in utf-8
 
 # data sources and thanks to
