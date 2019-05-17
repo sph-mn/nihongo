@@ -85,6 +85,7 @@ function get_components($path, $kanji_to_radical_path) {
 function get_example_words($word_frequencies, $jmdict, $kanji, $count) {
   # try to find $count number of words with kana and translations.
   $result = [];
+  if(0 == $count) return $result;
   foreach ($word_frequencies as $a) {
     if(string_contains($a, $kanji)) {
       $entry = isset($jmdict[$a]) ? $jmdict[$a] : false;
@@ -133,28 +134,22 @@ function get_kanji_info($jmdict, $components, $kanjidic, $kanji, $config) {
     $translation = "kanji component: " . $info[0];
     if(isset($info[1])) $kana = $info[1];
   }
-  $entry = false;
-  if(isset($jmdict[$kanji])) {
-    $entry = $jmdict[$kanji];
-  }
-  else if (!$translation && isset($kanjidic[$kanji])) {
-    # kanjidic is only used if no jmdict entry and not a component
-    $entry = $kanjidic[$kanji];
-  }
-  if($entry) {
-    # if translation already set for component
-    if($translation) {
-      $word = [];
-      $word[$kanji] = $entry;
+  else {
+    $entry = false;
+    if (isset($kanjidic[$kanji])) {
+      $entry = $kanjidic[$kanji];
     }
-    else {
+    else if (isset($jmdict[$kanji])){
+      $entry = $jmdict[$kanji];
+    }
+    if($entry) {
       $translation_limit = $config["example_translation_limit"];
       $translation_word_limit = $config["example_translation_word_limit"];
       $translation = join_translations($entry[1], $translation_limit, $translation_word_limit);
       if($entry[0]) $kana = $entry[0][0];
     }
   }
-  return [$translation, $kana, $word];
+  return [$translation, $kana];
 }
 
 function main($c) {
@@ -170,9 +165,8 @@ function main($c) {
   foreach($kanji_list as $index => $kanji) {
     if($limit <= $index) break;
     $example_words = get_example_words($word_frequencies, $jmdict, $kanji, $c["example_limit"]);
-    $kanji_info = get_kanji_info($jmdict, $components, $kanjidic, $kanji, $c);
-    if($kanji_info[2]) $example_words = $kanji_info[2] + $example_words;
     $example_words_string = get_example_words_string($example_words, $c);
+    $kanji_info = get_kanji_info($jmdict, $components, $kanjidic, $kanji, $c);
     fputcsv($out, [$kanji, $kanji_info[0], $kanji_info[1], $example_words_string]);
   }
 }
