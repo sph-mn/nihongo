@@ -12,11 +12,11 @@ download/kanji.csv contains the data for flashcards and download/topokanji.apkg 
 
 # data sources and thanks to
 * kanji order: [topokanji](https://github.com/scriptin/topokanji) (cc-by-4.0 and other licenses)
-* translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0) via a regenerated [jmdict-simplified](https://github.com/scriptin/jmdict-simplified) (cc-by-sa-4.0)
+* kanji meanings: [kanjidic2](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project) (cc-by-sa-3.0)
+* words and translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0) via a regenerated [jmdict-simplified](https://github.com/scriptin/jmdict-simplified) (cc-by-sa-4.0)
 * word frequency: [wiktionary japanese wikipedia 2015](https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/Japanese2015_10000) (cc-by-sa-3.0)
 * component names: [kanji alive](https://github.com/kanjialive/kanji-data-media) language data (cc-by-4.0)
 * unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
-* additional translations: [kanjidic2](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project) (cc-by-sa-3.0)
 
 all data sources are included and all other data of this project is cc-by-sa-4.0.
 
