@@ -4,12 +4,13 @@ $config = [
   "kanji_path" => "data/aozora-694107d.txt",
   "kanji_to_radical_path" => "data/kanji-to-radical.csv",
   "jmdict_path" => "data/jmdict-translations.json",
+  "joyo_meanings_path" => "data/joyo-meanings.csv",
   "kanjidic_path" => "data/kanjidic2-translations.json",
-  "word_frequency_path" => "data/wikipedia-20150422-lemmas.tsv",
+  "word_frequency_path" => "data/wordlex-2011.txt",
   "components_path" => "data/japanese-radicals-513ba7a.csv",
-  "example_limit" => 15,
-  "example_translation_limit" => 3,
-  "example_translation_word_limit" => 3,
+  "example_limit" => 5,
+  "example_translation_limit" => 2,
+  "example_translation_word_limit" => 1,
   "limit" => 3000,
   "word_separator" => "\n"
 ];
@@ -18,13 +19,34 @@ function string_contains($a, $b) {
   return false !== mb_strpos($a, $b);
 }
 
-function get_word_frequencies($path) {
+function get_word_frequencies_wiktionary($path) {
   $lines = file($path, FILE_IGNORE_NEW_LINES);
   $result = [];
   foreach ($lines as $a) {
     $a = explode("\t", $a)[2];
     if(1 == mb_strlen($a)) continue;
     $result[] = $a;
+  }
+  return $result;
+}
+
+function get_word_frequencies_wordlex($path) {
+  $lines = file($path, FILE_IGNORE_NEW_LINES);
+  $result = [];
+  foreach ($lines as $i => $a) {
+    if(100100 < $i) break;
+    $a = explode("\t", $a)[0];
+    $result[] = $a;
+  }
+  return $result;
+}
+
+function get_joyo_meanings($path) {
+  $lines = file($path, FILE_IGNORE_NEW_LINES);
+  $result = [];
+  foreach ($lines as $a) {
+    $a = explode(",", $a);
+    $result[$a[0]] = $a[1];
   }
   return $result;
 }
@@ -124,7 +146,7 @@ function get_example_words_string($words, $config) {
   return join($separator, $result);
 }
 
-function get_kanji_info($jmdict, $components, $kanjidic, $kanji, $config) {
+function get_kanji_info($jmdict, $components, $kanjidic, $joyo_meanings, $kanji, $config) {
   # get details for a single kanji or component
   $translation = null;
   $kana = null;
@@ -143,9 +165,14 @@ function get_kanji_info($jmdict, $components, $kanjidic, $kanji, $config) {
       $entry = $jmdict[$kanji];
     }
     if($entry) {
-      $translation_limit = $config["example_translation_limit"];
-      $translation_word_limit = $config["example_translation_word_limit"];
-      $translation = join_translations($entry[1], $translation_limit, $translation_word_limit);
+      if (isset($joyo_meanings[$kanji])) {
+        $translation = $joyo_meanings[$kanji];
+      }
+      else {
+        $translation_limit = $config["example_translation_limit"];
+        $translation_word_limit = $config["example_translation_word_limit"];
+        $translation = join_translations($entry[1], $translation_limit, $translation_word_limit);
+      }
       if($entry[0]) $kana = $entry[0][0];
     }
   }
@@ -157,7 +184,8 @@ function main($c) {
   $kanji_list = file($c["kanji_path"], FILE_IGNORE_NEW_LINES);
   $jmdict = json_decode(file_get_contents($c["jmdict_path"]), true);
   $kanjidic = json_decode(file_get_contents($c["kanjidic_path"]), true);
-  $word_frequencies = get_word_frequencies($c["word_frequency_path"]);
+  $joyo_meanings = get_joyo_meanings($c["joyo_meanings_path"]);
+  $word_frequencies = get_word_frequencies_wordlex($c["word_frequency_path"]);
   $limit = $c["limit"];
   $out = fopen("php://output", "w");
   # anki doesnt skip the csv header so it isnt included for now
@@ -166,7 +194,7 @@ function main($c) {
     if($limit <= $index) break;
     $example_words = get_example_words($word_frequencies, $jmdict, $kanji, $c["example_limit"]);
     $example_words_string = get_example_words_string($example_words, $c);
-    $kanji_info = get_kanji_info($jmdict, $components, $kanjidic, $kanji, $c);
+    $kanji_info = get_kanji_info($jmdict, $components, $kanjidic, $joyo_meanings, $kanji, $c);
     fputcsv($out, [$kanji, $kanji_info[0], $kanji_info[1], $example_words_string]);
   }
 }

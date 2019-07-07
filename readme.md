@@ -1,5 +1,5 @@
 a csv file and anki deck to study basic information about kanji in [topokanji](https://github.com/scriptin/topokanji) order.
-the kanji and components are sorted by component dependency and a list of the most frequent words that include a kanji is given.
+for each entry a single word for the meaning and most frequent example words with kana and meaning are included.
 
 download/kanji.csv contains the data for flashcards and download/topokanji.apkg is the anki deck. [ankiweb page](https://ankiweb.net/shared/info/211883411)
 
@@ -12,17 +12,17 @@ download/kanji.csv contains the data for flashcards and download/topokanji.apkg 
 
 # data sources and thanks to
 * kanji order: [topokanji](https://github.com/scriptin/topokanji) (cc-by-4.0 and other licenses)
-* kanji meanings: [kanjidic2](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project) (cc-by-sa-3.0)
-* words and translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0) via a regenerated [jmdict-simplified](https://github.com/scriptin/jmdict-simplified) (cc-by-sa-4.0)
-* word frequency: [wiktionary japanese wikipedia 2015](https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/Japanese2015_10000) (cc-by-sa-3.0)
+* kanji meanings: [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji)
+* supplementary kanji meanings: [kanjidic2](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project) (cc-by-sa-3.0)
+* word translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0) via a regenerated [jmdict-simplified](https://github.com/scriptin/jmdict-simplified) (cc-by-sa-4.0)
+* word frequency: [gimenes, m., & new, b. (2015) wordlex](http://www.lexique.org/?page_id=250)
 * component names: [kanji alive](https://github.com/kanjialive/kanji-data-media) language data (cc-by-4.0)
 * unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
 
 all data sources are included and all other data of this project is cc-by-sa-4.0.
 
 # motivation
-to learn kanji fast, i thought it would be best to have just the kanji symbol (to learn appearance and to recognise it), core meanings, only the most frequent readings (to give a pronounciation and guess pronounciation in unknown words) and a list of the most common words that contain the kanji (to better understand the meaning and confirm the readings). readings are currently not included in this list because it may suffice to get the readings from words.
-the kanji should also be well-sorted: "remembering the kanji" sorts the kanji by visual or component similarities and such regularity can help a lot with learning.
+to learn fast to recognise the kanji, i thought it would be best to have just the kanji symbol (to learn appearance and to recognise it), core meanings, only the most frequent readings (to give a pronounciation and guess pronounciation in unknown words) and a list of the most common words using it (to better understand the meaning and confirm the readings). readings are currently not included in this list because it may suffice to get the readings from words. standard readings are often not applicable to common words. the kanji should also be well-sorted: "remembering the kanji" sorts the kanji by visual or component similarities and such regularity can help a lot with learning.
 
 # technical
 * how to recreate the csv file
