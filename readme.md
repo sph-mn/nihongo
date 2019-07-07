@@ -5,8 +5,8 @@ download/kanji.csv contains the data for flashcards and download/topokanji.apkg 
 
 # features
 * the most common kanji and components sorted by topokanji. "Kanji list covers about 95-99% of kanji found in various Japanese texts. Generally, the goal is provide something similar to Jōyō kanji, but based on actual data."
-* kanji and component kana translation and meaning in english
-* top n example words that use a kanji sorted by frequency in the 2015 japanese wikipedia, with kana translation
+* kanji and component kana translation and single keyword meaning in english
+* top n example words that use a kanji selected by twitter and blog usage frequency
 * sensitive words and kana-only words are excluded
 * files are in utf-8
 
