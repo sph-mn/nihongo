@@ -26,7 +26,6 @@ to learn fast to recognise the kanji, i thought it would be best to have just th
 
 # technical
 * how to recreate the csv file
-  * ensure that all data sources exist, particularly uncompressed versions of the .xz files without the .xz suffix
   * execute `php php/display-kanji-csv.php`
   * this processes the source files and writes the csv to standard output. php was chosen because it includes all dependencies
   * see the top of the php file for configuration options

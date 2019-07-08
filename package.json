@@ -1,0 +1,10 @@
+{
+  "name": "topokanji-deck",
+  "version": "1.0.0",
+  "license": "cc-by",
+  "dependencies": {
+    "coffee-script": "*",
+    "xml2js": "*",
+    "csv-stringify": "*"
+  }
+}
