@@ -1,5 +1,4 @@
-# extract and filter words that use kanji and translations from jmdict and write the result to a json file.
-# output format is [[word, reading, [[translation ...], ...]] ...]
+# extract relevant information from the jmdict file
 
 parse_xml = require("xml2js").parseString
 fs = require "fs"
@@ -28,6 +27,7 @@ config =
 exclusions = config.misc_tag_exclusions.map (a) -> "&#{a};"
 # parse xml to an object
 xml = fs.readFileSync config.jmdict_path
+
 parse_xml xml, {strict: false}, (error, jmdict) ->
   if error
     console.log error
