@@ -5,15 +5,14 @@ config =
   additions_path: "data/manual-additions"
   dictionary_path: "data/jmdict-translations.json"
   example_limit: 5
-  example_translation_limit: 2
-  example_translation_word_limit: 1
-  kanji_path: "data/aozora-694107d.txt"
+  example_meanings_limit: 2
+  example_separator: "\n"
+  kanji_path: "data/all.txt"
   kanji_radical_path: "data/kanji-to-radical.csv"
   limit: 3000
   meanings_path: "data/joyo-meanings.csv"
   output_path: "download/topokanji-deck.csv"
   radicals_path: "data/japanese-radicals-513ba7a.csv"
-  word_separator: "\n"
   words_path: "data/wordlex-2011.txt"
 
 array_from_newline_file = (path) -> fs.readFileSync(path).toString().split("\n")
@@ -39,7 +38,7 @@ get_example_words = (kanji, limit, words, dictionary) ->
   for a in words
     continue unless a.includes kanji
     entry = dictionary[a]
-    continue unless entry
+    continue unless entry and entry[1].length
     result.push [a].concat entry
     break if limit is result.length
   result
@@ -72,6 +71,21 @@ get_components = (radicals, kanji_radical) ->
       result[kanji_radical[char]] = value
   result
 
+get_kanji_info = (kanji, config, meanings, dictionary) ->
+  a = meanings[kanji]
+  return a if a
+  a = components[kanji]
+  return a[0] if a
+  console.log "no meaning found for #{kanji}"
+
+examples_to_string = (a, separator, meanings_limit) ->
+  a = a.map (word) ->
+    meaning = word[2].map (a) -> a[0]
+    if meanings_limit < meaning.length then meaning = meaning.slice(0, meanings_limit)
+    meaning = meaning.join "; "
+    "#{word[0]} (#{word[1]}): #{meaning}"
+  a.join(separator)
+
 words = array_from_newline_file(config.words_path).slice(0, 100100)
 kanjis = array_from_newline_file config.kanji_path
 meanings = get_meanings config.meanings_path, config.additions_path
@@ -80,17 +94,11 @@ kanji_radical = get_kanji_radical(config.kanji_radical_path)
 radicals = array_from_newline_file(config.radicals_path).map((a) -> a.split(";"))
 components = get_components radicals, kanji_radical
 
-get_kanji_info = (kanji, config, meanings, dictionary) ->
-  a = meanings[kanji]
-  return a if a
-  a = components[kanji]
-  return a[0] if a
-  console.log "no meaning found for #{kanji}"
-
 # anki doesnt skip the csv header so it isnt included for now
 csv.pipe fs.createWriteStream config.output_path
 for kanji in kanjis
-  examples = get_example_words kanji, 2, words, dictionary
+  examples = get_example_words kanji, config.example_limit, words, dictionary
+  examples_string = examples_to_string examples, config.example_separator, config.example_meanings_limit
   info = get_kanji_info kanji, config, meanings, dictionary
-  csv.write [kanji, info]
+  csv.write [kanji, info, examples_string]
 csv.end()
