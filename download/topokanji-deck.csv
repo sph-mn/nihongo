@@ -1,22 +1,22 @@
 人,person
 一,one
-丨,"[""vertical stroke"",""たてぼう""]"
+丨,vertical stroke
 口,mouth
 日,day
 目,eye
-儿,"[""human legs"",""ひとあし""]"
+儿,human legs
 見,see
-凵,"[""container, open box"",""かんにょう""]"
+凵,container
 山,mountain
 出,exit
 十,ten
 八,eight
 木,tree
 未,not yet
-丶,"[""dot"",""てん""]"
+丶,dot
 来,come
 大,large
-亅,"[""vertical stroke with a hook"",""はねぼう""]"
+亅,vertical stroke with a hook
 了,finish
 子,child
 心,heart
@@ -26,22 +26,22 @@
 思,think
 二,two
 丁,ward
-彳,"[""step, stride, street, to go"",""ぎょうにんべん""]"
+彳,step
 行,go
 寸,measurement
 寺,Buddhist temple
 時,time
-卜,"[""choosing"",""settling"",""fixing""]"
+卜,oracle
 上,up
-丿,"[""diagonal sweeping stroke"",""の""]"
+丿,diagonal sweeping stroke
 刀,sword
 分,part
-厶,"[""private, Katakana Mu"",""む""]"
-禾,"[""grain"",""のぎへん""]"
+厶,private
+禾,grain
 私,me
 中,middle
-彐,"[""pig’s head"",""けいがしら""]"
-尹,"[""director (of the ritsuryo-period Imperial Prosecuting and Investigating Office)""]"
+彐,snout
+尹,director
 事,abstract thing
 可,possible
 亻,variant of 人
@@ -51,7 +51,7 @@
 又,or again
 皮,skin
 彼,he
-亠,"[""lid, top"",""なべぶた""]"
+亠,lid
 方,direction
 生,life
 月,month
@@ -63,7 +63,7 @@
 女,woman
 本,book
 乙,the latter
-气,"[""steam, air"",""きがまえ""]"
+气,steam
 気,feeling
 干,dry
 年,year
@@ -72,16 +72,16 @@
 者,someone
 刂,variant of 刀
 前,in front
-勹,"[""to wrap"",""つつみがまえ""]"
+勹,to wrap
 勿,not
-豕,"[""pig"",""いのこ""]"
-冖,"[""cover, crown"",""わかんむり""]"
-宀,"[""roof, house"",""うかんむり""]"
+豕,pig
+冖,cover
+宀,roof
 家,house
 今,now
 下,below
 白,white
-勺,"[""shaku"",{""_"":""traditional unit of volume, approx. 18 ml"",""$"":{""G_TYPE"":""expl""}}]"
+勺,ladle
 的,target
 云,say
 牛,cow
@@ -94,16 +94,16 @@
 入,enter
 乍,while
 作,make
-聿,"[""writing brush"",""ふでづくり""]"
+聿,writing brush
 書,write
 学,study
 合,fit
 幺,short thread
-夂,"[""to follow"",""のまた""]"
+夂,to follow
 後,behind
 持,hold
 古,old
-尸,"[""corpse, awning"",""しかばね""]"
+尸,corpse
 居,reside
 灬,variant of 火
 無,nothing
@@ -112,19 +112,19 @@
 様,formal title
 音,sound
 意,idea
-也,"[""sum of money""]"
+也,to be
 地,ground
 止,stop
 午,noon
-卩,"[""kanji \""seal\"" radical (radical 26)""]"
+卩,stamp
 卸,wholesale
 御,honorable
 至,climax
 屋,roof
-廾,"[""folded hands"",""にじゅうあし""]"
+廾,folded hands
 廿,twenty
-厂,"[""cliff"",""がんだれ""]"
-广,"[""kanji \""dotted cliff\"" radical (radical 53)""]"
+厂,cliff
+广,slanting roof
 度,degrees
 同,same
 不,non-
@@ -140,31 +140,31 @@
 力,power
 五,five
 明,bright
-弋,"[""javelin"",""いぐるみ""]"
+弋,javelin
 代,substitute
 犬,dog
 然,so
 用,use
-廴,"[""to move, stretch"",""えんにょう""]"
+廴,to move
 辶,variant of ⻌
 通,pass through
 耳,ear
 聞,hear
 衣,clothes
-艮,"[""gen (one of the trigrams of the I Ching: mountain, northeast)""]"
+艮,boundary
 長,long
 少,few
 己,self
 竹,bamboo
 弓,bow (archery
 第,ordinal number prefix
-戈,"[""ge (ancient Chinese dagger-axe)""]"
+戈,spear
 感,feeling
 世,world
 工,craft
 穴,hole
 空,sky
-囗,"[""border, territorial boundaries"",""くにがまえ""]"
+囗,border
 四,four
 王,king
 里,village
@@ -175,10 +175,10 @@
 名,name
 面,face
 場,place
-彡,"[""hair-style, light rays"",""さんづくり""]"
-彦,"[""boy""]"
+彡,hair-style
+彦,lad
 貝,shellfish
-頁,"[""head, page"",""おおがい""]"
+頁,head
 顔,face
 君,you
 万,ten thousand
@@ -198,7 +198,7 @@
 取,take
 新,new
 虫,insect
-几,"[""desk"",""table""]"
+几,table
 風,wind
 申,say
 礻,variant of 示
@@ -230,20 +230,20 @@
 近,near
 巴,tomoe
 色,color
-癶,"[""outspread legs, departure"",""はつがしら""]"
+癶,outspread legs
 発,departure
 母,mother
 高,tall
 以,by means of
-匕,"[""spoon"",""さじ""]"
-歹,"[""death & dying, to decompose"",""がつ""]"
+匕,spoon
+歹,death & dying
 死,death
 旦,daybreak
 得,acquire
 豆,beans
 頭,head
 欠,lack
-冫,"[""ice"",""にすい""]"
+冫,ice
 次,next
 天,heaven
 夫,husband
@@ -344,7 +344,7 @@
 置,put
 叩,strike
 命,fate
-韋,"[""leather"",""なめしがわ""]"
+韋,leather
 違,differ
 如,likeness
 早,early
@@ -376,10 +376,10 @@
 且,moreover
 助,help
 頃,times
-巳,"[""sixth sign of the Chinese zodiac (The Serpent, 9am-11am, south-southeast, April)""]"
+巳,sign of the snake
 民,people
 半,half
-隹,"[""kanji \""old bird\"" radical""]"
+隹,small bird
 集,collect
 誰,who (question word)
 共,together
@@ -427,7 +427,7 @@
 売,sell
 読,read
 丙,third class
-疒,"[""sickness"",""やまいだれ""]"
+疒,sickness
 病,sick
 種,kind
 連,take along
@@ -465,10 +465,10 @@
 凡,mediocre
 恐,fear
 赤,red
-殳,"[""lance shaft, action"",""るまた""]"
+殳,lance shaft
 殺,kill
 式,style
-釆,"[""to separate"",""のごめ""]"
+釆,to separate
 番,one's turn
 呈,display
 程,extent
@@ -492,7 +492,7 @@
 非,negative
 婦,lady
 寝,lie down
-酉,"[""tenth sign of the Chinese zodiac (The Bird, 5pm-7pm, west, August)""]"
+酉,sake jar
 酒,alcoholic drink
 失,lose
 武,military
@@ -517,7 +517,7 @@
 位,rank
 暗,dark
 芸,art
-辰,"[""fifth sign of the Chinese zodiac (The Dragon, 7am-9am, east-southeast, March)""]"
+辰,Fifth zodiac sign
 振,shake
 片,one-sided
 難,difficult
@@ -535,8 +535,8 @@
 丸,circle
 勢,power
 衛,defense
-匚,"[""box"",""はこがまえ""]"
-匸,"[""to conceal, hide"",""かくしがまえ""]"
+匚,box
+匸,to conceal
 亡,deceased
 望,hope
 春,springtime
@@ -576,7 +576,7 @@
 精,refined
 与,give
 守,protect
-氺,"[""water"",""したみず""]"
+氺,water
 藤,wisteria
 類,sort
 妻,wife
@@ -601,7 +601,7 @@
 注,pour
 造,create
 放,release
-壬,"[""9th in rank"",""ninth sign of the Chinese calendar""]"
+壬,9th calendar sign
 廷,courts
 庭,garden
 為,do
@@ -634,7 +634,7 @@
 静,quiet
 押,push
 市,market
-舛,"[""contrary, to err"",""まいあし""]"
+舛,contrary
 舞,dance
 奄,obstruct
 俺,I
@@ -710,7 +710,7 @@
 附,affixed
 並,line-up
 期,period of time
-毋,"[""not, mother"",""なかれ""]"
+毋,not
 毎,every
 抜,slip out
 岸,beach
@@ -718,9 +718,9 @@
 労,labour
 薄,dilute
 黙,silence
-而,"[""and also"",""しこうして""]"
+而,and also
 端,edge
-虍,"[""tiger"",""とらがしら""]"
+虍,tiger
 劇,drama
 確,certain
 末,end
@@ -748,9 +748,9 @@
 玄,mysterious
 刻,engrave
 散,scatter
-卯,"[""fourth sign of the Chinese zodiac (The Hare, 5am-7am, east, February)""]"
+卯,sign of the hare
 仰,face-up
-疋,"[""bolt of cloth"",""ひき""]"
+疋,bolt of cloth
 疑,doubt
 痛,pain
 破,rend
@@ -875,7 +875,7 @@
 寒,cold
 坊,boy
 隊,group
-龍,"[""dragon"",""りゅう""]"
+龍,dragon
 籠,basket
 囲,surround
 星,star
@@ -943,11 +943,11 @@
 印,mark
 荒,laid waste
 晴,clear up
-筈,"[""nock (of a bow)""]"
+筈,ought
 軒,flats
 樹,trees
 尊,revered
-屮,"[""sprout"",""くさのめ""]"
+屮,sprout
 屯,barracks
 純,genuine
 休,rest
@@ -1158,7 +1158,7 @@
 誌,document
 仙,hermit
 陸,land
-頬,"[""cheek (of face)""]"
+頬,cheeks
 拠,foothold
 嬢,lass
 省,government ministry
@@ -1298,7 +1298,7 @@
 鮮,fresh
 防,prevent
 偶,accidentally
-庵,"[""hermitage"",""retreat""]"
+庵,hermitage
 築,fabricate
 誘,entice
 希,hope
@@ -1310,7 +1310,7 @@
 潮,tide
 操,maneuver
 免,excuse
-隶,"[""to capture"",""れいづくり""]"
+隶,to capture
 康,health
 唐,T'ang
 針,needle
@@ -1330,7 +1330,7 @@
 幼,infancy
 澄,lucidity
 駆,drive
-只,"[""unaffected"",""as is"",""safe""]"
+只,only
 扱,handle
 緑,green
 敏,cleverness
@@ -1345,17 +1345,17 @@
 綱,hawser
 鋭,pointed
 透,transparent
-噂,"[""rumour"",""rumor"",""report"",""hearsay"",""gossip"",""common talk""]"
+噂,rumor
 替,exchange
 潜,submerge
 封,seal
 愉,pleasure
 牧,breed
-巛,"[""winding river"",""まがりがわ""]"
+巛,winding river
 巡,patrol
 票,ballot
 標,signpost
-嘘,"[""lie"",""fib"",""falsehood"",""untruth""]"
+嘘,lie
 裁,judge
 壇,podium
 靴,shoes
@@ -1406,7 +1406,7 @@
 札,tag
 匠,artisan
 勉,exertion
-胡,"[""barbarian tribes surrounding ancient China""]"
+胡,barbarian
 湖,lake
 貨,freight
 臭,stinking
@@ -1492,13 +1492,13 @@
 葬,interment
 稿,draft
 偵,spy
-瓜,"[""melon"",""gourd""]"
+瓜,melon
 孤,orphan
 兔,rabbit
 逸,deviate
 骸,dead remains
 爵,baron
-雀,"[""tree sparrow (Passer montanus)""]"
+雀,sparrow
 課,section
 県,prefecture
 尉,military officer
@@ -1536,7 +1536,7 @@
 寿,longevity
 焦,char
 拘,arrest
-笠,"[""conical hat (East-Asian style)"",""coolie hat""]"
+笠,bamboo hat
 脳,brain
 協,cooperation
 壊,demolition
@@ -1576,7 +1576,7 @@
 採,pick
 曇,cloudy weather
 掌,manipulate
-蓮,"[""rose of Sharon (Hibiscus syriacus)""]"
+蓮,lotus
 桃,peach tree
 鐘,bell
 審,examine
@@ -1596,7 +1596,7 @@
 複,duplicate
 双,pair
 陥,collapse
-巷,"[""the public"",""the street (e.g. \""word on the street\"")""]"
+巷,fork in road
 港,harbor
 劣,inferiority
 歓,delight
@@ -1619,7 +1619,7 @@
 環,ring
 綿,cotton
 紳,sire
-豸,"[""badger"",""むじなへん""]"
+豸,badger
 貌,appearance
 嘩,noisy
 襟,collar
@@ -1636,7 +1636,7 @@
 担,shouldering
 飽,sated
 鎌,sickle
-辻,"[""intersection"",""crossing"",""crossroad"",""street corner"",""street""]"
+辻,crossing
 臓,entrails
 粗,coarse
 訓,instruction
@@ -1758,16 +1758,16 @@
 屏,wall
 塀,fence
 獲,seize
-磯,"[""(rocky) beach"",""seashore""]"
+磯,seashore
 絡,entwine
 汰,luxury
 痴,stupid
 剥,come off
 賛,approve
 蜂,bee
-柴,"[""brushwood"",""firewood""]"
+柴,brush
 頻,repeatedly
-耒,"[""kanji \""plow\"" or \""three-branch tree\"" radical""]"
+耒,plow
 籍,enroll
 蘇,be resuscitated
 倫,ethics
@@ -1787,7 +1787,7 @@
 頑,stubborn
 膚,skin
 怠,neglect
-笹,"[""bamboo grass"",{""_"":""generally smaller species of running bamboo that do not shed their sheaths (e.g. Sasa spp.)"",""$"":{""G_TYPE"":""expl""}}]"
+笹,bamboo grass
 鈍,dull
 摘,pinch
 柿,persimmon
@@ -1799,7 +1799,7 @@
 邦,home country
 鎖,chain
 粒,grains
-萩,"[""dark red exterior with blue interior (color combination worn in autumn)""]"
+萩,bush clover
 均,level
 胴,trunk
 罵,insult
@@ -1817,8 +1817,8 @@
 徐,gradually
 挿,insert
 詣,visit a temple
-爿,"[""split wood"",""しょうへん""]"
-淵,"[""deep pool"",""deep water"",""abyss""]"
+爿,split wood
+淵,abyss
 悠,permanence
 捉,capture
 股,crotch
@@ -1886,7 +1886,7 @@
 瑠,lapis lazuli
 滴,drip
 但,however
-梢,"[""treetop"",""tip of a branch""]"
+梢,treetops
 塊,clod
 妨,disturb
 顎,jaw
@@ -1952,7 +1952,7 @@
 稼,earnings
 偏,partial
 釜,kettle
-樽,"[""cask"",""barrel""]"
+樽,barrel
 奔,bustle
 侵,encroach
 蔽,cover
@@ -1986,7 +1986,7 @@
 糖,sugar
 粛,solemn
 遭,encounter
-柏,"[""oak"",""daimyo oak"",""Japanese emperor oak"",""Quercus dentata""]"
+柏,oak
 棟,ridgepole
 昧,foolish
 塾,cram school
@@ -2011,14 +2011,14 @@
 褒,praise
 託,consign
 伎,deed
-桐,"[""paulownia tree"",""Paulownia tomentosa""]"
+桐,paulownia
 殻,husk
 廉,bargain
 副,vice
 克,overcome
 戚,grieve
 項,paragraph
-梁,"[""(roof) beam""]"
+梁,weir
 薪,fuel
 腸,intestines
 棺,coffin
@@ -2026,7 +2026,7 @@
 爽,refreshing
 禍,calamity
 漏,leak
-丑,"[""second sign of the Chinese zodiac (The Ox, 1am-3am, north-northeast, December)""]"
+丑,sign of the ox
 肺,lungs
 唾,saliva
 碁,Go
@@ -2049,7 +2049,7 @@
 践,tread
 隷,slave
 淫,lewdness
-鯉,"[""common carp (Cyprinus carpio)"",""koi carp""]"
+鯉,carp
 浩,wide expanse
 謹,discreet
 赦,pardon
@@ -2063,14 +2063,14 @@
 渇,thirst
 髄,marrow
 溺,drown
-旬,10-day period (of the month)
+旬,ten-day period
 錠,lock
 儒,Confucian
 梨,pear tree
 膨,swell
 秒,second (part of time)
 償,reparation
-篠,"[""thin-culmed dwarf bamboo (growing in clusters)""]"
+篠,bamboo grass
 磐,rock
 赴,proceed
 畔,paddy-ridge
@@ -2089,7 +2089,7 @@
 諧,harmony
 柵,fence
 軸,axis
-朔,"[""new moon""]"
+朔,conjunction
 茅,miscanthus reed
 羞,feel ashamed
 函,box (archaic) 
@@ -2115,7 +2115,7 @@
 披,expose
 墜,crash
 殴,assault
-瑞,"[""good omen""]"
+瑞,congratulations
 倣,emulate
 億,hundred million
 磁,magnet
@@ -2203,7 +2203,7 @@
 舗,pavement
 剰,surplus
 詐,lie
-幌,"[""canopy (esp. the cloth or canvas used for it)"",""awning"",""top (of a convertible)"",""hood""]"
+幌,canopy
 汐,eventide
 錬,tempering
 薦,recommend
@@ -2229,7 +2229,7 @@
 阻,thwart
 桁,beam
 訟,sue
-菱,"[""caltrop (weapon)"",""caltrap""]"
+菱,diamond shape
 搬,conveyor
 嗣,heir
 旺,flourishing
@@ -2240,7 +2240,7 @@
 綻,rip
 帥,commander
 舶,liner
-渚,"[""water's edge"",""beach"",""shore""]"
+渚,beach
 尿,urine
 賄,bribe
 汎,pan-
@@ -2306,5 +2306,5 @@
 腺,gland
 搭,board
 哺,suckle
-瘍,boil (medical)
+瘍,swelling
 祉,welfare

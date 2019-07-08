@@ -22,12 +22,12 @@ object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
 get_meanings = (path, additions_path) ->
   result = {}
   # additions not found otherwise
-  additions = array_from_newline_file additions_path
-  additions.forEach (a) ->
-    a = a.split ","
-    result[a[0]] = a[1]
   a = array_from_newline_file config.meanings_path
   a.forEach (a) ->
+    a = a.split ","
+    result[a[0]] = a[1]
+  additions = array_from_newline_file additions_path
+  additions.forEach (a) ->
     a = a.split ","
     result[a[0]] = a[1]
   result
@@ -46,7 +46,7 @@ get_example_words = (kanji, limit, words, dictionary) ->
 
 get_kanji_radical = (path) ->
   # radicals and same looking kanji characters have separate unicode codepoints.
-  # this returns a lookup table from radical to kanji.
+  # this returns a lookup table.
   result = {}
   a = array_from_newline_file(config.kanji_radical_path)
   a.forEach (a) ->
@@ -66,7 +66,7 @@ get_components = (radicals, kanji_radical) ->
     char = a[1]
     meaning = a[3]
     reading = a[4]
-    value = [meaning, reading]
+    value = [meaning.split(",")[0], reading]
     result[char] = value
     if kanji_radical[char]
       result[kanji_radical[char]] = value
@@ -83,14 +83,11 @@ components = get_components radicals, kanji_radical
 get_kanji_info = (kanji, config, meanings, dictionary) ->
   a = meanings[kanji]
   return a if a
-  a = dictionary[kanji]
-  return a[1][0] if a and a[1].length
   a = components[kanji]
-  return a if a
-  throw "no meaning found for " + kanji
+  return a[0] if a
+  console.log "no meaning found for #{kanji}"
 
 # anki doesnt skip the csv header so it isnt included for now
-#csv.pipe process.stdout
 csv.pipe fs.createWriteStream config.output_path
 for kanji in kanjis
   examples = get_example_words kanji, 2, words, dictionary
