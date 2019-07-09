@@ -5,7 +5,7 @@ config =
   additions_path: "data/manual-additions"
   dictionary_path: "data/jmdict-translations.json"
   example_limit: 5
-  example_meanings_limit: 2
+  example_meanings_limit: 1
   example_separator: "\n"
   kanji_path: "data/all.txt"
   kanji_radical_path: "data/kanji-to-radical.csv"
@@ -20,7 +20,7 @@ object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
 
 get_meanings = (path, additions_path) ->
   result = {}
-  # additions not found otherwise
+  # additions that are not not found otherwise
   a = array_from_newline_file config.meanings_path
   a.forEach (a) ->
     a = a.split ","
@@ -32,7 +32,7 @@ get_meanings = (path, additions_path) ->
   result
 
 get_example_words = (kanji, limit, words, dictionary) ->
-  # try to find $count number of words with kana and translations.
+  # try to find limit number of words with kana and translations.
   result = []
   return result unless limit
   for a in words
@@ -80,6 +80,7 @@ get_kanji_info = (kanji, config, meanings, dictionary) ->
 
 examples_to_string = (a, separator, meanings_limit) ->
   a = a.map (word) ->
+    # get the first word of each sense
     meaning = word[2].map (a) -> a[0]
     if meanings_limit < meaning.length then meaning = meaning.slice(0, meanings_limit)
     meaning = meaning.join "; "

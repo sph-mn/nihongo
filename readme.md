@@ -3,7 +3,7 @@ the kanji are sorted by frequency of use and so that they dont appear before the
 download/topokanji-deck.csv contains the data for flashcards and download/topokanji.apkg is the anki deck ([ankiweb page](https://ankiweb.net/shared/info/211883411)).
 
 * "covers about 95-99% of kanji found in various Japanese texts. Generally, the goal is provide something similar to Jōyō kanji, but based on actual data."
-* sensitive words and kana-only words are excluded
+* sensitive example words and kana-only words were excluded
 * files are in utf-8
 
 # data sources and thanks to
