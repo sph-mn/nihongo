@@ -4,6 +4,7 @@ csv = require("csv-stringify")()
 config =
   additions_path: "data/manual-additions"
   dictionary_path: "data/jmdict-translations.json"
+  add_example_words: false
   example_limit: 5
   example_meanings_limit: 1
   example_separator: "\n"
@@ -65,7 +66,7 @@ get_components = (radicals, kanji_radical) ->
     char = a[1]
     meaning = a[3]
     reading = a[4]
-    value = [meaning.split(",")[0], reading]
+    value = [meaning.split(",")[0]]
     result[char] = value
     if kanji_radical[char]
       result[kanji_radical[char]] = value
@@ -95,11 +96,16 @@ kanji_radical = get_kanji_radical(config.kanji_radical_path)
 radicals = array_from_newline_file(config.radicals_path).map((a) -> a.split(";"))
 components = get_components radicals, kanji_radical
 
-# anki doesnt skip the csv header so it isnt included for now
+# anki doesnt skip csv headers so none is included for now
 csv.pipe fs.createWriteStream config.output_path
-for kanji in kanjis
-  examples = get_example_words kanji, config.example_limit, words, dictionary
-  examples_string = examples_to_string examples, config.example_separator, config.example_meanings_limit
-  info = get_kanji_info kanji, config, meanings, dictionary
-  csv.write [kanji, info, examples_string]
+if config.add_example_words
+  for kanji in kanjis
+    examples = get_example_words kanji, config.example_limit, words, dictionary
+    examples_string = examples_to_string examples, config.example_separator, config.example_meanings_limit
+    info = get_kanji_info kanji, config, meanings, dictionary
+    csv.write [kanji, info, examples_string]
+else
+  for kanji in kanjis
+    info = get_kanji_info kanji, config, meanings, dictionary
+    csv.write [kanji, info]
 csv.end()
