@@ -1,5 +1,5 @@
 a csv file and anki deck to learn to distinguish the 2000+ most common kanji and components/radicals.
-the kanji are sorted by frequency of use and so that they dont appear before their parts, thanks to the [topokanji](https://github.com/scriptin/topokanji) project. only a single word is given for the meaning for quick learning. additionally. download/topokanji-deck.csv contains the data for flashcards and download/topokanji.apkg is the anki deck ([ankiweb page](https://ankiweb.net/shared/info/211883411)).
+the kanji are sorted by frequency of use and so that they dont appear before their parts, thanks to the [topokanji](https://github.com/scriptin/topokanji) project. only a single word is given for the meaning for quick learning. additionally, download/topokanji-deck.csv contains the data for flashcards and download/topokanji.apkg is the anki deck ([ankiweb page](https://ankiweb.net/shared/info/211883411)).
 
 "covers about 95-99% of kanji found in various Japanese texts. Generally, the goal is provide something similar to Jōyō kanji, but based on actual data.". files are in utf-8
 
@@ -15,7 +15,7 @@ all data sources are included and all other data of this project is cc-by-sa-4.0
 
 # example words
 example words with kana reading can be included by setting add_example_words at the top of js/create-csv-file.coffee to true and recreating the csv file.
-the example words were selected based on twitter and blog usage frequencies and sensitive words were excluded
+the example words were selected based on twitter and blog usage frequencies and sensitive words are excluded
 
 # technical
 * how to recreate the csv file
