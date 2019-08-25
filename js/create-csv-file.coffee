@@ -2,21 +2,23 @@ fs = require "fs"
 csv = require("csv-stringify")()
 
 config =
+  kanji_path: "data/all.txt"
+  output_path: "download/topokanji-deck.csv"
+  #kanji_path: "data/jouyou-by-stroke-count.txt"
+  #output_path: "download/jouyou-by-stroke-count.csv"
   additions_path: "data/manual-additions"
   dictionary_path: "data/jmdict-translations.json"
   add_example_words: false
   example_limit: 5
   example_meanings_limit: 1
   example_separator: "\n"
-  kanji_path: "data/all.txt"
   kanji_radical_path: "data/kanji-to-radical.csv"
   limit: 3000
   meanings_path: "data/joyo-meanings.csv"
-  output_path: "download/topokanji-deck.csv"
   radicals_path: "data/japanese-radicals-513ba7a.csv"
   words_path: "data/wordlex-2011.txt"
 
-array_from_newline_file = (path) -> fs.readFileSync(path).toString().split("\n")
+array_from_newline_file = (path) -> fs.readFileSync(path).toString().trim().split("\n")
 object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
 
 get_meanings = (path, additions_path) ->

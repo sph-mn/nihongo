@@ -1,7 +1,9 @@
-a csv file and anki deck to learn to distinguish the 2000+ most common kanji and components/radicals.
+a csv file and anki deck to learn to distinguish the most common kanji and components/radicals.
 the kanji are sorted by frequency of use and so that they dont appear before their parts, thanks to the [topokanji](https://github.com/scriptin/topokanji) project. only a single word is given for the meaning for quick learning. additionally, download/topokanji-deck.csv contains the data for flashcards and download/topokanji.apkg.
 
 "covers about 95-99% of kanji found in various Japanese texts. Generally, the goal is provide something similar to Jōyō kanji, but based on actual data.". files are in utf-8
+
+a deck with the 2136 jouyou kanji sorted by stroke count is now also included under download/.
 
 # data sources and thanks to
 * kanji order: [topokanji](https://github.com/scriptin/topokanji) (cc-by-4.0 and other licenses)
