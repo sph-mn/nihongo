@@ -1,4 +1,4 @@
-# extract relevant information from the jmdict file
+# extract relevant information from the jmdict file and output as json
 
 parse_xml = require("xml2js").parseString
 fs = require "fs"
