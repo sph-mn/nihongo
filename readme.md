@@ -11,7 +11,7 @@ all data sources are included and all other data of this project is cc-by-sa-4.0
 originally this project had a different focus and because of this, more features are available and still maintained. these features can be added when using the provided scripts to create csv files.
 
 * example words per character sorted by frequency of usage in media
-  * to enable this feature, set add_example_words at the top of js/create-csv-file.coffee to true and recreate the csv file
+  * to enable this feature, set add_example_words at the top of js/create-csv-file-with-extras.coffee to true and generate a csv file (see section "technical" below)
   * the example words are selected based on twitter and blog usage frequencies and sensitive words will be excluded
 * [topokanji](https://github.com/scriptin/topokanji) order
 
