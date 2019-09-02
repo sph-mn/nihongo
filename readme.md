@@ -8,7 +8,8 @@ also included is a single-page stroke-order lookup application at `download/kanj
 notes
 * the anki deck uses a special font that looks hand-drawn and makes individual strokes more apparent, which can also help with differentiating components
 * the anki deck has custom scheduling with more reviews, which seems necessary to really memorise the shapes and differences between similar characters
-* this deck makes use of a few relatively uncommon english words, but which should be quickly looked up if necessary. for example: beckon, portent, acquiesce.
+* this deck makes use of a few relatively uncommon english words, but which should be quickly looked up if necessary. examples: beckon, portent, acquiesce
+* jouyou kanji dont include some commonly seen kanj. examples: 嬉萌伊綺嘘菅貰縺繋呟也
 
 data source: [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji).
 all data sources are included and all other data of this project is cc-by-sa-4.0.

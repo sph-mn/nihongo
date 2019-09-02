@@ -1,5 +1,5 @@
-# this code displays the html for the single file viewer page built from
-# html/template.html and kanjisvg stroke images.
+# this code writes the html file for the single file viewer page built from
+# html/template.html and kanjivg stroke images.
 
 config =
   html_path: "html/template.html"
