@@ -3,12 +3,12 @@ because it contains less information than many other decks, you will be familiar
 the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and the learning progress is apparent.
 
 `download/jouyou by stroke count.apkg` is the anki deck and `download/jouyou-by-stroke-count.csv` is the csv file.
-also included is a single-page stroke-order lookup application at `download/kanji-viewer.html`. the html file can be opened with a browser and is also hosted [here](http://sph.mn/other/kanji-viewer.html).
+also included is a single-page stroke-order lookup application at `download/kanji-viewer.html`. the html file can be downloaded and opened with a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
 
 notes
 * the anki deck uses a special font that looks hand-drawn and makes individual strokes more apparent, which can also help with differentiating components
 * the anki deck has custom scheduling with more reviews, which seems necessary to really memorise the shapes and differences between similar characters
-* this deck makes use of some relatively uncommon english words, but which should be quickly looked up if necessary. for example: beckon, portent, acquiesce
+* this deck makes use of a few relatively uncommon english words, but which should be quickly looked up if necessary. for example: beckon, portent, acquiesce.
 
 data source: [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji).
 all data sources are included and all other data of this project is cc-by-sa-4.0.
