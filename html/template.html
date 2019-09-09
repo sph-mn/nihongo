@@ -167,22 +167,24 @@
         return (input.addEventListener("change", on_filter))
       }
 
+      function minimise_event(event) {
+        if (!this.classList.contains("k")) return
+        var row = this.parentNode
+        console.log("double!")
+        if (event.ctrlKey) {
+          set_previous_rows(row, !row.previousElementSibling.classList.contains("hidden"))
+          return (scroll_to(row.id))
+        } else {
+          return set_row(row, !row.classList.contains("hidden"))
+        }
+      }
+
       document.querySelectorAll(".k").forEach(function(a) {
         init_row(a.parentNode)
-        return (a.addEventListener("mouseup", (function(event) {
-          if (!this.classList.contains("k")) {
-            return
-          }
-          var row = this.parentNode
-          if (1 === event.button) {
-            if (event.ctrlKey) {
-              set_previous_rows(row, !row.previousElementSibling.classList.contains("hidden"))
-              return (scroll_to(row.id))
-            } else {
-              return (set_row(row, !row.classList.contains("hidden")))
-            }
-          }
-        })))
+        a.addEventListener("dblclick", minimise_event)
+        a.addEventListener("mousedown", function(event) {
+          if(1 == event.button) minimise_event.call(this, event)
+        })
       })
 
       init_filter()
