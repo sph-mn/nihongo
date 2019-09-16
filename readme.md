@@ -1,15 +1,15 @@
 a csv file and anki deck to learn the shape and only one useful meaning of each 2136 jouyou kanji.
-because it contains less information than many other decks, you will be familiar with the whole set in a shorter period of time and then have an easy time learning anything else related to kanji.
-the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and the learning progress is apparent.
+because it contains less information than many other decks, you will be familiar with the whole set in a shorter period of time and then have an easier time learning anything else related to kanji.
+the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent.
 
 `download/jouyou by stroke count.apkg` is the anki deck and `download/jouyou-by-stroke-count.csv` is the csv file.
-also included is a single-page stroke-order lookup application at `download/kanji-viewer.html`. the html file can be downloaded and opened with a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
+also included is a single-page stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and opened with a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
 
 notes
-* the anki deck uses a special font that looks hand-drawn and makes individual strokes more apparent, which can also help with differentiating components
+* the anki deck uses a special font that looks hand-drawn and makes individual strokes more apparent. this can also help with differentiating components
 * the anki deck has custom scheduling with more reviews, which seems necessary to really memorise the shapes and differences between similar characters
-* this deck makes use of a few relatively uncommon english words, but which should be quickly looked up if necessary. examples: beckon, portent, acquiesce
-* jouyou kanji dont include some commonly seen kanj. examples: 嬉萌伊綺嘘菅貰縺繋呟也
+* this deck makes use of a small number of relatively uncommon english words, but which should be quick to look-up if necessary. examples: beckon, portent, acquiesce
+* jouyou kanji dont include some commonly used kanj. examples: 嬉萌伊綺嘘菅貰縺繋呟也
 
 data source: [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji).
 all data sources are included and all other data of this project is cc-by-sa-4.0.
