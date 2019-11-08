@@ -3,7 +3,12 @@ because it contains less information than many other decks, you will be familiar
 the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent.
 
 `download/jouyou by stroke count.apkg` is the anki deck and `download/jouyou-by-stroke-count.csv` is the csv file.
-also included is a single-page stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and opened with a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
+
+additionally included in this repository is:
+* a single-page stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and opened with a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
+* a list of kanji sorted by pronounciation with kanji that share the individual readings
+* a jlpt n5 vocabulary list for practising writing that includes only words with kanji and lists the pronounciation in romaji, meaning and the word
+* an anki deck for the jlpt n5 vocabulary list for writing practice
 
 notes
 * the anki deck uses a special font that looks hand-drawn and makes individual strokes more apparent. this can also help with differentiating components
@@ -11,8 +16,10 @@ notes
 * this deck makes use of a small number of relatively uncommon english words, but which should be quick to look-up if necessary. examples: beckon, portent, acquiesce
 * jouyou kanji dont include some commonly used kanj. examples: 嬉萌伊綺嘘菅貰縺繋呟也
 
-data source: [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji).
-all data sources are included and all other data of this project is cc-by-sa-4.0.
+data sources:
+* [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji)
+* [jlpt n5 words and meanings](http://www.passjapanesetest.com/jlpt-n5-vocabulary-list/)
+all data sources are included, except for the jlpt n5 wordlist, and all other data of this project is cc-by-sa-4.0.
 
 # extra features
 originally this project had a different focus and because of this, more features are available and still maintained. these features can be added when using the provided scripts to create csv files.
