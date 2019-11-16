@@ -1,4 +1,4 @@
-a csv file and anki deck to memorise the shape and only one useful meaning of each of the 2136 jouyou kanji.
+a csv file and anki deck to memorise the shape and only one useful meaning for each of the 2136 jouyou kanji.
 because it contains less information than many other decks, you will be familiar with the characters in a shorter period of time and then have an easier time learning anything else related to kanji.
 the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent.
 
@@ -19,12 +19,11 @@ notes
 * the jouyou kanji generally dont include some commonly used kanji. examples: 嬉萌伊綺嘘菅貰縺繋呟也
 
 # adding example words
-originally this project had a different focus and because of this, more features are available and still maintained.
 to add example words to jouyou-by-stroke-count.csv, set add_example_words at the top of js/create-csv-file-with-extras.coffee to true and generate a csv file (see section "technical" below).
 the example words are sorted by twitter and blog usage frequencies and sensitive words will be excluded.
 
 # data sources
-* [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji)
+* [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
 * extras
   * word translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0)
   * word frequency: [gimenes, m., & new, b. (2015) wordlex](http://www.lexique.org/?page_id=250)
@@ -33,7 +32,7 @@ the example words are sorted by twitter and blog usage frequencies and sensitive
   * [jlpt n5 words and meanings](http://www.passjapanesetest.com/jlpt-n5-vocabulary-list/)
   * [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
 
-most data is included, except for the jlpt n5 wordlist, and all other data of this project is cc-by-sa-4.0.
+most data is included, except for the jlpt n5 wordlist. all other data of this project is cc-by-sa-4.0.
 
 # technical
 * the code uses javascript, nodejs and its package manager npm. the code is actually written in [coffeescript](http://coffeescript.org), which is javascript written with less code
