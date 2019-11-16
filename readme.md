@@ -5,10 +5,10 @@ the characters are sorted by stroke count, which is a natural order that roughly
 `download/jouyou by stroke count.apkg` is the anki deck and `download/jouyou-by-stroke-count.csv` is the source data csv file.
 
 additionally included in this repository are
-* a single-page stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
+* a one file stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
 * under download/extras:
   * multiple-kanji-to-reading.csv: a list of multiple kanji and their shared reading
-  * jouyou-with-shared-readings.csv: a list of kanji and for each of its readings, the kanji that share the reading
+  * jouyou-with-shared-readings.csv: a list of kanji and for each of its readings the kanji that share the reading
   * writing-n5.csv: a jlpt n5 vocabulary list for practising writing for only words that include kanji with pronounciation in romaji, meaning and the word
   * writing-n5.apkg: an anki deck for the jlpt n5 vocabulary list for writing practice
   * kanji-radicals.csv
@@ -16,14 +16,12 @@ additionally included in this repository are
 notes
 * the anki deck uses a special font that looks hand-drawn and makes individual strokes more apparent. this can also help with differentiating components
 * this deck uses a small number of relatively uncommon english words. examples: beckon, portent, acquiesce
-* the jouyou kanji dont include some commonly used kanj. examples: 嬉萌伊綺嘘菅貰縺繋呟也
+* the jouyou kanji generally dont include some commonly used kanji. examples: 嬉萌伊綺嘘菅貰縺繋呟也
 
-# adding example words to jouyou-by-stroke-count.csv
+# adding example words
 originally this project had a different focus and because of this, more features are available and still maintained.
-to enable this feature, set add_example_words at the top of js/create-csv-file-with-extras.coffee to true and generate a csv file (see section "technical" below).
-the example words are sorted by twitter and blog usage frequencies and sensitive words will be excluded
-
-this feature uses data from the following additional sources:
+to add example words to jouyou-by-stroke-count.csv, set add_example_words at the top of js/create-csv-file-with-extras.coffee to true and generate a csv file (see section "technical" below).
+the example words are sorted by twitter and blog usage frequencies and sensitive words will be excluded.
 
 # data sources
 * [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji)
@@ -35,7 +33,7 @@ this feature uses data from the following additional sources:
   * [jlpt n5 words and meanings](http://www.passjapanesetest.com/jlpt-n5-vocabulary-list/)
   * [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
 
-most data sources are included, except for the jlpt n5 wordlist, and all other data of this project is cc-by-sa-4.0.
+most data is included, except for the jlpt n5 wordlist, and all other data of this project is cc-by-sa-4.0.
 
 # technical
 * the code uses javascript, nodejs and its package manager npm. the code is actually written in [coffeescript](http://coffeescript.org), which is javascript written with less code
