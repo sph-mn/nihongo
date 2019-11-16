@@ -9,6 +9,9 @@
     "coffee-script": "*",
     "csv": "*",
     "wanakana": "*",
-    "xml2js": "^0.4.22"
+    "xml2js": "*",
+    "table-scraper": "*",
+    "underscore": "*",
+    "wikijs": "*"
   }
 }
