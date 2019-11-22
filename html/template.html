@@ -117,6 +117,7 @@
     </div>
     <div class="filter">
       <input id="filter-input" placeholder="filter..."/>
+      <button id="filter-reset">reset</button>
     </div>
     <div class="list">{content}</div>
     <script>
@@ -153,7 +154,8 @@
 
       function init_filter() {
         var input = document.getElementById("filter-input")
-        function on_filter(event) {
+        var button = document.getElementById("filter-reset")
+        function on_filter() {
           for (var i = 0;
                (i < rows.length); i = (1 + i)) {
             var row = rows[i]
@@ -164,7 +166,12 @@
             }
           }
         }
+        function on_reset() {
+          input.value = ""
+          on_filter()
+        }
         input.addEventListener("keyup", on_filter)
+        button.addEventListener("click", on_reset)
         return (input.addEventListener("change", on_filter))
       }
 
