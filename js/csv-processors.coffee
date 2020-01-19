@@ -1,3 +1,5 @@
+# this file contains various standalone functions to process csv files
+
 csv_parse = require "csv-parse"
 csv_stringify = require "csv-stringify"
 nodeStream = require "stream"
