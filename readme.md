@@ -6,9 +6,9 @@ the characters are sorted by stroke count, which is a natural order that roughly
 
 additionally included in this repository are
 * a one file stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
-* under download/extras:
-  * multiple-kanji-to-reading.csv: a list of multiple kanji and their shared reading
-  * jouyou-with-shared-readings.csv: a list of kanji and for each of its readings the kanji that share the reading
+* under download/extras among other things:
+  jouyou-example-words.csv: example words for each jouyou kanji, except words that are not in the top 10000
+  jouyou-by-stroke-count-extras.csv: like the default kanji deck but with example words in a third field
   * writing-n5.csv: a jlpt n5 vocabulary list for practising writing for only words that include kanji with pronounciation in romaji, meaning and the word
   * writing-n5.apkg: an anki deck for the jlpt n5 vocabulary list for writing practice
   * kanji-radicals.csv
