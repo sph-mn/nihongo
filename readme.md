@@ -7,7 +7,7 @@ the characters are sorted by stroke count, which is a natural order that roughly
 additionally included in this repository are
 * a one file stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
 * under download/extras among other things:
-  jouyou-example-words.csv: example words for each jouyou kanji, except words that are not in the top 10000
+  jouyou-example-words.csv: example words for each jouyou kanji, except words that are not in the top 10000. example words are selected and sorted by twitter and blog usage frequencies (see sources below) and sensitive words are excluded
   jouyou-by-stroke-count-extras.csv: like the default kanji deck but with example words in a third field
   * writing-n5.csv: a jlpt n5 vocabulary list for practising writing for only words that include kanji with pronounciation in romaji, meaning and the word
   * writing-n5.apkg: an anki deck for the jlpt n5 vocabulary list for writing practice
@@ -18,9 +18,8 @@ notes
 * this deck uses a small number of relatively uncommon english words. examples: beckon, portent, acquiesce
 * the jouyou kanji generally dont include some commonly used kanji. examples: 嬉萌伊綺嘘菅貰縺繋呟也
 
-# adding example words
-to add example words to jouyou-by-stroke-count.csv, set add_example_words at the top of js/create-csv-file-with-extras.coffee to true and generate a csv file (see section "technical" below).
-the example words are sorted by twitter and blog usage frequencies and sensitive words will be excluded.
+# why is the deck not on ankiweb
+because ankiweb deletes decks that dont get popular enough in a few weeks. there are not enough people interested in such a deck for it to not get deleted.
 
 # data sources
 * [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
@@ -32,7 +31,7 @@ the example words are sorted by twitter and blog usage frequencies and sensitive
   * [jlpt n5 words and meanings](http://www.passjapanesetest.com/jlpt-n5-vocabulary-list/)
   * [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
 
-most data is included, except for the jlpt n5 wordlist. all other data of this project is cc-by-sa-4.0.
+most data is included, except for the jlpt n5 wordlist and kanjisvg. all other data of this project is cc-by-sa-4.0.
 
 # technical
 * the code uses javascript, nodejs and its package manager npm. the code is actually written in [coffeescript](http://coffeescript.org), which is javascript written with less code
