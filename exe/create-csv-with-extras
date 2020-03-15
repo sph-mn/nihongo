@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./node_modules/coffeescript/bin/coffee js/create-csv-file-with-extras.coffee

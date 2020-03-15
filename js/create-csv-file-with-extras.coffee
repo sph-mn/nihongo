@@ -3,20 +3,19 @@ csv = require("csv-stringify")()
 
 config =
   kanji_path: "data/jouyou-by-stroke-count.txt"
-  output_path: "download/jouyou-by-stroke-count-extras.csv"
-  #kanji_path: "data/extra/topokanji-all.txt"
-  #output_path: "download/topokanji-deck.csv"
-  additions_path: "data/extra/manual-additions"
-  dictionary_path: "data/extra/jmdict-translations.json"
-  add_example_words: false
+  output_path: "download/extras/jouyou-by-stroke-count-extras.csv"
+  additions_path: "data/extras/manual-additions"
+  dictionary_path: "data/extras/jmdict-translations.json"
+  add_example_words: true
   example_limit: 5
   example_meanings_limit: 1
   example_separator: "\n"
-  kanji_radical_path: "data/extra/kanji-to-radical.csv"
+  kanji_radical_path: "data/extras/kanji-to-radical.csv"
   limit: 3000
+  words_limit: 10000
   meanings_path: "data/joyo-meanings.csv"
-  radicals_path: "data/extra/japanese-radicals-513ba7a.csv"
-  words_path: "data/extra/wordlex-2011.txt"
+  radicals_path: "data/extras/japanese-radicals-513ba7a.csv"
+  words_path: "data/extras/wordlex-2011.txt"
 
 array_from_newline_file = (path) -> fs.readFileSync(path).toString().trim().split("\n")
 object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
@@ -90,7 +89,8 @@ examples_to_string = (a, separator, meanings_limit) ->
     "#{word[0]} (#{word[1]}): #{meaning}"
   a.join(separator)
 
-words = array_from_newline_file(config.words_path).slice(0, 100100)
+words = array_from_newline_file(config.words_path)
+words = words.slice(0, Math.min(words.length, config.words_limit))
 kanjis = array_from_newline_file config.kanji_path
 meanings = get_meanings config.meanings_path, config.additions_path
 dictionary = object_from_json_file config.dictionary_path

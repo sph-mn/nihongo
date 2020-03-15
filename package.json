@@ -6,12 +6,12 @@
     "compile": "coffee js/create-csv-file.coffee"
   },
   "dependencies": {
-    "coffee-script": "*",
+    "coffeescript": "*",
     "csv": "*",
-    "wanakana": "*",
-    "xml2js": "*",
     "table-scraper": "*",
     "underscore": "*",
-    "wikijs": "*"
+    "wanakana": "*",
+    "wikijs": "*",
+    "xml2js": "*"
   }
 }
