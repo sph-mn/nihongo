@@ -1,9 +1,11 @@
 fs = require "fs"
 csv = require("csv-stringify")()
+wanakana = require "wanakana"
 
 config =
   kanji_path: "data/jouyou-by-stroke-count.txt"
   output_path: "download/extras/jouyou-by-stroke-count-extras.csv"
+  output_path_words_only: "download/extras/jouyou-example-words.csv"
   additions_path: "data/extras/manual-additions"
   dictionary_path: "data/extras/jmdict-translations.json"
   add_example_words: true
@@ -80,14 +82,18 @@ get_kanji_info = (kanji, config, meanings, dictionary) ->
   return a[0] if a
   console.log "no meaning found for #{kanji}"
 
-examples_to_string = (a, separator, meanings_limit) ->
-  a = a.map (word) ->
+examples_filter = (a, meanings_limit) ->
+  a.map (word) ->
     # get the first word of each sense
     meaning = word[2].map (a) -> a[0]
     if meanings_limit < meaning.length then meaning = meaning.slice(0, meanings_limit)
-    meaning = meaning.join "; "
-    "#{word[0]} (#{word[1]}): #{meaning}"
-  a.join(separator)
+    [word[0], word[1], meaning]
+
+examples_to_string = (a, separator, meanings_limit) ->
+  examples = examples_filter(a, meanings_limit).map (a) ->
+    meaning = a[2].join "; "
+    "#{a[0]} (#{a[1]}): #{meaning}"
+  examples.join(separator)
 
 words = array_from_newline_file(config.words_path)
 words = words.slice(0, Math.min(words.length, config.words_limit))
@@ -98,16 +104,32 @@ kanji_radical = get_kanji_radical(config.kanji_radical_path)
 radicals = array_from_newline_file(config.radicals_path).map((a) -> a.split(";"))
 components = get_components radicals, kanji_radical
 
-# anki doesnt skip csv headers so none is included for now
-csv.pipe fs.createWriteStream config.output_path
-if config.add_example_words
+csv_with_extras = () ->
+  # anki doesnt skip csv headers so none is included for now
+  csv.pipe fs.createWriteStream config.output_path
+  if config.add_example_words
+    for kanji in kanjis
+      examples = get_example_words kanji, config.example_limit, words, dictionary
+      examples_string = examples_to_string examples, config.example_separator, config.example_meanings_limit
+      info = get_kanji_info kanji, config, meanings, dictionary
+      csv.write [kanji, info, examples_string]
+  else
+    for kanji in kanjis
+      info = get_kanji_info kanji, config, meanings, dictionary
+      csv.write [kanji, info]
+  csv.end()
+
+only_example_words = () ->
+  csv.pipe fs.createWriteStream config.output_path_words_only
+  config.add_example_words = true
   for kanji in kanjis
     examples = get_example_words kanji, config.example_limit, words, dictionary
-    examples_string = examples_to_string examples, config.example_separator, config.example_meanings_limit
-    info = get_kanji_info kanji, config, meanings, dictionary
-    csv.write [kanji, info, examples_string]
-else
-  for kanji in kanjis
-    info = get_kanji_info kanji, config, meanings, dictionary
-    csv.write [kanji, info]
-csv.end()
+    examples = examples_filter examples, config.example_meanings_limit
+    for a in examples
+      a[2] = a[2].join "; "
+      a[1] = wanakana.toRomaji a[1]
+      csv.write a
+  csv.end()
+
+#only_example_words()
+csv_with_extras()
