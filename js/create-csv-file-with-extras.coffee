@@ -108,28 +108,35 @@ csv_with_extras = () ->
   # anki doesnt skip csv headers so none is included for now
   csv.pipe fs.createWriteStream config.output_path
   if config.add_example_words
-    for kanji in kanjis
+    for kanji, i in kanjis
       examples = get_example_words kanji, config.example_limit, words, dictionary
       examples_string = examples_to_string examples, config.example_separator, config.example_meanings_limit
       info = get_kanji_info kanji, config, meanings, dictionary
-      csv.write [kanji, info, examples_string]
+      csv.write [kanji, info, examples_string, i]
   else
-    for kanji in kanjis
+    for kanji, i in kanjis
       info = get_kanji_info kanji, config, meanings, dictionary
-      csv.write [kanji, info]
+      csv.write [kanji, info, i]
   csv.end()
 
 only_example_words = () ->
   csv.pipe fs.createWriteStream config.output_path_words_only
   config.add_example_words = true
+  index = 0
   for kanji in kanjis
     examples = get_example_words kanji, config.example_limit, words, dictionary
     examples = examples_filter examples, config.example_meanings_limit
-    for a in examples
+    for a, i2 in examples
+      continue if words[a[0]]
+      words[a[0]] = true
       a[2] = a[2].join "; "
       a[1] = wanakana.toRomaji a[1]
+      # partofspeech, sort index
+      a.push ""
+      a.push index
       csv.write a
+      index += 1
   csv.end()
 
-#only_example_words()
-csv_with_extras()
+only_example_words()
+#csv_with_extras()

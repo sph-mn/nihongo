@@ -28,7 +28,7 @@ get_kanji_meaning = (kanji, meanings) ->
 kanji_order = array_from_newline_file config.kanji_order_path
 meanings = get_all_meanings config.meanings_path
 csv.pipe fs.createWriteStream config.output_path
-for kanji in kanji_order
+for kanji, i in kanji_order
   meaning = get_kanji_meaning kanji, meanings
-  csv.write [kanji, meaning]
+  csv.write [kanji, meaning, i]
 csv.end()
