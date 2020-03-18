@@ -3,7 +3,7 @@
 * csv file with kanji meaning
 * one file stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html)
 * csv file with kanji and example words. words in the top 10000, sensitive words excluded
-* csv file with only example words for the jouyou kanji. up to 5 words per kanji, adjustable
+* csv file with only example words for the jouyou kanji. currently up to 5 words per kanji, freely adjustable
 * all csv files have a sort index field at the end that can be used as a sort field in anki
 * some additional files for kanji components and other things under download/extras and data/extras
 * uses the 2136 jouyou kanji as of 2020
