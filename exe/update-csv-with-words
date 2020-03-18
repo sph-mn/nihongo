@@ -1,0 +1,14 @@
+#!/usr/bin/env coffee
+
+config =
+  example_meanings_limit: 1
+  example_word_separator: "\n"
+  example_words_limit: 5
+  word_frequency_limit: 10000
+  dictionary_path: "data/extras/jmdict-translations.json"
+  kanji_path: "data/jouyou-by-stroke-count.txt"
+  meanings_path: "data/joyo-meanings.csv"
+  output_path: "download/extras/jouyou-by-stroke-count-with-words.csv"
+  word_frequency_path: "data/extras/wordlex-2011.txt"
+
+require("../js/csv").update_csv_with_words config

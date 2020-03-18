@@ -1,9 +1,10 @@
-# this file contains various standalone functions to process csv files
+# this file contains various standalone functions for csv files.
+# the functions read from standard input and write to standard output.
 
+fs = require "fs"
 csv_parse = require "csv-parse"
 csv_stringify = require "csv-stringify"
 nodeStream = require "stream"
-fs = require "fs"
 wanakana = require "wanakana"
 
 helper =
@@ -28,7 +29,6 @@ helper =
               if error then console.log error
               else console.log result
 
-# the following functions read from standard input and write to standard output.
 
 csv_kana_to_romaji = (column_index) ->
   # translate all kana words at column_index to romaji.
