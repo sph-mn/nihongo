@@ -1,10 +1,7 @@
 {
-  "name": "kanji-deck",
+  "name": "jouyou-kanji-csv",
   "version": "1.0.0",
-  "license": "cc-by",
-  "scripts": {
-    "compile": "coffee js/create-csv-file.coffee"
-  },
+  "license": "cc-by-sa",
   "dependencies": {
     "coffeescript": "*",
     "csv": "*",

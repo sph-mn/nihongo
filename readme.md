@@ -1,44 +1,43 @@
-a csv file and anki deck to memorise the shape and only one useful meaning for each of the 2136 jouyou kanji.
-because it contains less information than many other decks, you will be familiar with the characters in a shorter period of time and then have an easier time learning anything else related to kanji.
-the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent.
+jouyou kanji learning material
 
-`download/jouyou by stroke count.apkg` is the anki deck and `download/jouyou-by-stroke-count.csv` is the source data csv file.
+* anki deck for kanji and one-word meaning
+* csv file with kanji to one-word meaning
+* one file stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
+* csv file with kanji and example words. words in the top 10000, sensitive words excluded
+* csv file with only example words for the jouyou kanji
+* all csv files have a sort index field at the end that can be used as a sort field in anki
+* some additional files for kanji components and other things under download/extras and data/extras
+* uses the 2136 jouyou kanji as of 2020
 
-additionally included in this repository are
-* a one file stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
-* under download/extras among other things:
-  jouyou-example-words.csv: example words for each jouyou kanji, except words that are not in the top 10000. example words are selected and sorted by twitter and blog usage frequencies (see sources below) and sensitive words are excluded
-  jouyou-by-stroke-count-extras.csv: like the default kanji deck but with example words in a third field
-  * writing-n5.csv: a jlpt n5 vocabulary list for practising writing for only words that include kanji with pronounciation in romaji, meaning and the word
-  * writing-n5.apkg: an anki deck for the jlpt n5 vocabulary list for writing practice
-  * kanji-radicals.csv
-
-notes
-* the anki deck uses a special font that looks hand-drawn and makes individual strokes more apparent. this can also help with differentiating components
-* this deck uses a small number of relatively uncommon english words. examples: beckon, portent, acquiesce
-* the jouyou kanji generally dont include some commonly used kanji. examples: 嬉萌伊綺嘘菅貰縺繋呟也
-
-# why is the deck not on ankiweb
-because ankiweb deletes decks that dont get popular enough in a few weeks. there are not enough people interested in such a deck for it to not get deleted.
+# about the anki deck
+* contains less information than many other decks, which means familiarity with the whole set is reached in a shorter period of time
+* the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent.
+* uses a font that looks hand-drawn and makes individual strokes more apparent. this can also help with differentiating components. note: it is not clear if the font needs to be included with the anki deck, currently it is not included
+* some meanings use relatively uncommon english words. examples: acquiesce, adroit, ardent, beckon, confer, consign, consort, consummate, portent
+* the jouyou kanji in general exclude some commonly seen kanji. examples: 嬉萌伊綺嘘菅貰縺繋呟也
+* the deck is not on ankiweb because ankiweb deletes decks that dont get popular enough in a period of a few weeks. there are apparently not enough people interested in such a deck for it to not get deleted
 
 # data sources
 * [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
+* word frequency: [gimenes, m., & new, b. (2015) wordlex](http://www.lexique.org/?page_id=250)
+* word translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0)
+* stroke order graphics: [kanjisvg](https://github.com/KanjiVG/kanjivg/releases)
 * extras
-  * word translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0)
-  * word frequency: [gimenes, m., & new, b. (2015) wordlex](http://www.lexique.org/?page_id=250)
   * component names: [kanji alive](https://github.com/kanjialive/kanji-data-media) language data (cc-by-4.0)
-  * unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
   * [jlpt n5 words and meanings](http://www.passjapanesetest.com/jlpt-n5-vocabulary-list/)
   * [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
+  * unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
 
-most data is included, except for the jlpt n5 wordlist and kanjisvg. all other data of this project is cc-by-sa-4.0.
+data is included, except for kanjisvg and the jlpt n5 wordlist. all other data of this project is cc-by-sa-4.0.
 
 # technical
-* the code uses javascript, nodejs and its package manager npm. the code is actually written in [coffeescript](http://coffeescript.org), which is javascript written with less code
-* how to recreate the csv file
-  * initialise the development environment once with "npm install" to install dependencies
-  * execute `npm run compile`. if the coffee command is not found, then `./node_modules/coffee-script/bin/coffee js/create-csv-file.coffee` might work instead
-  * see the top of the code file for configuration options
-* to create a csv file with extra features, see js/create-csv-file-with-extras.coffee for configuration and execute this file with the coffee command as for the standard csv file
-* good to know regarding unicode: kanji components and kanji that look exactly the same exist at multiple separate codepoints. see [wikipedia: kangxi radical unicode](https://en.wikipedia.org/wiki/Kangxi_radical#Unicode)
-* kanji-viewer.html is built from html/template.html and js/create-kanji-viewer.coffee, and requires the kanji directory from [kanjivg](https://github.com/KanjiVG/kanjivg) to have been downloaded and its path configured in the coffee file
+* code uses node.js and its package manager npm. code is written in [coffeescript](http://coffeescript.org), which is really just javascript reduced
+* how to recreate the csv files
+  * initialise the development environment once with "npm install" to install dependencies, which creates a node_modules directory in the current directory
+  * see files under exe/, they can be executed with ./exe/filename and contain configuration options
+  * for other tools "coffee js/filename"
+* how to recreate kanji-viewer
+  * built from html/template.html and js/viewer-html.coffee
+  * requires the kanji directory from [kanjivg](https://github.com/KanjiVG/kanjivg) to have been downloaded and saved under data/kanjivg
+  * execute "coffee js/viewer-html.coffee"
+* good to know regarding unicode: kanji components/radicals and kanji that look exactly the same exist at separate codepoints. see [wikipedia: kangxi radical unicode](https://en.wikipedia.org/wiki/Kangxi_radical#Unicode)

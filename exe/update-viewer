@@ -1,0 +1,9 @@
+#!/usr/bin/env coffee
+
+config =
+  html_path: "html/template.html"
+  kanji_path: "download/jouyou-by-stroke-count.csv"
+  kanjivg_path: "data/kanjivg"
+  output_path: "download/kanji-viewer.html"
+
+require("../js/viewer").update_viewer config

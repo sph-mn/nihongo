@@ -2,12 +2,6 @@
 # html/template.html and kanjivg stroke images.
 # https://github.com/KanjiVG/kanjivg/releases
 
-config =
-  html_path: "html/template.html"
-  kanjivg_path: "data/extras/kanjivg/kanji"
-  kanji_path: "download/jouyou-by-stroke-count.csv"
-  output_path: "download/kanji-viewer.html"
-
 fs = require "fs"
 xml2js = require "xml2js"
 
@@ -57,36 +51,37 @@ clean_svg = (xml, c) ->
     builder = new xml2js.Builder({renderOpts: {pretty: false}, headless: true})
     c builder.buildObject data
 
-stroke_order_svg = (id) ->
-  filename = "0" + id.charCodeAt(0).toString(16) + ".svg"
-  path = config.kanjivg_path + "/" + filename
-  new Promise (resolve, reject) ->
-    fs.readFile path, "utf8", (error, xml) ->
-      if error
-        console.error error.toString(), "for character #{id}"
-        resolve false
-      else clean_svg xml, resolve
+update_viewer = (config) ->
+  stroke_order_svg = (id) ->
+    filename = "0" + id.charCodeAt(0).toString(16) + ".svg"
+    path = config.kanjivg_path + "/" + filename
+    new Promise (resolve, reject) ->
+      fs.readFile path, "utf8", (error, xml) ->
+        if error
+          console.error error.toString(), "for character #{id}"
+          resolve false
+        else clean_svg xml, resolve
+  kanji = read_kanji config.kanji_path
+  # load all the svg files asynchronously
+  result_promises = kanji.map (a) ->
+    [id, meaning] = a
+    new Promise (resolve, reject) ->
+      resolver = (svg) -> resolve [id, meaning, svg]
+      stroke_order_svg(a[0]).then resolver
+  with_results = (results) ->
+    html_list = results.map (a) ->
+      [id, meaning, svg] = a
+      return unless svg
+      "<div class=\"i\" id=\"#{id}\">" +
+        "<div class=\"k\"><span class=\"k1\">#{svg}</span><span class=\"k2\">#{id}</span></div>" +
+        "<div class=\"m\"><div>#{meaning}</div></div>" +
+      "</div>"
+    html = fs.readFileSync config.html_path, "utf8"
+    html = html.replace "{content}", html_list.join ""
+    fs.writeFile config.output_path, html, (error) ->
+      if error then console.error error
+  Promise.all(result_promises).then with_results
 
-kanji = read_kanji config.kanji_path
-
-# load all the svg files asynchronously
-result_promises = kanji.map (a) ->
-  [id, meaning] = a
-  new Promise (resolve, reject) ->
-    resolver = (svg) -> resolve [id, meaning, svg]
-    stroke_order_svg(a[0]).then resolver
-
-with_results = (results) ->
-  html_list = results.map (a) ->
-    [id, meaning, svg] = a
-    return unless svg
-    "<div class=\"i\" id=\"#{id}\">" +
-      "<div class=\"k\"><span class=\"k1\">#{svg}</span><span class=\"k2\">#{id}</span></div>" +
-      "<div class=\"m\"><div>#{meaning}</div></div>" +
-    "</div>"
-  html = fs.readFileSync config.html_path, "utf8"
-  html = html.replace "{content}", html_list.join ""
-  fs.writeFile config.output_path, html, (error) ->
-    if error then console.error error
-
-Promise.all(result_promises).then with_results
+module.exports = {
+  update_viewer
+}
