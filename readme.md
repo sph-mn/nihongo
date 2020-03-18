@@ -1,17 +1,15 @@
-jouyou kanji learning material
-
-* anki deck for kanji and one-word meaning
-* csv file with kanji to one-word meaning
-* one file stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
+# features
+* anki deck for kanji and one-word meaning. the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent
+* csv file with kanji meaning
+* one file stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html)
 * csv file with kanji and example words. words in the top 10000, sensitive words excluded
-* csv file with only example words for the jouyou kanji
+* csv file with only example words for the jouyou kanji. up to 5 words per kanji, adjustable
 * all csv files have a sort index field at the end that can be used as a sort field in anki
 * some additional files for kanji components and other things under download/extras and data/extras
 * uses the 2136 jouyou kanji as of 2020
 
 # about the anki deck
 * contains less information than many other decks, which means familiarity with the whole set is reached in a shorter period of time
-* the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent.
 * uses a font that looks hand-drawn and makes individual strokes more apparent. this can also help with differentiating components. note: it is not clear if the font needs to be included with the anki deck, currently it is not included
 * some meanings use relatively uncommon english words. examples: acquiesce, adroit, ardent, beckon, confer, consign, consort, consummate, portent
 * the jouyou kanji in general exclude some commonly seen kanji. examples: 嬉萌伊綺嘘菅貰縺繋呟也
