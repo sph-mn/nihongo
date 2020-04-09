@@ -1,8 +1,6 @@
 fs = require "fs"
 csv = require("csv-stringify")()
 wanakana = require "wanakana"
-fs = require "fs"
-csv = require("csv-stringify")()
 array_from_newline_file = (path) -> fs.readFileSync(path).toString().trim().split("\n")
 object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
 

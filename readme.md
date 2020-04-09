@@ -5,7 +5,7 @@
 * csv file with kanji and example words. words in the top 10000, sensitive words excluded
 * csv file with only example words for the jouyou kanji. currently up to 5 words per kanji, freely adjustable
 * all csv files have a sort index field at the end that can be used as a sort field in anki
-* some additional files for kanji components and other things under download/extras and data/extras
+* some additional files for kanji components and other things under download/extras and data/extras, including a list of kanji that share at least two radicals
 * uses the 2136 jouyou kanji as of 2020
 
 # about the anki deck
