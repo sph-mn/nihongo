@@ -10,6 +10,7 @@ complement_product = (flat) ->
   # * entries without at least 2 shared values
   # * equal key1 and key2
   # * key2 + key1 combinations
+  # * keys that are included in any of the compared values
   result = []
   used = new Set
   flat.forEach (a) ->
@@ -17,6 +18,7 @@ complement_product = (flat) ->
       return if a[0] is b[0]
       return if used.has b[0] + a[0]
       used.add a[0] + b[0]
+      return if a[1].includes(b[0]) or b[1].includes(a[0])
       parts = array_complement a[1], b[1]
       parts = array_delete_duplicates parts
       if 2 <= parts.length

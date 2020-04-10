@@ -6,8 +6,8 @@
 * csv file with only example words for the jouyou kanji. currently up to 5 words per kanji, freely adjustable
 * all csv files have a sort index field at the end that can be used as a sort field in anki
 * some additional files for kanji components and other things under download/extras and data/extras
-  * components of each kanji. alternative to kradfile
-  * kanji that share at least two radicals
+  * list of components for each kanji. alternative to kradfile
+  * list of kanji that share at least two components
 * uses the 2136 jouyou kanji as of 2020
 
 # about the anki deck
