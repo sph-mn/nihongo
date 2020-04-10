@@ -1,4 +1,3 @@
-# loading and displaying data for each kanji and its contained components.
 # uses the component data from kanji bakuhatsu https://github.com/ScottOglesby/kanji-bakuhatsu.
 
 fs = require "fs"
@@ -50,8 +49,7 @@ get_flat = (data) ->
     parts = array_delete_duplicates parts
     [a[0], parts]
 
-get_flat_csv = (data) ->
-  flat = get_flat data
+flat_to_csv = (flat) ->
   result = flat.map (a) ->
     parts = a[1]
     return unless parts.length
@@ -65,8 +63,10 @@ get_data = (config) ->
 get_flat_inverted = (data) -> invert_flat get_flat data
 
 update_csv = (config) ->
-  csv = get_flat_csv get_data config
-  fs.writeFileSync config.output_path, csv
+  flat = get_flat get_data config
+  flat_inverted = invert_flat flat
+  fs.writeFileSync config.output_path, flat_to_csv(flat)
+  fs.writeFileSync config.output_path_inverted, flat_to_csv(flat_inverted)
 
 module.exports =
   get_data: get_data
