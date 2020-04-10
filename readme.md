@@ -5,7 +5,9 @@
 * csv file with kanji and example words. words in the top 10000, sensitive words excluded
 * csv file with only example words for the jouyou kanji. currently up to 5 words per kanji, freely adjustable
 * all csv files have a sort index field at the end that can be used as a sort field in anki
-* some additional files for kanji components and other things under download/extras and data/extras, including a list of kanji that share at least two radicals
+* some additional files for kanji components and other things under download/extras and data/extras
+  * components of each kanji. alternative to kradfile
+  * kanji that share at least two radicals
 * uses the 2136 jouyou kanji as of 2020
 
 # about the anki deck
@@ -21,6 +23,7 @@
 * word translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0)
 * stroke order graphics: [kanjisvg](https://github.com/KanjiVG/kanjivg/releases)
 * extras
+  * kanji to component mapping: [kanji bakuhatsu](https://github.com/ScottOglesby/kanji-bakuhatsu) (gpl3)
   * component names: [kanji alive](https://github.com/kanjialive/kanji-data-media) language data (cc-by-4.0)
   * [jlpt n5 words and meanings](http://www.passjapanesetest.com/jlpt-n5-vocabulary-list/)
   * [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
