@@ -25,8 +25,12 @@ update_frequent_word_translations = (config) ->
 
 update_word_search = (config) ->
   html = fs.readFileSync config.html_path, "utf8"
-  translations = fs.readFileSync config.translations_path, "utf8"
-  html = html.replace "{content}", translations
+  translations = JSON.parse fs.readFileSync(config.translations_path, "utf8")
+  translations = translations.sort (a, b) ->
+    if a[1].length == b[1].length then 0
+    else if a[1].length < b[1].length then -1
+    else 1
+  html = html.replace "{content}", JSON.stringify(translations)
   fs.writeFile config.output_path, html, (error) ->
     if error then console.error error
 
