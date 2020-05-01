@@ -1,0 +1,18 @@
+#!/usr/bin/env coffee
+
+config =
+  jmdict_path: "data/JMdict_e"
+  output_path: "data/jmdict-translations.json"
+  only_words_with_kanji: false
+  misc_tag_exclusions: [
+    "abbr"
+    "organization"
+    "person"
+  ]
+  frequency_tags: [
+    "news1",
+    "ichi1",
+    "spec1"
+  ]
+
+require("../js/jmdict-translations").update_json config

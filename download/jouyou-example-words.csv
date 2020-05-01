@@ -523,7 +523,7 @@
 台湾,taiwan,Taiwan,,522
 旦那,danna,"master (of a house, shop, etc.)",,523
 一旦,ittan,once,,524
-田舎,inaka,hometown,,525
+田舎,inaka,rural area,,525
 田,ta,rice field,,526
 上田,jouden,high rice field,,527
 田んぼ,tanbo,paddy field,,528
@@ -760,7 +760,7 @@
 旨,mune,principle,,759
 趣旨,shushi,meaning,,760
 死,shi,death,,761
-死ぬ,shinu,to lose spirit,,762
+死ぬ,shinu,to die,,762
 死者,shisha,casualty,,763
 糸,ito,thread,,764
 至る,itaru,to arrive at (e.g. a decision),,765
@@ -2394,7 +2394,7 @@
 移動,idou,movement,,2393
 移行,ikou,switching over to,,2394
 移転,iten,moving,,2395
-移民,imin,emigrant,,2396
+移民,imin,emigration,,2396
 移植,ishoku,"transplanting (plants, organs, culture, etc.)",,2397
 領域,ryouiki,area,,2398
 全域,zen'iki,the whole area,,2399
@@ -2653,1036 +2653,1037 @@
 貧しい,mazushii,poor,,2652
 瓶,bin,bottle,,2653
 主婦,shufu,housewife,,2654
-切符,kippu,ticket,,2655
-部,bu,department (in an organization),,2656
-一部,ichibu,one part,,2657
-副,fuku,assistant,,2658
-副作用,fukusayou,side effect,,2659
-閉鎖,heisa,closing,,2660
-閉店,heiten,closing up shop (for the day),,2661
-閉じる,tojiru,"to close (e.g. book, eyes, meeting, etc.)",,2662
-偏見,henken,prejudice,,2663
-崩壊,houkai,collapse,,2664
-崩れ,kuzure,crumbling,,2665
-訪問,houmon,call,,2666
-訪れ,otozure,visit,,2667
-訪れる,otozureru,to visit,,2668
-要望,youbou,demand for,,2669
-絶望,zetsubou,despair,,2670
-望む,nozomu,to desire,,2671
-望み,nozomi,wish,,2672
-麻痺,mahi,paralysis,,2673
-麻薬,mayaku,narcotic,,2674
-麻,asa,cannabis (Cannabis sativa),,2675
-密度,mitsudo,density,,2676
-厳密,genmitsu,strict,,2677
-密か,hisoka,secret,,2678
-密接,missetsu,"close (relationship, connection, etc.)",,2679
-業務,gyoumu,business,,2680
-事務,jimu,office work,,2681
-勤務,kinmu,service,,2682
-義務,gimu,duty,,2683
-問題,mondai,question (e.g. on a test),,2684
-質問,shitsumon,question,,2685
-疑問,gimon,doubt,,2686
-問い合わせ,toiawase,enquiry,,2687
-分野,bun'ya,field,,2688
-野,no,plain,,2689
-視野,shiya,field of vision,,2690
-訳,wake,"conclusion from reasoning, judgement or calculation based on something read or heard",,2691
-翻訳,hon'yaku,translation,,2692
-言い訳,iiwake,excuse,,2693
-通訳,tsuuyaku,interpretation (i.e. oral translation),,2694
-唯一,yuiitsu,only,,2695
-欲しい,hoshii,wanted,,2696
-欲,yoku,greed,,2697
-食欲,shokuyoku,appetite (for food),,2698
-意欲,iyoku,will,,2699
-翌日,yokujitsu,next day,,2700
-翌朝,yokuasa,next morning,,2701
-理解,rikai,understanding,,2702
-管理,kanri,control,,2703
-無理,muri,unreasonable,,2704
-大陸,tairiku,continent,,2705
-陸,riku,land,,2706
-陸上,rikujou,(on) land,,2707
-戦略,senryaku,strategy,,2708
-略,hobo,almost,,2709
-中略,chuuryaku,omission (of middle part of a text),,2710
-粒,tsubu,grain,,2711
-涼しい,suzushii,cool,,2712
-握り,nigiri,grasping,,2713
-握手,akushu,handshake,,2714
-嵐,arashi,storm,,2715
-偉大,idai,great,,2716
-偉い,erai,great,,2717
-椅子,isu,chair,,2718
-飲む,nomu,to drink,,2719
-飲み物,nomimono,drink,,2720
-飲食,inshoku,food and drink,,2721
-飲料,inryou,beverage,,2722
-運動,undou,exercise,,2723
-運営,un'ei,management,,2724
-運,un,fortune,,2725
-運用,un'you,making use of,,2726
-雲,kumo,cloud,,2727
-営業,eigyou,business,,2728
-営利,eiri,money-making,,2729
-越し,goshi,across,,2730
-越える,koeru,to cross over,,2731
-義援金,gienkin,donation money (esp. disaster relief or charity),,2732
-奥,oku,inner part,,2733
-奥さん,okusan,wife,,2734
-奥様,okusama,wife,,2735
-気温,kion,air temperature,,2736
-温度,ondo,temperature,,2737
-温暖,ondan,warm,,2738
-体温,taion,temperature,,2739
-過ぎ,sugi,past,,2740
-過程,katei,process,,2741
-過ぎる,sugiru,to pass through,,2742
-年賀状,nengajou,New Year's card,,2743
-絵,e,picture,,2744
-絵画,kaiga,painting,,2745
-絵本,ehon,picture book,,2746
-絵文字,emoji,emoji,,2747
-開催,kaisai,"holding (a conference, exhibition, etc.)",,2748
-階,kai,storey,,2749
-階層,kaisou,class,,2750
-街,gai,... street,,2751
-街道,kaidou,highway (esp. one existing from the Edo period),,2752
-覚え,oboe,memory,,2753
-感覚,kankaku,sense,,2754
-覚える,oboeru,to memorize,,2755
-自覚,jikaku,self-consciousness,,2756
-割,wari,rate,,2757
-割合,wariai,rate,,2758
-分割,bunkatsu,partition,,2759
-葛藤,kattou,conflict,,2760
-寒い,samui,cold (e.g. weather),,2761
-堪能,tannou,proficient,,2762
-変換,henkan,change,,2763
-敢えて,aete,"purposely (of something needless, unexpected or seemingly counterproductive, etc.)",,2764
-間,aida,space (between),,2765
-喜び,yorokobi,joy,,2766
-喜ぶ,yorokobu,to be delighted,,2767
-幾つ,ikutsu,how many?,,2768
-幾,iku,some,,2769
-発揮,hakki,"show (of power, ability, etc.)",,2770
-指揮,shiki,command,,2771
-期間,kikan,period,,2772
-貴方,anata,you (referring to someone of equal or lower status),,2773
-詐欺,sagi,fraud,,2774
-喫煙,kitsuen,smoking,,2775
-満喫,mankitsu,"having enough of (food, drink, etc.)",,2776
-喫茶,kissa,tea drinking,,2777
-給料,kyuuryou,salary,,2778
-補給,hokyuu,supply,,2779
-支給,shikyuu,provision,,2780
-距離,kyori,distance,,2781
-長距離,choukyori,long distance,,2782
-御,go,honorific/polite/humble prefix,,2783
-制御,seigyo,"control (of a machine, device, etc.)",,2784
-積極,sekkyoku,positive,,2785
-極めて,kiwamete,exceedingly,,2786
-極端,kyokutan,extreme,,2787
-極,goku,quite,,2788
-通勤,tsuukin,commuting to work,,2789
-出勤,shukkin,going to work,,2790
-勤め,tsutome,service,,2791
-筋,suji,muscle,,2792
-隅,sumi,corner,,2793
-尊敬,sonkei,respect,,2794
-敬意,keii,respect,,2795
-景気,keiki,business conditions,,2796
-軽い,karui,light (i.e. not heavy),,2797
-気軽,kigaru,carefree,,2798
-手軽,tegaru,easy,,2799
-軽,kei,"light (e.g. vehicle, aircraft, etc.)",,2800
-軽減,keigen,abatement,,2801
-結構,kekkou,splendid,,2802
-結論,ketsuron,conclusion,,2803
-圏内,kennai,"(being) within range (radio, commuting, etc.)",,2804
-検証,kenshou,verification,,2805
-検出,kenshutsu,detection,,2806
-減少,genshou,decrease,,2807
-減らす,herasu,to abate,,2808
-減る,heru,to decrease (in size or number),,2809
-加減,kagen,degree,,2810
-湖,mizuumi,lake,,2811
-雇用,koyou,employment (long term),,2812
-喉,nodo,throat,,2813
-港,minato,harbour,,2814
-硬い,katai,hard,,2815
-絞り,shibori,tye-dye,,2816
-事項,jikou,matter,,2817
-裁判所,saibansho,court,,2818
-独裁,dokusai,dictatorship,,2819
-対策,taisaku,measure,,2820
-策,saku,plan,,2821
-散策,sansaku,walking,,2822
-酢,su,vinegar,,2823
-傘,kasa,umbrella,,2824
-解散,kaisan,breaking up (e.g. meeting),,2825
-分散,bunsan,dispersion,,2826
-紫,murasaki,purple,,2827
-紫外線,shigaisen,ultraviolet rays,,2828
-歌詞,kashi,song lyrics,,2829
-作詞,sakushi,(writing) song lyrics,,2830
-歯,ha,tooth,,2831
-歯医者,haisha,dentist,,2832
-歯科,shika,dentistry,,2833
-軸,jiku,axis,,2834
-湿度,shitsudo,level of humidity,,2835
-雑煮,zouni,soup containing rice cakes and vegetables (New Year's dish),,2836
-就職,shuushoku,finding employment,,2837
-就寝,shuushin,going to bed,,2838
-大衆,taishuu,general public,,2839
-公衆,koushuu,the public,,2840
-編集,henshuu,editing,,2841
-集,shuu,collection,,2842
-募集,boshuu,recruitment,,2843
-循環,junkan,circulation,,2844
-手順,tejun,process,,2845
-順番,junban,turn (in line),,2846
-順,jun,order,,2847
-順調,junchou,favourable,,2848
-暑い,atsui,hot,,2849
-優勝,yuushou,overall victory,,2850
-勝ち,kachi,win,,2851
-燃焼,nenshou,burning,,2852
-焼く,yaku,to burn,,2853
-日焼け,hiyake,sunburn,,2854
-焼肉,yakiniku,yakiniku,,2855
-焦点,shouten,focus (e.g. photographic),,2856
-焦り,aseri,impatience,,2857
-認証,ninshou,certification,,2858
-現象,genshou,phenomenon,,2859
-象徴,shouchou,(abstract) symbol,,2860
-場,ba,place,,2861
-登場,toujou,entry (on stage),,2862
-畳,jou,"tatami mat (esp. as a measure of room size, either 1.82 sqm or 1.54 sqm)",,2863
-植物,shokubutsu,plant,,2864
-繁殖,hanshoku,breeding,,2865
-増殖,zoushoku,increase,,2866
-森,mori,forest,,2867
-診察,shinsatsu,medical examination,,2868
-診療,shinryou,diagnosis and treatment,,2869
-遂に,tsuini,finally,,2870
-遂行,suikou,accomplishment,,2871
-随分,zuibun,very,,2872
-随時,zuiji,as needed,,2873
-晴れ,hare,clear weather,,2874
-税金,zeikin,tax,,2875
-課税,kazei,taxation,,2876
-増税,zouzei,tax increase,,2877
-税務,zeimu,taxation business,,2878
-善,zen,good,,2879
-最善,saizen,the very best,,2880
-全然,zenzen,not at all (with neg. verb),,2881
-訴え,uttae,lawsuit,,2882
-訴える,uttaeru,to raise,,2883
-創作,sousaku,creation,,2884
-喪失,soushitsu,loss,,2885
-葬儀,sougi,funeral service,,2886
-葬式,soushiki,funeral,,2887
-装着,souchaku,equipping,,2888
-装備,soubi,equipment,,2889
-装置,souchi,equipment,,2890
-測定,sokutei,measurement,,2891
-予測,yosoku,prediction,,2892
-観測,kansoku,observation,,2893
-計測,keisoku,measuring,,2894
-所属,shozoku,"belonging to (a group, organization, etc.)",,2895
-付属,fuzoku,attached,,2896
-金属,kinzoku,metal,,2897
-属する,zokusuru,to belong to,,2898
-尊重,sonchou,respect,,2899
-替え,kae,change,,2900
-代替,daitai,substitution,,2901
-着替え,kigae,changing clothes,,2902
-入れ替え,irekae,replacement,,2903
-貸し,kashi,loan,,2904
-賃貸,chintai,lease,,2905
-自衛隊,jieitai,self-defence force,,2906
-部隊,butai,force,,2907
-隊員,taiin,troops,,2908
-達,tachi,pluralizing suffix (esp. for people and animals; formerly honorific),,2909
-達成,tassei,achievement,,2910
-調達,choutatsu,supply,,2911
-棚,tana,shelf,,2912
-本棚,hondana,bookshelves,,2913
-短い,mijikai,short,,2914
-短期,tanki,short-term,,2915
-短歌,tanka,tanka,,2916
-短時間,tanjikan,short time,,2917
-短期間,tankikan,short term,,2918
-爆弾,bakudan,bomb,,2919
-弾く,hajiku,to flip,,2920
-遅れ,okure,delay,,2921
-遅い,osoi,slow,,2922
-遅れる,okureru,to be late,,2923
-着,chaku,counter for suits of clothing,,2924
-着く,tsuku,to arrive at,,2925
-着る,kiru,"to wear (in modern Japanese, from the shoulders down)",,2926
-貯金,chokin,putting money aside,,2927
-貯蓄,chochiku,savings,,2928
-朝,asa,morning,,2929
-今朝,kesa,this morning,,2930
-朝食,choushoku,breakfast,,2931
-超,chou,super-,,2932
-痛み,itami,pain,,2933
-痛い,itai,painful,,2934
-頭痛,zutsuu,headache,,2935
-腰痛,youtsuu,lower back (or hip) pain,,2936
-堤,tsutsumi,bank,,2937
-前提,zentei,condition,,2938
-提出,teishutsu,presentation (of documents),,2939
-提示,teiji,presentation,,2940
-程,hodo,degree,,2941
-日程,nittei,schedule,,2942
-工程,koutei,process,,2943
-渡し,watashi,ferry (crossing),,2944
-渡す,watasu,to ferry across (e.g. a river),,2945
-渡り,watari,crossing,,2946
-渡る,wataru,to cross over,,2947
-譲渡,jouto,transfer,,2948
-塔,tou,tower,,2949
-搭載,tousai,loading (on board),,2950
-棟,mune,ridge (of roof),,2951
-湯,yu,hot water,,2952
-登録,touroku,registration,,2953
-答え,kotae,answer,,2954
-回答,kaitou,reply,,2955
-答える,kotaeru,to answer,,2956
-応答,outou,reply,,2957
-返答,hentou,reply,,2958
-等,nado,et cetera,,2959
-等々,toutou,etc.,,2960
-同等,doutou,equality,,2961
-平等,byoudou,equality,,2962
-高等,koutou,high class,,2963
-大統領,daitouryou,president (of a nation or company),,2964
-統合,tougou,integration,,2965
-統計,toukei,statistics,,2966
-統一,touitsu,unity,,2967
-道,michi,road,,2968
-報道,houdou,information,,2969
-道路,douro,road,,2970
-廃棄,haiki,disposal,,2971
-廃止,haishi,abolition,,2972
-媒体,baitai,medium,,2973
-買う,kau,to buy,,2974
-買い,kai,buying,,2975
-売買,baibai,trade,,2976
-博物館,hakubutsukan,museum,,2977
-ご飯,gohan,cooked rice,,2978
-飯,meshi,cooked rice,,2979
-晩,ban,evening,,2980
-毎晩,maiban,every night,,2981
-晩年,bannen,one's later years,,2982
-今晩,konban,tonight,,2983
-番,ban,number (in a series),,2984
-番目,banme,indicates position in a sequence,,2985
-悲しい,kanashii,sad,,2986
-悲劇,higeki,tragedy,,2987
-悲しみ,kanashimi,sadness,,2988
-扉,tobira,door,,2989
-費,hi,cost,,2990
-費用,hiyou,cost,,2991
-経費,keihi,expenses,,2992
-出費,shuppi,expenses,,2993
-準備,junbi,preparation,,2994
-整備,seibi,maintenance,,2995
-備え,sonae,preparation,,2996
-設備,setsubi,equipment,,2997
-筆,fude,writing brush,,2998
-鉛筆,enpitsu,pencil,,2999
-評論,hyouron,criticism,,3000
-豊富,houfu,abundant,,3001
-富,tomi,riches,,3002
-普遍,fuhen,universal,,3003
-幅,haba,width,,3004
-大幅,oohaba,big,,3005
-幅広い,habahiroi,extensive,,3006
-復興,fukkou,revival,,3007
-補正,hosei,correction,,3008
-募金,bokin,fund-raising,,3009
-予報,yohou,forecast,,3010
-報酬,houshuu,remuneration,,3011
-帽子,boushi,hat,,3012
-棒,bou,pole,,3013
-不満,fuman,dissatisfaction,,3014
-満たす,mitasu,"to satisfy (conditions, one's appetite, etc.)",,3015
-無い,nai,nonexistent,,3016
-無事,buji,safety,,3017
-無駄,muda,futility,,3018
-遊び,asobi,playing,,3019
-遊ぶ,asobu,to play,,3020
-雄,osu,"male (animal, plant)",,3021
-揚げ,age,frying,,3022
-揺れる,yureru,to shake,,3023
-葉,ha,leaf,,3024
-葉っぱ,happa,leaf,,3025
-陽,you,yang (i.e. the positive),,3026
-陽気,youki,cheerful,,3027
-絡み,karami,linkage,,3028
-落ち,ochi,slip,,3029
-落ちる,ochiru,to fall down,,3030
-落とす,otosu,to drop,,3031
-落ち着き,ochitsuki,calmness,,3032
-落下,rakka,fall,,3033
-下痢,geri,diarrhea,,3034
-量,ryou,quantity,,3035
-大量,tairyou,large quantity,,3036
-線量,senryou,dose (of radioactivity),,3037
-音量,onryou,volume (sound),,3038
-分裂,bunretsu,split,,3039
-廊下,rouka,corridor,,3040
-湾,wan,bay,,3041
-腕,ude,arm,,3042
-愛,ai,love,,3043
-愛する,aisuru,to love,,3044
-愛情,aijou,love,,3045
-暗い,kurai,dark,,3046
-真っ暗,makkura,total darkness,,3047
-暗闇,kurayami,darkness,,3048
-意識,ishiki,consciousness,,3049
-違う,chigau,to differ (from),,3050
-違い,chigai,difference,,3051
-間違い,machigai,mistake,,3052
-園,sono,garden (esp. man-made),,3053
-学園,gakuen,educational institution,,3054
-煙,kemuri,smoke,,3055
-禁煙,kin'en,abstaining from smoking,,3056
-猿,saru,"monkey (esp. the Japanese macaque, Macaca fuscata)",,3057
-遠く,tooku,far away,,3058
-遠い,tooi,far,,3059
-遠慮,enryo,reserve,,3060
-塩,shio,salt (i.e. sodium chloride),,3061
-嫁,yome,wife,,3062
-暇,hima,spare time,,3063
-休暇,kyuuka,holiday,,3064
-靴,kutsu,shoe,,3065
-靴下,kutsushita,socks,,3066
-優雅,yuuga,elegant,,3067
-塊,katamari,lump,,3068
-解説,kaisetsu,explanation,,3069
-感慨,kangai,deep emotion,,3070
-蓋,futa,cover,,3071
-該当,gaitou,corresponding to,,3072
-間隔,kankaku,space,,3073
-楽しみ,tanoshimi,enjoyment,,3074
-楽しい,tanoshii,enjoyable,,3075
-楽,raku,comfort,,3076
-楽しむ,tanoshimu,to enjoy (oneself),,3077
-滑り,numeri,slime,,3078
-勧め,susume,recommendation,,3079
-勧誘,kan'yuu,invitation,,3080
-新幹線,shinkansen,Shinkansen,,3081
-幹事,kanji,executive secretary,,3082
-幹部,kanbu,management,,3083
-幹,miki,(tree) trunk,,3084
-感じ,kanji,feeling,,3085
-感じる,kanjiru,to feel,,3086
-感謝,kansha,thanks,,3087
-感動,kandou,being deeply moved emotionally,,3088
-頑張る,ganbaru,to persevere,,3089
-放棄,houki,abandonment,,3090
-定義,teigi,definition,,3091
-講義,kougi,lecture,,3092
-正義,seigi,justice,,3093
-事業,jigyou,project,,3094
-僅か,wazuka,only,,3095
-解禁,kaikin,lifting a ban,,3096
-愚痴,guchi,idle complaint,,3097
-群,gun,group,,3098
-群れ,mure,group,,3099
-連携,renkei,cooperation,,3100
-提携,teikei,cooperation,,3101
-継続,keizoku,continuation,,3102
-中継,chuukei,relay,,3103
-後継,koukei,succession,,3104
-隙間,sukima,crevice,,3105
-隙,suki,gap,,3106
-傑作,kessaku,masterpiece,,3107
-嫌,iya,disagreeable,,3108
-嫌い,kirai,disliked,,3109
-機嫌,kigen,humour,,3110
-嫌悪,ken'o,disgust,,3111
-文献,bunken,literature,,3112
-電源,dengen,source of electricity,,3113
-源,minamoto,source (of a river),,3114
-資源,shigen,resources,,3115
-誇り,hokori,pride,,3116
-誇る,hokoru,to boast of,,3117
-溝,mizo,ditch,,3118
-債務,saimu,debt,,3119
-国債,kokusai,national debt,,3120
-債,sai,debt,,3121
-主催,shusai,sponsorship (i.e. conducting under one's auspices),,3122
-歳,sai,-years-old,,3123
-記載,kisai,mention (in a document),,3124
-連載,rensai,serialization,,3125
-罪,tsumi,crime,,3126
-謝罪,shazai,apology,,3127
-試し,tameshi,trial,,3128
-試験,shiken,examination,,3129
-試み,kokoromi,attempt,,3130
-試行錯誤,shikousakugo,trial and error,,3131
-詩,shi,poem,,3132
-詩人,shijin,poet,,3133
-飼育,shiiku,breeding,,3134
-飼い主,kainushi,shepherd,,3135
-辞書,jisho,dictionary,,3136
-辞める,yameru,to resign,,3137
-標準,hyoujun,standard,,3138
-署名,shomei,signature,,3139
-部署,busho,one's post,,3140
-傷,kizu,wound,,3141
-損傷,sonshou,damage,,3142
-照明,shoumei,illumination,,3143
-対照,taishou,contrast,,3144
-詳しい,kuwashii,detailed,,3145
-蒸し,mushi,steaming,,3146
-飾り,kazari,decoration,,3147
-装飾,soushoku,ornament,,3148
-触れる,fureru,to touch,,3149
-感触,kanshoku,feel (i.e. tactile sensation),,3150
-触る,sawaru,to touch,,3151
-寝,ne,sleep,,3152
-寝る,neru,to lie down,,3153
-慎重,shinchou,careful,,3154
-新しい,atarashii,new,,3155
-新,shin,new,,3156
-新た,arata,new,,3157
-新聞,shinbun,newspaper,,3158
-数,kazu,number,,3159
-複数,fukusuu,plural,,3160
-人数,ninzuu,the number of people,,3161
-勢い,ikioi,force,,3162
-勢力,seiryoku,influence,,3163
-大勢,oozei,crowd of people,,3164
-情勢,jousei,state of things,,3165
-聖書,seisho,Bible,,3166
-神聖,shinsei,holiness,,3167
-誠に,makotoni,indeed,,3168
-誠実,seijitsu,sincere,,3169
-誠,makoto,truth,,3170
-跡,ato,trace,,3171
-遺跡,iseki,"historic ruins (remains, relics)",,3172
-足跡,ashiato,footprints,,3173
-節,setsu,occasion,,3174
-節約,setsuyaku,economising,,3175
-調節,chousetsu,regulation,,3176
-関節,kansetsu,"joint (knee, elbow, etc.)",,3177
-戦,ikusa,war,,3178
-戦闘,sentou,battle,,3179
-羨ましい,urayamashii,envious,,3180
-所詮,shosen,after all,,3181
-実践,jissen,practice,,3182
-想像,souzou,imagination,,3183
-感想,kansou,impressions,,3184
-理想,risou,ideal,,3185
-想定,soutei,hypothesis,,3186
-海賊,kaizoku,pirate,,3187
-続ける,tsuzukeru,to continue,,3188
-続く,tsuzuku,to continue,,3189
-続き,tsuzuki,continuation,,3190
-損,son,loss,,3191
-滝,taki,waterfall,,3192
-暖かい,atatakai,warm,,3193
-置く,oku,to put,,3194
-蓄積,chikuseki,accumulation,,3195
-腸,chou,guts,,3196
-賃金,chingin,wages,,3197
-家賃,yachin,rent,,3198
-地下鉄,chikatetsu,underground train,,3199
-鉄道,tetsudou,railroad,,3200
-鉄,tetsu,iron (Fe),,3201
-殿,dono,Mr.,,3202
-電話,denwa,telephone call,,3203
-電気,denki,electricity,,3204
-発電,hatsuden,generation (e.g. power),,3205
-働き,hataraki,work,,3206
-働く,hataraku,to work,,3207
-稼働,kadou,operation (of machine),,3208
-監督,kantoku,supervision,,3209
-農業,nougyou,agriculture,,3210
-農家,nouka,farmer,,3211
-農薬,nouyaku,"agricultural chemical (i.e. pesticide, herbicide, fungicide, etc.)",,3212
-鉢,hachi,bowl,,3213
-福,fuku,good fortune,,3214
-お腹,onaka,belly,,3215
-腹,hara,abdomen,,3216
-満腹,manpuku,full stomach,,3217
-空腹,kuufuku,empty stomach,,3218
-墓,haka,gravesite,,3219
-豊か,yutaka,abundant,,3220
-飽き,aki,weariness,,3221
-字幕,jimaku,subtitles,,3222
-幕,maku,curtain,,3223
-開幕,kaimaku,raising the curtain,,3224
-夢,yume,dream,,3225
-夢中,muchuu,absorbed in,,3226
-同盟,doumei,alliance,,3227
-連盟,renmei,league,,3228
-消滅,shoumetsu,extinction,,3229
-滅多,metta,thoughtless,,3230
-名誉,meiyo,honor,,3231
-預金,yokin,deposit,,3232
-腰,koshi,back,,3233
-裸,hadaka,nakedness,,3234
-雷,kaminari,lightning,,3235
-裏,ura,opposite side,,3236
-裏側,uragawa,the reverse,,3237
-回路,kairo,circuit (electric),,3238
-路線,rosen,"route (bus, train, air, etc.)",,3239
-路面,romen,road surface,,3240
-路地,roji,alley,,3241
-話,hanashi,talk,,3242
-お話,ohanashi,story,,3243
-話題,wadai,topic,,3244
-会話,kaiwa,conversation,,3245
-繊維,sen'i,fibre,,3246
-隠す,kakusu,to hide,,3247
-駅,eki,railway station,,3248
-駅前,ekimae,in front of a station,,3249
-出演,shutsuen,performance,,3250
-演出,enshutsu,production (e.g. play),,3251
-講演,kouen,lecture,,3252
-歌,uta,song,,3253
-歌う,utau,to sing,,3254
-歌手,kashu,singer,,3255
-箇所,kasho,passage,,3256
-概要,gaiyou,outline,,3257
-内閣,naikaku,cabinet (of a government),,3258
-慣れ,nare,practice,,3259
-慣れる,nareru,to get used to,,3260
-管,kan,pipe,,3261
-保管,hokan,charge,,3262
-に関して,nikanshite,related to,,3263
-機関,kikan,engine,,3264
-旗,hata,flag,,3265
-容疑,yougi,suspicion,,3266
-疑い,utagai,doubt,,3267
-質疑,shitsugi,question,,3268
-環境,kankyou,environment,,3269
-国境,kokkyou,national border,,3270
-境界,kyoukai,boundary,,3271
-境,sakai,border,,3272
-心境,shinkyou,state of mind,,3273
-銀行,ginkou,bank,,3274
-銀,gin,silver (Ag),,3275
-駆使,kushi,free use,,3276
-駆動,kudou,driving force,,3277
-熊,kuma,bear (any mammal of family Ursidae),,3278
-日本語,nihongo,Japanese (language),,3279
-語,go,language,,3280
-誤解,gokai,misunderstanding,,3281
-誤り,ayamari,error,,3282
-構築,kouchiku,construction,,3283
-機構,kikou,mechanism,,3284
-発酵,hakkou,fermentation,,3285
-酷い,hidoi,cruel,,3286
-過酷,kakoku,severe,,3287
-残酷,zankoku,cruelty,,3288
-地獄,jigoku,hell,,3289
-魂,tamashii,soul,,3290
-際,sai,on the occasion of,,3291
-国際,kokusai,international,,3292
-警察,keisatsu,police,,3293
-観察,kansatsu,observation,,3294
-考察,kousatsu,consideration,,3295
-視察,shisatsu,inspection,,3296
-雑誌,zasshi,journal,,3297
-複雑,fukuzatsu,complex,,3298
-雑,zatsu,rough,,3299
-換算,kansan,conversion (e.g. yen to dollars),,3300
-決算,kessan,settlement of accounts,,3301
-酸,san,acid,,3302
-酸素,sanso,oxygen (O),,3303
-酸化,sanka,oxidation,,3304
-種類,shurui,variety,,3305
-種,tane,seed (e.g. of a plant),,3306
-機種,kishu,type of equipment,,3307
-一種,isshu,species,,3308
-需要,juyou,demand,,3309
-銃,juu,gun,,3310
-塾,juku,coaching school,,3311
-支障,shishou,obstacle,,3312
-精度,seido,precision,,3313
-製,sei,-made,,3314
-製作,seisaku,manufacture,,3315
-静か,shizuka,quiet,,3316
-静止,seishi,stillness,,3317
-説,setsu,theory,,3318
-説得,settoku,persuasion,,3319
-金銭,kinsen,money,,3320
-一層,issou,much more,,3321
-総,sou,whole,,3322
-総合,sougou,synthesis,,3323
-総理,souri,leading,,3324
-総務,soumu,general affairs,,3325
-総額,sougaku,sum total,,3326
-像,zou,image,,3327
-現像,genzou,development (of film),,3328
-増える,fueru,to increase,,3329
-増し,mashi,better,,3330
-増やす,fuyasu,to increase,,3331
-駄目,dame,no good,,3332
-事態,jitai,situation,,3333
-態度,taido,attitude,,3334
-実態,jittai,true state,,3335
-端,hashi,end (e.g. of street),,3336
-徴収,choushuu,"collection (of fees, taxes, etc.)",,3337
-点滴,tenteki,raindrops,,3338
-適当,tekitou,suitable,,3339
-適用,tekiyou,applying (e.g. a technology),,3340
-最適,saiteki,most suitable,,3341
-適切,tekisetsu,pertinent,,3342
-稲,ine,rice plant,,3343
-道徳,doutoku,morals,,3344
-読み,yomi,reading,,3345
-読む,yomu,to read,,3346
-読書,dokusho,reading,,3347
-確認,kakunin,confirmation,,3348
-認識,ninshiki,recognition,,3349
-認め,mitome,approval,,3350
-認知,ninchi,acknowledgement,,3351
-髪,kami,hair (on the head),,3352
-鼻,hana,nose,,3353
-漂う,tadayou,to drift,,3354
-複合,fukugou,composite,,3355
-聞く,kiku,to hear,,3356
-聞こえる,kikoeru,to be heard,,3357
-暮らし,kurashi,life,,3358
-暮らす,kurasu,to live,,3359
-暮れ,kure,sunset,,3360
-僕,boku,I,,3361
-僕ら,bokura,we,,3362
-膜,maku,membrane,,3363
-自慢,jiman,pride,,3364
-慢性,mansei,chronic (illness),,3365
-漫画,manga,cartoon,,3366
-鳴る,naru,to sound,,3367
-鳴り,nari,ringing,,3368
-共鳴,kyoumei,resonance,,3369
-模様,moyou,pattern,,3370
-模型,mokei,model,,3371
-網,ami,net,,3372
-誘導,yuudou,guidance,,3373
-誘い,sasoi,invitation,,3374
-様,sama,Mr.,,3375
-様々,samazama,varied,,3376
-踊り,odori,dance,,3377
-踊る,odoru,to dance (orig. a hopping dance),,3378
-同僚,douryou,coworker,,3379
-緑,midori,green,,3380
-緑色,midoriiro,green,,3381
-暦,koyomi,calendar,,3382
-履歴,rireki,personal history,,3383
-遺産,isan,inheritance,,3384
-遺体,itai,corpse,,3385
-遺伝,iden,heredity,,3386
-影響,eikyou,influence,,3387
-撮影,satsuei,photography (still or motion),,3388
-影,kage,shadow,,3389
-悪影響,akueikyou,bad influence,,3390
-鋭い,surudoi,sharp (blade),,3391
-閲覧,etsuran,inspection,,3392
-縁,fuchi,rim,,3393
-無縁,muen,unrelated,,3394
-横,yoko,horizontal (as opposed to vertical),,3395
-横断,oudan,crossing,,3396
-億,oku,10^8,,3397
-稼ぐ,kasegu,to earn (income),,3398
-稼ぎ,kasegi,earnings,,3399
-課題,kadai,subject,,3400
-課,ka,lesson,,3401
-課長,kachou,section manager,,3402
-確か,tashika,sure,,3403
-確実,kakujitsu,certainty,,3404
-新潟,niigata,Niigata (city),,3405
-緩和,kanwa,relief,,3406
-器,utsuwa,bowl,,3407
-機器,kiki,device,,3408
-楽器,gakki,musical instrument,,3409
-輝き,kagayaki,brightness,,3410
-輝く,kagayaku,to shine,,3411
-儀式,gishiki,ceremony,,3412
-余儀なく,yoginaku,unavoidably,,3413
-稽古,keiko,practice,,3414
-劇,geki,drama,,3415
-劇場,gekijou,theatre,,3416
-演劇,engeki,drama,,3417
-劇的,gekiteki,dramatic,,3418
-衝撃,shougeki,shock,,3419
-目撃,mokugeki,witnessing,,3420
-簡潔,kanketsu,brevity,,3421
-権,ken,right (to do something),,3422
-権力,kenryoku,(political) power,,3423
-権限,kengen,power,,3424
-原稿,genkou,manuscript,,3425
-稿,kou,manuscript,,3426
-駒,koma,"piece (in shogi, chess, etc.)",,3427
-撮る,toru,to take (a photo),,3428
-賛成,sansei,approval,,3429
-賛同,sandou,approval,,3430
-暫く,shibaraku,for a moment,,3431
-暫定,zantei,provisional,,3432
-真摯,shinshi,sincere,,3433
-餌,esa,(animal) feed,,3434
-質,shitsu,quality,,3435
-本質,honshitsu,essence,,3436
-趣向,shukou,plan,,3437
-趣,omomuki,meaning,,3438
-成熟,seijuku,maturity,,3439
-諸国,shokoku,various countries,,3440
-諸,sho,various,,3441
-憧れ,akogare,yearning,,3442
-衝動,shoudou,impulse,,3443
-賞,shou,prize,,3444
-鑑賞,kanshou,"appreciation (of art, music, poetry, etc.)",,3445
-受賞,jushou,winning (a prize),,3446
-審議,shingi,deliberation,,3447
-要請,yousei,appeal,,3448
-潜在,senzai,potentiality,,3449
-線,sen,line,,3450
-無線,musen,radio (communication),,3451
-回線,kaisen,circuit,,3452
-選ぶ,erabu,to choose,,3453
-水槽,suisou,water tank,,3454
-内蔵,naizou,internal (e.g. disk),,3455
-蔵,kura,warehouse,,3456
-誰,dare,who,,3457
-誰か,dareka,someone,,3458
-誕生,tanjou,birth,,3459
-対談,taidan,talk,,3460
-会談,kaidan,conversation,,3461
-調べ,shirabe,investigation,,3462
-調整,chousei,adjustment,,3463
-調子,choushi,tune,,3464
-体調,taichou,physical condition,,3465
-締め,shime,tie up,,3466
-締め切り,shimekiri,deadline,,3467
-取締役,torishimariyaku,company director,,3468
-敵,teki,opponent,,3469
-徹夜,tetsuya,staying up all night,,3470
-踏む,fumu,to step on,,3471
-導入,dounyuu,introduction,,3472
-主導,shudou,leadership,,3473
-導く,michibiku,to guide,,3474
-熱,netsu,heat,,3475
-熱い,atsui,hot (thing),,3476
-熱心,nesshin,zealous,,3477
-熱中,netchuu,being enthusiastic about,,3478
-先輩,senpai,senior (at work or school),,3479
-後輩,kouhai,"junior (at work, school, etc.)",,3480
-賠償,baishou,compensation,,3481
-箱,hako,box,,3482
-箸,hashi,chopsticks,,3483
-盤,ban,disk,,3484
-中盤,chuuban,middle (stage),,3485
-終盤,shuuban,endgame,,3486
-鍵盤,kenban,"keyboard (piano, computer, etc.)",,3487
-膝,hiza,knee,,3488
-指標,shihyou,index,,3489
-標高,hyoukou,elevation,,3490
-敷地,shikichi,site,,3491
-屋敷,yashiki,residence,,3492
-敷居,shikii,threshold (esp. one with grooves for sliding doors),,3493
-見舞い,mimai,visiting ill or distressed people,,3494
-舞,mai,dancing,,3495
-弊社,heisha,our firm,,3496
-餅,mochi,mochi,,3497
-編,hen,compilation (of a text),,3498
-再編,saihen,reorganization,,3499
-編成,hensei,composition,,3500
-続編,zokuhen,continuation,,3501
-暴力,bouryoku,violence,,3502
-相撲,sumou,sumo wrestling,,3503
-魅了,miryou,fascination,,3504
-養成,yousei,training,,3505
-考慮,kouryo,consideration,,3506
-配慮,hairyo,consideration,,3507
-寮,ryou,hostel,,3508
-輪,wa,ring,,3509
-指輪,yubiwa,(finger) ring,,3510
-霊,rei,soul,,3511
-議論,giron,argument,,3512
-論文,ronbun,thesis,,3513
-理論,riron,theory,,3514
-勿論,mochiron,of course,,3515
-経緯,ikisatsu,details,,3516
-衛生,eisei,hygiene,,3517
-前衛,zen'ei,advance guard,,3518
-穏やか,odayaka,calm,,3519
-懐かしい,natsukashii,dear (old),,3520
-懐,futokoro,bosom,,3521
-還元,kangen,restoration,,3522
-帰還,kikan,repatriation,,3523
-会館,kaikan,meeting hall,,3524
-大使館,taishikan,embassy,,3525
-橋,hashi,bridge,,3526
-激しい,hageshii,violent,,3527
-感激,kangeki,deep emotion,,3528
-過激,kageki,extreme,,3529
-賢い,kashikoi,wise,,3530
-興奮,koufun,excitement,,3531
-新興,shinkou,rising,,3532
-錯覚,sakkaku,optical illusion,,3533
-獣,kemono,beast,,3534
-縦,tate,the vertical,,3535
-土壌,dojou,soil,,3536
-嬢,jou,unmarried woman,,3537
-薪,maki,firewood,,3538
-親,oya,parent,,3539
-親切,shinsetsu,kind,,3540
-整理,seiri,sorting,,3541
-整える,totonoeru,to put in order,,3542
-面積,menseki,square measure,,3543
-積み重ね,tsumikasane,pile,,3544
-操作,sousa,operation,,3545
-体操,taisou,gymnastics,,3546
-賭け,kake,bet,,3547
-糖,tou,sugar,,3548
-頭,tou,counter for large animals (e.g. head of cattle),,3549
-店頭,tentou,shopfront,,3550
-先頭,sentou,head,,3551
-曇り,kumori,cloudiness,,3552
-燃料,nenryou,fuel,,3553
-燃費,nenpi,fuel consumption,,3554
-濃い,koi,deep (colour),,3555
-濃度,noudo,concentration,,3556
-薄い,usui,thin,,3557
-頻繁,hinpan,frequent,,3558
-避難,hinan,taking refuge,,3559
-回避,kaihi,evasion,,3560
-避ける,sakeru,to avoid (physical contact with),,3561
-壁,kabe,wall,,3562
-膨大,boudai,huge,,3563
-磨き,migaki,polish,,3564
-麺,men,noodles,,3565
-薬,kusuri,medicine,,3566
-輸入,yunyuu,import,,3567
-輸出,yushutsu,export,,3568
-輸送,yusou,transport,,3569
-融合,yuugou,agglutination,,3570
-融資,yuushi,financing,,3571
-頼り,tayori,reliance,,3572
-頼む,tanomu,to request,,3573
-頼み,tanomi,request,,3574
-隣,tonari,next (to),,3575
-近隣,kinrin,neighbourhood,,3576
-隣接,rinsetsu,adjacency,,3577
-録画,rokuga,(video) recording,,3578
-一環,ikkan,link (e.g. in a chain of events),,3579
-鍵,kagi,key,,3580
-厳しい,kibishii,severe,,3581
-購買,koubai,procurement,,3582
-購読,koudoku,paid subscription (e.g. magazine),,3583
-懇親,konshin,friendship,,3584
-代謝,taisha,metabolism,,3585
-縮小,shukushou,reduction,,3586
-短縮,tanshuku,shortening,,3587
-無償,mushou,without compensation,,3588
-補償,hoshou,compensation,,3589
-実績,jisseki,achievements,,3590
-成績,seiseki,results,,3591
-業績,gyouseki,achievement,,3592
-繊細,sensai,dainty,,3593
-新鮮,shinsen,fresh,,3594
-朝鮮,chousen,Korea,,3595
-鮮やか,azayaka,vivid,,3596
-鮮明,senmei,vivid,,3597
-瞳,hitomi,pupil (of eye),,3598
-謎,nazo,riddle,,3599
-鍋,nabe,saucepan,,3600
-頻度,hindo,frequency (of occurrence),,3601
-闇,yami,darkness,,3602
-優しい,yasashii,tender,,3603
-翼,tsubasa,wing,,3604
-左翼,sayoku,left-wing (politics),,3605
-ご覧,goran,seeing,,3606
-一覧,ichiran,look,,3607
-療法,ryouhou,therapy,,3608
-年齢,nenrei,age,,3609
-高齢,kourei,advanced age,,3610
-齢,yowai,(one's) age,,3611
-額,gaku,picture (framed),,3612
-金額,kingaku,amount of money,,3613
-高額,kougaku,large sum (money),,3614
-全額,zengaku,total,,3615
-顎,ago,chin,,3616
-簡易,kan'i,simplicity,,3617
-観,kan,look,,3618
-観点,kanten,point of view,,3619
-顔,kao,face,,3620
-騎士,kishi,knight,,3621
-実験,jikken,experiment,,3622
-受験,juken,taking an examination (esp. school and university entrance),,3623
-連鎖,rensa,chain,,3624
-瞬間,shunkan,moment,,3625
-一瞬,isshun,instant,,3626
-瞬時,shunji,moment,,3627
-職場,shokuba,one's post,,3628
-職員,shokuin,staff member,,3629
-職,shoku,job,,3630
-職業,shokugyou,occupation,,3631
-騒ぎ,sawagi,uproar,,3632
-大騒ぎ,oosawagi,clamour,,3633
-贈り物,okurimono,present,,3634
-放題,houdai,(doing) as one pleases,,3635
-題,dai,title,,3636
-格闘,kakutou,hand-to-hand fighting,,3637
-難しい,muzukashii,difficult,,3638
-難い,nikui,difficult to ...,,3639
-癖,kuse,"habit (often a bad habit, i.e. vice)",,3640
-日曜日,nichiyoubi,Sunday,,3641
-金曜日,kin'youbi,Friday,,3642
-日曜,nichiyou,Sunday,,3643
-月曜日,getsuyoubi,Monday,,3644
-臨時,rinji,temporary,,3645
-類,rui,kind,,3646
-人類,jinrui,mankind,,3647
-分類,bunrui,classification,,3648
-艶,tsuya,gloss,,3649
-お願い,onegai,request,,3650
-願い,negai,desire,,3651
-願う,negau,to desire,,3652
-願望,ganbou,desire,,3653
-念願,nengan,one's heart's desire,,3654
-鏡,kagami,mirror,,3655
-警備,keibi,defense,,3656
-鶏,niwatori,(domestic) chicken,,3657
-常識,joushiki,common sense,,3658
-無意識,muishiki,unconsciousness,,3659
-心臓,shinzou,heart,,3660
-内臓,naizou,internal organs,,3661
-爆発,bakuhatsu,explosion,,3662
-楽譜,gakufu,score,,3663
-霧,kiri,fog,,3664
-分離,bunri,separation,,3665
-離れる,hanareru,to be separated,,3666
-綺麗,kirei,pretty,,3667
-会議,kaigi,meeting,,3668
-議会,gikai,congress,,3669
-競合,kyougou,contention,,3670
-響き,hibiki,echo,,3671
-音響,onkyou,sound,,3672
-響く,hibiku,to resound,,3673
-懸命,kenmei,eager,,3674
-防護,bougo,protection,,3675
-鐘,kane,bell (often a large hanging bell),,3676
-国籍,kokuseki,nationality,,3677
-欄,ran,section (e.g. in a newspaper),,3678
-顧問,komon,adviser,,3679
-魔法,mahou,magic,,3680
-魔,ma,demon,,3681
-魔女,majo,witch,,3682
-飛躍,hiyaku,leaping,,3683
-露,tsuyu,dew,,3684
-驚き,odoroki,surprise,,3685
-驚く,odoroku,to be surprised,,3686
-籠,kago,"basket (shopping, etc.)",,3687
+婦人,fujin,woman,,2655
+切符,kippu,ticket,,2656
+部,bu,department (in an organization),,2657
+一部,ichibu,one part,,2658
+副,fuku,assistant,,2659
+副作用,fukusayou,side effect,,2660
+閉鎖,heisa,closing,,2661
+閉店,heiten,closing up shop (for the day),,2662
+閉じる,tojiru,"to close (e.g. book, eyes, meeting, etc.)",,2663
+偏見,henken,prejudice,,2664
+崩壊,houkai,collapse,,2665
+崩れ,kuzure,crumbling,,2666
+訪問,houmon,call,,2667
+訪れ,otozure,visit,,2668
+訪れる,otozureru,to visit,,2669
+要望,youbou,demand for,,2670
+絶望,zetsubou,despair,,2671
+望む,nozomu,to desire,,2672
+望み,nozomi,wish,,2673
+麻痺,mahi,paralysis,,2674
+麻薬,mayaku,narcotic,,2675
+麻,asa,cannabis (Cannabis sativa),,2676
+密度,mitsudo,density,,2677
+厳密,genmitsu,strict,,2678
+密か,hisoka,secret,,2679
+密接,missetsu,"close (relationship, connection, etc.)",,2680
+業務,gyoumu,business,,2681
+事務,jimu,office work,,2682
+勤務,kinmu,service,,2683
+義務,gimu,duty,,2684
+問題,mondai,question (e.g. on a test),,2685
+質問,shitsumon,question,,2686
+疑問,gimon,doubt,,2687
+問い合わせ,toiawase,enquiry,,2688
+分野,bun'ya,field,,2689
+野,no,plain,,2690
+視野,shiya,field of vision,,2691
+訳,wake,"conclusion from reasoning, judgement or calculation based on something read or heard",,2692
+翻訳,hon'yaku,translation,,2693
+言い訳,iiwake,excuse,,2694
+通訳,tsuuyaku,interpretation (i.e. oral translation),,2695
+唯一,yuiitsu,only,,2696
+欲しい,hoshii,wanted,,2697
+欲,yoku,greed,,2698
+食欲,shokuyoku,appetite (for food),,2699
+意欲,iyoku,will,,2700
+翌日,yokujitsu,next day,,2701
+翌朝,yokuasa,next morning,,2702
+理解,rikai,understanding,,2703
+管理,kanri,control,,2704
+無理,muri,unreasonable,,2705
+大陸,tairiku,continent,,2706
+陸,riku,land,,2707
+陸上,rikujou,(on) land,,2708
+戦略,senryaku,strategy,,2709
+略,hobo,almost,,2710
+中略,chuuryaku,omission (of middle part of a text),,2711
+粒,tsubu,grain,,2712
+涼しい,suzushii,cool,,2713
+握り,nigiri,grasping,,2714
+握手,akushu,handshake,,2715
+嵐,arashi,storm,,2716
+偉大,idai,great,,2717
+偉い,erai,great,,2718
+椅子,isu,chair,,2719
+飲む,nomu,to drink,,2720
+飲み物,nomimono,drink,,2721
+飲食,inshoku,food and drink,,2722
+飲料,inryou,beverage,,2723
+運動,undou,exercise,,2724
+運営,un'ei,management,,2725
+運,un,fortune,,2726
+運用,un'you,making use of,,2727
+雲,kumo,cloud,,2728
+営業,eigyou,business,,2729
+営利,eiri,money-making,,2730
+越し,goshi,across,,2731
+越える,koeru,to cross over,,2732
+義援金,gienkin,donation money (esp. disaster relief or charity),,2733
+奥,oku,inner part,,2734
+奥さん,okusan,wife,,2735
+奥様,okusama,wife,,2736
+気温,kion,air temperature,,2737
+温度,ondo,temperature,,2738
+温暖,ondan,warm,,2739
+体温,taion,temperature,,2740
+過ぎ,sugi,past,,2741
+過程,katei,process,,2742
+過ぎる,sugiru,to pass through,,2743
+年賀状,nengajou,New Year's card,,2744
+絵,e,picture,,2745
+絵画,kaiga,painting,,2746
+絵本,ehon,picture book,,2747
+絵文字,emoji,emoji,,2748
+開催,kaisai,"holding (a conference, exhibition, etc.)",,2749
+階,kai,storey,,2750
+階層,kaisou,class,,2751
+街,gai,... street,,2752
+街道,kaidou,highway (esp. one existing from the Edo period),,2753
+覚え,oboe,memory,,2754
+感覚,kankaku,sense,,2755
+覚える,oboeru,to memorize,,2756
+自覚,jikaku,self-consciousness,,2757
+割,wari,rate,,2758
+割合,wariai,rate,,2759
+分割,bunkatsu,partition,,2760
+葛藤,kattou,conflict,,2761
+寒い,samui,cold (e.g. weather),,2762
+堪能,tannou,proficient,,2763
+変換,henkan,change,,2764
+敢えて,aete,"purposely (of something needless, unexpected or seemingly counterproductive, etc.)",,2765
+間,aida,space (between),,2766
+喜び,yorokobi,joy,,2767
+喜ぶ,yorokobu,to be delighted,,2768
+幾つ,ikutsu,how many?,,2769
+幾,iku,some,,2770
+発揮,hakki,"show (of power, ability, etc.)",,2771
+指揮,shiki,command,,2772
+期間,kikan,period,,2773
+貴方,anata,you (referring to someone of equal or lower status),,2774
+詐欺,sagi,fraud,,2775
+喫煙,kitsuen,smoking,,2776
+満喫,mankitsu,"having enough of (food, drink, etc.)",,2777
+喫茶,kissa,tea drinking,,2778
+給料,kyuuryou,salary,,2779
+補給,hokyuu,supply,,2780
+支給,shikyuu,provision,,2781
+距離,kyori,distance,,2782
+長距離,choukyori,long distance,,2783
+御,go,honorific/polite/humble prefix,,2784
+制御,seigyo,"control (of a machine, device, etc.)",,2785
+積極,sekkyoku,positive,,2786
+極めて,kiwamete,exceedingly,,2787
+極端,kyokutan,extreme,,2788
+極,goku,quite,,2789
+通勤,tsuukin,commuting to work,,2790
+出勤,shukkin,going to work,,2791
+勤め,tsutome,service,,2792
+筋,suji,muscle,,2793
+隅,sumi,corner,,2794
+尊敬,sonkei,respect,,2795
+敬意,keii,respect,,2796
+景気,keiki,business conditions,,2797
+軽い,karui,light (i.e. not heavy),,2798
+気軽,kigaru,carefree,,2799
+手軽,tegaru,easy,,2800
+軽,kei,"light (e.g. vehicle, aircraft, etc.)",,2801
+軽減,keigen,abatement,,2802
+結構,kekkou,splendid,,2803
+結論,ketsuron,conclusion,,2804
+圏内,kennai,"(being) within range (radio, commuting, etc.)",,2805
+検証,kenshou,verification,,2806
+検出,kenshutsu,detection,,2807
+減少,genshou,decrease,,2808
+減らす,herasu,to abate,,2809
+減る,heru,to decrease (in size or number),,2810
+加減,kagen,degree,,2811
+湖,mizuumi,lake,,2812
+雇用,koyou,employment (long term),,2813
+喉,nodo,throat,,2814
+港,minato,harbour,,2815
+硬い,katai,hard,,2816
+絞り,shibori,tye-dye,,2817
+事項,jikou,matter,,2818
+裁判所,saibansho,court,,2819
+独裁,dokusai,dictatorship,,2820
+対策,taisaku,measure,,2821
+策,saku,plan,,2822
+散策,sansaku,walking,,2823
+酢,su,vinegar,,2824
+傘,kasa,umbrella,,2825
+解散,kaisan,breaking up (e.g. meeting),,2826
+分散,bunsan,dispersion,,2827
+紫,murasaki,purple,,2828
+紫外線,shigaisen,ultraviolet rays,,2829
+歌詞,kashi,song lyrics,,2830
+作詞,sakushi,(writing) song lyrics,,2831
+歯,ha,tooth,,2832
+歯医者,haisha,dentist,,2833
+歯科,shika,dentistry,,2834
+軸,jiku,axis,,2835
+湿度,shitsudo,level of humidity,,2836
+雑煮,zouni,soup containing rice cakes and vegetables (New Year's dish),,2837
+就職,shuushoku,finding employment,,2838
+就寝,shuushin,going to bed,,2839
+大衆,taishuu,general public,,2840
+公衆,koushuu,the public,,2841
+編集,henshuu,editing,,2842
+集,shuu,collection,,2843
+募集,boshuu,recruitment,,2844
+循環,junkan,circulation,,2845
+手順,tejun,process,,2846
+順番,junban,turn (in line),,2847
+順,jun,order,,2848
+順調,junchou,favourable,,2849
+暑い,atsui,hot,,2850
+優勝,yuushou,overall victory,,2851
+勝ち,kachi,win,,2852
+燃焼,nenshou,burning,,2853
+焼く,yaku,to burn,,2854
+日焼け,hiyake,sunburn,,2855
+焼肉,yakiniku,yakiniku,,2856
+焦点,shouten,focus (e.g. photographic),,2857
+焦り,aseri,impatience,,2858
+認証,ninshou,certification,,2859
+現象,genshou,phenomenon,,2860
+象徴,shouchou,(abstract) symbol,,2861
+場,ba,place,,2862
+登場,toujou,entry (on stage),,2863
+畳,jou,"tatami mat (esp. as a measure of room size, either 1.82 sqm or 1.54 sqm)",,2864
+植物,shokubutsu,plant,,2865
+繁殖,hanshoku,breeding,,2866
+増殖,zoushoku,increase,,2867
+森,mori,forest,,2868
+診察,shinsatsu,medical examination,,2869
+診療,shinryou,diagnosis and treatment,,2870
+遂に,tsuini,finally,,2871
+遂行,suikou,accomplishment,,2872
+随分,zuibun,very,,2873
+随時,zuiji,as needed,,2874
+晴れ,hare,clear weather,,2875
+税金,zeikin,tax,,2876
+課税,kazei,taxation,,2877
+増税,zouzei,tax increase,,2878
+税務,zeimu,taxation business,,2879
+善,zen,good,,2880
+最善,saizen,the very best,,2881
+全然,zenzen,not at all (with neg. verb),,2882
+訴え,uttae,lawsuit,,2883
+訴える,uttaeru,to raise,,2884
+創作,sousaku,creation,,2885
+喪失,soushitsu,loss,,2886
+葬儀,sougi,funeral service,,2887
+葬式,soushiki,funeral,,2888
+装着,souchaku,equipping,,2889
+装備,soubi,equipment,,2890
+装置,souchi,equipment,,2891
+測定,sokutei,measurement,,2892
+予測,yosoku,prediction,,2893
+観測,kansoku,observation,,2894
+計測,keisoku,measuring,,2895
+所属,shozoku,"belonging to (a group, organization, etc.)",,2896
+付属,fuzoku,attached,,2897
+金属,kinzoku,metal,,2898
+属する,zokusuru,to belong to,,2899
+尊重,sonchou,respect,,2900
+替え,kae,change,,2901
+代替,daitai,substitution,,2902
+着替え,kigae,changing clothes,,2903
+入れ替え,irekae,replacement,,2904
+貸し,kashi,loan,,2905
+賃貸,chintai,lease,,2906
+自衛隊,jieitai,self-defence force,,2907
+部隊,butai,force,,2908
+隊員,taiin,troops,,2909
+達,tachi,pluralizing suffix (esp. for people and animals; formerly honorific),,2910
+達成,tassei,achievement,,2911
+調達,choutatsu,supply,,2912
+棚,tana,shelf,,2913
+本棚,hondana,bookshelves,,2914
+短い,mijikai,short,,2915
+短期,tanki,short-term,,2916
+短歌,tanka,tanka,,2917
+短時間,tanjikan,short time,,2918
+短期間,tankikan,short term,,2919
+爆弾,bakudan,bomb,,2920
+弾く,hajiku,to flip,,2921
+遅れ,okure,delay,,2922
+遅い,osoi,slow,,2923
+遅れる,okureru,to be late,,2924
+着,chaku,counter for suits of clothing,,2925
+着く,tsuku,to arrive at,,2926
+着る,kiru,"to wear (in modern Japanese, from the shoulders down)",,2927
+貯金,chokin,putting money aside,,2928
+貯蓄,chochiku,savings,,2929
+朝,asa,morning,,2930
+今朝,kesa,this morning,,2931
+朝食,choushoku,breakfast,,2932
+超,chou,super-,,2933
+痛み,itami,pain,,2934
+痛い,itai,painful,,2935
+頭痛,zutsuu,headache,,2936
+腰痛,youtsuu,lower back (or hip) pain,,2937
+堤,tsutsumi,bank,,2938
+前提,zentei,condition,,2939
+提出,teishutsu,presentation (of documents),,2940
+提示,teiji,presentation,,2941
+程,hodo,degree,,2942
+日程,nittei,schedule,,2943
+工程,koutei,process,,2944
+渡し,watashi,ferry (crossing),,2945
+渡す,watasu,to ferry across (e.g. a river),,2946
+渡り,watari,crossing,,2947
+渡る,wataru,to cross over,,2948
+譲渡,jouto,transfer,,2949
+塔,tou,tower,,2950
+搭載,tousai,loading (on board),,2951
+棟,mune,ridge (of roof),,2952
+湯,yu,hot water,,2953
+登録,touroku,registration,,2954
+答え,kotae,answer,,2955
+回答,kaitou,reply,,2956
+答える,kotaeru,to answer,,2957
+応答,outou,reply,,2958
+返答,hentou,reply,,2959
+等,nado,et cetera,,2960
+等々,toutou,etc.,,2961
+同等,doutou,equality,,2962
+平等,byoudou,equality,,2963
+高等,koutou,high class,,2964
+大統領,daitouryou,president (of a nation or company),,2965
+統合,tougou,integration,,2966
+統計,toukei,statistics,,2967
+統一,touitsu,unity,,2968
+道,michi,road,,2969
+報道,houdou,information,,2970
+道路,douro,road,,2971
+廃棄,haiki,disposal,,2972
+廃止,haishi,abolition,,2973
+媒体,baitai,medium,,2974
+買う,kau,to buy,,2975
+買い,kai,buying,,2976
+売買,baibai,trade,,2977
+博物館,hakubutsukan,museum,,2978
+ご飯,gohan,cooked rice,,2979
+飯,meshi,cooked rice,,2980
+晩,ban,evening,,2981
+毎晩,maiban,every night,,2982
+晩年,bannen,one's later years,,2983
+今晩,konban,tonight,,2984
+番,ban,number (in a series),,2985
+番目,banme,indicates position in a sequence,,2986
+悲しい,kanashii,sad,,2987
+悲劇,higeki,tragedy,,2988
+悲しみ,kanashimi,sadness,,2989
+扉,tobira,door,,2990
+費,hi,cost,,2991
+費用,hiyou,cost,,2992
+経費,keihi,expenses,,2993
+出費,shuppi,expenses,,2994
+準備,junbi,preparation,,2995
+整備,seibi,maintenance,,2996
+備え,sonae,preparation,,2997
+設備,setsubi,equipment,,2998
+筆,fude,writing brush,,2999
+鉛筆,enpitsu,pencil,,3000
+評論,hyouron,criticism,,3001
+豊富,houfu,abundant,,3002
+富,tomi,riches,,3003
+普遍,fuhen,universal,,3004
+幅,haba,width,,3005
+大幅,oohaba,big,,3006
+幅広い,habahiroi,extensive,,3007
+復興,fukkou,revival,,3008
+補正,hosei,correction,,3009
+募金,bokin,fund-raising,,3010
+予報,yohou,forecast,,3011
+報酬,houshuu,remuneration,,3012
+帽子,boushi,hat,,3013
+棒,bou,pole,,3014
+不満,fuman,dissatisfaction,,3015
+満たす,mitasu,"to satisfy (conditions, one's appetite, etc.)",,3016
+無い,nai,nonexistent,,3017
+無事,buji,safety,,3018
+無駄,muda,futility,,3019
+遊び,asobi,playing,,3020
+遊ぶ,asobu,to play,,3021
+雄,osu,"male (animal, plant)",,3022
+揚げ,age,frying,,3023
+揺れる,yureru,to shake,,3024
+葉,ha,leaf,,3025
+葉っぱ,happa,leaf,,3026
+陽,you,yang (i.e. the positive),,3027
+陽気,youki,cheerful,,3028
+絡み,karami,linkage,,3029
+落ち,ochi,slip,,3030
+落ちる,ochiru,to fall down,,3031
+落とす,otosu,to drop,,3032
+落ち着き,ochitsuki,calmness,,3033
+落下,rakka,fall,,3034
+下痢,geri,diarrhea,,3035
+量,ryou,quantity,,3036
+大量,tairyou,large quantity,,3037
+線量,senryou,dose (of radioactivity),,3038
+音量,onryou,volume (sound),,3039
+分裂,bunretsu,split,,3040
+廊下,rouka,corridor,,3041
+湾,wan,bay,,3042
+腕,ude,arm,,3043
+愛,ai,love,,3044
+愛する,aisuru,to love,,3045
+愛情,aijou,love,,3046
+暗い,kurai,dark,,3047
+真っ暗,makkura,total darkness,,3048
+暗闇,kurayami,darkness,,3049
+意識,ishiki,consciousness,,3050
+違う,chigau,to differ (from),,3051
+違い,chigai,difference,,3052
+間違い,machigai,mistake,,3053
+園,sono,garden (esp. man-made),,3054
+学園,gakuen,educational institution,,3055
+煙,kemuri,smoke,,3056
+禁煙,kin'en,abstaining from smoking,,3057
+猿,saru,"monkey (esp. the Japanese macaque, Macaca fuscata)",,3058
+遠く,tooku,far away,,3059
+遠い,tooi,far,,3060
+遠慮,enryo,reserve,,3061
+塩,shio,salt (i.e. sodium chloride),,3062
+嫁,yome,wife,,3063
+暇,hima,spare time,,3064
+休暇,kyuuka,holiday,,3065
+靴,kutsu,shoe,,3066
+靴下,kutsushita,socks,,3067
+優雅,yuuga,elegant,,3068
+塊,katamari,lump,,3069
+解説,kaisetsu,explanation,,3070
+感慨,kangai,deep emotion,,3071
+蓋,futa,cover,,3072
+該当,gaitou,corresponding to,,3073
+間隔,kankaku,space,,3074
+楽しみ,tanoshimi,enjoyment,,3075
+楽しい,tanoshii,enjoyable,,3076
+楽,raku,comfort,,3077
+楽しむ,tanoshimu,to enjoy (oneself),,3078
+滑り,numeri,slime,,3079
+勧め,susume,recommendation,,3080
+勧誘,kan'yuu,invitation,,3081
+新幹線,shinkansen,Shinkansen,,3082
+幹事,kanji,executive secretary,,3083
+幹部,kanbu,management,,3084
+幹,miki,(tree) trunk,,3085
+感じ,kanji,feeling,,3086
+感じる,kanjiru,to feel,,3087
+感謝,kansha,thanks,,3088
+感動,kandou,being deeply moved emotionally,,3089
+頑張る,ganbaru,to persevere,,3090
+放棄,houki,abandonment,,3091
+定義,teigi,definition,,3092
+講義,kougi,lecture,,3093
+正義,seigi,justice,,3094
+事業,jigyou,project,,3095
+僅か,wazuka,only,,3096
+解禁,kaikin,lifting a ban,,3097
+愚痴,guchi,idle complaint,,3098
+群,gun,group,,3099
+群れ,mure,group,,3100
+連携,renkei,cooperation,,3101
+提携,teikei,cooperation,,3102
+継続,keizoku,continuation,,3103
+中継,chuukei,relay,,3104
+後継,koukei,succession,,3105
+隙間,sukima,crevice,,3106
+隙,suki,gap,,3107
+傑作,kessaku,masterpiece,,3108
+嫌,iya,disagreeable,,3109
+嫌い,kirai,disliked,,3110
+機嫌,kigen,humour,,3111
+嫌悪,ken'o,disgust,,3112
+文献,bunken,literature,,3113
+電源,dengen,source of electricity,,3114
+源,minamoto,source (of a river),,3115
+資源,shigen,resources,,3116
+誇り,hokori,pride,,3117
+誇る,hokoru,to boast of,,3118
+溝,mizo,ditch,,3119
+債務,saimu,debt,,3120
+国債,kokusai,national debt,,3121
+債,sai,debt,,3122
+主催,shusai,sponsorship (i.e. conducting under one's auspices),,3123
+歳,sai,-years-old,,3124
+記載,kisai,mention (in a document),,3125
+連載,rensai,serialization,,3126
+罪,tsumi,crime,,3127
+謝罪,shazai,apology,,3128
+試し,tameshi,trial,,3129
+試験,shiken,examination,,3130
+試み,kokoromi,attempt,,3131
+試行錯誤,shikousakugo,trial and error,,3132
+詩,shi,poem,,3133
+詩人,shijin,poet,,3134
+飼育,shiiku,breeding,,3135
+飼い主,kainushi,shepherd,,3136
+辞書,jisho,dictionary,,3137
+辞める,yameru,to resign,,3138
+標準,hyoujun,standard,,3139
+署名,shomei,signature,,3140
+部署,busho,one's post,,3141
+傷,kizu,wound,,3142
+損傷,sonshou,damage,,3143
+照明,shoumei,illumination,,3144
+対照,taishou,contrast,,3145
+詳しい,kuwashii,detailed,,3146
+蒸し,mushi,steaming,,3147
+飾り,kazari,decoration,,3148
+装飾,soushoku,ornament,,3149
+触れる,fureru,to touch,,3150
+感触,kanshoku,feel (i.e. tactile sensation),,3151
+触る,sawaru,to touch,,3152
+寝,ne,sleep,,3153
+寝る,neru,to lie down,,3154
+慎重,shinchou,careful,,3155
+新しい,atarashii,new,,3156
+新,shin,new,,3157
+新た,arata,new,,3158
+新聞,shinbun,newspaper,,3159
+数,kazu,number,,3160
+複数,fukusuu,plural,,3161
+人数,ninzuu,the number of people,,3162
+勢い,ikioi,force,,3163
+勢力,seiryoku,influence,,3164
+大勢,oozei,crowd of people,,3165
+情勢,jousei,state of things,,3166
+聖書,seisho,Bible,,3167
+神聖,shinsei,holiness,,3168
+誠に,makotoni,indeed,,3169
+誠実,seijitsu,sincere,,3170
+誠,makoto,truth,,3171
+跡,ato,trace,,3172
+遺跡,iseki,"historic ruins (remains, relics)",,3173
+足跡,ashiato,footprints,,3174
+節,setsu,occasion,,3175
+節約,setsuyaku,economising,,3176
+調節,chousetsu,regulation,,3177
+関節,kansetsu,"joint (knee, elbow, etc.)",,3178
+戦,ikusa,war,,3179
+戦闘,sentou,battle,,3180
+羨ましい,urayamashii,envious,,3181
+所詮,shosen,after all,,3182
+実践,jissen,practice,,3183
+想像,souzou,imagination,,3184
+感想,kansou,impressions,,3185
+理想,risou,ideal,,3186
+想定,soutei,hypothesis,,3187
+海賊,kaizoku,pirate,,3188
+続ける,tsuzukeru,to continue,,3189
+続く,tsuzuku,to continue,,3190
+続き,tsuzuki,continuation,,3191
+損,son,loss,,3192
+滝,taki,waterfall,,3193
+暖かい,atatakai,warm,,3194
+置く,oku,to put,,3195
+蓄積,chikuseki,accumulation,,3196
+腸,chou,guts,,3197
+賃金,chingin,wages,,3198
+家賃,yachin,rent,,3199
+地下鉄,chikatetsu,underground train,,3200
+鉄道,tetsudou,railroad,,3201
+鉄,tetsu,iron (Fe),,3202
+殿,dono,Mr.,,3203
+電話,denwa,telephone call,,3204
+電気,denki,electricity,,3205
+発電,hatsuden,generation (e.g. power),,3206
+働き,hataraki,work,,3207
+働く,hataraku,to work,,3208
+稼働,kadou,operation (of machine),,3209
+監督,kantoku,supervision,,3210
+農業,nougyou,agriculture,,3211
+農家,nouka,farmer,,3212
+農薬,nouyaku,"agricultural chemical (i.e. pesticide, herbicide, fungicide, etc.)",,3213
+鉢,hachi,bowl,,3214
+福,fuku,good fortune,,3215
+お腹,onaka,belly,,3216
+腹,hara,abdomen,,3217
+満腹,manpuku,full stomach,,3218
+空腹,kuufuku,empty stomach,,3219
+墓,haka,gravesite,,3220
+豊か,yutaka,abundant,,3221
+飽き,aki,weariness,,3222
+字幕,jimaku,subtitles,,3223
+幕,maku,curtain,,3224
+開幕,kaimaku,raising the curtain,,3225
+夢,yume,dream,,3226
+夢中,muchuu,absorbed in,,3227
+同盟,doumei,alliance,,3228
+連盟,renmei,league,,3229
+消滅,shoumetsu,extinction,,3230
+滅多,metta,thoughtless,,3231
+名誉,meiyo,honor,,3232
+預金,yokin,deposit,,3233
+腰,koshi,back,,3234
+裸,hadaka,nakedness,,3235
+雷,kaminari,lightning,,3236
+裏,ura,opposite side,,3237
+裏側,uragawa,the reverse,,3238
+回路,kairo,circuit (electric),,3239
+路線,rosen,"route (bus, train, air, etc.)",,3240
+路面,romen,road surface,,3241
+路地,roji,alley,,3242
+話,hanashi,talk,,3243
+お話,ohanashi,story,,3244
+話題,wadai,topic,,3245
+会話,kaiwa,conversation,,3246
+繊維,sen'i,fibre,,3247
+隠す,kakusu,to hide,,3248
+駅,eki,railway station,,3249
+駅前,ekimae,in front of a station,,3250
+出演,shutsuen,performance,,3251
+演出,enshutsu,production (e.g. play),,3252
+講演,kouen,lecture,,3253
+歌,uta,song,,3254
+歌う,utau,to sing,,3255
+歌手,kashu,singer,,3256
+箇所,kasho,passage,,3257
+概要,gaiyou,outline,,3258
+内閣,naikaku,cabinet (of a government),,3259
+慣れ,nare,practice,,3260
+慣れる,nareru,to get used to,,3261
+管,kan,pipe,,3262
+保管,hokan,charge,,3263
+に関して,nikanshite,related to,,3264
+機関,kikan,engine,,3265
+旗,hata,flag,,3266
+容疑,yougi,suspicion,,3267
+疑い,utagai,doubt,,3268
+質疑,shitsugi,question,,3269
+環境,kankyou,environment,,3270
+国境,kokkyou,national border,,3271
+境界,kyoukai,boundary,,3272
+境,sakai,border,,3273
+心境,shinkyou,state of mind,,3274
+銀行,ginkou,bank,,3275
+銀,gin,silver (Ag),,3276
+駆使,kushi,free use,,3277
+駆動,kudou,driving force,,3278
+熊,kuma,bear (any mammal of family Ursidae),,3279
+日本語,nihongo,Japanese (language),,3280
+語,go,language,,3281
+誤解,gokai,misunderstanding,,3282
+誤り,ayamari,error,,3283
+構築,kouchiku,construction,,3284
+機構,kikou,mechanism,,3285
+発酵,hakkou,fermentation,,3286
+酷い,hidoi,cruel,,3287
+過酷,kakoku,severe,,3288
+残酷,zankoku,cruelty,,3289
+地獄,jigoku,hell,,3290
+魂,tamashii,soul,,3291
+際,sai,on the occasion of,,3292
+国際,kokusai,international,,3293
+警察,keisatsu,police,,3294
+観察,kansatsu,observation,,3295
+考察,kousatsu,consideration,,3296
+視察,shisatsu,inspection,,3297
+雑誌,zasshi,journal,,3298
+複雑,fukuzatsu,complex,,3299
+雑,zatsu,rough,,3300
+換算,kansan,conversion (e.g. yen to dollars),,3301
+決算,kessan,settlement of accounts,,3302
+酸,san,acid,,3303
+酸素,sanso,oxygen (O),,3304
+酸化,sanka,oxidation,,3305
+種類,shurui,variety,,3306
+種,tane,seed (e.g. of a plant),,3307
+機種,kishu,type of equipment,,3308
+一種,isshu,species,,3309
+需要,juyou,demand,,3310
+銃,juu,gun,,3311
+塾,juku,coaching school,,3312
+支障,shishou,obstacle,,3313
+精度,seido,precision,,3314
+製,sei,-made,,3315
+製作,seisaku,manufacture,,3316
+静か,shizuka,quiet,,3317
+静止,seishi,stillness,,3318
+説,setsu,theory,,3319
+説得,settoku,persuasion,,3320
+金銭,kinsen,money,,3321
+一層,issou,much more,,3322
+総,sou,whole,,3323
+総合,sougou,synthesis,,3324
+総理,souri,leading,,3325
+総務,soumu,general affairs,,3326
+総額,sougaku,sum total,,3327
+像,zou,image,,3328
+現像,genzou,development (of film),,3329
+増える,fueru,to increase,,3330
+増し,mashi,better,,3331
+増やす,fuyasu,to increase,,3332
+駄目,dame,no good,,3333
+事態,jitai,situation,,3334
+態度,taido,attitude,,3335
+実態,jittai,true state,,3336
+端,hashi,end (e.g. of street),,3337
+徴収,choushuu,"collection (of fees, taxes, etc.)",,3338
+点滴,tenteki,raindrops,,3339
+適当,tekitou,suitable,,3340
+適用,tekiyou,applying (e.g. a technology),,3341
+最適,saiteki,most suitable,,3342
+適切,tekisetsu,pertinent,,3343
+稲,ine,rice plant,,3344
+道徳,doutoku,morals,,3345
+読み,yomi,reading,,3346
+読む,yomu,to read,,3347
+読書,dokusho,reading,,3348
+確認,kakunin,confirmation,,3349
+認識,ninshiki,recognition,,3350
+認め,mitome,approval,,3351
+認知,ninchi,acknowledgement,,3352
+髪,kami,hair (on the head),,3353
+鼻,hana,nose,,3354
+漂う,tadayou,to drift,,3355
+複合,fukugou,composite,,3356
+聞く,kiku,to hear,,3357
+聞こえる,kikoeru,to be heard,,3358
+暮らし,kurashi,life,,3359
+暮らす,kurasu,to live,,3360
+暮れ,kure,sunset,,3361
+僕,boku,I,,3362
+僕ら,bokura,we,,3363
+膜,maku,membrane,,3364
+自慢,jiman,pride,,3365
+慢性,mansei,chronic (illness),,3366
+漫画,manga,cartoon,,3367
+鳴る,naru,to sound,,3368
+鳴り,nari,ringing,,3369
+共鳴,kyoumei,resonance,,3370
+模様,moyou,pattern,,3371
+模型,mokei,model,,3372
+網,ami,net,,3373
+誘導,yuudou,guidance,,3374
+誘い,sasoi,invitation,,3375
+様,sama,Mr.,,3376
+様々,samazama,varied,,3377
+踊り,odori,dance,,3378
+踊る,odoru,to dance (orig. a hopping dance),,3379
+同僚,douryou,coworker,,3380
+緑,midori,green,,3381
+緑色,midoriiro,green,,3382
+暦,koyomi,calendar,,3383
+履歴,rireki,personal history,,3384
+遺産,isan,inheritance,,3385
+遺体,itai,corpse,,3386
+遺伝,iden,heredity,,3387
+影響,eikyou,influence,,3388
+撮影,satsuei,photography (still or motion),,3389
+影,kage,shadow,,3390
+悪影響,akueikyou,bad influence,,3391
+鋭い,surudoi,sharp (blade),,3392
+閲覧,etsuran,inspection,,3393
+縁,fuchi,rim,,3394
+無縁,muen,unrelated,,3395
+横,yoko,horizontal (as opposed to vertical),,3396
+横断,oudan,crossing,,3397
+億,oku,10^8,,3398
+稼ぐ,kasegu,to earn (income),,3399
+稼ぎ,kasegi,earnings,,3400
+課題,kadai,subject,,3401
+課,ka,lesson,,3402
+課長,kachou,section manager,,3403
+確か,tashika,sure,,3404
+確実,kakujitsu,certainty,,3405
+新潟,niigata,Niigata (city),,3406
+緩和,kanwa,relief,,3407
+器,utsuwa,bowl,,3408
+機器,kiki,device,,3409
+楽器,gakki,musical instrument,,3410
+輝き,kagayaki,brightness,,3411
+輝く,kagayaku,to shine,,3412
+儀式,gishiki,ceremony,,3413
+余儀なく,yoginaku,unavoidably,,3414
+稽古,keiko,practice,,3415
+劇,geki,drama,,3416
+劇場,gekijou,theatre,,3417
+演劇,engeki,drama,,3418
+劇的,gekiteki,dramatic,,3419
+衝撃,shougeki,shock,,3420
+目撃,mokugeki,witnessing,,3421
+簡潔,kanketsu,brevity,,3422
+権,ken,right (to do something),,3423
+権力,kenryoku,(political) power,,3424
+権限,kengen,power,,3425
+原稿,genkou,manuscript,,3426
+稿,kou,manuscript,,3427
+駒,koma,"piece (in shogi, chess, etc.)",,3428
+撮る,toru,to take (a photo),,3429
+賛成,sansei,approval,,3430
+賛同,sandou,approval,,3431
+暫く,shibaraku,for a moment,,3432
+暫定,zantei,provisional,,3433
+真摯,shinshi,sincere,,3434
+餌,esa,(animal) feed,,3435
+質,shitsu,quality,,3436
+本質,honshitsu,essence,,3437
+趣向,shukou,plan,,3438
+趣,omomuki,meaning,,3439
+成熟,seijuku,maturity,,3440
+諸国,shokoku,various countries,,3441
+諸,sho,various,,3442
+憧れ,akogare,yearning,,3443
+衝動,shoudou,impulse,,3444
+賞,shou,prize,,3445
+鑑賞,kanshou,"appreciation (of art, music, poetry, etc.)",,3446
+受賞,jushou,winning (a prize),,3447
+審議,shingi,deliberation,,3448
+要請,yousei,appeal,,3449
+潜在,senzai,potentiality,,3450
+線,sen,line,,3451
+無線,musen,radio (communication),,3452
+回線,kaisen,circuit,,3453
+選ぶ,erabu,to choose,,3454
+水槽,suisou,water tank,,3455
+内蔵,naizou,internal (e.g. disk),,3456
+蔵,kura,warehouse,,3457
+誰,dare,who,,3458
+誰か,dareka,someone,,3459
+誕生,tanjou,birth,,3460
+対談,taidan,talk,,3461
+会談,kaidan,conversation,,3462
+調べ,shirabe,investigation,,3463
+調整,chousei,adjustment,,3464
+調子,choushi,tune,,3465
+体調,taichou,physical condition,,3466
+締め,shime,tie up,,3467
+締め切り,shimekiri,deadline,,3468
+取締役,torishimariyaku,company director,,3469
+敵,teki,opponent,,3470
+徹夜,tetsuya,staying up all night,,3471
+踏む,fumu,to step on,,3472
+導入,dounyuu,introduction,,3473
+主導,shudou,leadership,,3474
+導く,michibiku,to guide,,3475
+熱,netsu,heat,,3476
+熱い,atsui,hot (thing),,3477
+熱心,nesshin,zealous,,3478
+熱中,netchuu,being enthusiastic about,,3479
+先輩,senpai,senior (at work or school),,3480
+後輩,kouhai,"junior (at work, school, etc.)",,3481
+賠償,baishou,compensation,,3482
+箱,hako,box,,3483
+箸,hashi,chopsticks,,3484
+盤,ban,disk,,3485
+中盤,chuuban,middle (stage),,3486
+終盤,shuuban,endgame,,3487
+鍵盤,kenban,"keyboard (piano, computer, etc.)",,3488
+膝,hiza,knee,,3489
+指標,shihyou,index,,3490
+標高,hyoukou,elevation,,3491
+敷地,shikichi,site,,3492
+屋敷,yashiki,residence,,3493
+敷居,shikii,threshold (esp. one with grooves for sliding doors),,3494
+見舞い,mimai,visiting ill or distressed people,,3495
+舞,mai,dancing,,3496
+弊社,heisha,our firm,,3497
+餅,mochi,mochi,,3498
+編,hen,compilation (of a text),,3499
+再編,saihen,reorganization,,3500
+編成,hensei,composition,,3501
+続編,zokuhen,continuation,,3502
+暴力,bouryoku,violence,,3503
+相撲,sumou,sumo wrestling,,3504
+魅了,miryou,fascination,,3505
+養成,yousei,training,,3506
+考慮,kouryo,consideration,,3507
+配慮,hairyo,consideration,,3508
+寮,ryou,hostel,,3509
+輪,wa,ring,,3510
+指輪,yubiwa,(finger) ring,,3511
+霊,rei,soul,,3512
+議論,giron,argument,,3513
+論文,ronbun,thesis,,3514
+理論,riron,theory,,3515
+勿論,mochiron,of course,,3516
+経緯,ikisatsu,details,,3517
+衛生,eisei,hygiene,,3518
+前衛,zen'ei,advance guard,,3519
+穏やか,odayaka,calm,,3520
+懐かしい,natsukashii,dear (old),,3521
+懐,futokoro,bosom,,3522
+還元,kangen,restoration,,3523
+帰還,kikan,repatriation,,3524
+会館,kaikan,meeting hall,,3525
+大使館,taishikan,embassy,,3526
+橋,hashi,bridge,,3527
+激しい,hageshii,violent,,3528
+感激,kangeki,deep emotion,,3529
+過激,kageki,extreme,,3530
+賢い,kashikoi,wise,,3531
+興奮,koufun,excitement,,3532
+新興,shinkou,rising,,3533
+錯覚,sakkaku,optical illusion,,3534
+獣,kemono,beast,,3535
+縦,tate,the vertical,,3536
+土壌,dojou,soil,,3537
+嬢,jou,unmarried woman,,3538
+薪,maki,firewood,,3539
+親,oya,parent,,3540
+親切,shinsetsu,kind,,3541
+整理,seiri,sorting,,3542
+整える,totonoeru,to put in order,,3543
+面積,menseki,square measure,,3544
+積み重ね,tsumikasane,pile,,3545
+操作,sousa,operation,,3546
+体操,taisou,gymnastics,,3547
+賭け,kake,bet,,3548
+糖,tou,sugar,,3549
+頭,tou,counter for large animals (e.g. head of cattle),,3550
+店頭,tentou,shopfront,,3551
+先頭,sentou,head,,3552
+曇り,kumori,cloudiness,,3553
+燃料,nenryou,fuel,,3554
+燃費,nenpi,fuel consumption,,3555
+濃い,koi,deep (colour),,3556
+濃度,noudo,concentration,,3557
+薄い,usui,thin,,3558
+頻繁,hinpan,frequent,,3559
+避難,hinan,taking refuge,,3560
+回避,kaihi,evasion,,3561
+避ける,sakeru,to avoid (physical contact with),,3562
+壁,kabe,wall,,3563
+膨大,boudai,huge,,3564
+磨き,migaki,polish,,3565
+麺,men,noodles,,3566
+薬,kusuri,medicine,,3567
+輸入,yunyuu,import,,3568
+輸出,yushutsu,export,,3569
+輸送,yusou,transport,,3570
+融合,yuugou,agglutination,,3571
+融資,yuushi,financing,,3572
+頼り,tayori,reliance,,3573
+頼む,tanomu,to request,,3574
+頼み,tanomi,request,,3575
+隣,tonari,next (to),,3576
+近隣,kinrin,neighbourhood,,3577
+隣接,rinsetsu,adjacency,,3578
+録画,rokuga,(video) recording,,3579
+一環,ikkan,link (e.g. in a chain of events),,3580
+鍵,kagi,key,,3581
+厳しい,kibishii,severe,,3582
+購買,koubai,procurement,,3583
+購読,koudoku,paid subscription (e.g. magazine),,3584
+懇親,konshin,friendship,,3585
+代謝,taisha,metabolism,,3586
+縮小,shukushou,reduction,,3587
+短縮,tanshuku,shortening,,3588
+無償,mushou,without compensation,,3589
+補償,hoshou,compensation,,3590
+実績,jisseki,achievements,,3591
+成績,seiseki,results,,3592
+業績,gyouseki,achievement,,3593
+繊細,sensai,dainty,,3594
+新鮮,shinsen,fresh,,3595
+朝鮮,chousen,Korea,,3596
+鮮やか,azayaka,vivid,,3597
+鮮明,senmei,vivid,,3598
+瞳,hitomi,pupil (of eye),,3599
+謎,nazo,riddle,,3600
+鍋,nabe,saucepan,,3601
+頻度,hindo,frequency (of occurrence),,3602
+闇,yami,darkness,,3603
+優しい,yasashii,tender,,3604
+翼,tsubasa,wing,,3605
+左翼,sayoku,left-wing (politics),,3606
+ご覧,goran,seeing,,3607
+一覧,ichiran,look,,3608
+療法,ryouhou,therapy,,3609
+年齢,nenrei,age,,3610
+高齢,kourei,advanced age,,3611
+齢,yowai,(one's) age,,3612
+額,gaku,picture (framed),,3613
+金額,kingaku,amount of money,,3614
+高額,kougaku,large sum (money),,3615
+全額,zengaku,total,,3616
+顎,ago,chin,,3617
+簡易,kan'i,simplicity,,3618
+観,kan,look,,3619
+観点,kanten,point of view,,3620
+顔,kao,face,,3621
+騎士,kishi,knight,,3622
+実験,jikken,experiment,,3623
+受験,juken,taking an examination (esp. school and university entrance),,3624
+連鎖,rensa,chain,,3625
+瞬間,shunkan,moment,,3626
+一瞬,isshun,instant,,3627
+瞬時,shunji,moment,,3628
+職場,shokuba,one's post,,3629
+職員,shokuin,staff member,,3630
+職,shoku,job,,3631
+職業,shokugyou,occupation,,3632
+騒ぎ,sawagi,uproar,,3633
+大騒ぎ,oosawagi,clamour,,3634
+贈り物,okurimono,present,,3635
+放題,houdai,(doing) as one pleases,,3636
+題,dai,title,,3637
+格闘,kakutou,hand-to-hand fighting,,3638
+難しい,muzukashii,difficult,,3639
+難い,nikui,difficult to ...,,3640
+癖,kuse,"habit (often a bad habit, i.e. vice)",,3641
+日曜日,nichiyoubi,Sunday,,3642
+金曜日,kin'youbi,Friday,,3643
+日曜,nichiyou,Sunday,,3644
+月曜日,getsuyoubi,Monday,,3645
+臨時,rinji,temporary,,3646
+類,rui,kind,,3647
+人類,jinrui,mankind,,3648
+分類,bunrui,classification,,3649
+艶,tsuya,gloss,,3650
+お願い,onegai,request,,3651
+願い,negai,desire,,3652
+願う,negau,to desire,,3653
+願望,ganbou,desire,,3654
+念願,nengan,one's heart's desire,,3655
+鏡,kagami,mirror,,3656
+警備,keibi,defense,,3657
+鶏,niwatori,(domestic) chicken,,3658
+常識,joushiki,common sense,,3659
+無意識,muishiki,unconsciousness,,3660
+心臓,shinzou,heart,,3661
+内臓,naizou,internal organs,,3662
+爆発,bakuhatsu,explosion,,3663
+楽譜,gakufu,score,,3664
+霧,kiri,fog,,3665
+分離,bunri,separation,,3666
+離れる,hanareru,to be separated,,3667
+綺麗,kirei,pretty,,3668
+会議,kaigi,meeting,,3669
+議会,gikai,congress,,3670
+競合,kyougou,contention,,3671
+響き,hibiki,echo,,3672
+音響,onkyou,sound,,3673
+響く,hibiku,to resound,,3674
+懸命,kenmei,eager,,3675
+防護,bougo,protection,,3676
+鐘,kane,bell (often a large hanging bell),,3677
+国籍,kokuseki,nationality,,3678
+欄,ran,section (e.g. in a newspaper),,3679
+顧問,komon,adviser,,3680
+魔法,mahou,magic,,3681
+魔,ma,demon,,3682
+魔女,majo,witch,,3683
+飛躍,hiyaku,leaping,,3684
+露,tsuyu,dew,,3685
+驚き,odoroki,surprise,,3686
+驚く,odoroku,to be surprised,,3687
+籠,kago,"basket (shopping, etc.)",,3688

@@ -4,7 +4,7 @@ config =
   example_words_limit: 5
   example_meanings_limit: 1
   word_frequency_limit: 10000
-  dictionary_path: "data/jmdict-translations.json"
+  dictionary_path: "data/jmdict-translations-kanji.json"
   kanji_path: "data/jouyou-by-stroke-count.txt"
   output_path: "download/jouyou-example-words.csv"
   word_frequency_path: "data/wordlex-2011.txt"
