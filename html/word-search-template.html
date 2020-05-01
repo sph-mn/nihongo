@@ -21,7 +21,7 @@
       #filter input {
           border: 0;
           background-color: #eee;
-          width: 6rem;
+          width: 9rem;
       }
       #results {
           margin-block-start: 1rem;
@@ -34,8 +34,9 @@
     <div class="description">
       <ul>
         <li>includes the 15000 most frequent words</li>
-        <li>finds words with similar spelling. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway</li>
+        <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway</li>
         <li>the page can be used offline after right click save page as. everything is contained in one html file</li>
+        <li>supports regexp syntax. for example, word$ for only searching at the end, ^word for only searching at the beginning or . for wildcards</li>
       </ul>
     </div>
     <div id="filter">
@@ -52,16 +53,17 @@
           [/tsu|zu/g, "#1"],
           [/ou/g, "#2"],
           [/ei|e/g, "#3"],
+          [/sh|ch|j/g, "#4"],
           [/ii|i/g, "(i|ii)"],
           [/uu|u/g, "(u|uu)"],
           [/o/g, "(o|ou)"],
           [/kk|k|g/g, "(k|g|kk)"],
           [/pp|p|b/g, "(b|p|pp)"],
-          [/ch|j/g, "(ch|j)"],
           [/ss|s|z/g, "(s|z|ss)"],
           [/#1/g, "(tsu|zu)"],
           [/#2/g, "(ou|o)"],
           [/#3/g, "(ei|e)"],
+          [/#4/g, "(ch|j|sh)"],
           [/na/g, "(na|nna)"]
         ]
         replacements.forEach(function(a) {
