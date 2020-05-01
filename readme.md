@@ -8,6 +8,7 @@
 * some additional files for kanji components and other things under download/extras and data/extras
   * list of components for each kanji and the inverse. alternative to kradfile and radfile
   * list of kanji that share at least two components
+  * html page for searching translations of the top 15000 words. finds words with similar spelling
 * uses the 2136 jouyou kanji as of 2020
 
 # about the anki deck

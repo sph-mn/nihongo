@@ -1,7 +1,7 @@
 #!/usr/bin/env coffee
 
 config =
-  html_path: "html/template.html"
+  html_path: "html/viewer-template.html"
   kanji_path: "download/jouyou-by-stroke-count.csv"
   kanjivg_path: "data/kanjivg"
   output_path: "download/kanji-viewer.html"
