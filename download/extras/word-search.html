@@ -57,14 +57,15 @@
           [/ii|i/g, "(i|ii)"],
           [/uu|u/g, "(u|uu)"],
           [/o/g, "(o|ou)"],
+          [/t|d/g, "(t|d)"],
           [/kk|k|g/g, "(k|g|kk)"],
           [/pp|p|b/g, "(b|p|pp)"],
           [/ss|s|z/g, "(s|z|ss)"],
+          [/nn|n/g, "(n|nn)"],
           [/#1/g, "(tsu|zu)"],
           [/#2/g, "(ou|o)"],
           [/#3/g, "(ei|e)"],
-          [/#4/g, "(ch|j|sh)"],
-          [/na/g, "(na|nna)"]
+          [/#4/g, "(ch|j|sh)"]
         ]
         replacements.forEach(function(a) {
           word = word.replace(a[0], a[1])
