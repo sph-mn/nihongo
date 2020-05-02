@@ -1,5 +1,5 @@
 # this code writes the html file for the single-file viewer page built from
-# html/template.html and kanjivg stroke images.
+# html/viewer-template.html and kanjivg stroke images.
 # https://github.com/KanjiVG/kanjivg/releases
 
 fs = require "fs"
@@ -86,7 +86,7 @@ for_each_word_info = (config, f) ->
   dictionary = object_from_json_file config.dictionary_path
   words = array_from_newline_file config.word_frequency_path
   words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
-  words = words.filter (a) -> a.length > 1
+  words = words.filter (a) -> a.length > 1 || !wanakana.isKana(a)
   return unless config.word_frequency_limit
   for word in words
     entry = dictionary[word]
