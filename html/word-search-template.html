@@ -35,6 +35,7 @@
       <ul>
         <li>includes the 15000 most frequent words</li>
         <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway</li>
+        <li>this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
         <li>the page can be used offline after right click save page as. everything is contained in one html file</li>
         <li>supports regexp syntax. for example, word$ for only searching at the end, ^word for only searching at the beginning or . for wildcards</li>
       </ul>
@@ -47,6 +48,7 @@
     </div>
     <script>
       var words = {content};
+      var abc_regexp = /[a-z]/
 
       function make_search_regexp(word) {
         var replacements = [
@@ -82,18 +84,27 @@
         var button = document.getElementById("filter-reset")
         var results = document.getElementById("results")
         function on_filter() {
-          if (input.value.length < 2) {
+          if (0 == input.value.length || (2 > input.value.length && abc_regexp.test(input.value))) {
             results.innerHTML = ""
             return
           }
           var value = input.value.trim()
-          var regexp = make_search_regexp(value)
-          //var matches = [regexp]
           var matches = []
-          for (var i = 0; (i < words.length); i = (1 + i)) {
-            if (regexp.test(words[i][1])) {
-              var line = words[i][0] + " " + words[i][1] + " " + words[i][2].join("/")
-              matches.push(line)
+          if (abc_regexp.test(value)) {
+            var regexp = make_search_regexp(value)
+            for (var i = 0; (i < words.length); i += 1) {
+              if (regexp.test(words[i][1])) {
+                var line = words[i][0] + " " + words[i][1] + " " + words[i][2].join("/")
+                matches.push(line)
+              }
+            }
+          }
+          else {
+            for (var i = 0; (i < words.length); i += 1) {
+              if (words[i][0].includes(value)) {
+                var line = words[i][0] + " " + words[i][1] + " " + words[i][2].join("/")
+                matches.push(line)
+              }
             }
           }
           results.innerHTML = matches.join("<br/>")
