@@ -85,8 +85,8 @@ update_viewer = (config) ->
 for_each_word_info = (config, f) ->
   dictionary = object_from_json_file config.dictionary_path
   words = array_from_newline_file config.word_frequency_path
-  words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
   words = words.filter (a) -> a.length > 1 || !wanakana.isKana(a)
+  words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
   return unless config.word_frequency_limit
   for word in words
     entry = dictionary[word]
@@ -101,8 +101,6 @@ update_word_info = (config) ->
   result = []
   for_each_word_info config, (a) -> result.push a
   fs.writeFileSync config.output_path, JSON.stringify result
-
-update_word_search = (config) ->
 
 module.exports =
   update_word_info: update_word_info
