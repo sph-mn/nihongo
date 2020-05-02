@@ -190,7 +190,9 @@
                 || values.some(function(a) {return kanji_data[i][1].includes(a)}))
             {
               var result = make_result.apply(null, kanji_data[i])
-              result.addEventListener("dblclick", function() {result.classList.toggle("mini")})
+              result.addEventListener("dblclick", (function(a) {
+                return function() {a.classList.toggle("mini")}
+              })(result))
               temp.push(result)
             }
           }
