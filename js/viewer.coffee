@@ -3,7 +3,10 @@
 # https://github.com/KanjiVG/kanjivg/releases
 
 fs = require "fs"
+wanakana = require "wanakana"
 xml2js = require "xml2js"
+array_from_newline_file = (path) -> fs.readFileSync(path).toString().trim().split("\n")
+object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
 
 is_object = (a) ->
   type = typeof a
@@ -51,7 +54,7 @@ clean_svg = (xml, c) ->
     builder = new xml2js.Builder({renderOpts: {pretty: false}, headless: true})
     c builder.buildObject data
 
-update_viewer = (config) ->
+update_kanji_info = (config) ->
   stroke_order_svg = (id) ->
     filename = "0" + id.charCodeAt(0).toString(16) + ".svg"
     path = config.kanjivg_path + "/" + filename
@@ -62,26 +65,46 @@ update_viewer = (config) ->
           resolve false
         else clean_svg xml, resolve
   kanji = read_kanji config.kanji_path
-  # load all the svg files asynchronously
+  # load all svg files asynchronously
   result_promises = kanji.map (a) ->
     [id, meaning] = a
     new Promise (resolve, reject) ->
       resolver = (svg) -> resolve [id, meaning, svg]
       stroke_order_svg(a[0]).then resolver
-  with_results = (results) ->
-    html_list = results.map (a) ->
-      [id, meaning, svg] = a
-      return unless svg
-      "<div class=\"i\" id=\"#{id}\">" +
-        "<div class=\"k\"><span class=\"k1\">#{svg}</span><span class=\"k2\">#{id}</span></div>" +
-        "<div class=\"m\"><div>#{meaning}</div></div>" +
-      "</div>"
-    html = fs.readFileSync config.html_path, "utf8"
-    html = html.replace "{content}", html_list.join ""
-    fs.writeFile config.output_path, html, (error) ->
-      if error then console.error error
-  Promise.all(result_promises).then with_results
+  Promise.all(result_promises).then (result) ->
+    fs.writeFileSync config.output_path, JSON.stringify(result)
 
-module.exports = {
-  update_viewer
-}
+update_viewer = (config) ->
+  kanji = fs.readFileSync(config.kanji_info_path, "utf8")
+  words = fs.readFileSync config.word_info_path, "utf8"
+  html = fs.readFileSync config.html_path, "utf8"
+  html = html.replace("{kanji-data}", kanji).replace("{word-data}", words)
+  on_error = (a) -> if a then console.error a
+  fs.writeFile config.output_path, html, on_error
+
+for_each_word_info = (config, f) ->
+  dictionary = object_from_json_file config.dictionary_path
+  words = array_from_newline_file config.word_frequency_path
+  words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
+  words = words.filter (a) -> a.length > 1
+  return unless config.word_frequency_limit
+  for word in words
+    entry = dictionary[word]
+    continue unless entry
+    meanings = entry[1].map (a) -> a[0]
+    if config.meanings_limit < meanings.length
+      meanings = meanings.slice(0, config.meanings_limit)
+    romaji = wanakana.toRomaji entry[0]
+    f [word, romaji, meanings]
+
+update_word_info = (config) ->
+  result = []
+  for_each_word_info config, (a) -> result.push a
+  fs.writeFileSync config.output_path, JSON.stringify result
+
+update_word_search = (config) ->
+
+module.exports =
+  update_word_info: update_word_info
+  update_kanji_info: update_kanji_info
+  update_viewer: update_viewer

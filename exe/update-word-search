@@ -1,8 +1,0 @@
-#!/usr/bin/env coffee
-
-config =
-  output_path: "download/extras/word-search.html"
-  html_path: "html/word-search-template.html"
-  translations_path: "download/extras/frequent-word-translations.json"
-
-require("../js/word-search.coffee").update_word_search config

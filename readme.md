@@ -1,14 +1,13 @@
 # features
 * anki deck for kanji and one-word meaning. the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent
 * csv file with kanji meaning
-* one file stroke-order lookup application at `download/kanji-viewer.html`. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html)
+* single-file stroke-order, meaning and top 15000 words fuzzy search application at `download/kanji-viewer.html`. finds words with similar pronunciation. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html)
 * csv file with kanji and example words. words in the top 10000, sensitive words excluded
 * csv file with frequently used example words for the jouyou kanji. currently up to 5 words per kanji, freely adjustable
-* all csv files have a sort index field at the end that can be used as a sort field in anki
+* csv files have a sort index field at the end that can be used as a sort field in anki
 * some additional files for kanji components and other things under download/extras and data/extras
   * list of components for each kanji and the inverse. alternative to kradfile and radfile
   * list of kanji that share at least two components
-  * html page for searching translations of the top 15000 words. finds words with similar spelling
 * uses the 2136 jouyou kanji as of 2020
 
 # about the anki deck
@@ -36,10 +35,11 @@ data is included, except for kanjisvg and the jlpt n5 wordlist. all other data o
 * code uses node.js and its package manager npm. code is written in [coffeescript](http://coffeescript.org), which is really just javascript reduced
 * how to recreate the csv files
   * initialise the development environment once with "npm install" to install dependencies, which creates a node_modules directory in the current directory
-  * see files under exe/, they can be executed with ./exe/filename and contain configuration options
+  * see files under exe/, they are shell scripts and can be executed with ./exe/filename and contain configuration options
   * for other tools "coffee js/filename"
 * how to recreate kanji-viewer
-  * built from html/template.html and js/viewer-html.coffee
   * requires the kanji directory from [kanjivg](https://github.com/KanjiVG/kanjivg) to have been downloaded and saved under data/kanjivg
-  * execute "coffee js/viewer-html.coffee"
+  * uses data files created by "./exe/update-kanji-info" and "./exe/update-word-info"
+  * execute "./exe/update-viewer"
+  * the result file is build from html/viewer-template.html
 * good to know regarding unicode: kanji components/radicals and kanji that look exactly the same exist at separate codepoints. see [wikipedia: kangxi radical unicode](https://en.wikipedia.org/wiki/Kangxi_radical#Unicode)
