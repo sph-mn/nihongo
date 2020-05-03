@@ -1,7 +1,7 @@
 # features
 * anki deck for kanji and one-word meaning. the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent
 * csv file with kanji meaning
-* single-file stroke-order, meaning and top 15000 words fuzzy search application at `download/kanji-viewer.html`. finds words with similar pronunciation. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html)
+* single-file kanji stroke order and meaning lookup, plus top 15000 words fuzzy search at `download/kanji-viewer.html`. finds words with similar pronunciation. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html)
 * csv file with kanji and example words. words in the top 10000, sensitive words excluded
 * csv file with frequently used example words for the jouyou kanji. currently up to 5 words per kanji, freely adjustable
 * csv files have a sort index field at the end that can be used as a sort field in anki

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="initial-scale=1"/>
-    <title>kanji viewer</title>
+    <title>kanji lookup and word search</title>
     <style>
       html {
           font-size: 16px;
@@ -178,16 +178,23 @@
           result.appendChild(m)
           return result
         }
+        function match_values(kanji_data, values) {
+          return values.some(function(a) {
+            return 3 > a.length ? kanji_data[1] == a : kanji_data[1].includes(a)
+          })
+        }
         function on_filter() {
           results.innerHTML = ""
-          if (0 == input.value.length || (3 > input.value.length && abc_regexp.test(input.value))) {
-            return
-          }
+          var values = input.value.split(",").map(function(a) {
+            return a.trim()
+          }).filter(function(a) {
+            return !(0 == a.length || (2 > a.length && abc_regexp.test(a)))
+          })
+          if (0 == values.length) return
           var temp = []
-          var values = input.value.split(",").map(function(a) {return a.trim()})
           for (var i = 0; i < kanji_data.length; i += 1) {
             if (input.value.includes(kanji_data[i][0])
-                || values.some(function(a) {return kanji_data[i][1].includes(a)}))
+                || match_values(kanji_data[i], values))
             {
               var result = make_result.apply(null, kanji_data[i])
               result.addEventListener("dblclick", (function(a) {
@@ -221,7 +228,7 @@
             [/ii|i/g, "(i|ii)"],
             [/uu|u/g, "(u|uu)"],
             [/o/g, "(o|ou)"],
-            [/t|d/g, "(t|d)"],
+            [/tt|t|d/g, "(tt|t|d)"],
             [/kk|k|g/g, "(k|g|kk)"],
             [/pp|p|b/g, "(b|p|pp)"],
             [/ss|s|z/g, "(s|z|ss)"],
@@ -261,7 +268,7 @@
           else {
             for (var i = 0; (i < word_data.length); i += 1) {
               if (word_data[i][0].includes(value)) {
-                var line = word_data[i][0] + " " + word_data[i][1] + " " + word_data[i][2].join(" /")
+                var line = word_data[i][0] + " " + word_data[i][1] + " " + word_data[i][2].join(" / ")
                 matches.push(line)
               }
             }
