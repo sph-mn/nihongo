@@ -4,7 +4,7 @@ config =
   output_path: "download/extras/word-info.json"
   dictionary_path: "data/jmdict-translations.json"
   word_frequency_path: "data/wordlex-2011.txt"
-  word_frequency_limit: 15000
+  word_frequency_limit: 100000
   meanings_limit: 2
 
 require("../js/viewer.coffee").update_word_info config

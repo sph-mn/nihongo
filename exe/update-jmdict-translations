@@ -9,10 +9,16 @@ config =
     "organization"
     "person"
   ]
+  frequency_tags: []
+  ###
   frequency_tags: [
     "news1",
+    "news2",
     "ichi1",
-    "spec1"
+    "ichi2",
+    "spec1",
+    "spec2"
   ]
+  ###
 
 require("../js/jmdict-translations").update_json config

@@ -132,7 +132,7 @@
       </ul>
       word search
       <ul>
-        <li>includes the 15000 most frequent words</li>
+        <li>includes over 38000 translations sorted by frequency of use</li>
         <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway</li>
         <li>this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
         <li>supports regexp syntax. for example, word$ for only searching at the end, ^word for only searching at the beginning or . for wildcards</li>
@@ -152,7 +152,6 @@
       var kanji_data = {kanji-data};
       var word_data = {word-data};
       var abc_regexp = /[a-z]/
-
       function kanji_search_init() {
         var input = document.getElementById("kanji-input")
         var button = document.getElementById("kanji-reset")
@@ -193,12 +192,13 @@
           if (0 == values.length) return
           var temp = []
           for (var i = 0; i < kanji_data.length; i += 1) {
-            if (input.value.includes(kanji_data[i][0])
-                || match_values(kanji_data[i], values))
-            {
+            if (input.value.includes(kanji_data[i][0]) ||
+              match_values(kanji_data[i], values)) {
               var result = make_result.apply(null, kanji_data[i])
               result.addEventListener("dblclick", (function(a) {
-                return function() {a.classList.toggle("mini")}
+                return function() {
+                  a.classList.toggle("mini")
+                }
               })(result))
               temp.push(result)
             }
@@ -209,6 +209,7 @@
           }
           if (!temp.length) results.innerHTML = "no kanji results"
         }
+
         function on_reset() {
           input.value = ""
           results.innerHTML = ""
@@ -225,6 +226,7 @@
             [/ou/g, "#2"],
             [/ei|e/g, "#3"],
             [/sh|ch|j/g, "#4"],
+            [/riy|ry/g, "#5"],
             [/ii|i/g, "(i|ii)"],
             [/uu|u/g, "(u|uu)"],
             [/o/g, "(o|ou)"],
@@ -236,41 +238,44 @@
             [/#1/g, "(tsu|zu)"],
             [/#2/g, "(ou|o)"],
             [/#3/g, "(ei|e)"],
-            [/#4/g, "(ch|j|sh)"]
+            [/#4/g, "(ch|j|sh)"],
+            [/#5/g, "(ry|riy)"]
           ]
           replacements.forEach(function(a) {
             word = word.replace(a[0], a[1])
           })
           return new RegExp(word)
         }
-
         var input = document.getElementById("word-input")
         var button = document.getElementById("word-reset")
         var checkbox_search_translation = document.getElementById("word-search-translation")
         var results = document.getElementById("word-results")
+        function make_result_line(a) {
+          var b = a[0] + " " + a[1] + " "
+          if (a[2].some(function(a) {return a.includes(" ")})) {
+            return b + "\"" + a[2].join(" / ") + "\""
+          } else return b + a[2].join("/")
+        }
         function on_filter() {
-          if (0 == input.value.length || (2 > input.value.length && abc_regexp.test(input.value))) {
+          var value = input.value.trim()
+          if (0 == value.length || (2 > value.length && abc_regexp.test(value))) {
             results.innerHTML = ""
             return
           }
-          var value = input.value.trim()
           var search_translation = checkbox_search_translation.checked
           var matches = []
           if (abc_regexp.test(value)) {
             var regexp = make_search_regexp(value)
-            for (var i = 0; (i < word_data.length); i += 1) {
+            for (var i = 0;
+              (i < word_data.length); i += 1) {
               if (regexp.test(word_data[i][1]) || (search_translation && regexp.test(word_data[i][2].join(",")))) {
-                var line = word_data[i][0] + " " + word_data[i][1] + " " + word_data[i][2].join(" / ")
-                matches.push(line)
+                matches.push(make_result_line(word_data[i]))
               }
             }
-          }
-          else {
-            for (var i = 0; (i < word_data.length); i += 1) {
-              if (word_data[i][0].includes(value)) {
-                var line = word_data[i][0] + " " + word_data[i][1] + " " + word_data[i][2].join(" / ")
-                matches.push(line)
-              }
+          } else {
+            for (var i = 0;
+              (i < word_data.length); i += 1) {
+              if (word_data[i][0].includes(value)) matches.push(make_result_line(word_data[i]))
             }
           }
           value = ""
@@ -289,7 +294,9 @@
       function about_init() {
         var about_link = document.getElementById("about-link")
         var about = document.getElementById("about")
-        about_link.addEventListener("click", function() {about.classList.toggle("hidden")})
+        about_link.addEventListener("click", function() {
+          about.classList.toggle("hidden")
+        })
       }
 
       kanji_search_init()
