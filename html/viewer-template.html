@@ -267,19 +267,18 @@
           var matches = []
           if (abc_regexp.test(value)) {
             var regexp = make_search_regexp(value)
-            var parens = regexp.source.match(/\(/g)
-            var length_limit = value.length + Math.max(Math.trunc(Math.pow(Math.max(0, value.length - 2), 2)), parens && parens.length)
-            for (var i = 0; i < word_data.length; i += 1) {
-              if (word_data[i][1].length < length_limit && regexp.test(word_data[i][1]) || (search_translation && value.length > 3 && regexp.test(word_data[i][2].join(",")))) {
+            var length_limit = value.length + Math.pow(Math.max(0, value.length - 2), 2)
+            for (var i = 0; (i < word_data.length && matches.length < 200); i += 1) {
+              if (word_data[i][1].length <= length_limit && regexp.test(word_data[i][1])
+                  || (search_translation && value.length > 3 && regexp.test(word_data[i][2].join(",")))) {
                 matches.push(make_result_line(word_data[i]))
               }
             }
           } else {
-            for (var i = 0; i < word_data.length; i += 1) {
+            for (var i = 0; (i < word_data.length && matches.length < 200); i += 1) {
               if (word_data[i][0].includes(value)) matches.push(make_result_line(word_data[i]))
             }
           }
-          value = ""
           results.innerHTML = matches.join("<br/>")
           if (!matches.length) results.innerHTML = "no word results"
         }
