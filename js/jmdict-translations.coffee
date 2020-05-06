@@ -2,6 +2,7 @@
 
 fs = require "fs"
 parse_xml = require("xml2js").parseString
+wanakana = require "wanakana"
 
 array_contains_any = (a, b) ->
   b.some (b) -> a.includes(b)
@@ -36,11 +37,12 @@ update_json = (config) ->
       reading = find_reading entry.R_ELE, config.frequency_tags
       return unless reading
       # select meanings
-      translations = entry.SENSE.map (sense) ->
-        exclude = sense.MISC and sense.MISC.some (a) -> exclusions.includes(a)
-        sense.GLOSS unless exclude
-      translations = translations.filter (a) -> a
-      return unless translations.length
+      translations = []
+      entry.SENSE.forEach (a) ->
+        return unless translations.length < config.translations_limit
+        unless a.MISC and a.MISC.some (a) -> exclusions.includes(a)
+          translations.push a.GLOSS[0] if "string" == typeof(a.GLOSS[0])
+      return if 0 == translations.length
       result[word] = [reading, translations]
     fs.writeFileSync config.output_path, JSON.stringify result
 

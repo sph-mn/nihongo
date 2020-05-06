@@ -4,6 +4,7 @@ config =
   jmdict_path: "data/JMdict_e"
   output_path: "data/jmdict-translations.json"
   only_words_with_kanji: false
+  translations_limit: 2
   misc_tag_exclusions: [
     "abbr"
     "organization"

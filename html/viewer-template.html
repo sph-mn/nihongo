@@ -132,9 +132,10 @@
       </ul>
       word search
       <ul>
-        <li>includes over 38000 translations sorted by frequency of use</li>
-        <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway</li>
-        <li>this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
+        <li>includes over 30000 translations with words sorted by frequency of use</li>
+        <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway.
+          this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
+        <li>to keep the search fast, katakana words (8000) are excluded and it doesnt search words much longer than input</li>
         <li>supports regexp syntax. for example, word$ for only searching at the end, ^word for only searching at the beginning or . for wildcards</li>
         <li>translations from <a href="http://www.edrdg.org/jmdict/j_jmdict.html">jmdict</a>, word frequency from <a href="http://www.lexique.org/?page_id=250">gimenes, m., & new, b. (2015) wordlex</a></li>
       </ul>
@@ -258,7 +259,7 @@
         }
         function on_filter() {
           var value = input.value.trim()
-          if (0 == value.length || (2 > value.length && abc_regexp.test(value))) {
+          if (0 == value.length) {
             results.innerHTML = ""
             return
           }
@@ -266,15 +267,15 @@
           var matches = []
           if (abc_regexp.test(value)) {
             var regexp = make_search_regexp(value)
-            for (var i = 0;
-              (i < word_data.length); i += 1) {
-              if (regexp.test(word_data[i][1]) || (search_translation && regexp.test(word_data[i][2].join(",")))) {
+            var parens = regexp.source.match(/\(/g)
+            var length_limit = value.length + Math.max(Math.trunc(Math.pow(Math.max(0, value.length - 2), 2)), parens && parens.length)
+            for (var i = 0; i < word_data.length; i += 1) {
+              if (word_data[i][1].length < length_limit && regexp.test(word_data[i][1]) || (search_translation && value.length > 3 && regexp.test(word_data[i][2].join(",")))) {
                 matches.push(make_result_line(word_data[i]))
               }
             }
           } else {
-            for (var i = 0;
-              (i < word_data.length); i += 1) {
+            for (var i = 0; i < word_data.length; i += 1) {
               if (word_data[i][0].includes(value)) matches.push(make_result_line(word_data[i]))
             }
           }

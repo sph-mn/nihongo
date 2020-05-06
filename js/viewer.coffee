@@ -84,16 +84,25 @@ update_viewer = (config) ->
 
 for_each_word_info = (config, f) ->
   dictionary = object_from_json_file config.dictionary_path
+  by_reading = {}
+  for key in Object.keys dictionary
+    a = dictionary[key]
+    by_reading[a[0]] = key
+  duplicates = {}
   words = array_from_newline_file config.word_frequency_path
-  words = words.filter (a) -> a.length > 1 || !wanakana.isKana(a)
-  words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
-  return unless config.word_frequency_limit
+  words = words.filter (a) ->
+    (a.length > 1 || !wanakana.isHiragana(a)) && !wanakana.isKatakana(a)
+  if config.word_frequency_limit
+    words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
   for word in words
     entry = dictionary[word]
+    unless entry
+      word = by_reading[word]
+      if word && !duplicates[word]
+        entry = dictionary[word]
     continue unless entry
-    meanings = entry[1].map (a) -> a[0]
-    if config.meanings_limit < meanings.length
-      meanings = meanings.slice(0, config.meanings_limit)
+    duplicates[word] = true
+    meanings = entry[1]
     romaji = wanakana.toRomaji entry[0]
     f [word, romaji, meanings]
 

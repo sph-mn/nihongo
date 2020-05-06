@@ -4,6 +4,7 @@ config =
   jmdict_path: "data/JMdict_e"
   output_path: "data/jmdict-translations-kanji.json"
   only_words_with_kanji: true
+  translations_limit: 2
   misc_tag_exclusions: [
     # uk: usually written using kana alone. but common words also often occur with kanji
     # x: rude or x-rated terms
