@@ -1,7 +1,7 @@
 #!/usr/bin/env coffee
 
 config =
-  output_path: "download/extras/kanji-info.json"
+  output_path: "data/extras/kanji-info.json"
   kanjivg_path: "data/kanjivg"
   kanji_path: "download/jouyou-by-stroke-count.csv"
 

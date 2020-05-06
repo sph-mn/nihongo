@@ -2,8 +2,8 @@
 
 config =
   html_path: "html/viewer-template.html"
-  kanji_info_path: "download/extras/kanji-info.json"
+  kanji_info_path: "data/extras/kanji-info.json"
+  word_info_path: "data/extras/word-info.json"
   output_path: "download/kanji-viewer.html"
-  word_info_path: "download/extras/word-info.json"
 
 require("../js/viewer").update_viewer config

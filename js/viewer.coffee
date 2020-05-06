@@ -95,6 +95,7 @@ for_each_word_info = (config, f) ->
   if config.word_frequency_limit
     words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
   for word in words
+    continue if duplicates[word]
     entry = dictionary[word]
     unless entry
       word = by_reading[word]
