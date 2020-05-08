@@ -203,23 +203,26 @@
           result.appendChild(m)
           return result
         }
-        function match_values(kanji_data, values) {
-          return values.some(function(a) {
-            return 3 > a.length ? kanji_data[1] == a : kanji_data[1].includes(a)
-          })
+        function match_values(meaning, values) {
+          return values.some(function(a) {return a.test(meaning)})
         }
         function on_filter() {
           results.innerHTML = ""
-          var values = input.value.split(",").map(function(a) {
-            return a.trim()
-          }).filter(function(a) {
-            return !(0 == a.length || (2 > a.length && abc_regexp.test(a)))
-          })
+          var temp = input.value.split(",")
+          var values = []
+          for (var i = 0; i < temp.length; i += 1) {
+            var value = temp[i].trim()
+            if (0 < value.length) {
+              if (4 > value.length) value = "\\b" + value + "\\b"
+              values.push(new RegExp(value))
+            }
+          }
           if (0 == values.length) return
-          var temp = []
-          for (var i = 0; i < kanji_data.length; i += 1) {
-            if (input.value.includes(kanji_data[i][0]) ||
-              match_values(kanji_data[i], values)) {
+          temp = []
+          for (i = 0; i < kanji_data.length; i += 1) {
+            if (input.value.includes(kanji_data[i][0])
+                || match_values(kanji_data[i][1], values))
+            {
               var result = make_result.apply(null, kanji_data[i])
               result.addEventListener("dblclick", (function(a) {
                 return function() {a.classList.toggle("mini")}
@@ -269,6 +272,7 @@
         var button = document.getElementById("word-reset")
         var checkbox_search_translation = document.getElementById("word-search-translation")
         var results = document.getElementById("word-results")
+        var result_limit = 100
         function make_result_line(a) {
           var b = a[0] + " " + a[1] + " "
           if (a[2].some(function(a) {return a.includes(" ")})) {
@@ -278,19 +282,20 @@
         function on_filter() {
           results.innerHTML = ""
           var value = input.value.trim()
+          if (0 == value.length) return
           var search_translation = checkbox_search_translation.checked
           var matches = []
           if (abc_regexp.test(value)) {
             var regexp = make_search_regexp(value)
             var length_limit = value.length + Math.pow(Math.max(0, value.length - 3), 2)
-            for (var i = 0; (i < word_data.length && matches.length < 200); i += 1) {
+            for (var i = 0; (i < word_data.length && matches.length < result_limit); i += 1) {
               if (word_data[i][1].length <= length_limit && regexp.test(word_data[i][1])
                   || (search_translation && value.length > 3 && regexp.test(word_data[i][2].join(",")))) {
                 matches.push(make_result_line(word_data[i]))
               }
             }
           } else {
-            for (var i = 0; (i < word_data.length && matches.length < 200); i += 1) {
+            for (var i = 0; (i < word_data.length && matches.length < result_limit); i += 1) {
               if (word_data[i][0].includes(value)) matches.push(make_result_line(word_data[i]))
             }
           }
