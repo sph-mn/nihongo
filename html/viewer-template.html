@@ -246,7 +246,7 @@
       function word_search_init() {
         function make_search_regexp(word) {
           var replacements = [
-            [/tsu|zu/g, "#1"],
+            [/ts|ss|s|z/g, "#1"],
             [/ou/g, "#2"],
             [/ei|e/g, "#3"],
             [/sh|tch|ch|j/g, "#4"],
@@ -257,9 +257,8 @@
             [/tt|t|d/g, "(tt|t|d)"],
             [/kk|k|g/g, "(kk|k|g)"],
             [/pp|p|b/g, "(pp|p|b)"],
-            [/ss|s|z/g, "(ss|s|z)"],
             [/nn|n/g, "(nn|n)"],
-            [/#1/g, "(tsu|zu)"],
+            [/#1/g, "(ts|ss|s|z)"],
             [/#2/g, "(ou|o)"],
             [/#3/g, "(ei|e)"],
             [/#4/g, "(sh|tch|ch|j)"],
