@@ -48,7 +48,7 @@
           display: inline;
       }
       #kanji-results > * .k .k2 {
-          font-size: 20px;
+          font-size: 1.5rem;
           display: none;
       }
       #kanji-results > * .k svg {
@@ -81,7 +81,7 @@
           clear: none;
       }
       #kanji-results > *.mini > * {
-          height: 22px;
+          height: 1.5rem;
       }
       #kanji-results > *.mini .k1 {
           display: none;
@@ -101,7 +101,7 @@
           padding-top: 0;
       }
       #word-results {
-          font-size: 26px;
+          font-size: 1.75rem;
       }
       #about-link {
           cursor: pointer;
@@ -112,6 +112,27 @@
       }
       #about.hidden {
           display: none;
+      }
+      #filter .row {
+          display: inline-block;
+      }
+      #filter label {
+          white-space: nowrap;
+      }
+      @media (max-width: 700px) {
+        html {
+            font-size: 14px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        body > :first-child ~ * {
+            margin-top: 0;
+        }
+        #word-results {
+            font-size: 1.5rem;
+        }
       }
     </style>
   </head>
@@ -141,11 +162,15 @@
       </ul>
     </div>
     <div id="filter">
-      <input id="kanji-input" placeholder="kanji search..."/>
-      <button id="kanji-reset">reset</button>
-      <input id="word-input" placeholder="word search..."/>
-      <button id="word-reset">reset</button>
-      <label><input id="word-search-translation" type="checkbox"/>extended</label>
+      <div class="row">
+        <input id="kanji-input" placeholder="kanji search..."/>
+        <button id="kanji-reset">reset</button>
+      </div>
+      <div class="row">
+        <input id="word-input" placeholder="word search..."/>
+        <button id="word-reset">reset</button>
+        <label><input id="word-search-translation" type="checkbox"/>extended</label>
+      </div>
     </div>
     <div id="kanji-results"></div>
     <div id="word-results"></div>
@@ -197,20 +222,15 @@
               match_values(kanji_data[i], values)) {
               var result = make_result.apply(null, kanji_data[i])
               result.addEventListener("dblclick", (function(a) {
-                return function() {
-                  a.classList.toggle("mini")
-                }
+                return function() {a.classList.toggle("mini")}
               })(result))
               temp.push(result)
             }
           }
-          for (i = 0; i < temp.length; i += 1) {
-            // seems to display a bit quicker this way
-            results.appendChild(temp[i])
-          }
-          if (!temp.length) results.innerHTML = "no kanji results"
+          // seems to display a bit quicker using the temp array
+          for (i = 0; i < temp.length; i += 1) {results.appendChild(temp[i])}
+          if (0 == temp.length) results.innerHTML = "no kanji results"
         }
-
         function on_reset() {
           input.value = ""
           results.innerHTML = ""
@@ -226,25 +246,23 @@
             [/tsu|zu/g, "#1"],
             [/ou/g, "#2"],
             [/ei|e/g, "#3"],
-            [/sh|ch|j/g, "#4"],
-            [/riy|ry/g, "#5"],
-            [/ii|i/g, "(i|ii)"],
-            [/uu|u/g, "(u|uu)"],
-            [/o/g, "(o|ou)"],
+            [/sh|tch|ch|j/g, "#4"],
+            [/iy|y/g, "#5"],
+            [/ii|i/g, "(ii|i)"],
+            [/uu|u/g, "(uu|u)"],
+            [/o/g, "(ou|o)"],
             [/tt|t|d/g, "(tt|t|d)"],
-            [/kk|k|g/g, "(k|g|kk)"],
-            [/pp|p|b/g, "(b|p|pp)"],
-            [/ss|s|z/g, "(s|z|ss)"],
-            [/nn|n/g, "(n|nn)"],
+            [/kk|k|g/g, "(kk|k|g)"],
+            [/pp|p|b/g, "(pp|p|b)"],
+            [/ss|s|z/g, "(ss|s|z)"],
+            [/nn|n/g, "(nn|n)"],
             [/#1/g, "(tsu|zu)"],
             [/#2/g, "(ou|o)"],
             [/#3/g, "(ei|e)"],
-            [/#4/g, "(ch|j|sh)"],
-            [/#5/g, "(ry|riy)"]
+            [/#4/g, "(sh|tch|ch|j)"],
+            [/#5/g, "(iy|y)"]
           ]
-          replacements.forEach(function(a) {
-            word = word.replace(a[0], a[1])
-          })
+          replacements.forEach(function(a) {word = word.replace(a[0], a[1])})
           return new RegExp(word)
         }
         var input = document.getElementById("word-input")
@@ -258,16 +276,13 @@
           } else return b + a[2].join("/")
         }
         function on_filter() {
+          results.innerHTML = ""
           var value = input.value.trim()
-          if (0 == value.length) {
-            results.innerHTML = ""
-            return
-          }
           var search_translation = checkbox_search_translation.checked
           var matches = []
           if (abc_regexp.test(value)) {
             var regexp = make_search_regexp(value)
-            var length_limit = value.length + Math.pow(Math.max(0, value.length - 2), 2)
+            var length_limit = value.length + Math.pow(Math.max(0, value.length - 3), 2)
             for (var i = 0; (i < word_data.length && matches.length < 200); i += 1) {
               if (word_data[i][1].length <= length_limit && regexp.test(word_data[i][1])
                   || (search_translation && value.length > 3 && regexp.test(word_data[i][2].join(",")))) {
@@ -280,11 +295,11 @@
             }
           }
           results.innerHTML = matches.join("<br/>")
-          if (!matches.length) results.innerHTML = "no word results"
+          if (0 == matches.length) results.innerHTML = "no word results"
         }
         function on_reset() {
           input.value = ""
-          on_filter()
+          results.innerHTML = ""
         }
         input.addEventListener("keyup", on_filter)
         input.addEventListener("change", on_filter)
@@ -294,9 +309,7 @@
       function about_init() {
         var about_link = document.getElementById("about-link")
         var about = document.getElementById("about")
-        about_link.addEventListener("click", function() {
-          about.classList.toggle("hidden")
-        })
+        about_link.addEventListener("click", function() {about.classList.toggle("hidden")})
       }
 
       kanji_search_init()
