@@ -15,7 +15,7 @@
       body a {
           color: #ddd;
       }
-      body > :first-child ~ * {
+      #filter, #kanji-results, #word-results {
           margin-top: 0.5rem;
       }
       h1 {
@@ -213,7 +213,7 @@
           for (var i = 0; i < temp.length; i += 1) {
             var value = temp[i].trim()
             if (0 < value.length) {
-              if (4 > value.length) value = "\\b" + value + "\\b"
+              if (5 > value.length) value = "\\b" + value + "\\b"
               values.push(new RegExp(value))
             }
           }
@@ -271,7 +271,7 @@
         var button = document.getElementById("word-reset")
         var checkbox_search_translation = document.getElementById("word-search-translation")
         var results = document.getElementById("word-results")
-        var result_limit = 100
+        var result_limit = 150
         function make_result_line(a) {
           var b = a[0] + " " + a[1] + " "
           if (a[2].some(function(a) {return a.includes(" ")})) {
