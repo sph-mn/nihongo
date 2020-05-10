@@ -213,7 +213,8 @@
           for (var i = 0; i < temp.length; i += 1) {
             var value = temp[i].trim()
             if (0 < value.length) {
-              if (5 > value.length) value = "\\b" + value + "\\b"
+              if (4 > value.length) value = "\\b" + value + "\\b"
+              else if (5 > value.length) value = "\\b" + value
               values.push(new RegExp(value))
             }
           }
