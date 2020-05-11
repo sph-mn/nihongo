@@ -283,14 +283,16 @@
           results.innerHTML = ""
           var value = input.value.trim()
           if (0 == value.length) return
-          var search_translation = checkbox_search_translation.checked
           var matches = []
           if (abc_regexp.test(value)) {
+            var search_translation = checkbox_search_translation.checked
+            var translation_regexp = new RegExp("\\b" + value)
             var regexp = make_search_regexp(value)
             var length_limit = value.length + Math.pow(Math.max(0, value.length - 3), 2)
             for (var i = 0; (i < word_data.length && matches.length < result_limit); i += 1) {
-              if (word_data[i][1].length <= length_limit && regexp.test(word_data[i][1])
-                  || (search_translation && value.length > 3 && regexp.test(word_data[i][2].join(",")))) {
+              if ((word_data[i][1].length <= length_limit && regexp.test(word_data[i][1]))
+                  || (search_translation && value.length > 2
+                      && word_data[i][2].some(function(a) {return translation_regexp.test(a)}))) {
                 matches.push(make_result_line(word_data[i]))
               }
             }
