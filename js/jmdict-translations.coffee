@@ -41,7 +41,8 @@ update_json = (config) ->
       entry.SENSE.forEach (a) ->
         return unless translations.length < config.translations_limit
         unless a.MISC and a.MISC.some (a) -> exclusions.includes(a)
-          translations.push a.GLOSS[0] if "string" == typeof(a.GLOSS[0])
+          b = a.GLOSS.filter (a) -> "string" == typeof(a)
+          translations.push b.join(", ") if b.length
       return if 0 == translations.length
       result[word] = [reading, translations]
     fs.writeFileSync config.output_path, JSON.stringify result

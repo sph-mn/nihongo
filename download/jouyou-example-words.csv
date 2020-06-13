@@ -1,368 +1,368 @@
-一,ichi,o,,0
-一番,ichiban,n,,1
-一つ,hitotsu,o,,2
-一緒,issho,t,,3
-一般,ippan,g,,4
+一,ichi,o; b,,0
+一番,ichiban,n; b,,1
+一つ,hitotsu,o; f,,2
+一緒,issho,t; a,,3
+一般,ippan,g; o,,4
 九,kyuu,n,,5
 九州,kyuushuu,K,,6
-七,shichi,s,,7
+七,shichi,s; h,,7
 十,juu,t,,8
-十分,juubun,e,,9
+十分,juubun,e; s,,9
 不十分,fujuubun,i,,10
-人,jin,-,,11
-人間,ningen,h,,12
+人,jin,-; -,,11
+人間,ningen,h; c,,12
 個人,kojin,i,,13
 日本人,nihonjin,J,,14
 人々,hitobito,e,,15
-丁寧,teinei,p,,16
-丁度,choudo,e,,17
+丁寧,teinei,p; c,,16
+丁度,choudo,e; a,,17
 丁目,choume,d,,18
 包丁,houchou,k,,19
-刀,katana,(,,20
+刀,katana,(; d,,20
 二,ni,t,,21
 二つ,futatsu,t,,22
 二度と,nidoto,n,,23
-二月,nigatsu,F,,24
+二月,nigatsu,F; s,,24
 購入,kounyuu,p,,25
-入り,iri,e,,26
+入り,iri,e; s,,26
 入る,iru,t,,27
 入力,nyuuryoku,i,,28
-入れる,ireru,t,,29
+入れる,ireru,t; t,,29
 八,hachi,e,,30
 又,mata,a,,31
 又は,mataha,o,,32
 終了,shuuryou,e,,33
-完了,kanryou,c,,34
+完了,kanryou,c; p,,34
 了承,ryoushou,a,,35
 了,ryou,f,,36
-了解,ryoukai,c,,37
-力,chikara,f,,38
+了解,ryoukai,c; O,,37
+力,chikara,f; c,,38
 能力,nouryoku,a,,39
 協力,kyouryoku,c,,40
 魅力,miryoku,c,,41
-下,shita,b,,42
-以下,ika,n,,43
-下さい,kudasai,p,,44
+下,shita,b; b,,42
+以下,ika,n; b,,43
+下さい,kudasai,p; p,,44
 下記,kaki,t,,45
 低下,teika,f,,46
-若干,jakkan,s,,47
-丸,maru,c,,48
-丸い,marui,r,,49
+若干,jakkan,s; s,,47
+丸,maru,c; e,,48
+丸い,marui,r; h,,49
 久しぶり,hisashiburi,a,,50
 久々,hisabisa,(,,51
 耐久,taikyuu,e,,52
-永久,eikyuu,e,,53
+永久,eikyuu,e; E,,53
 及び,oyobi,a,,54
 普及,fukyuu,d,,55
 言及,genkyuu,r,,56
-及ぶ,oyobu,t,,57
+及ぶ,oyobu,t; t,,57
 及ぼす,oyobosu,t,,58
-弓,yumi,b,,59
+弓,yumi,b; a,,59
 自己,jiko,s,,60
-己,onore,I,,61
-口,kuchi,m,,62
-人口,jinkou,p,,63
+己,onore,I; b,,61
+口,kuchi,m; o,,62
+人口,jinkou,p; c,,63
 口座,kouza,a,,64
-窓口,madoguchi,t,,65
+窓口,madoguchi,t; c,,65
 出口,deguchi,e,,66
 工場,koujou,f,,67
 工事,kouji,c,,68
-工夫,kufuu,s,,69
+工夫,kufuu,s; d,,69
 加工,kakou,m,,70
 人工,jinkou,a,,71
 才能,sainou,t,,72
 天才,tensai,g,,73
-才,sai,a,,74
-三,san,t,,75
+才,sai,a; s,,74
+三,san,t; t,,75
 三つ,mittsu,t,,76
 三角,sankaku,t,,77
 第三者,daisansha,t,,78
-三昧,sanmai,s,,79
-山,yama,m,,80
-沢山,takusan,a,,81
+三昧,sanmai,s; b,,79
+山,yama,m; m,,80
+沢山,takusan,a; e,,81
 登山,tozan,m,,82
 富士山,fujisan,M,,83
 山形,yamagata,m,,84
 同士,doushi,f,,85
-博士,hakase,e,,86
+博士,hakase,e; d,,86
 弁護士,bengoshi,l,,87
 兵士,heishi,s,,88
 子供,kodomo,c,,89
-子,ko,c,,90
-様子,yousu,s,,91
+子,ko,c; y,,90
+様子,yousu,s; a,,91
 原子力,genshiryoku,a,,92
 息子,musuko,s,,93
-彼女,kanojo,s,,94
-女性,josei,w,,95
-女,onna,f,,96
-女の子,onnanoko,g,,97
+彼女,kanojo,s; g,,94
+女性,josei,w; f,,95
+女,onna,f; f,,96
+女の子,onnanoko,g; y,,97
 女子,joshi,w,,98
 小さな,chiisana,s,,99
-小さい,chiisai,s,,100
-小,shou,s,,101
+小さい,chiisai,s; s,,100
+小,shou,s; s,,101
 小説,shousetsu,n,,102
 小学校,shougakkou,p,,103
-上,ue,a,,104
-以上,ijou,n,,105
-上げ,age,t,,106
+上,ue,a; t,,104
+以上,ijou,n; b,,105
+上げ,age,t; r,,106
 上記,jouki,a,,107
 向上,koujou,e,,108
-大丈夫,daijoubu,s,,109
-丈,dake,o,,110
+大丈夫,daijoubu,s; c,,109
+丈,dake,o; a,,110
 丈夫,joubu,h,,111
-刃,ha,e,,112
-寸前,sunzen,j,,113
+刃,ha,e; p,,112
+寸前,sunzen,j; j,,113
 夕方,yuugata,e,,114
 夕食,yuushoku,e,,115
 夕飯,yuuhan,e,,116
 夕,yuu,e,,117
 千,sen,1,,118
 千葉,chiba,C,,119
-川,kawa,r,,120
+川,kawa,r; R,,120
 川柳,senryuu,s,,121
 小川,ogawa,s,,122
 川崎,kawasaki,K,,123
 大,oo,b,,124
 大きな,ookina,b,,125
-大変,taihen,v,,126
-大学,daigaku,u,,127
-大切,taisetsu,i,,128
-土地,tochi,p,,129
-土,tsuchi,e,,130
+大変,taihen,v; i,,126
+大学,daigaku,u; t,,127
+大切,taisetsu,i; b,,128
+土地,tochi,p; l,,129
+土,tsuchi,e; t,,130
 土曜日,doyoubi,S,,131
 土産,miyage,p,,132
 土日,donichi,w,,133
-死亡,shibou,d,,134
-万,man,1,,135
+死亡,shibou,d; t,,134
+万,man,1; m,,135
 万が一,mangaichi,i,,136
 与え,atae,g,,137
-与える,ataeru,t,,138
-給与,kyuuyo,p,,139
+与える,ataeru,t; t,,138
+給与,kyuuyo,p; a,,139
 関与,kan'yo,p,,140
 与党,yotou,r,,141
 取引,torihiki,t,,142
 引用,in'you,q,,143
-引き続き,hikitsuzuki,c,,144
+引き続き,hikitsuzuki,c; n,,144
 引っ越し,hikkoshi,m,,145
-割引,waribiki,d,,146
-円,en,y,,147
-王,ou,k,,148
-王子,ouji,p,,149
+割引,waribiki,d; t,,146
+円,en,y; c,,147
+王,ou,k; t,,148
+王子,ouji,p; s,,149
 女王,joou,q,,150
 王国,oukoku,k,,151
-変化,henka,c,,152
-文化,bunka,c,,153
+変化,henka,c; v,,152
+文化,bunka,c; B,,153
 進化,shinka,e,,154
 強化,kyouka,s,,155
 化粧,keshou,m,,156
 火,hi,f,,157
 花火,hanabi,f,,158
 火曜日,kayoubi,T,,159
-火力,karyoku,h,,160
+火力,karyoku,h; f,,160
 火災,kasai,c,,161
 紹介,shoukai,i,,162
 介護,kaigo,n,,163
 介入,kainyuu,i,,164
-厄介,yakkai,t,,165
-牛,ushi,c,,166
+厄介,yakkai,t; c,,165
+牛,ushi,c; b,,166
 牛乳,gyuunyuu,(,,167
 牛肉,gyuuniku,b,,168
 区,ku,w,,169
 地区,chiku,d,,170
 区別,kubetsu,d,,171
-区域,kuiki,l,,172
+区域,kuiki,l; a,,172
 区画,kukaku,d,,173
-欠点,ketten,f,,174
+欠点,ketten,f; f,,174
 不可欠,fukaketsu,i,,175
-月,tsuki,m,,176
+月,tsuki,m; m,,176
 ヶ月,kagetsu,m,,177
 今月,kongetsu,t,,178
 ３月,sangatsu,M,,179
 ９月,kugatsu,S,,180
-犬,inu,d,,181
+犬,inu,d; s,,181
 愛犬,aiken,p,,182
-元,moto,o,,183
-元気,genki,l,,184
-地元,jimoto,h,,185
+元,moto,o; b,,183
+元気,genki,l; h,,184
+地元,jimoto,h; l,,185
 元々,motomoto,o,,186
-次元,jigen,d,,187
+次元,jigen,d; p,,187
 幻想,gensou,f,,188
 幻,maboroshi,p,,189
 神戸,koube,K,,190
 江戸,edo,E,,191
-戸,to,d,,192
+戸,to,d; s,,192
 五,go,f,,193
 相互,sougo,m,,194
-互換,gokan,i,,195
+互換,gokan,i; t,,195
 互いに,tagaini,m,,196
 互い,tagai,e,,197
 午後,gogo,a,,198
 午前,gozen,m,,199
 公開,koukai,o,,200
-主人公,shujinkou,p,,201
+主人公,shujinkou,p; h,,201
 公園,kouen,(,,202
-公式,koushiki,f,,203
-公演,kouen,p,,204
+公式,koushiki,f; f,,203
+公演,kouen,p; e,,204
 今,ima,n,,205
-今日,kyou,t,,206
+今日,kyou,t; t,,206
 今回,konkai,n,,207
 今年,kotoshi,t,,208
 今後,kongo,f,,209
 支援,shien,s,,210
-支持,shiji,s,,211
-支配,shihai,d,,212
+支持,shiji,s; s,,211
+支配,shihai,d; d,,212
 支払い,shiharai,p,,213
 支店,shiten,b,,214
-停止,teishi,s,,215
+停止,teishi,s; c,,215
 禁止,kinshi,p,,216
 中止,chuushi,s,,217
 防止,boushi,p,,218
-止める,tomeru,t,,219
-氏,shi,M,,220
-彼氏,kareshi,b,,221
-手,te,h,,222
-相手,aite,c,,223
+止める,tomeru,t; t,,219
+氏,shi,M; c,,220
+彼氏,kareshi,b; h,,221
+手,te,h; f,,222
+相手,aite,c; o,,223
 選手,senshu,p,,224
-勝手,katte,o,,225
-苦手,nigate,p,,226
-収録,shuuroku,c,,227
+勝手,katte,o; s,,225
+苦手,nigate,p; n,,226
+収録,shuuroku,c; r,,227
 収入,shuunyuu,i,,228
-収集,shuushuu,c,,229
-買収,baishuu,a,,230
-収穫,shuukaku,h,,231
-少し,sukoshi,s,,232
+収集,shuushuu,c; c,,229
+買収,baishuu,a; b,,230
+収穫,shuukaku,h; f,,231
+少し,sukoshi,s; l,,232
 少ない,sukunai,f,,233
 少なくとも,sukunakutomo,a,,234
-多少,tashou,m,,235
+多少,tashou,m; a,,235
 少々,shoushou,j,,236
 冗談,joudan,j,,237
-心,kokoro,m,,238
-心配,shinpai,w,,239
-中心,chuushin,c,,240
+心,kokoro,m; t,,238
+心配,shinpai,w; c,,239
+中心,chuushin,c; -,,240
 安心,anshin,r,,241
 関心,kanshin,c,,242
-水,mizu,w,,243
+水,mizu,w; f,,243
 水分,suibun,w,,244
-水道,suidou,w,,245
+水道,suidou,w; c,,245
 水曜日,suiyoubi,W,,246
-水準,suijun,l,,247
-天井,tenjou,c,,248
+水準,suijun,l; w,,247
+天井,tenjou,c; c,,248
 井,i,w,,249
-切れ,kire,p,,250
-一切,issai,a,,251
-切り,kiri,e,,252
+切れ,kire,p; c,,250
+一切,issai,a; a,,251
+切り,kiri,e; b,,252
 切り替え,kirikae,e,,253
 双方,souhou,b,,254
 太陽,taiyou,s,,255
 太平洋,taiheiyou,P,,256
 太鼓,taiko,d,,257
-太い,futoi,f,,258
-中,naka,i,,259
-中国,chuugoku,C,,260
-途中,tochuu,o,,261
-集中,shuuchuu,c,,262
-爪,tsume,n,,263
-天気,tenki,w,,264
-天,ten,s,,265
+太い,futoi,f; d,,258
+中,naka,i; a,,259
+中国,chuugoku,C; c,,260
+途中,tochuu,o; i,,261
+集中,shuuchuu,c; w,,262
+爪,tsume,n; p,,263
+天気,tenki,w; f,,264
+天,ten,s; h,,265
 天然,tennen,n,,266
 天皇,tennou,E,,267
 内容,naiyou,c,,268
-内,uchi,i,,269
+内,uchi,i; w,,269
 国内,kokunai,i,,270
 内部,naibu,i,,271
-案内,annai,g,,272
-匂い,nioi,o,,273
-日,hi,d,,274
+案内,annai,g; i,,272
+匂い,nioi,o; a,,273
+日,hi,d; s,,274
 日本,nihon,J,,275
 昨日,kinou,y,,276
-明日,ashita,t,,277
+明日,ashita,t; n,,277
 反応,hannou,r,,278
-反対,hantai,o,,279
-反省,hansei,r,,280
-反映,han'ei,r,,281
-反,han,a,,282
+反対,hantai,o; r,,279
+反省,hansei,r; r,,280
+反映,han'ei,r; i,,281
+反,han,a; a,,282
 比べ,kurabe,c,,283
 比較,hikaku,c,,284
 比較的,hikakuteki,c,,285
-比べる,kuraberu,t,,286
-比,hi,r,,287
-匹,hiki,c,,288
+比べる,kuraberu,t; t,,286
+比,hi,r; m,,287
+匹,hiki,c; c,,288
 匹敵,hitteki,t,,289
 不安,fuan,a,,290
 不思議,fushigi,w,,291
 不足,fusoku,i,,292
-不明,fumei,u,,293
+不明,fumei,u; u,,293
 不可能,fukanou,i,,294
 夫,otto,h,,295
-夫婦,fuufu,m,,296
+夫婦,fuufu,m; h,,296
 夫妻,fusai,h,,297
 父,chichi,f,,298
 父親,chichioya,f,,299
-お父さん,otousan,f,,300
+お父さん,otousan,f; h,,300
 親父,oyaji,o,,301
-祖父,sofu,g,,302
-仏,hotoke,B,,303
+祖父,sofu,g; o,,302
+仏,hotoke,B; t,,303
 仏教,bukkyou,B,,304
-自分,jibun,m,,305
-分,fun,m,,306
+自分,jibun,m; I,,305
+分,fun,m; f,,306
 部分,bubun,p,,307
 気分,kibun,f,,308
-文字,moji,l,,309
-文章,bunshou,w,,310
+文字,moji,l; w,,309
+文章,bunshou,w; s,,310
 注文,chuumon,o,,311
 文,fumi,l,,312
 片付け,katazuke,t,,313
 片手,katate,o,,314
-片方,katahou,o,,315
+片方,katahou,o; o,,315
 片隅,katasumi,c,,316
-方,kata,d,,317
+方,kata,d; p,,317
 方法,houhou,m,,318
-一方,ippou,o,,319
-方々,katagata,t,,320
+一方,ippou,o; o,,319
+方々,katagata,t; y,,320
 仕方,shikata,w,,321
 貧乏,binbou,p,,322
-木,ki,t,,323
+木,ki,t; w,,323
 木曜日,mokuyoubi,T,,324
 木々,kigi,(,,325
-毛,ke,h,,326
-脱毛,datsumou,h,,327
+毛,ke,h; f,,326
+脱毛,datsumou,h; h,,327
 髪の毛,kaminoke,h,,328
 毛穴,keana,p,,329
 友達,tomodachi,f,,330
 友人,yuujin,f,,331
-友,tomo,f,,332
+友,tomo,f; a,,332
 親友,shin'yuu,c,,333
 友情,yuujou,f,,334
 予定,yotei,p,,335
 予想,yosou,e,,336
-予約,yoyaku,r,,337
+予約,yoyaku,r; c,,337
 予算,yosan,e,,338
 予防,yobou,p,,339
 六,roku,s,,340
-圧力,atsuryoku,p,,341
+圧力,atsuryoku,p; p,,341
 圧倒的,attouteki,o,,342
 電圧,den'atsu,v,,343
 圧縮,asshuku,c,,344
-圧倒,attou,t,,345
+圧倒,attou,t; t,,345
 以外,igai,w,,346
 以前,izen,a,,347
 以降,ikou,o,,348
-右,migi,r,,349
-左右,sayuu,l,,350
+右,migi,r; a,,349
+左右,sayuu,l; i,,350
 右側,migigawa,r,,351
-右手,migite,r,,352
+右手,migite,r; r,,352
 永遠,eien,e,,353
-中央,chuuou,c,,354
+中央,chuuou,c; m,,354
 参加,sanka,p,,355
 追加,tsuika,a,,356
 増加,zouka,i,,357
 加速,kasoku,a,,358
 可能,kanou,p,,359
-可愛い,kawaii,c,,360
-許可,kyoka,p,,361
+可愛い,kawaii,c; d,,360
+許可,kyoka,p; t,,361
 可,ka,p,,362
 瓦礫,gareki,r,,363
-外,soto,o,,364
+外,soto,o; o,,364
 海外,kaigai,f,,365
 外国,gaikoku,f,,366
 意外,igai,u,,367
@@ -370,99 +370,99 @@
 刊行,kankou,p,,369
 創刊,soukan,l,,370
 週刊,shuukan,w,,371
-甘い,amai,s,,372
+甘い,amai,s; f,,372
 甘え,amae,l,,373
-丘,oka,h,,374
+丘,oka,h; b,,374
 旧,kyuu,e,,375
 復旧,fukkyuu,r,,376
-過去,kako,t,,377
+過去,kako,t; a,,377
 去年,kyonen,l,,378
 除去,jokyo,r,,379
 去来,kyorai,c,,380
-去る,saru,t,,381
+去る,saru,t; t,,381
 巨大,kyodai,h,,382
 巨人,kyojin,g,,383
-玉,tama,b,,384
+玉,tama,b; b,,384
 目玉,medama,e,,385
 埼玉,saitama,S,,386
 玉ねぎ,tamanegi,o,,387
-句,ku,s,,388
+句,ku,s; p,,388
 俳句,haiku,h,,389
 句集,kushuu,c,,390
-文句,monku,c,,391
-一句,ikku,p,,392
+文句,monku,c; p,,391
+一句,ikku,p; o,,392
 兄,ani,e,,393
-兄弟,kyoudai,s,,394
-兄さん,niisan,o,,395
-兄ちゃん,anchan,(,,396
-穴,ana,h,,397
+兄弟,kyoudai,s; b,,394
+兄さん,niisan,o; b,,395
+兄ちゃん,anchan,(; y,,396
+穴,ana,h; p,,397
 玄関,genkan,e,,398
-古い,furui,o,,399
+古い,furui,o; l,,399
 名古屋,nagoya,N,,400
-中古,chuuko,u,,401
+中古,chuuko,u; M,,401
 古,inishie,a,,402
 古代,kodai,a,,403
 成功,seikou,s,,404
 巧み,takumi,s,,405
-広告,koukoku,a,,406
+広告,koukoku,a; a,,406
 広い,hiroi,s,,407
-広島,hiroshima,H,,408
+広島,hiroshima,H; a,,408
 広がる,hirogaru,t,,409
 広場,hiroba,p,,410
 甲斐,kai,e,,411
 甲状腺,koujousen,t,,412
-号,gou,n,,413
+号,gou,n; s,,413
 番号,bangou,n,,414
-信号,shingou,s,,415
+信号,shingou,s; t,,415
 記号,kigou,s,,416
 暗号,angou,c,,417
-書き込み,kakikomi,w,,418
+書き込み,kakikomi,w; e,,418
 申し込み,moushikomi,a,,419
-突っ込み,tsukkomi,p,,420
-見込み,mikomi,h,,421
+突っ込み,tsukkomi,p; (,,420
+見込み,mikomi,h; e,,421
 思い込み,omoikomi,w,,422
 左,hidari,l,,423
 左側,hidarigawa,l,,424
-左手,hidarite,l,,425
+左手,hidarite,l; l,,425
 左上,hidariue,u,,426
 冊,satsu,c,,427
 札幌,sapporo,S,,428
 札,satsu,b,,429
 改札,kaisatsu,e,,430
 入札,nyuusatsu,b,,431
-皿,sara,p,,432
-仕事,shigoto,w,,433
-仕様,shiyou,w,,434
-仕組み,shikumi,s,,435
+皿,sara,p; s,,432
+仕事,shigoto,w; w,,433
+仕様,shiyou,w; (,,434
+仕組み,shikumi,s; p,,435
 仕上げ,shiage,f,,436
 歴史,rekishi,h,,437
 史,shi,h,,438
 史上,shijou,i,,439
 上司,joushi,(,,440
 寿司,sushi,s,,441
-司会,shikai,l,,442
+司会,shikai,l; c,,442
 司令,shirei,c,,443
 司法,shihou,a,,444
 四,shi,f,,445
 四国,shikoku,S,,446
 四季,shiki,f,,447
 市,ichi,m,,448
-市場,ichiba,(,,449
-市民,shimin,c,,450
+市場,ichiba,(; (,,449
+市民,shimin,c; c,,450
 都市,toshi,t,,451
 市内,shinai,(,,452
-矢,ya,a,,453
-表示,hyouji,i,,454
+矢,ya,a; w,,453
+表示,hyouji,i; d,,454
 展示,tenji,e,,455
-示し,shimeshi,l,,456
-示す,shimesu,t,,457
-指示,shiji,i,,458
+示し,shimeshi,l; r,,456
+示す,shimesu,t; t,,457
+指示,shiji,i; i,,458
 失敗,shippai,f,,459
-失礼,shitsurei,d,,460
-失業,shitsugyou,u,,461
+失礼,shitsurei,d; e,,460
+失業,shitsugyou,u; l,,461
 損失,sonshitsu,l,,462
-失う,ushinau,t,,463
-写真,shashin,p,,464
+失う,ushinau,t; t,,463
+写真,shashin,p; m,,464
 描写,byousha,d,,465
 写生,shasei,s,,466
 被写体,hishatai,(,,467
@@ -471,247 +471,247 @@
 主,omo,c,,470
 主張,shuchou,c,,471
 民主党,minshutou,D,,472
-汁,shiru,j,,473
+汁,shiru,j; s,,473
 味噌汁,misoshiru,m,,474
-出,de,c,,475
+出,de,c; a,,475
 出来,shuttai,o,,476
-出し,dashi,d,,477
-出来る,dekiru,t,,478
-出る,deru,t,,479
+出し,dashi,d; p,,477
+出来る,dekiru,t; t,,478
+出る,deru,t; t,,479
 処理,shori,p,,480
 対処,taisho,d,,481
-何処,doko,w,,482
-処分,shobun,d,,483
-処置,shochi,m,,484
-尻,shiri,b,,485
+何処,doko,w; h,,482
+処分,shobun,d; d,,483
+処置,shochi,m; m,,484
+尻,shiri,b; u,,485
 尻尾,shippo,t,,486
 申し訳,moushiwake,a,,487
 申請,shinsei,a,,488
 申告,shinkoku,r,,489
-世界,sekai,t,,490
+世界,sekai,t; s,,490
 世代,sedai,g,,491
 世の中,yononaka,s,,492
 世界中,sekaijuu,a,,493
-世紀,seiki,c,,494
-正直,shoujiki,h,,495
-正しい,tadashii,r,,496
+世紀,seiki,c; e,,494
+正直,shoujiki,h; h,,495
+正しい,tadashii,r; p,,496
 修正,shuusei,a,,497
 正確,seikaku,a,,498
 正式,seishiki,d,,499
 生活,seikatsu,l,,500
-先生,sensei,t,,501
-生き,iki,l,,502
+先生,sensei,t; w,,501
+生き,iki,l; f,,502
 人生,jinsei,(,,503
-生まれ,umare,b,,504
-石,ishi,s,,505
+生まれ,umare,b; b,,504
+石,ishi,s; g,,505
 石油,sekiyu,o,,506
-流石,sasuga,a,,507
+流石,sasuga,a; s,,507
 石鹸,sekken,s,,508
 宝石,houseki,g,,509
 仙台,sendai,S,,510
 占い,uranai,f,,511
-独占,dokusen,m,,512
-占める,shimeru,t,,513
-他,hoka,o,,514
+独占,dokusen,m; h,,512
+占める,shimeru,t; t,,513
+他,hoka,o; o,,514
 その他,sonohoka,e,,515
-他人,tanin,a,,516
+他人,tanin,a; u,,516
 他者,tasha,a,,517
 他社,tasha,a,,518
-打つ,utsu,t,,519
-打ち合わせ,uchiawase,a,,520
-打ち上げ,uchiage,l,,521
-時代,jidai,p,,522
+打つ,utsu,t; t,,519
+打ち合わせ,uchiawase,a; o,,520
+打ち上げ,uchiage,l; e,,521
+時代,jidai,p; t,,522
 代表,daihyou,r,,523
 現代,gendai,n,,524
 年代,nendai,a,,525
-台,dai,s,,526
-舞台,butai,s,,527
+台,dai,s; s,,526
+舞台,butai,s; s,,527
 台風,taifuu,t,,528
 台湾,taiwan,T,,529
-旦那,danna,m,,530
-一旦,ittan,o,,531
-田舎,inaka,r,,532
+旦那,danna,m; h,,530
+一旦,ittan,o; f,,531
+田舎,inaka,r; h,,532
 田,ta,r,,533
 上田,jouden,h,,534
 田んぼ,tanbo,p,,535
-奴,yatsu,t,,536
-奴隷,dorei,s,,537
+奴,yatsu,t; h,,536
+奴隷,dorei,s; s,,537
 冬,fuyu,w,,538
 丼,donburi,p,,539
-面白い,omoshiroi,i,,540
-白,shiro,w,,541
+面白い,omoshiroi,i; a,,540
+白,shiro,w; i,,541
 白い,shiroi,w,,542
 面白,omoshiro,a,,543
 白人,hakujin,w,,544
 半分,hanbun,h,,545
 後半,kouhan,s,,546
-半,han,h,,547
+半,han,h; h,,547
 時半,jihan,h,,548
 前半,zenhan,f,,549
 犯罪,hanzai,c,,550
 犯人,hannin,o,,551
 皮膚,hifu,s,,552
-皮,kawa,s,,553
-皮肉,hiniku,i,,554
-必要,hitsuyou,n,,555
+皮,kawa,s; r,,553
+皮肉,hiniku,i; u,,554
+必要,hitsuyou,n; n,,555
 必ず,kanarazu,a,,556
-必死,hisshi,f,,557
+必死,hisshi,f; i,,557
 必須,hissu,i,,558
 必ずしも,kanarazushimo,n,,559
-氷,koori,i,,560
-付け,tsuke,b,,561
-付き,tsuki,f,,562
+氷,koori,i; s,,560
+付け,tsuke,b; t,,561
+付き,tsuki,f; a,,562
 付近,fukin,n,,563
-受付,uketsuke,r,,564
+受付,uketsuke,r; r,,564
 寄付,kifu,c,,565
 配布,haifu,d,,566
-布,nuno,c,,567
-布団,futon,f,,568
+布,nuno,c; b,,567
+布団,futon,f; r,,568
 財布,saifu,p,,569
 昆布,konbu,k,,570
-払う,harau,t,,571
-払い,harai,p,,572
+払う,harau,t; t,,571
+払い,harai,p; s,,572
 支払う,shiharau,t,,573
 平和,heiwa,p,,574
-平均,heikin,a,,575
+平均,heikin,a; b,,575
 平成,heisei,H,,576
-平日,heijitsu,w,,577
-平気,heiki,c,,578
-辺,hen,a,,579
-周辺,shuuhen,c,,580
-辺り,atari,o,,581
+平日,heijitsu,w; k,,577
+平気,heiki,c; a,,578
+辺,hen,a; s,,579
+周辺,shuuhen,c; (,,580
+辺り,atari,o; (,,581
 近辺,kinpen,n,,582
 弁当,bentou,b,,583
-弁,ben,s,,584
+弁,ben,s; d,,584
 勘弁,kanben,p,,585
 母,haha,m,,586
-お母さん,okaasan,m,,587
+お母さん,okaasan,m; w,,587
 母親,hahaoya,m,,588
 祖母,sobo,g,,589
-義母,gibo,m,,590
-北,kita,n,,591
+義母,gibo,m; f,,590
+北,kita,n; t,,591
 北海道,hokkaidou,H,,592
-東北,touhoku,n,,593
+東北,touhoku,n; T,,593
 北朝鮮,kitachousen,N,,594
 北京,pekin,B,,595
-本,hon,b,,596
+本,hon,b; t,,596
 本当に,hontouni,r,,597
 基本,kihon,b,,598
-末,sue,t,,599
+末,sue,t; e,,599
 端末,tanmatsu,e,,600
 週末,shuumatsu,w,,601
 年末,nenmatsu,e,,602
 月末,getsumatsu,e,,603
-未来,mirai,t,,604
+未来,mirai,t; f,,604
 未,hitsuji,e,,605
-未だ,mada,s,,606
+未だ,mada,s; n,,606
 未満,miman,l,,607
 未定,mitei,n,,608
 国民,kokumin,p,,609
 住民,juumin,i,,610
-民主,minshu,d,,611
+民主,minshu,d; d,,611
 矛盾,mujun,c,,612
-目,me,e,,613
+目,me,e; e,,613
 目的,mokuteki,p,,614
 目標,mokuhyou,m,,615
 注目,chuumoku,n,,616
-項目,koumoku,i,,617
+項目,koumoku,i; h,,617
 理由,riyuu,r,,618
 自由,jiyuu,f,,619
 経由,keiyu,g,,620
 由来,yurai,o,,621
-不自由,fujiyuu,d,,622
+不自由,fujiyuu,d; p,,622
 幼稚園,youchien,k,,623
-幼い,osanai,v,,624
-幼児,youji,y,,625
+幼い,osanai,v; c,,624
+幼児,youji,y; c,,625
 幼少,youshou,i,,626
-用,you,b,,627
+用,you,b; u,,627
 利用,riyou,u,,628
 使用,shiyou,u,,629
 用意,youi,p,,630
-活用,katsuyou,p,,631
-立ち,tachi,d,,632
-立場,tachiba,p,,633
-独立,dokuritsu,i,,634
-成立,seiritsu,f,,635
-立派,rippa,s,,636
-命令,meirei,o,,637
-お礼,orei,t,,638
+活用,katsuyou,p; c,,631
+立ち,tachi,d; b,,632
+立場,tachiba,p; v,,633
+独立,dokuritsu,i; i,,634
+成立,seiritsu,f; c,,635
+立派,rippa,s; p,,636
+命令,meirei,o; (,,637
+お礼,orei,t; m,,638
 扱い,atsukai,t,,639
-扱う,atsukau,t,,640
+扱う,atsukau,t; t,,640
 取り扱い,toriatsukai,t,,641
 安全,anzen,s,,642
-安い,yasui,c,,643
+安い,yasui,c; c,,643
 安定,antei,s,,644
 衣装,ishou,c,,645
-衣,koromo,c,,646
+衣,koromo,c; g,,646
 浴衣,yukata,y,,647
 芋,imo,t,,648
 印象,inshou,i,,649
 印刷,insatsu,p,,650
-印,shirushi,m,,651
-封印,fuuin,s,,652
+印,shirushi,m; s,,651
+封印,fuuin,s; t,,652
 原因,gen'in,c,,653
 要因,youin,m,,654
 因みに,chinamini,b,,655
 宇宙,uchuu,u,,656
-羽,hane,f,,657
+羽,hane,f; w,,657
 汚染,osen,p,,658
 汚れ,yogore,d,,659
-汚い,kitanai,d,,660
+汚い,kitanai,d; d,,660
 仮想,kasou,i,,661
-仮に,karini,s,,662
+仮に,karini,s; t,,662
 仮定,katei,a,,663
-仮,kari,t,,664
+仮,kari,t; f,,664
 仮説,kasetsu,h,,665
-回,kai,c,,666
+回,kai,c; a,,666
 前回,zenkai,p,,667
 次回,jikai,n,,668
-回復,kaifuku,r,,669
-会,kai,m,,670
-会社,kaisha,c,,671
+回復,kaifuku,r; r,,669
+会,kai,m; a,,670
+会社,kaisha,c; w,,671
 社会,shakai,s,,672
 機会,kikai,c,,673
 会場,kaijou,a,,674
 各,kaku,e,,675
 各種,kakushu,e,,676
 各地,kakuchi,e,,677
-各国,kakkoku,e,,678
+各国,kakkoku,e; m,,678
 各自,kakuji,e,,679
-汗,ase,s,,680
+汗,ase,s; m,,680
 缶,kan,c,,681
 企業,kigyou,e,,682
 企画,kikaku,p,,683
-危険,kiken,d,,684
+危険,kiken,d; r,,684
 危機,kiki,c,,685
-危ない,abunai,d,,686
+危ない,abunai,d; i,,686
 机,tsukue,d,,687
-気,ki,s,,688
-気持ち,kimochi,f,,689
-雰囲気,fun'iki,a,,690
-人気,ninki,p,,691
-休み,yasumi,r,,692
+気,ki,s; n,,688
+気持ち,kimochi,f; p,,689
+雰囲気,fun'iki,a; a,,690
+人気,ninki,p; c,,691
+休み,yasumi,r; v,,692
 休憩,kyuukei,r,,693
 連休,renkyuu,c,,694
 夏休み,natsuyasumi,s,,695
 休日,kyuujitsu,h,,696
-呼吸,kokyuu,b,,697
+呼吸,kokyuu,b; k,,697
 吸収,kyuushuu,a,,698
 吸血鬼,kyuuketsuki,v,,699
-共有,kyouyuu,j,,700
-共通,kyoutsuu,c,,701
+共有,kyouyuu,j; s,,700
+共通,kyoutsuu,c; t,,701
 共同,kyoudou,d,,702
 共感,kyoukan,s,,703
 公共,koukyou,p,,704
 叫び,sakebi,s,,705
-叫ぶ,sakebu,t,,706
+叫ぶ,sakebu,t; t,,706
 信仰,shinkou,(,,707
-曲,kyoku,c,,708
+曲,kyoku,c; t,,708
 作曲,sakkyoku,c,,709
 楽曲,gakkyoku,m,,710
 名曲,meikyoku,f,,711
 新曲,shinkyoku,n,,712
-刑事,keiji,(,,713
+刑事,keiji,(; c,,713
 死刑,shikei,d,,714
 血,chi,b,,715
 血液,ketsueki,b,,716
@@ -721,44 +721,44 @@
 事件,jiken,e,,720
 件,ken,m,,721
 条件,jouken,c,,722
-案件,anken,m,,723
+案件,anken,m; (,,723
 物件,bukken,a,,724
 交換,koukan,e,,725
-交流,kouryuu,(,,726
+交流,kouryuu,(; a,,726
 交通,koutsuu,t,,727
-交渉,koushou,n,,728
+交渉,koushou,n; c,,728
 交代,koutai,a,,729
-光,hikari,l,,730
+光,hikari,l; i,,730
 観光,kankou,s,,731
 光景,koukei,s,,732
 光る,hikaru,t,,733
 向け,muke,i,,734
-方向,houkou,d,,735
+方向,houkou,d; c,,735
 傾向,keikou,t,,736
-向かう,mukau,t,,737
-好き,suki,l,,738
+向かう,mukau,t; t,,737
+好き,suki,l; i,,738
 大好き,daisuki,l,,739
 好み,konomi,l,,740
-格好,kakkou,s,,741
+格好,kakkou,s; a,,741
 好評,kouhyou,f,,742
 江,e,i,,743
-考え,kangae,t,,744
-考える,kangaeru,t,,745
+考え,kangae,t; i,,744
+考える,kangaeru,t; t,,745
 参考,sankou,r,,746
 考え方,kangaekata,w,,747
 思考,shikou,t,,748
-行く,iku,t,,749
-行き,iki,t,,750
+行く,iku,t; t,,749
+行き,iki,t; b,,750
 行動,koudou,a,,751
 行う,okonau,t,,752
 実行,jikkou,e,,753
 場合,baai,c,,754
 試合,shiai,m,,755
-組み合わせ,kumiawase,c,,756
-具合,guai,c,,757
-都合,tsugou,c,,758
+組み合わせ,kumiawase,c; m,,756
+具合,guai,c; h,,757
+都合,tsugou,c; t,,758
 再,sai,r,,759
-再生,saisei,r,,760
+再生,saisei,r; r,,760
 再び,futatabi,a,,761
 再度,saido,t,,762
 再開,saikai,r,,763
@@ -767,114 +767,114 @@
 滞在,taizai,s,,766
 在庫,zaiko,i,,767
 在住,zaijuu,r,,768
-旨,mune,p,,769
-趣旨,shushi,m,,770
-死,shi,d,,771
-死ぬ,shinu,t,,772
+旨,mune,p; p,,769
+趣旨,shushi,m; g,,770
+死,shi,d; (,,771
+死ぬ,shinu,t; t,,772
 死者,shisha,c,,773
 糸,ito,t,,774
-至る,itaru,t,,775
+至る,itaru,t; t,,775
 至り,itari,u,,776
 数字,suuji,n,,777
 字,aza,s,,778
 漢字,kanji,C,,779
-赤字,akaji,(,,780
+赤字,akaji,(; r,,780
 寺,tera,t,,781
-次,tsugi,n,,782
-次第,shidai,d,,783
+次,tsugi,n; s,,782
+次第,shidai,d; a,,783
 次々,tsugitsugi,i,,784
-耳,mimi,e,,785
+耳,mimi,e; h,,785
 自身,jishin,(,,786
-自然,shizen,n,,787
-自体,jitai,i,,788
-式,shiki,e,,789
-形式,keishiki,f,,790
+自然,shizen,n; n,,787
+自体,jitai,i; o,,788
+式,shiki,e; c,,789
+形式,keishiki,f; m,,790
 方式,houshiki,f,,791
 芝,shiba,l,,792
 芝居,shibai,p,,793
-守る,mamoru,t,,794
-守り,mori,b,,795
-保守,hoshu,m,,796
+守る,mamoru,t; t,,794
+守り,mori,b; p,,795
+保守,hoshu,m; c,,796
 守備,shubi,d,,797
-州,shuu,s,,798
+州,shuu,s; c,,798
 欧州,oushuu,E,,799
-充実,juujitsu,f,,800
-充電,juuden,c,,801
+充実,juujitsu,f; e,,800
+充電,juuden,c; e,,801
 中旬,chuujun,m,,802
-旬,shun,s,,803
+旬,shun,s; i,,803
 下旬,gejun,l,,804
 上旬,joujun,f,,805
-巡る,meguru,t,,806
+巡る,meguru,t; t,,806
 如何,dou,h,,807
-師匠,shishou,m,,808
-色,iro,c,,809
+師匠,shishou,m; c,,808
+色,iro,c; c,,809
 色々,iroiro,v,,810
 色んな,ironna,v,,811
 景色,keshiki,s,,812
 黄色,kiiro,y,,813
 迅速,jinsoku,q,,814
 作成,sakusei,d,,815
-成長,seichou,g,,816
-完成,kansei,c,,817
+成長,seichou,g; g,,816
+完成,kansei,c; p,,817
 構成,kousei,o,,818
 西,nishi,w,,819
-関西,kansai,K,,820
+関西,kansai,K; K,,820
 西洋,seiyou,t,,821
-舌,shita,t,,822
-先,saki,p,,823
+舌,shita,t; t,,822
+先,saki,p; p,,823
 先日,senjitsu,t,,824
 先週,senshuu,l,,825
 優先,yuusen,p,,826
-全く,mattaku,r,,827
-全て,subete,e,,828
+全く,mattaku,r; i,,827
+全て,subete,e; e,,828
 全体,zentai,w,,829
 完全,kanzen,p,,830
 全部,zenbu,a,,831
 壮大,soudai,m,,832
-早く,hayaku,e,,833
-早い,hayai,f,,834
+早く,hayaku,e; q,,833
+早い,hayai,f; e,,834
 早速,sassoku,a,,835
 早,haya,a,,836
 早朝,souchou,e,,837
-戦争,sensou,w,,838
-競争,kyousou,c,,839
+戦争,sensou,w; f,,838
+競争,kyousou,c; c,,839
 争い,arasoi,d,,840
 紛争,funsou,d,,841
 闘争,tousou,s,,842
-保存,hozon,p,,843
+保存,hozon,p; s,,843
 依存,izon,d,,844
 既存,kison,e,,845
-ご存じ,gozonji,k,,846
+ご存じ,gozonji,k; (,,846
 多く,ooku,m,,847
-多い,ooi,m,,848
-多分,tabun,p,,849
+多い,ooi,m; l,,848
+多分,tabun,p; g,,849
 多,ta,m,,850
-多数,tasuu,l,,851
+多数,tasuu,l; m,,851
 自宅,jitaku,o,,852
 帰宅,kitaku,r,,853
 住宅,juutaku,r,,854
-宅,taku,h,,855
+宅,taku,h; o,,855
 団体,dantai,o,,856
 集団,shuudan,g,,857
-団子,dango,d,,858
+団子,dango,d; b,,858
 軍団,gundan,a,,859
-地,chi,e,,860
+地,chi,e; p,,860
 地域,chiiki,a,,861
 地球,chikyuu,E,,862
 地震,jishin,e,,863
 電池,denchi,b,,864
 池,ike,p,,865
-竹,take,b,,866
-仲間,nakama,c,,867
-仲良く,nakayoku,o,,868
+竹,take,b; m,,866
+仲間,nakama,c; m,,867
+仲良く,nakayoku,o; t,,868
 仲,naka,r,,869
 仲良し,nakayoshi,i,,870
 虫,mushi,i,,871
-兆,chou,1,,872
+兆,chou,1; s,,872
 伝統,dentou,t,,873
 伝える,tsutaeru,t,,874
 宣伝,senden,p,,875
-遺伝子,idenshi,g,,876
+遺伝子,idenshi,g; g,,876
 伝説,densetsu,t,,877
 吐き気,hakike,n,,878
 灯,hi,l,,879
@@ -883,82 +883,82 @@
 当時,touji,a,,882
 当然,touzen,n,,883
 担当,tantou,b,,884
-当たり前,atarimae,n,,885
-同じ,onaji,s,,886
+当たり前,atarimae,n; u,,885
+同じ,onaji,s; a,,886
 同,dou,t,,887
 同時に,doujini,c,,888
 同様,douyou,i,,889
-同期,douki,s,,890
-肉,niku,f,,891
+同期,douki,s; s,,890
+肉,niku,f; m,,891
 筋肉,kinniku,m,,892
 肉体,nikutai,t,,893
-鶏肉,toriniku,c,,894
-責任,sekinin,d,,895
+鶏肉,toriniku,c; f,,894
+責任,sekinin,d; l,,895
 就任,shuunin,a,,896
-任意,nin'i,o,,897
+任意,nin'i,o; a,,897
 辞任,jinin,r,,898
-任せる,makaseru,t,,899
-年,toshi,y,,900
-年間,nenkan,(,,901
+任せる,makaseru,t; t,,899
+年,toshi,y; a,,900
+年間,nenkan,(; d,,901
 昨年,sakunen,l,,902
-肌,hada,s,,903
+肌,hada,s; b,,903
 汎用,han'you,g,,904
 米国,beikoku,A,,905
-米,meetoru,m,,906
+米,meetoru,m; m,,906
 欧米,oubei,E,,907
 全米,zenbei,a,,908
-忙しい,isogashii,b,,909
+忙しい,isogashii,b; r,,909
 素朴,soboku,s,,910
 毎日,mainichi,e,,911
 毎年,maitoshi,e,,912
 毎回,maikai,e,,913
 毎,goto,e,,914
 毎週,maishuu,e,,915
-名,na,n,,916
-名前,namae,n,,917
-有名,yuumei,f,,918
+名,na,n; t,,916
+名前,namae,n; g,,917
+有名,yuumei,f; f,,918
 名称,meishou,n,,919
 妄想,mousou,w,,920
-有効,yuukou,v,,921
+有効,yuukou,v; y,,921
 所有,shoyuu,o,,922
 有料,yuuryou,f,,923
 羊,hitsuji,s,,924
 両方,ryouhou,b,,925
 両親,ryoushin,p,,926
-両,ryou,b,,927
+両,ryou,b; c,,927
 車両,sharyou,r,,928
 両者,ryousha,p,,929
-列,retsu,r,,930
+列,retsu,r; c,,930
 列車,ressha,t,,931
-行列,gyouretsu,l,,932
-系列,keiretsu,s,,933
-配列,hairetsu,a,,934
-劣化,rekka,d,,935
+行列,gyouretsu,l; m,,932
+系列,keiretsu,s; k,,933
+配列,hairetsu,a; a,,934
+劣化,rekka,d; b,,935
 老人,roujin,o,,936
 老化,rouka,a,,937
 海老,ebi,p,,938
-位,kurai,t,,939
+位,kurai,t; g,,939
 位置,ichi,p,,940
-単位,tan'i,u,,941
-上位,joui,s,,942
+単位,tan'i,u; c,,941
+上位,joui,s; h,,942
 順位,jun'i,o,,943
 範囲,han'i,e,,944
-周囲,shuui,s,,945
+周囲,shuui,s; c,,945
 広範囲,kouhan'i,e,,946
 医療,iryou,m,,947
 医師,ishi,d,,948
 医者,isha,(,,949
 医学,igaku,m,,950
 医,i,m,,951
-対応,taiou,c,,952
-一応,ichiou,m,,953
+対応,taiou,c; s,,952
+一応,ichiou,m; t,,953
 応援,ouen,a,,954
 応募,oubo,a,,955
-何,nani,w,,956
-何とか,nantoka,s,,957
+何,nani,w; h,,956
+何とか,nantoka,s; s,,957
 何故,naze,w,,958
-何より,naniyori,a,,959
-花,hana,f,,960
+何より,naniyori,a; b,,959
+花,hana,f; c,,960
 花粉,kafun,p,,961
 花見,hanami,c,,962
 花鳥,kachou,f,,963
@@ -966,31 +966,31 @@
 我が家,wagaya,o,,965
 我慢,gaman,p,,966
 我が,waga,m,,967
-我,ware,I,,968
+我,ware,I; o,,968
 快適,kaiteki,p,,969
-不快,fukai,d,,970
+不快,fukai,d; i,,970
 爽快,soukai,r,,971
-軽快,keikai,l,,972
+軽快,keikai,l; l,,972
 警戒,keikai,v,,973
-改善,kaizen,b,,974
-改めて,aratamete,a,,975
+改善,kaizen,b; k,,974
+改めて,aratamete,a; f,,975
 改革,kaikaku,r,,976
-改造,kaizou,r,,977
+改造,kaizou,r; m,,977
 改良,kairyou,i,,978
-貝,kai,s,,979
-角,kaku,a,,980
+貝,kai,s; s,,979
+角,kaku,a; s,,980
 角度,kakudo,a,,981
-折角,sekkaku,w,,982
-一角,ikkaku,c,,983
+折角,sekkaku,w; r,,982
+一角,ikkaku,c; o,,983
 完璧,kanpeki,p,,984
 完結,kanketsu,c,,985
 肝心,kanjin,e,,986
-肝,kimo,l,,987
+肝,kimo,l; c,,987
 肝臓,kanzou,l,,988
-含む,fukumu,t,,989
+含む,fukumu,t; t,,989
 岐阜,gifu,G,,990
 希望,kibou,h,,991
-技術,gijutsu,t,,992
+技術,gijutsu,t; t,,992
 技,waza,t,,993
 演技,engi,a,,994
 競技,kyougi,g,,995
@@ -999,7 +999,7 @@
 売却,baikyaku,s,,998
 返却,henkyaku,r,,999
 要求,youkyuu,d,,1000
-求める,motomeru,t,,1001
+求める,motomeru,t; t,,1001
 追求,tsuikyuu,p,,1002
 請求,seikyuu,c,,1003
 欲求,yokkyuu,d,,1004
@@ -1007,97 +1007,97 @@
 研究所,kenkyuusho,r,,1006
 究極,kyuukyoku,u,,1007
 狂気,kyouki,m,,1008
-結局,kekkyoku,a,,1009
-局,kyoku,b,,1010
-当局,toukyoku,a,,1011
+結局,kekkyoku,a; c,,1009
+局,kyoku,b; a,,1010
+当局,toukyoku,a; t,,1011
 局長,kyokuchou,b,,1012
-局面,kyokumen,p,,1013
-最近,saikin,r,,1014
-近く,chikaku,n,,1015
-近い,chikai,n,,1016
+局面,kyokumen,p; a,,1013
+最近,saikin,r; n,,1014
+近く,chikaku,n; n,,1015
+近い,chikai,n; c,,1016
 近所,kinjo,n,,1017
-君,kimi,y,,1018
-形,katachi,f,,1019
+君,kimi,y; m,,1018
+形,katachi,f; v,,1019
 形態,keitai,f,,1020
-形成,keisei,f,,1021
+形成,keisei,f; r,,1021
 人形,ningyou,d,,1022
-系,kei,s,,1023
+系,kei,s; c,,1023
 体系,taikei,s,,1024
-系統,keitou,s,,1025
-日系,nikkei,(,,1026
+系統,keitou,s; l,,1025
+日系,nikkei,(; c,,1026
 芸術,geijutsu,(,,1027
-文芸,bungei,l,,1028
-芸人,geinin,e,,1029
+文芸,bungei,l; t,,1028
+芸人,geinin,e; t,,1029
 芸,gei,a,,1030
-芸能,geinou,p,,1031
+芸能,geinou,p; a,,1031
 迎え,mukae,m,,1032
 歓迎,kangei,w,,1033
-迎える,mukaeru,t,,1034
+迎える,mukaeru,t; t,,1034
 決め,kime,a,,1035
 解決,kaiketsu,s,,1036
 決定,kettei,d,,1037
 決して,kesshite,n,,1038
-決める,kimeru,t,,1039
-見る,miru,t,,1040
-見える,mieru,t,,1041
+決める,kimeru,t; t,,1039
+見る,miru,t; t,,1040
+見える,mieru,t; t,,1041
 意見,iken,o,,1042
 発見,hakken,d,,1043
-見事,migoto,s,,1044
-言う,iu,t,,1045
-言葉,kotoba,l,,1046
+見事,migoto,s; u,,1044
+言う,iu,t; t,,1045
+言葉,kotoba,l; w,,1046
 言語,gengo,l,,1047
 発言,hatsugen,s,,1048
 一言,hitokoto,s,,1049
-抵抗,teikou,r,,1050
+抵抗,teikou,r; r,,1050
 対抗,taikou,o,,1051
 抗議,kougi,p,,1052
-攻撃,kougeki,a,,1053
-攻め,seme,a,,1054
-攻略,kouryaku,c,,1055
-速攻,sokkou,s,,1056
+攻撃,kougeki,a; c,,1053
+攻め,seme,a; d,,1054
+攻略,kouryaku,c; d,,1055
+速攻,sokkou,s; r,,1056
 専攻,senkou,m,,1057
 変更,henkou,c,,1058
 更新,koushin,r,,1059
 更に,sarani,f,,1060
-今更,imasara,n,,1061
+今更,imasara,n; a,,1061
 克服,kokufuku,c,,1062
 報告,houkoku,r,,1063
 警告,keikoku,w,,1064
 告知,kokuchi,n,,1065
 谷,tani,v,,1066
-困難,konnan,d,,1067
-困る,komaru,t,,1068
-貧困,hinkon,p,,1069
+困難,konnan,d; i,,1067
+困る,komaru,t; t,,1068
+貧困,hinkon,p; s,,1069
 ご無沙汰,gobusata,n,,1070
 被災,hisai,b,,1071
 震災,shinsai,e,,1072
 災害,saigai,c,,1073
 大震災,daishinsai,g,,1074
 防災,bousai,p,,1075
-素材,sozai,i,,1076
-材料,zairyou,i,,1077
-取材,shuzai,n,,1078
-人材,jinzai,c,,1079
+素材,sozai,i; u,,1076
+材料,zairyou,i; m,,1077
+取材,shuzai,n; i,,1078
+人材,jinzai,c; h,,1079
 機材,kizai,m,,1080
 作品,sakuhin,w,,1081
 作業,sagyou,w,,1082
-作り,tsukuri,m,,1083
-作る,tsukuru,t,,1084
-伺い,ukagai,c,,1085
+作り,tsukuri,m; a,,1083
+作る,tsukuru,t; t,,1084
+伺い,ukagai,c; i,,1085
 意志,ishi,w,,1086
-志,kokorozashi,w,,1087
+志,kokorozashi,w; k,,1087
 志向,shikou,i,,1088
-私,watashi,I,,1089
+私,watashi,I; p,,1089
 私的,shiteki,p,,1090
-真似,mane,i,,1091
+真似,mane,i; b,,1091
 似合う,niau,t,,1092
 類似,ruiji,r,,1093
 児童,jidou,c,,1094
 育児,ikuji,c,,1095
 社長,shachou,c,,1096
-社員,shain,c,,1097
+社員,shain,c; m,,1097
 神社,jinja,S,,1098
-車,kuruma,c,,1099
+車,kuruma,c; w,,1099
 自転車,jitensha,b,,1100
 電車,densha,t,,1101
 駐車,chuusha,p,,1102
@@ -1107,107 +1107,107 @@
 住む,sumu,t,,1106
 住所,juusho,a,,1107
 最初,saisho,b,,1108
-初めて,hajimete,f,,1109
+初めて,hajimete,f; o,,1109
 初,hatsu,f,,1110
-初期,shoki,e,,1111
-当初,tousho,b,,1112
+初期,shoki,e; i,,1111
+当初,tousho,b; a,,1112
 助け,tasuke,a,,1113
-補助,hojo,a,,1114
+補助,hojo,a; s,,1114
 援助,enjo,a,,1115
-助ける,tasukeru,t,,1116
+助ける,tasukeru,t; t,,1116
 救助,kyuujo,r,,1117
 秩序,chitsujo,o,,1118
-床,toko,b,,1119
+床,toko,b; s,,1119
 起床,kishou,r,,1120
 条約,jouyaku,t,,1121
-条例,jourei,r,,1122
+条例,jourei,r; (,,1122
 無条件,mujouken,u,,1123
 状態,joutai,c,,1124
 状況,joukyou,s,,1125
 現状,genjou,p,,1126
 症状,shoujou,s,,1127
-状,jou,s,,1128
-伸び,nobi,g,,1129
-伸びる,nobiru,t,,1130
-伸ばす,nobasu,t,,1131
+状,jou,s; l,,1128
+伸び,nobi,g; s,,1129
+伸びる,nobiru,t; t,,1130
+伸ばす,nobasu,t; t,,1131
 大臣,daijin,c,,1132
-芯,shin,w,,1133
-身,mi,b,,1134
+芯,shin,w; c,,1133
+身,mi,b; o,,1134
 身体,shintai,b,,1135
 中身,nakami,c,,1136
 出身,shusshin,p,,1137
-辛い,karai,s,,1138
+辛い,karai,s; s,,1138
 辛,kanoto,8,,1139
 唐辛子,tougarashi,c,,1140
-図,zu,d,,1141
+図,zu,d; s,,1141
 意図,ito,i,,1142
 地図,chizu,m,,1143
 図書館,toshokan,l,,1144
 構図,kouzu,c,,1145
-吹く,fuku,t,,1146
-声,koe,v,,1147
-音声,onsei,v,,1148
+吹く,fuku,t; t,,1146
+声,koe,v; s,,1147
+音声,onsei,v; s,,1148
 歌声,utagoe,s,,1149
 声明,seimei,d,,1150
 大声,oogoe,l,,1151
-赤,aka,r,,1152
-赤い,akai,r,,1153
+赤,aka,r; r,,1152
+赤い,akai,r; R,,1153
 赤ちゃん,akachan,b,,1154
-真っ赤,makka,b,,1155
+真っ赤,makka,b; d,,1155
 時折,tokiori,s,,1156
-折,ori,o,,1157
+折,ori,o; f,,1157
 挫折,zasetsu,s,,1158
-折り返し,orikaeshi,b,,1159
-走り,hashiri,r,,1160
-走る,hashiru,t,,1161
+折り返し,orikaeshi,b; l,,1159
+走り,hashiri,r; g,,1160
+走る,hashiru,t; t,,1161
 走行,soukou,r,,1162
-暴走,bousou,a,,1163
+暴走,bousou,a; r,,1163
 即座,sokuza,i,,1164
-即興,sokkyou,i,,1165
+即興,sokkyou,i; i,,1165
 即ち,sunawachi,t,,1166
-約束,yakusoku,p,,1167
-収束,shuusoku,c,,1168
+約束,yakusoku,p; c,,1167
+収束,shuusoku,c; g,,1168
 拘束,kousoku,r,,1169
-足,ashi,f,,1170
-満足,manzoku,s,,1171
-足元,ashimoto,a,,1172
+足,ashi,f; l,,1170
+満足,manzoku,s; s,,1171
+足元,ashimoto,a; g,,1172
 補足,hosoku,s,,1173
 村,mura,v,,1174
 妥当,datou,v,,1175
 妥協,dakyou,c,,1176
 に対して,nitaishite,t,,1177
 に対する,nitaisuru,r,,1178
-絶対,zettai,d,,1179
+絶対,zettai,d; a,,1179
 対象,taishou,t,,1180
-体,karada,b,,1181
+体,karada,b; t,,1181
 体験,taiken,p,,1182
 選択,sentaku,s,,1183
 選択肢,sentakushi,c,,1184
-贅沢,zeitaku,l,,1185
-沢,sawa,m,,1186
+贅沢,zeitaku,l; t,,1185
+沢,sawa,m; w,,1186
 但し,tadashi,b,,1187
-男,otoko,m,,1188
-男性,dansei,m,,1189
+男,otoko,m; f,,1188
+男性,dansei,m; m,,1189
 男子,danshi,y,,1190
 男の子,otokonoko,b,,1191
 男女,danjo,m,,1192
-沖縄,okinawa,O,,1193
+沖縄,okinawa,O; O,,1193
 沖,oki,o,,1194
-町,machi,t,,1195
-沈黙,chinmoku,s,,1196
-低い,hikui,l,,1197
-最低,saitei,l,,1198
+町,machi,t; d,,1195
+沈黙,chinmoku,s; r,,1196
+低い,hikui,l; l,,1197
+最低,saitei,l; w,,1198
 低音,teion,l,,1199
-最低限,saiteigen,m,,1200
-弟,otouto,y,,1201
+最低限,saiteigen,m; a,,1200
+弟,otouto,y; b,,1201
 弟子,deshi,p,,1202
 努力,doryoku,e,,1203
 投稿,toukou,c,,1204
 投資,toushi,i,,1205
 投票,touhyou,v,,1206
-投入,tounyuu,t,,1207
+投入,tounyuu,t; i,,1207
 投げ,nage,a,,1208
-豆,mame,l,,1209
+豆,mame,l; s,,1209
 豆腐,toufu,t,,1210
 大豆,daizu,s,,1211
 納豆,nattou,n,,1212
@@ -1218,162 +1218,162 @@
 把握,haaku,g,,1217
 販売,hanbai,s,,1218
 発売,hatsubai,s,,1219
-売り,uri,s,,1220
+売り,uri,s; s,,1220
 売る,uru,t,,1221
 商売,shoubai,t,,1222
-蕎麦,soba,b,,1223
+蕎麦,soba,b; s,,1223
 麦,mugi,w,,1224
 小麦粉,komugiko,w,,1225
-抜き,nuki,w,,1226
-抜群,batsugun,o,,1227
+抜き,nuki,w; (,,1226
+抜群,batsugun,o; p,,1227
 抜粋,bassui,e,,1228
-抜ける,nukeru,t,,1229
-抜く,nuku,t,,1230
-伴う,tomonau,t,,1231
-判断,handan,j,,1232
+抜ける,nukeru,t; t,,1229
+抜く,nuku,t; t,,1230
+伴う,tomonau,t; t,,1231
+判断,handan,j; d,,1232
 批判,hihan,c,,1233
-評判,hyouban,f,,1234
+評判,hyouban,f; r,,1234
 裁判,saiban,t,,1235
 判明,hanmei,e,,1236
 坂,saka,s,,1237
 坂道,sakamichi,h,,1238
 大阪,oosaka,O,,1239
-阪神,hanshin,O,,1240
-否定,hitei,d,,1241
+阪神,hanshin,O; H,,1240
+否定,hitei,d; n,,1241
 拒否,kyohi,r,,1242
 否,hi,n,,1243
 批評,hihyou,c,,1244
-尾,o,t,,1245
+尾,o,t; s,,1245
 兵器,heiki,a,,1246
 核兵器,kakuheiki,n,,1247
-兵,hei,(,,1248
+兵,hei,(; a,,1248
 海兵,kaihei,s,,1249
-別,betsu,d,,1250
+別,betsu,d; s,,1250
 特別,tokubetsu,s,,1251
-別に,betsuni,(,,1252
+別に,betsuni,(; s,,1252
 別れ,wakare,p,,1253
-差別,sabetsu,d,,1254
-繰り返し,kurikaeshi,r,,1255
+差別,sabetsu,d; d,,1254
+繰り返し,kurikaeshi,r; r,,1255
 返事,henji,r,,1256
 繰り返す,kurikaesu,t,,1257
 返信,henshin,r,,1258
-返す,kaesu,t,,1259
+返す,kaesu,t; t,,1259
 連邦,renpou,c,,1260
 忘れる,wasureru,t,,1261
 忘年会,bounenkai,y,,1262
-防ぐ,fusegu,t,,1263
+防ぐ,fusegu,t; t,,1263
 防衛,bouei,d,,1264
 防御,bougyo,d,,1265
-没,botsu,d,,1266
-微妙,bimyou,s,,1267
-妙,myou,s,,1268
+没,botsu,d; l,,1266
+微妙,bimyou,s; d,,1267
+妙,myou,s; w,,1268
 奇妙,kimyou,s,,1269
 絶妙,zetsumyou,e,,1270
-役,yaku,u,,1271
+役,yaku,u; p,,1271
 役割,yakuwari,p,,1272
 主役,shuyaku,l,,1273
-現役,gen'eki,a,,1274
+現役,gen'eki,a; s,,1274
 役に立つ,yakunitatsu,t,,1275
-余裕,yoyuu,s,,1276
-余計,yokei,t,,1277
-余り,amari,r,,1278
+余裕,yoyuu,s; c,,1276
+余計,yokei,t; u,,1277
+余り,amari,r; n,,1278
 余談,yodan,d,,1279
 余震,yoshin,a,,1280
-抑え,osae,w,,1281
-抑える,osaeru,t,,1282
+抑え,osae,w; k,,1281
+抑える,osaeru,t; t,,1282
 抑制,yokusei,c,,1283
-来,rai,n,,1284
-来る,kuru,t,,1285
+来,rai,n; s,,1284
+来る,kuru,t; t,,1285
 混乱,konran,d,,1286
 乱れ,midare,d,,1287
-卵,tamago,e,,1288
+卵,tamago,e; h,,1288
 便利,benri,c,,1289
-利益,rieki,p,,1290
+利益,rieki,p; b,,1290
 権利,kenri,r,,1291
 勝利,shouri,v,,1292
-里,ri,J,,1293
-良い,yoi,g,,1294
-良く,yoku,n,,1295
-良,ryou,g,,1296
-不良,furyou,b,,1297
+里,ri,J; n,,1293
+良い,yoi,g; s,,1294
+良く,yoku,n; f,,1295
+良,ryou,g; B,,1296
+不良,furyou,b; d,,1297
 冷蔵庫,reizouko,r,,1298
 冷静,reisei,c,,1299
-冷たい,tsumetai,c,,1300
+冷たい,tsumetai,c; c,,1300
 冷凍,reitou,f,,1301
 励まし,hagemashi,e,,1302
-戻る,modoru,t,,1303
-戻り,modori,r,,1304
+戻る,modoru,t; t,,1303
+戻り,modori,r; r,,1304
 戻し,modoshi,r,,1305
-戻す,modosu,t,,1306
+戻す,modosu,t; t,,1306
 取り戻す,torimodosu,t,,1307
-風呂,furo,b,,1308
+風呂,furo,b; b,,1308
 労働,roudou,m,,1309
-苦労,kurou,t,,1310
+苦労,kurou,t; a,,1310
 疲労,hirou,f,,1311
 労力,rouryoku,l,,1312
-依頼,irai,r,,1313
+依頼,irai,r; d,,1313
 委員,iin,c,,1314
-教育,kyouiku,e,,1315
+教育,kyouiku,e; c,,1315
 保育園,hoikuen,n,,1316
 育成,ikusei,r,,1317
 子育て,kosodate,c,,1318
-育てる,sodateru,t,,1319
+育てる,sodateru,t; t,,1319
 雨,ame,r,,1320
-梅雨,tsuyu,r,,1321
+梅雨,tsuyu,r; r,,1321
 大雨,ooame,h,,1322
 英語,eigo,E,,1323
 英国,eikoku,G,,1324
 英文,eibun,E,,1325
 容易,youi,e,,1326
-易い,yasui,e,,1327
+易い,yasui,e; l,,1327
 難易,nan'i,d,,1328
 貿易,boueki,t,,1329
-安易,an'i,e,,1330
-延長,enchou,e,,1331
+安易,an'i,e; e,,1330
+延長,enchou,e; E,,1331
 延期,enki,p,,1332
 遅延,chien,d,,1333
 沿い,zoi,a,,1334
 沿岸,engan,c,,1335
-炎,honoo,f,,1336
+炎,honoo,f; f,,1336
 炎症,enshou,i,,1337
-往復,oufuku,m,,1338
+往復,oufuku,m; c,,1338
 押し,oshi,p,,1339
-押す,osu,t,,1340
+押す,osu,t; t,,1340
 福岡,fukuoka,F,,1341
 静岡,shizuoka,S,,1342
 価格,kakaku,p,,1343
 価値,kachi,v,,1344
-評価,hyouka,v,,1345
+評価,hyouka,v; t,,1345
 高価,kouka,h,,1346
-安価,anka,l,,1347
-結果,kekka,r,,1348
-効果,kouka,e,,1349
+安価,anka,l; s,,1347
+結果,kekka,r; c,,1348
+効果,kouka,e; e,,1349
 成果,seika,(,,1350
-果たして,hatashite,a,,1351
+果たして,hatashite,a; r,,1351
 果物,kudamono,f,,1352
-銀河,ginga,M,,1353
+銀河,ginga,M; g,,1353
 映画,eiga,m,,1354
-画面,gamen,s,,1355
+画面,gamen,s; i,,1355
 画像,gazou,i,,1356
-動画,douga,v,,1357
+動画,douga,v; a,,1357
 計画,keikaku,p,,1358
 芽,me,s,,1359
 怪我,kega,i,,1360
-怪しい,ayashii,s,,1361
+怪しい,ayashii,s; c,,1361
 拡大,kakudai,m,,1362
 拡張,kakuchou,e,,1363
 拡散,kakusan,s,,1364
 学校,gakkou,s,,1365
 学生,gakusei,s,,1366
-学,gaku,l,,1367
+学,gaku,l; s,,1367
 科学,kagaku,s,,1368
-岳,take,p,,1369
+岳,take,p; m,,1369
 官僚,kanryou,b,,1370
 長官,choukan,s,,1371
 警官,keikan,p,,1372
 官房,kanbou,g,,1373
 海岸,kaigan,c,,1374
-岩,iwa,r,,1375
+岩,iwa,r; c,,1375
 奇跡,kiseki,m,,1376
 好奇,kouki,i,,1377
 祈り,inori,p,,1378
@@ -1381,10 +1381,10 @@
 季節,kisetsu,s,,1380
 季語,kigo,s,,1381
 今季,konki,t,,1382
-宜しく,yoroshiku,w,,1383
+宜しく,yoroshiku,w; b,,1383
 泣き,naki,w,,1384
 泣く,naku,t,,1385
-居る,iru,t,,1386
+居る,iru,t; t,,1386
 居住,kyojuu,r,,1387
 居酒屋,izakaya,i,,1388
 居心地,igokochi,c,,1389
@@ -1394,9 +1394,9 @@
 拠点,kyoten,p,,1393
 東京,toukyou,T,,1394
 京都,kyouto,K,,1395
-京,kyou,i,,1396
+京,kyou,i; f,,1396
 享受,kyouju,r,,1397
-提供,teikyou,o,,1398
+提供,teikyou,o; s,,1398
 供給,kyoukyuu,s,,1399
 協会,kyoukai,a,,1400
 協議,kyougi,c,,1401
@@ -1404,24 +1404,24 @@
 不況,fukyou,r,,1403
 近況,kinkyou,r,,1404
 盛況,seikyou,s,,1405
-金,kane,m,,1406
+金,kane,m; m,,1406
 お金,okane,m,,1407
 料金,ryoukin,f,,1408
-金融,kin'yuu,f,,1409
+金融,kin'yuu,f; m,,1409
 資金,shikin,f,,1410
 苦笑,kushou,b,,1411
-苦しい,kurushii,p,,1412
+苦しい,kurushii,p; d,,1412
 苦しみ,kurushimi,p,,1413
 具体,gutai,c,,1414
-道具,dougu,t,,1415
+道具,dougu,t; m,,1415
 家具,kagu,f,,1416
-具,gu,t,,1417
+具,gu,t; i,,1417
 空,kara,e,,1418
-空気,kuuki,a,,1419
+空気,kuuki,a; m,,1419
 空間,kuukan,s,,1420
 空港,kuukou,a,,1421
 航空,koukuu,a,,1422
-退屈,taikutsu,t,,1423
+退屈,taikutsu,t; t,,1423
 理屈,rikutsu,t,,1424
 直径,chokkei,d,,1425
 半径,hankei,r,,1426
@@ -1431,58 +1431,58 @@
 馬券,baken,(,,1430
 肩こり,katakori,s,,1431
 肩,kata,s,,1432
-弦,tsuru,b,,1433
-呼ぶ,yobu,t,,1434
+弦,tsuru,b; s,,1433
+呼ぶ,yobu,t; t,,1434
 呼びかけ,yobikake,c,,1435
-呼び出し,yobidashi,c,,1436
-固定,kotei,f,,1437
-固め,katame,h,,1438
+呼び出し,yobidashi,c; u,,1436
+固定,kotei,f; f,,1437
+固め,katame,h; p,,1438
 固有,koyuu,c,,1439
-虎,tora,t,,1440
+虎,tora,t; d,,1440
 効率,kouritsu,e,,1441
 無効,mukou,i,,1442
-効く,kiku,t,,1443
+効く,kiku,t; t,,1443
 幸せ,shiawase,h,,1444
-幸い,saiwai,h,,1445
+幸い,saiwai,h; l,,1445
 幸福,koufuku,h,,1446
-不幸,fukou,u,,1447
+不幸,fukou,u; d,,1447
 幸運,kouun,g,,1448
-肯定,koutei,a,,1449
+肯定,koutei,a; a,,1449
 深刻,shinkoku,s,,1450
 時刻,jikoku,i,,1451
 遅刻,chikoku,l,,1452
-国,kuni,c,,1453
-妻,tsuma,w,,1454
+国,kuni,c; r,,1453
+妻,tsuma,w; g,,1454
 参照,sanshou,r,,1455
 持参,jisan,b,,1456
-参入,sannyuu,e,,1457
-使う,tsukau,t,,1458
-使い,tsukai,e,,1459
+参入,sannyuu,e; v,,1457
+使う,tsukau,t; t,,1458
+使い,tsukai,e; m,,1459
 使い方,tsukaikata,w,,1460
 天使,tenshi,a,,1461
 刺激,shigeki,s,,1462
 名刺,meishi,b,,1463
 刺身,sashimi,s,,1464
-始め,hajime,b,,1465
+始め,hajime,b; f,,1465
 開始,kaishi,s,,1466
-始める,hajimeru,t,,1467
+始める,hajimeru,t; t,,1467
 始まり,hajimari,o,,1468
-始まる,hajimaru,t,,1469
+始まる,hajimaru,t; t,,1469
 姉,ane,o,,1470
-姉さん,neesan,e,,1471
+姉さん,neesan,e; y,,1471
 姉妹,shimai,s,,1472
 枝,eda,b,,1473
 福祉,fukushi,w,,1474
-事,koto,t,,1475
+事,koto,t; i,,1475
 記事,kiji,a,,1476
-事故,jiko,a,,1477
-大事,daiji,i,,1478
+事故,jiko,a; c,,1477
+大事,daiji,i; v,,1478
 政治,seiji,p,,1479
 治療,chiryou,m,,1480
 明治,meiji,M,,1481
 自治体,jichitai,m,,1482
 治安,chian,p,,1483
-実際,jissai,p,,1484
+実際,jissai,p; r,,1484
 実は,jitsuha,a,,1485
 現実,genjitsu,r,,1486
 事実,jijitsu,f,,1487
@@ -1493,93 +1493,93 @@
 患者,kanja,p,,1492
 筆者,hissha,w,,1493
 風邪,kaze,c,,1494
-邪魔,jama,h,,1495
-若い,wakai,y,,1496
+邪魔,jama,h; t,,1495
+若い,wakai,y; i,,1496
 若者,wakamono,y,,1497
 若手,wakate,y,,1498
 若返り,wakagaeri,r,,1499
 取得,shutoku,a,,1500
-取る,toru,t,,1501
-摂取,sesshu,i,,1502
-受け,uke,p,,1503
-受ける,ukeru,t,,1504
+取る,toru,t; t,,1501
+摂取,sesshu,i; a,,1502
+受け,uke,p; d,,1503
+受ける,ukeru,t; t,,1504
 受け入れ,ukeire,r,,1505
 受信,jushin,r,,1506
-周り,mawari,c,,1507
-周年,shuunen,w,,1508
+周り,mawari,c; s,,1507
+周年,shuunen,w; n,,1508
 周波数,shuuhasuu,f,,1509
-宗教,shuukyou,r,,1510
+宗教,shuukyou,r; r,,1510
 宗,shuu,s,,1511
 記述,kijutsu,d,,1512
 前述,zenjutsu,a,,1513
 述べる,noberu,t,,1514
-場所,basho,p,,1515
-所,tokoro,p,,1516
+場所,basho,p; r,,1515
+所,tokoro,p; a,,1516
 事務所,jimusho,o,,1517
 尚,nao,f,,1518
 招待,shoutai,i,,1519
 招き,maneki,i,,1520
-承知,shouchi,k,,1521
-継承,keishou,i,,1522
+承知,shouchi,k; c,,1521
+継承,keishou,i; s,,1522
 承認,shounin,r,,1523
 上昇,joushou,r,,1524
-松,matsu,p,,1525
-垂直,suichoku,v,,1526
-制作,seisaku,w,,1527
+松,matsu,p; h,,1525
+垂直,suichoku,v; p,,1526
+制作,seisaku,w; p,,1527
 制限,seigen,r,,1528
 制度,seido,s,,1529
 規制,kisei,r,,1530
 体制,taisei,o,,1531
-遠征,ensei,e,,1532
-性,sei,n,,1533
+遠征,ensei,e; t,,1532
+性,sei,n; s,,1533
 性能,seinou,a,,1534
-性格,seikaku,c,,1535
-青,ao,b,,1536
+性格,seikaku,c; c,,1535
+青,ao,b; g,,1536
 青年,seinen,y,,1537
-青い,aoi,b,,1538
+青い,aoi,b; g,,1538
 青春,seishun,y,,1539
 青少年,seishounen,y,,1540
 一斉,issei,s,,1541
 昔,mukashi,o,,1542
 分析,bunseki,a,,1543
-解析,kaiseki,a,,1544
+解析,kaiseki,a; p,,1544
 狙い,nerai,a,,1545
-狙う,nerau,t,,1546
+狙う,nerau,t; t,,1546
 阻止,soshi,o,,1547
-卒業,sotsugyou,g,,1548
+卒業,sotsugyou,g; m,,1548
 卒業生,sotsugyousei,g,,1549
 新卒,shinsotsu,n,,1550
 食卓,shokutaku,d,,1551
-開拓,kaitaku,r,,1552
-負担,futan,b,,1553
+開拓,kaitaku,r; p,,1552
+負担,futan,b; b,,1553
 担保,tanpo,s,,1554
 知識,chishiki,k,,1555
-知る,shiru,t,,1556
+知る,shiru,t; t,,1556
 お知らせ,oshirase,n,,1557
 知り合い,shiriai,a,,1558
 通知,tsuuchi,n,,1559
 忠実,chuujitsu,f,,1560
 抽象,chuushou,a,,1561
 抽選,chuusen,l,,1562
-抽出,chuushutsu,e,,1563
+抽出,chuushutsu,e; s,,1563
 注意,chuui,c,,1564
 注,chuu,a,,1565
 注射,chuusha,i,,1566
-長い,nagai,l,,1567
-長,chou,h,,1568
+長い,nagai,l; l,,1567
+長,chou,h; m,,1568
 長期,chouki,l,,1569
 直接,chokusetsu,d,,1570
 直後,chokugo,i,,1571
-直し,naoshi,c,,1572
+直し,naoshi,c; m,,1572
 直前,chokuzen,j,,1573
-設定,settei,e,,1574
+設定,settei,e; o,,1574
 指定,shitei,d,,1575
 底,soko,b,,1576
 徹底的,tetteiteki,t,,1577
-徹底,tettei,t,,1578
+徹底,tettei,t; t,,1578
 到底,toutei,b,,1579
 根底,kontei,r,,1580
-大抵,taitei,m,,1581
+大抵,taitei,m; p,,1581
 泥,doro,m,,1582
 的,teki,-,,1583
 自動的,jidouteki,a,,1584
@@ -1591,100 +1591,100 @@
 店舗,tenpo,s,,1590
 店員,ten'in,e,,1591
 店内,tennai,s,,1592
-本店,honten,h,,1593
+本店,honten,h; t,,1593
 東,higashi,e,,1594
-東海,toukai,r,,1595
+東海,toukai,r; E,,1595
 中東,chuutou,M,,1596
 到着,touchaku,a,,1597
 到達,toutatsu,r,,1598
 到来,tourai,a,,1599
-毒,doku,p,,1600
-中毒,chuudoku,p,,1601
+毒,doku,p; h,,1600
+中毒,chuudoku,p; a,,1601
 突然,totsuzen,a,,1602
-突入,totsunyuu,r,,1603
-衝突,shoutotsu,c,,1604
-突破,toppa,b,,1605
-届く,todoku,t,,1606
+突入,totsunyuu,r; p,,1603
+衝突,shoutotsu,c; c,,1604
+突破,toppa,b; s,,1605
+届く,todoku,t; t,,1606
 奈良,nara,N,,1607
-乳,chichi,m,,1608
+乳,chichi,m; b,,1608
 残念,zannen,d,,1609
 記念,kinen,c,,1610
 概念,gainen,g,,1611
-念,nen,s,,1612
+念,nen,s; d,,1612
 懸念,kenen,w,,1613
-波,nami,w,,1614
+波,nami,w; u,,1614
 津波,tsunami,t,,1615
-電波,denpa,r,,1616
-波動,hadou,w,,1617
+電波,denpa,r; s,,1616
+波動,hadou,w; w,,1617
 拝見,haiken,s,,1618
 参拝,sanpai,v,,1619
 杯,sakazuki,s,,1620
-精一杯,seiippai,t,,1621
-乾杯,kanpai,c,,1622
+精一杯,seiippai,t; w,,1621
+乾杯,kanpai,c; t,,1622
 拍手,hakushu,c,,1623
 泊,haku,c,,1624
 宿泊,shukuhaku,a,,1625
-泊まり,tomari,o,,1626
+泊まり,tomari,o; i,,1626
 迫力,hakuryoku,i,,1627
-圧迫,appaku,p,,1628
-迫る,semaru,t,,1629
-板,ita,b,,1630
-看板,kanban,s,,1631
-掲示板,keijiban,b,,1632
+圧迫,appaku,p; o,,1628
+迫る,semaru,t; t,,1629
+板,ita,b; s,,1630
+看板,kanban,s; d,,1631
+掲示板,keijiban,b; e,,1632
 基板,kiban,s,,1633
-版,han,e,,1634
+版,han,e; p,,1634
 出版,shuppan,p,,1635
-彼,are,t,,1636
+彼,are,t; t,,1636
 彼ら,karera,t,,1637
 披露,hirou,a,,1638
 肥満,himan,c,,1639
-非常,hijou,e,,1640
-是非,zehi,c,,1641
-非,hi,f,,1642
+非常,hijou,e; e,,1640
+是非,zehi,c; r,,1641
+非,hi,f; g,,1642
 非難,hinan,c,,1643
 分泌,bunpitsu,s,,1644
-表現,hyougen,e,,1645
+表現,hyougen,e; r,,1645
 発表,happyou,a,,1646
-表,omote,s,,1647
+表,omote,s; f,,1647
 政府,seifu,g,,1648
 怖い,kowai,s,,1649
 恐怖,kyoufu,f,,1650
-武器,buki,w,,1651
+武器,buki,w; w,,1651
 武装,busou,a,,1652
 武将,bushou,m,,1653
-服,fuku,c,,1654
+服,fuku,c; c,,1654
 洋服,youfuku,W,,1655
 服装,fukusou,g,,1656
 制服,seifuku,u,,1657
-物,mono,t,,1658
+物,mono,t; o,,1658
 物語,monogatari,t,,1659
-物質,busshitsu,m,,1660
+物質,busshitsu,m; m,,1660
 建物,tatemono,b,,1661
 買い物,kaimono,s,,1662
 合併,gappei,m,,1663
 併用,heiyou,u,,1664
-並ぶ,narabu,t,,1665
+並ぶ,narabu,t; t,,1665
 並び,narabi,l,,1666
-並,nami,a,,1667
-並行,heikou,g,,1668
-並べる,naraberu,t,,1669
-歩,ho,s,,1670
+並,nami,a; m,,1667
+並行,heikou,g; r,,1668
+並べる,naraberu,t; t,,1669
+歩,ho,s; c,,1670
 散歩,sanpo,w,,1671
 歩く,aruku,t,,1672
 徒歩,toho,w,,1673
 進歩,shinpo,p,,1674
 宝,takara,t,,1675
-重宝,chouhou,c,,1676
-抱え,kakae,a,,1677
+重宝,chouhou,c; p,,1676
+抱え,kakae,a; e,,1677
 抱っこ,dakko,h,,1678
-抱える,kakaeru,t,,1679
-抱く,idaku,t,,1680
+抱える,kakaeru,t; t,,1679
+抱く,idaku,t; t,,1680
 放送,housou,b,,1681
 放射線,houshasen,r,,1682
 放射能,houshanou,r,,1683
 放射,housha,r,,1684
 放置,houchi,l,,1685
-法,hou,l,,1686
+法,hou,l; m,,1686
 法人,houjin,c,,1687
 手法,shuhou,t,,1688
 憲法,kenpou,c,,1689
@@ -1694,27 +1694,27 @@
 脂肪,shibou,f,,1693
 妹,imouto,y,,1694
 枚,mai,c,,1695
-枚数,maisuu,t,,1696
-枕,makura,p,,1697
+枚数,maisuu,t; w,,1696
+枕,makura,p; i,,1697
 意味,imi,m,,1698
-味,aji,f,,1699
+味,aji,f; c,,1699
 興味,kyoumi,i,,1700
-美味しい,oishii,d,,1701
-趣味,shumi,h,,1702
-命,inochi,l,,1703
+美味しい,oishii,d; a,,1701
+趣味,shumi,h; t,,1702
+命,inochi,l; l,,1703
 生命,seimei,l,,1704
 一生懸命,isshoukenmei,v,,1705
-革命,kakumei,r,,1706
+革命,kakumei,r; 5,,1706
 運命,unmei,f,,1707
 説明,setsumei,e,,1708
 明らか,akiraka,o,,1709
 証明,shoumei,p,,1710
 免許,menkyo,l,,1711
-免疫,men'eki,i,,1712
+免疫,men'eki,i; b,,1712
 専門,senmon,s,,1713
 部門,bumon,d,,1714
-門,mon,g,,1715
-入門,nyuumon,e,,1716
+門,mon,g; b,,1715
+入門,nyuumon,e; p,,1716
 夜,yoru,e,,1717
 深夜,shin'ya,l,,1718
 今夜,kon'ya,t,,1719
@@ -1723,40 +1723,40 @@
 油,abura,o,,1722
 醤油,shouyu,s,,1723
 油断,yudan,n,,1724
-林,hayashi,w,,1725
+林,hayashi,w; b,,1725
 例えば,tatoeba,f,,1726
-例,rei,c,,1727
+例,rei,c; s,,1727
 事例,jirei,e,,1728
 例外,reigai,e,,1729
-例え,tatoe,e,,1730
+例え,tatoe,e; s,,1730
 炉心,roshin,n,,1731
 昭和,shouwa,S,,1732
-違和感,iwakan,u,,1733
-和,wa,s,,1734
+違和感,iwakan,u; m,,1733
+和,wa,s; h,,1734
 共和,kyouwa,r,,1735
-枠,waku,f,,1736
-枠組み,wakugumi,f,,1737
+枠,waku,f; b,,1736
+枠組み,wakugumi,f; f,,1737
 脅威,kyoui,t,,1738
 権威,ken'i,a,,1739
 威力,iryoku,p,,1740
-為,tame,g,,1741
+為,tame,g; s,,1741
 行為,koui,a,,1742
-為替,kawase,m,,1743
-胃,i,s,,1744
-映像,eizou,i,,1745
-上映,jouei,s,,1746
+為替,kawase,m; e,,1743
+胃,i,s; C,,1744
+映像,eizou,i; v,,1745
+上映,jouei,s; t,,1746
 放映,houei,t,,1747
 栄養,eiyou,n,,1748
-部屋,heya,r,,1749
+部屋,heya,r; a,,1749
 屋根,yane,r,,1750
-本屋,hon'ya,b,,1751
-音,oto,s,,1752
+本屋,hon'ya,b; p,,1751
+音,oto,s; n,,1752
 音楽,ongaku,m,,1753
 録音,rokuon,(,,1754
 音質,onshitsu,t,,1755
-科,ka,d,,1756
+科,ka,d; c,,1756
 教科書,kyoukasho,t,,1757
-学科,gakka,s,,1758
+学科,gakka,s; d,,1758
 科目,kamoku,(,,1759
 後悔,koukai,r,,1760
 悔しい,kuyashii,v,,1761
@@ -1766,82 +1766,82 @@
 限界,genkai,l,,1765
 視界,shikai,f,,1766
 皆さん,minasan,a,,1767
-皆,minna,a,,1768
+皆,minna,a; e,,1768
 皆様,minasama,e,,1769
 皆無,kaimu,n,,1770
 柿,kaki,k,,1771
 革新,kakushin,r,,1772
 革,kawa,l,,1773
-変革,henkaku,c,,1774
+変革,henkaku,c; R,,1774
 一括,ikkatsu,l,,1775
 活動,katsudou,a,,1776
-活躍,katsuyaku,a,,1777
-復活,fukkatsu,r,,1778
-冠,kanmuri,t,,1779
-巻,maki,r,,1780
+活躍,katsuyaku,a; t,,1777
+復活,fukkatsu,r; r,,1778
+冠,kanmuri,t; c,,1779
+巻,maki,r; w,,1780
 看護,kango,n,,1781
-軌道,kidou,o,,1782
-お客様,okyakusama,g,,1783
-客,kyaku,g,,1784
+軌道,kidou,o; r,,1782
+お客様,okyakusama,g; c,,1783
+客,kyaku,g; c,,1784
 顧客,kokyaku,c,,1785
 観客,kankyaku,a,,1786
 客観,kyakkan,o,,1787
-逆,gyaku,r,,1788
+逆,gyaku,r; c,,1788
 逆転,gyakuten,(,,1789
 虐待,gyakutai,a,,1790
 虐殺,gyakusatsu,a,,1791
-急,kyuu,s,,1792
+急,kyuu,s; u,,1792
 緊急,kinkyuu,u,,1793
 急遽,kyuukyo,h,,1794
 急速,kyuusoku,r,,1795
 急激,kyuugeki,s,,1796
-級,kyuu,c,,1797
-高級,koukyuu,h,,1798
+級,kyuu,c; k,,1797
+高級,koukyuu,h; h,,1798
 同級生,doukyuusei,c,,1799
-階級,kaikyuu,(,,1800
+階級,kaikyuu,(; r,,1800
 上級,joukyuu,a,,1801
-狭い,semai,n,,1802
+狭い,semai,n; l,,1802
 軍,gun,a,,1803
 軍事,gunji,m,,1804
 軍隊,guntai,a,,1805
 海軍,kaigun,n,,1806
-関係,kankei,r,,1807
-係,kakari,c,,1808
+関係,kankei,r; p,,1807
+係,kakari,c; c,,1808
 無関係,mukankei,u,,1809
-型,kata,m,,1810
+型,kata,m; t,,1810
 大型,oogata,l,,1811
 小型,kogata,s,,1812
 新型,shingata,n,,1813
 契約,keiyaku,c,,1814
-計算,keisan,c,,1815
+計算,keisan,c; f,,1815
 設計,sekkei,p,,1816
-計,kei,p,,1817
+計,kei,p; m,,1817
 時計,tokei,w,,1818
 建築,kenchiku,c,,1819
 建設,kensetsu,c,,1820
 建造,kenzou,b,,1821
-再建,saiken,r,,1822
+再建,saiken,r; p,,1822
 研修,kenshuu,t,,1823
-県,ken,p,,1824
+県,ken,p; c,,1824
 県内,kennai,w,,1825
 県民,kenmin,c,,1826
-限り,kagiri,l,,1827
+限り,kagiri,l; d,,1827
 限定,gentei,l,,1828
-期限,kigen,t,,1829
+期限,kigen,t; t,,1829
 孤独,kodoku,s,,1830
 何故か,nazeka,s,,1831
 故郷,furusato,h,,1832
-故障,koshou,b,,1833
-後,ato,b,,1834
-最後,saigo,e,,1835
-濃厚,noukou,r,,1836
-厚み,atsumi,t,,1837
+故障,koshou,b; d,,1833
+後,ato,b; a,,1834
+最後,saigo,e; l,,1835
+濃厚,noukou,r; v,,1836
+厚み,atsumi,t; p,,1837
 厚生,kousei,w,,1838
 恒例,kourei,e,,1839
 洪水,kouzui,f,,1840
 紅茶,koucha,b,,1841
-紅葉,kouyou,a,,1842
-紅,kurenai,d,,1843
+紅葉,kouyou,a; l,,1842
+紅,kurenai,d; r,,1843
 荒れ,are,s,,1844
 郊外,kougai,s,,1845
 香り,kaori,a,,1846
@@ -1853,7 +1853,7 @@
 捜査,sousa,s,,1852
 監査,kansa,i,,1853
 砂糖,satou,s,,1854
-砂,suna,s,,1855
+砂,suna,s; g,,1855
 砂漠,sabaku,d,,1856
 削除,sakujo,d,,1857
 削減,sakugen,c,,1858
@@ -1861,57 +1861,57 @@
 昨今,sakkon,n,,1860
 昨晩,sakuban,l,,1861
 咲く,saku,t,,1862
-挨拶,aisatsu,g,,1863
-姿,sugata,f,,1864
-姿勢,shisei,p,,1865
-思い,omoi,t,,1866
-思う,omou,t,,1867
+挨拶,aisatsu,g; p,,1863
+姿,sugata,f; a,,1864
+姿勢,shisei,p; a,,1865
+思い,omoi,t; i,,1866
+思う,omou,t; t,,1867
 思い出,omoide,m,,1868
 指摘,shiteki,p,,1869
-指導,shidou,g,,1870
+指導,shidou,g; s,,1870
 指,yubi,f,,1871
-目指す,mezasu,t,,1872
+目指す,mezasu,t; t,,1872
 施設,shisetsu,i,,1873
 実施,jisshi,e,,1874
 施し,hodokoshi,c,,1875
-施行,shikou,e,,1876
+施行,shikou,e; g,,1876
 施策,shisaku,p,,1877
-持つ,motsu,t,,1878
-持ち,mochi,h,,1879
+持つ,motsu,t; t,,1878
+持ち,mochi,h; w,,1879
 維持,iji,m,,1880
-室,shitsu,r,,1881
-教室,kyoushitsu,c,,1882
+室,shitsu,r; C,,1881
+教室,kyoushitsu,c; d,,1882
 室内,shitsunai,i,,1883
-狩り,kari,h,,1884
+狩り,kari,h; h,,1884
 首相,shushou,P,,1885
-首,kubi,n,,1886
+首,kubi,n; h,,1886
 首都,shuto,c,,1887
 手首,tekubi,w,,1888
 秋,aki,a,,1889
-臭い,kusai,s,,1890
+臭い,kusai,s; s,,1890
 柔軟,juunan,f,,1891
-柔らかい,yawarakai,s,,1892
+柔らかい,yawarakai,s; g,,1892
 柔らか,yawaraka,s,,1893
 重要,juuyou,i,,1894
 体重,taijuu,(,,1895
-重い,omoi,h,,1896
+重い,omoi,h; h,,1896
 貴重,kichou,p,,1897
-重ね,kasane,p,,1898
+重ね,kasane,p; c,,1898
 お祝い,oiwai,c,,1899
 祝日,shukujitsu,n,,1900
-春,haru,s,,1901
+春,haru,s; N,,1901
 盾,tate,s,,1902
-乗り,nori,r,,1903
-乗る,noru,t,,1904
-乗り換え,norikae,t,,1905
+乗り,nori,r; s,,1903
+乗る,noru,t; t,,1904
+乗り換え,norikae,t; s,,1905
 乗車,jousha,b,,1906
-乗り物,norimono,v,,1907
+乗り物,norimono,v; r,,1907
 城,shiro,c,,1908
-浄化,jouka,p,,1909
-洗浄,senjou,w,,1910
-食事,shokuji,m,,1911
-食べる,taberu,t,,1912
-食,shoku,f,,1913
+浄化,jouka,p; c,,1909
+洗浄,senjou,w; c,,1910
+食事,shokuji,m; d,,1911
+食べる,taberu,t; t,,1912
+食,shoku,f; e,,1913
 食べ物,tabemono,f,,1914
 食品,shokuhin,f,,1915
 侵害,shingai,i,,1916
@@ -1922,173 +1922,173 @@
 信頼,shinrai,r,,1921
 配信,haishin,d,,1922
 送信,soushin,t,,1923
-精神,seishin,m,,1924
-神,kami,g,,1925
-神経,shinkei,n,,1926
+精神,seishin,m; a,,1924
+神,kami,g; i,,1925
+神経,shinkei,n; n,,1926
 政権,seiken,(,,1927
 政策,seisaku,p,,1928
-財政,zaisei,p,,1929
-星,hoshi,s,,1930
+財政,zaisei,p; f,,1929
+星,hoshi,s; s,,1930
 惑星,wakusei,p,,1931
-衛星,eisei,(,,1932
-犠牲,gisei,s,,1933
+衛星,eisei,(; (,,1932
+犠牲,gisei,s; s,,1933
 省略,shouryaku,o,,1934
 帰省,kisei,h,,1935
 宣言,sengen,d,,1936
-専用,sen'you,e,,1937
-温泉,onsen,h,,1938
+専用,sen'you,e; p,,1937
+温泉,onsen,h; o,,1938
 泉,izumi,s,,1939
-源泉,gensen,s,,1940
-浅い,asai,s,,1941
-洗濯,sentaku,w,,1942
-洗う,arau,t,,1943
+源泉,gensen,s; s,,1940
+浅い,asai,s; s,,1941
+洗濯,sentaku,w; r,,1942
+洗う,arau,t; t,,1943
 洗練,senren,p,,1944
 洗顔,sengan,f,,1945
 感染,kansen,i,,1946
-前,zen,t,,1947
+前,zen,t; p,,1947
 演奏,ensou,m,,1948
 奏者,sousha,i,,1949
-相当,soutou,c,,1950
+相当,soutou,c; a,,1950
 相談,soudan,c,,1951
 相変わらず,aikawarazu,a,,1952
-草,kusa,g,,1953
-煙草,tabako,t,,1954
+草,kusa,g; n,,1953
+煙草,tabako,t; t,,1954
 雑草,zassou,w,,1955
-送る,okuru,t,,1956
+送る,okuru,t; t,,1956
 転送,tensou,t,,1957
-送り,okuri,s,,1958
+送り,okuri,s; f,,1958
 促進,sokushin,p,,1959
-促す,unagasu,t,,1960
+促す,unagasu,t; t,,1960
 原則,gensoku,p,,1961
 法則,housoku,l,,1962
 規則,kisoku,r,,1963
 期待,kitai,e,,1964
-待ち,machi,w,,1965
-待つ,matsu,t,,1966
+待ち,machi,w; w,,1965
+待つ,matsu,t; t,,1966
 待機,taiki,s,,1967
 退職,taishoku,r,,1968
 引退,intai,r,,1969
 撤退,tettai,e,,1970
 退院,taiin,l,,1971
-簡単,kantan,s,,1972
+簡単,kantan,s; b,,1972
 単純,tanjun,s,,1973
 単に,tanni,s,,1974
 単なる,tannaru,m,,1975
 炭酸,tansan,c,,1976
 大胆,daitan,b,,1977
-普段,fudan,u,,1978
+普段,fudan,u; u,,1978
 値段,nedan,p,,1979
 段階,dankai,g,,1980
 手段,shudan,m,,1981
 階段,kaidan,s,,1982
-お茶,ocha,t,,1983
-茶,cha,t,,1984
+お茶,ocha,t; t,,1983
+茶,cha,t; t,,1984
 喫茶店,kissaten,c,,1985
-無茶,mucha,a,,1986
-昼,hiru,n,,1987
-お昼,ohiru,l,,1988
+無茶,mucha,a; v,,1986
+昼,hiru,n; d,,1987
+お昼,ohiru,l; n,,1988
 昼間,hiruma,d,,1989
-昼食,chuushoku,l,,1990
+昼食,chuushoku,l; f,,1990
 昼寝,hirune,n,,1991
-柱,hashira,p,,1992
+柱,hashira,p; s,,1992
 挑戦,chousen,c,,1993
-珍しい,mezurashii,u,,1994
-追う,ou,t,,1995
-追跡,tsuiseki,c,,1996
-帝国,teikoku,e,,1997
+珍しい,mezurashii,u; n,,1994
+追う,ou,t; t,,1995
+追跡,tsuiseki,c; f,,1996
+帝国,teikoku,e; i,,1997
 訂正,teisei,c,,1998
-点,ten,d,,1999
+点,ten,d; m,,1999
 時点,jiten,p,,2000
 視点,shiten,o,,2001
 現時点,genjiten,p,,2002
 地点,chiten,s,,2003
 度,tabi,t,,2004
 程度,teido,d,,2005
-今度,kondo,t,,2006
-一度,ichido,o,,2007
-速度,sokudo,s,,2008
+今度,kondo,t; n,,2006
+一度,ichido,o; t,,2007
+速度,sokudo,s; v,,2008
 怒り,ikari,a,,2009
-怒る,okoru,t,,2010
+怒る,okoru,t; t,,2010
 逃げ,nige,e,,2011
 逃げる,nigeru,t,,2012
-見逃し,minogashi,o,,2013
-峠,touge,(,,2014
-独自,dokuji,o,,2015
-独特,dokutoku,p,,2016
-単独,tandoku,s,,2017
+見逃し,minogashi,o; l,,2013
+峠,touge,(; p,,2014
+独自,dokuji,o; i,,2015
+独特,dokutoku,p; u,,2016
+単独,tandoku,s; i,,2017
 南,minami,s,,2018
 南部,nanbu,s,,2019
 南山,nanzan,s,,2020
 南アフリカ,minamiafurika,S,,2021
 虹,niji,r,,2022
-派,ha,c,,2023
+派,ha,c; (,,2023
 派遣,haken,d,,2024
 派手,hade,s,,2025
 派生,hasei,d,,2026
-背景,haikei,b,,2027
+背景,haikei,b; b,,2027
 背中,senaka,b,,2028
 背,sei,h,,2029
-背後,haigo,b,,2030
-背筋,sesuji,s,,2031
-畑,hatake,f,,2032
+背後,haigo,b; b,,2030
+背筋,sesuji,s; s,,2031
+畑,hatake,f; f,,2032
 原発,genpatsu,p,,2033
 開発,kaihatsu,d,,2034
-発生,hassei,o,,2035
+発生,hassei,o; g,,2035
 飛行機,hikouki,a,,2036
-飛ぶ,tobu,t,,2037
-飛行,hikou,a,,2038
+飛ぶ,tobu,t; t,,2037
+飛行,hikou,a; t,,2038
 飛ばし,tobashi,s,,2039
 飛び出し,tobidashi,s,,2040
 美しい,utsukushii,b,,2041
 美,bi,b,,2042
 美容,biyou,b,,2043
 美術館,bijutsukan,a,,2044
-秒,byou,s,,2045
+秒,byou,s; a,,2045
 商品,shouhin,c,,2046
 製品,seihin,m,,2047
-品,shina,a,,2048
-負け,make,d,,2049
-勝負,shoubu,v,,2050
+品,shina,a; q,,2048
+負け,make,d; f,,2049
+勝負,shoubu,v; m,,2050
 負荷,fuka,b,,2051
 負,fu,n,,2052
 赴任,funin,m,,2053
-風,kaze,w,,2054
-風景,fuukei,s,,2055
-柄,e,h,,2056
+風,kaze,w; m,,2054
+風景,fuukei,s; s,,2055
+柄,e,h; s,,2056
 事柄,kotogara,m,,2057
 変え,kae,c,,2058
-変,hen,s,,2059
-便,bin,f,,2060
+変,hen,s; u,,2059
+便,bin,f; m,,2060
 郵便,yuubin,m,,2061
 不便,fuben,i,,2062
-保護,hogo,p,,2063
+保護,hogo,p; p,,2063
 保険,hoken,i,,2064
-確保,kakuho,s,,2065
+確保,kakuho,s; b,,2065
 保証,hoshou,g,,2066
-細胞,saibou,c,,2067
+細胞,saibou,c; c,,2067
 同胞,douhou,b,,2068
 某,bou,c,,2069
 冒頭,boutou,b,,2070
-冒険,bouken,a,,2071
-曖昧,aimai,v,,2072
-迷惑,meiwaku,t,,2073
-迷い,mayoi,h,,2074
-迷う,mayou,t,,2075
-面,omote,f,,2076
-面倒,mendou,t,,2077
-場面,bamen,s,,2078
-約,yaku,a,,2079
+冒険,bouken,a; v,,2071
+曖昧,aimai,v; f,,2072
+迷惑,meiwaku,t; t,,2073
+迷い,mayoi,h; i,,2074
+迷う,mayou,t; t,,2075
+面,omote,f; s,,2076
+面倒,mendou,t; t,,2077
+場面,bamen,s; s,,2078
+約,yaku,a; p,,2079
 制約,seiyaku,l,,2080
 勇気,yuuki,c,,2081
 東洋,touyou,O,,2082
 海洋,kaiyou,o,,2083
-要素,youso,c,,2084
+要素,youso,c; e,,2084
 法律,houritsu,l,,2085
-柳,yanagi,w,,2086
+柳,yanagi,w; w,,2086
 野郎,yarou,g,,2087
 提案,teian,p,,2088
-案,an,i,,2089
-案外,angai,u,,2090
+案,an,i; d,,2089
+案外,angai,u; u,,2090
 員,in,m,,2091
 全員,zen'in,a,,2092
 議員,giin,m,,2093
@@ -2096,74 +2096,74 @@
 入院,nyuuin,h,,2095
 大学院,daigakuin,g,,2096
 通院,tsuuin,g,,2097
-畝,une,r,,2098
+畝,une,r; r,,2098
 収益,shuueki,e,,2099
 有益,yuueki,b,,2100
 宴会,enkai,p,,2101
-桜,sakura,c,,2102
-翁,ou,o,,2103
+桜,sakura,c; f,,2102
+翁,ou,o; v,,2103
 俺,ore,I,,2104
 恩恵,onkei,g,,2105
 夏,natsu,s,,2106
 真夏,manatsu,m,,2107
-家,ie,h,,2108
+家,ie,h; f,,2108
 家族,kazoku,f,,2109
 家庭,katei,h,,2110
 国家,kokka,s,,2111
-荷物,nimotsu,l,,2112
+荷物,nimotsu,l; b,,2112
 入荷,nyuuka,a,,2113
 出荷,shukka,s,,2114
 豪華,gouka,w,,2115
 華やか,hanayaka,s,,2116
 蚊,ka,m,,2117
 被害,higai,(,,2118
-障害,shougai,o,,2119
+障害,shougai,o; h,,2119
 損害,songai,d,,2120
-本格,honkaku,o,,2121
+本格,honkaku,o; s,,2121
 資格,shikaku,q,,2122
-核,kaku,s,,2123
-核分裂,kakubunretsu,n,,2124
-株,kabu,s,,2125
+核,kaku,s; c,,2123
+核分裂,kakubunretsu,n; k,,2124
+株,kabu,s; s,,2125
 株式,kabushiki,s,,2126
 株式会社,kabushikigaisha,p,,2127
 株主,kabunushi,s,,2128
 株価,kabuka,s,,2129
 釜,kama,i,,2130
-陥る,ochiiru,t,,2131
+陥る,ochiiru,t; t,,2131
 既に,sudeni,a,,2132
-記憶,kioku,m,,2133
-記録,kiroku,r,,2134
+記憶,kioku,m; s,,2133
+記録,kiroku,r; r,,2134
 起動,kidou,s,,2135
 起こる,okoru,t,,2136
-起きる,okiru,t,,2137
+起きる,okiru,t; t,,2137
 起こり,okori,s,,2138
-起こす,okosu,t,,2139
-鬼,oni,o,,2140
+起こす,okosu,t; t,,2139
+鬼,oni,o; s,,2140
 帰り,kaeri,r,,2141
-帰る,kaeru,t,,2142
+帰る,kaeru,t; t,,2142
 帰国,kikoku,r,,2143
-復帰,fukki,r,,2144
+復帰,fukki,r; c,,2144
 子宮,shikyuu,w,,2145
 選挙,senkyo,e,,2146
 挙動,kyodou,c,,2147
-挙句,ageku,i,,2148
+挙句,ageku,i; l,,2148
 恐れ,osore,f,,2149
-恐ろしい,osoroshii,t,,2150
+恐ろしい,osoroshii,t; s,,2150
 恐らく,osoraku,p,,2151
-胸,mune,c,,2152
+胸,mune,c; b,,2152
 訓練,kunren,t,,2153
 教訓,kyoukun,l,,2154
-郡,gun,d,,2155
-知恵,chie,w,,2156
-桁,keta,c,,2157
+郡,gun,d; d,,2155
+知恵,chie,w; p,,2156
+桁,keta,c; d,,2157
 兼,ken,c,,2158
-真剣,shinken,s,,2159
-剣,ken,s,,2160
+真剣,shinken,s; r,,2159
+剣,ken,s; b,,2160
 拳,kobushi,f,,2161
-軒,noki,e,,2162
+軒,noki,e; n,,2162
 原子,genshi,a,,2163
 原作,gensaku,o,,2164
-個,ko,c,,2165
+個,ko,c; c,,2165
 個性,kosei,i,,2166
 個々,koko,i,,2167
 個別,kobetsu,p,,2168
@@ -2171,39 +2171,39 @@
 倉庫,souko,s,,2170
 娯楽,goraku,p,,2171
 覚悟,kakugo,r,,2172
-候補,kouho,c,,2173
+候補,kouho,c; c,,2173
 気候,kikou,c,,2174
 天候,tenkou,w,,2175
 高校生,koukousei,s,,2176
 中学校,chuugakkou,j,,2177
 校長,kouchou,p,,2178
 貢献,kouken,c,,2179
-降り,furi,r,,2180
-降る,furu,t,,2181
-降りる,oriru,t,,2182
-高い,takai,h,,2183
+降り,furi,r; a,,2180
+降る,furu,t; t,,2181
+降りる,oriru,t; t,,2182
+高い,takai,h; e,,2183
 高,taka,q,,2184
-最高,saikou,m,,2185
+最高,saikou,m; b,,2185
 高速,kousoku,h,,2186
-骨,hone,b,,2187
+骨,hone,b; f,,2187
 根本,kongen,r,,2188
-根,ne,r,,2189
+根,ne,r; r,,2189
 大根,daikon,d,,2190
 示唆,shisa,s,,2191
-差,sa,d,,2192
+差,sa,d; d,,2192
 日差し,hizashi,s,,2193
 格差,kakusa,q,,2194
 交差点,kousaten,c,,2195
-座,za,s,,2196
-講座,kouza,a,,2197
-銀座,ginza,G,,2198
-座り,suwari,s,,2199
+座,za,s; p,,2196
+講座,kouza,a; c,,2197
+銀座,ginza,G; (,,2198
+座り,suwari,s; s,,2199
 主宰,shusai,s,,2200
 栽培,saibai,c,,2201
 洗剤,senzai,d,,2202
 財産,zaisan,p,,2203
 財務,zaimu,f,,2204
-財,zai,f,,2205
+財,zai,f; g,,2205
 検索,kensaku,l,,2206
 模索,mosaku,g,,2207
 探索,tansaku,s,,2208
@@ -2220,35 +2220,35 @@
 講師,koushi,l,,2219
 紙,kami,p,,2220
 手紙,tegami,l,,2221
-表紙,hyoushi,c,,2222
-用紙,youshi,b,,2223
+表紙,hyoushi,c; a,,2222
+用紙,youshi,b; s,,2223
 脂,abura,f,,2224
-時,toki,t,,2225
-時間,jikan,t,,2226
+時,toki,t; o,,2225
+時間,jikan,t; h,,2226
 時期,jiki,t,,2227
 疾患,shikkan,d,,2228
-反射,hansha,r,,2229
+反射,hansha,r; r,,2229
 借り,kari,b,,2230
 借金,shakkin,d,,2231
-借りる,kariru,t,,2232
+借りる,kariru,t; t,,2232
 弱い,yowai,w,,2233
-弱,jaku,l,,2234
+弱,jaku,l; w,,2234
 弱点,jakuten,w,,2235
 特殊,tokushu,s,,2236
 酒,sake,a,,2237
 修理,shuuri,r,,2238
-修行,shugyou,a,,2239
+修行,shugyou,a; t,,2239
 修復,shuufuku,r,,2240
-袖,sode,s,,2241
-従来,juurai,u,,2242
+袖,sode,s; w,,2241
+従来,juurai,u; t,,2242
 従業,juugyou,e,,2243
 に従って,nishitagatte,i,,2244
 従って,shitagatte,t,,2245
 従事,juuji,e,,2246
 純粋,junsui,p,,2247
 純正,junsei,g,,2248
-純,jun,i,,2249
-書く,kaku,t,,2250
+純,jun,i; p,,2249
+書く,kaku,t; t,,2250
 書籍,shoseki,b,,2251
 本書,honsho,t,,2252
 書類,shorui,d,,2253
@@ -2256,198 +2256,198 @@
 掃除,souji,c,,2255
 解除,kaijo,c,,2256
 排除,haijo,e,,2257
-除く,nozoku,t,,2258
+除く,nozoku,t; t,,2258
 将来,shourai,f,,2259
 将軍,shougun,g,,2260
 将棋,shougi,s,,2261
 消費,shouhi,c,,2262
 解消,kaishou,c,,2263
-消化,shouka,d,,2264
+消化,shouka,d; d,,2264
 消える,kieru,t,,2265
 消耗,shoumou,e,,2266
 症,shou,i,,2267
 発症,hasshou,o,,2268
 通称,tsuushou,p,,2269
-自称,jishou,s,,2270
+自称,jishou,s; p,,2270
 笑顔,egao,s,,2271
-笑い,warai,l,,2272
-笑う,warau,t,,2273
-爆笑,bakushou,r,,2274
+笑い,warai,l; s,,2272
+笑う,warau,t; t,,2273
+爆笑,bakushou,r; l,,2274
 唇,kuchibiru,l,,2275
-振り,furi,s,,2276
+振り,furi,s; a,,2276
 振動,shindou,o,,2277
-振り返る,furikaeru,t,,2278
+振り返る,furikaeru,t; t,,2278
 振興,shinkou,p,,2279
-振込,furikomi,p,,2280
-浸透,shintou,p,,2281
-真,shin,t,,2282
+振込,furikomi,p; d,,2280
+浸透,shintou,p; p,,2281
+真,shin,t; s,,2282
 真ん中,mannaka,m,,2283
-真実,shinjitsu,t,,2284
-方針,houshin,p,,2285
-針,hari,n,,2286
-陣,jin,b,,2287
-凄い,sugoi,t,,2288
-席,seki,s,,2289
-出席,shusseki,a,,2290
+真実,shinjitsu,t; t,,2284
+方針,houshin,p; m,,2285
+針,hari,n; h,,2286
+陣,jin,b; c,,2287
+凄い,sugoi,t; a,,2288
+席,seki,s; l,,2289
+出席,shusseki,a; t,,2290
 座席,zaseki,s,,2291
-客席,kyakuseki,g,,2292
+客席,kyakuseki,g; a,,2292
 扇風機,senpuuki,e,,2293
 素晴らしい,subarashii,w,,2294
 素敵,suteki,l,,2295
-素,su,p,,2296
+素,su,p; e,,2296
 鎌倉,kamakura,K,,2297
 挿入,sounyuu,i,,2298
 構造,kouzou,s,,2299
 創造,souzou,c,,2300
 製造,seizou,m,,2301
-息,iki,b,,2302
-一息,hitoiki,o,,2303
-捉える,toraeru,t,,2304
+息,iki,b; t,,2302
+一息,hitoiki,o; t,,2303
+捉える,toraeru,t; t,,2304
 孫,mago,g,,2305
 携帯,keitai,s,,2306
-帯,obi,o,,2307
+帯,obi,o; p,,2307
 地帯,chitai,a,,2308
 世帯,setai,h,,2309
-値,atai,p,,2310
-数値,suuchi,n,,2311
+値,atai,p; v,,2310
+数値,suuchi,n; r,,2311
 値する,ataisuru,t,,2312
-恥ずかしい,hazukashii,e,,2313
+恥ずかしい,hazukashii,e; d,,2313
 恥,haji,s,,2314
-一致,itchi,c,,2315
+一致,itchi,c; c,,2315
 致命,chimei,f,,2316
 焼酎,shouchuu,s,,2317
-普通,futsuu,g,,2318
-通り,toori,a,,2319
+普通,futsuu,g; n,,2318
+通り,toori,a; c,,2319
 通常,tsuujou,u,,2320
-庭,niwa,g,,2321
+庭,niwa,g; f,,2321
 庭園,teien,g,,2322
 哲学,tetsugaku,p,,2323
-展開,tenkai,d,,2324
-発展,hatten,d,,2325
+展開,tenkai,d; e,,2324
+発展,hatten,d; d,,2325
 展覧,tenran,e,,2326
 出展,shutten,e,,2327
 生徒,seito,p,,2328
 中途半端,chuutohanpa,h,,2329
 用途,youto,u,,2330
-途上,tojou,e,,2331
+途上,tojou,e; o,,2331
 途端,totan,j,,2332
-倒れ,taore,b,,2333
+倒れ,taore,b; c,,2333
 面倒くさい,mendokusai,b,,2334
-解凍,kaitou,t,,2335
+解凍,kaitou,t; d,,2335
 唐突,toutotsu,a,,2336
 唐,tou,T,,2337
-島,shima,i,,2338
+島,shima,i; t,,2338
 桃,momo,p,,2339
 検討,kentou,c,,2340
 透明,toumei,t,,2341
-党,tou,p,,2342
+党,tou,p; f,,2342
 政党,seitou,p,,2343
 野党,yatou,o,,2344
 匿名,tokumei,a,,2345
 特に,tokuni,p,,2346
 特徴,tokuchou,f,,2347
-特定,tokutei,s,,2348
+特定,tokutei,s; s,,2348
 悩み,nayami,t,,2349
 悩む,nayamu,t,,2350
 苦悩,kunou,(,,2351
-納得,nattoku,c,,2352
-格納,kakunou,s,,2353
-収納,shuunou,s,,2354
+納得,nattoku,c; u,,2352
+格納,kakunou,s; p,,2353
+収納,shuunou,s; r,,2354
 納品,nouhin,d,,2355
 機能,kinou,f,,2356
-破壊,hakai,d,,2357
+破壊,hakai,d; (,,2357
 破綻,hatan,f,,2358
 破損,hason,d,,2359
 爆破,bakuha,d,,2360
-馬,uma,h,,2361
-馬鹿,baka,f,,2362
+馬,uma,h; h,,2361
+馬鹿,baka,f; t,,2362
 競馬,keiba,h,,2363
 俳人,haijin,h,,2364
 俳優,haiyuu,a,,2365
 俳諧,haikai,h,,2366
 俳壇,haidan,t,,2367
 配置,haichi,a,,2368
-倍,bai,t,,2369
-梅,ume,J,,2370
-班,han,g,,2371
+倍,bai,t; t,,2369
+梅,ume,J; l,,2370
+班,han,g; s,,2371
 全般,zenpan,(,,2372
 一般人,ippanjin,o,,2373
 疲れ,tsukare,t,,2374
-お疲れ様,otsukaresama,t,,2375
-疲れる,tsukareru,t,,2376
-秘密,himitsu,s,,2377
+お疲れ様,otsukaresama,t; t,,2375
+疲れる,tsukareru,t; t,,2376
+秘密,himitsu,s; m,,2377
 神秘,shinpi,m,,2378
-秘書,hisho,(,,2379
+秘書,hisho,(; t,,2379
 秘訣,hiketsu,s,,2380
 被曝,hibaku,b,,2381
-被爆,hibaku,b,,2382
-姫,hime,y,,2383
-病,yamai,i,,2384
-病気,byouki,i,,2385
+被爆,hibaku,b; b,,2382
+姫,hime,y; g,,2383
+病,yamai,i; b,,2384
+病気,byouki,i; w,,2385
 横浜,yokohama,Y,,2386
 浜,hama,b,,2387
 敏感,binkan,s,,2388
-浮かぶ,ukabu,t,,2389
+浮かぶ,ukabu,t; t,,2389
 粉,kona,f,,2390
-勉強,benkyou,s,,2391
+勉強,benkyou,s; d,,2391
 逮捕,taiho,a,,2392
 砲,hou,g,,2393
-埋める,uzumeru,t,,2394
+埋める,uzumeru,t; t,,2394
 文脈,bunmyaku,c,,2395
 睡眠,suimin,s,,2396
-眠り,nemuri,s,,2397
+眠り,nemuri,s; i,,2397
 眠い,nemui,s,,2398
-眠る,nemuru,t,,2399
-娘,musume,(,,2400
+眠る,nemuru,t; t,,2399
+娘,musume,(; g,,2400
 容量,youryou,c,,2401
 容器,youki,c,,2402
-入浴,nyuuyoku,b,,2403
-浴びる,abiru,t,,2404
-流れ,nagare,f,,2405
-流し,nagashi,s,,2406
-流,ryuu,f,,2407
-流行,ryuukou,f,,2408
+入浴,nyuuyoku,b; t,,2403
+浴びる,abiru,t; t,,2404
+流れ,nagare,f; f,,2405
+流し,nagashi,s; c,,2406
+流,ryuu,f; s,,2407
+流行,ryuukou,f; p,,2408
 留学,ryuugaku,s,,2409
-留め,tome,(,,2410
+留め,tome,(; r,,2410
 留学生,ryuugakusei,o,,2411
-竜,ryuu,d,,2412
+竜,ryuu,d; n,,2412
 旅,tabi,t,,2413
 旅行,ryokou,t,,2414
 旅館,ryokan,r,,2415
-料理,ryouri,c,,2416
+料理,ryouri,c; d,,2416
 無料,muryou,f,,2417
-料,ryou,f,,2418
+料,ryou,f; m,,2418
 資料,shiryou,m,,2419
 倫理,rinri,e,,2420
-涙,namida,t,,2421
+涙,namida,t; s,,2421
 強烈,kyouretsu,s,,2422
 猛烈,mouretsu,f,,2423
 恋,koi,(,,2424
 恋愛,ren'ai,l,,2425
 恋人,koibito,l,,2426
-連絡,renraku,t,,2427
+連絡,renraku,t; c,,2427
 関連,kanren,r,,2428
 連れ,tsure,c,,2429
 連続,renzoku,c,,2430
 朗読,roudoku,r,,2431
-脇,waki,a,,2432
-悪い,warui,b,,2433
+脇,waki,a; b,,2432
+悪い,warui,b; p,,2433
 悪,aku,e,,2434
-最悪,saiaku,w,,2435
+最悪,saiaku,w; h,,2435
 悪化,akka,(,,2436
-悪魔,akuma,d,,2437
+悪魔,akuma,d; S,,2437
 異なる,kotonaru,t,,2438
 異常,ijou,s,,2439
 異様,iyou,b,,2440
-移動,idou,m,,2441
+移動,idou,m; m,,2441
 移行,ikou,s,,2442
-移転,iten,m,,2443
-移民,imin,e,,2444
-移植,ishoku,t,,2445
+移転,iten,m; t,,2443
+移民,imin,e; e,,2444
+移植,ishoku,t; p,,2445
 領域,ryouiki,a,,2446
 全域,zen'iki,t,,2447
-陰,kage,s,,2448
-陰謀,inbou,p,,2449
+陰,kage,s; o,,2448
+陰謀,inbou,p; c,,2449
 液晶,ekishou,l,,2450
 液,eki,l,,2451
 液体,ekitai,l,,2452
@@ -2455,30 +2455,30 @@
 菓子,kashi,c,,2454
 通貨,tsuuka,c,,2455
 雑貨,zakka,m,,2456
-機械,kikai,m,,2457
-生涯,shougai,l,,2458
+機械,kikai,m; i,,2457
+生涯,shougai,l; f,,2458
 殻,kara,s,,2459
-掛け,kake,m,,2460
-仕掛け,shikake,d,,2461
-掛かる,kakaru,t,,2462
-出掛け,degake,(,,2463
-乾燥,kansou,d,,2464
+掛け,kake,m; p,,2460
+仕掛け,shikake,d; t,,2461
+掛かる,kakaru,t; t,,2462
+出掛け,degake,(; h,,2463
+乾燥,kansou,d; i,,2464
 勘違い,kanchigai,m,,2465
-一貫,ikkan,c,,2466
+一貫,ikkan,c; o,,2466
 眼,manako,e,,2467
-眼鏡,megane,g,,2468
+眼鏡,megane,g; j,,2468
 基準,kijun,s,,2469
 基礎,kiso,f,,2470
 基地,kichi,b,,2471
-基盤,kiban,f,,2472
-寄せ,yose,l,,2473
-年寄り,toshiyori,o,,2474
+基盤,kiban,f; b,,2472
+寄せ,yose,l; g,,2473
+年寄り,toshiyori,o; t,,2474
 規模,kibo,s,,2475
 規定,kitei,s,,2476
-新規,shinki,n,,2477
+新規,shinki,n; n,,2477
 正規,seiki,r,,2478
-亀,kame,t,,2479
-偽,nise,i,,2480
+亀,kame,t; h,,2479
+偽,nise,i; p,,2480
 菊,kiku,c,,2481
 脚本,kyakuhon,s,,2482
 救済,kyuusai,r,,2483
@@ -2486,62 +2486,62 @@
 救急,kyuukyuu,f,,2485
 救援,kyuuen,r,,2486
 野球,yakyuu,b,,2487
-球,kyuu,s,,2488
+球,kyuu,s; c,,2488
 電球,denkyuu,l,,2489
 謙虚,kenkyo,m,,2490
-特許,tokkyo,p,,2491
+特許,tokkyo,p; p,,2491
 許し,yurushi,p,,2492
 許容,kyoyou,p,,2493
 魚,sakana,f,,2494
-強い,tsuyoi,s,,2495
+強い,tsuyoi,s; s,,2495
 強制,kyousei,c,,2496
 強力,kyouryoku,p,,2497
 教え,oshie,t,,2498
-教授,kyouju,p,,2499
-菌,kin,f,,2500
-偶然,guuzen,c,,2501
+教授,kyouju,p; t,,2499
+菌,kin,f; g,,2500
+偶然,guuzen,c; b,,2501
 掲載,keisai,p,,2502
 経験,keiken,e,,2503
 経済,keizai,e,,2504
 経営,keiei,m,,2505
 経,kyou,s,,2506
-経過,keika,p,,2507
-健康,kenkou,h,,2508
+経過,keika,p; p,,2507
+健康,kenkou,h; h,,2508
 健全,kenzen,h,,2509
 保健,hoken,p,,2510
 実現,jitsugen,i,,2511
-控え,hikae,r,,2512
+控え,hikae,r; n,,2512
 控えめ,hikaeme,m,,2513
 控除,koujo,s,,2514
-黄金,ougon,g,,2515
+黄金,ougon,g; g,,2515
 黄,ki,y,,2516
-黄色い,kiiroi,y,,2517
-黒,kuro,b,,2518
-黒い,kuroi,b,,2519
+黄色い,kiiroi,y; h,,2517
+黒,kuro,b; b,,2518
+黒い,kuroi,b; d,,2519
 黒人,kokujin,b,,2520
 真っ黒,makkuro,p,,2521
-頃,koro,(,,2522
+頃,koro,(; s,,2522
 今頃,imagoro,a,,2523
 近頃,chikagoro,l,,2524
 結婚,kekkon,m,,2525
 結婚式,kekkonshiki,m,,2526
 離婚,rikon,d,,2527
-混雑,konzatsu,c,,2528
-混合,kongou,m,,2529
+混雑,konzatsu,c; c,,2528
+混合,kongou,m; m,,2529
 多彩,tasai,v,,2530
-採用,saiyou,u,,2531
+採用,saiyou,u; a,,2531
 採取,saishu,p,,2532
 済み,zumi,a,,2533
-済む,sumu,t,,2534
+済む,sumu,t; t,,2534
 返済,hensai,r,,2535
-祭,matsuri,f,,2536
-詳細,shousai,d,,2537
-細かい,komakai,s,,2538
+祭,matsuri,f; h,,2536
+詳細,shousai,d; d,,2537
+細かい,komakai,s; f,,2538
 細かく,komakaku,m,,2539
-細い,hosoi,t,,2540
+細い,hosoi,t; u,,2540
 野菜,yasai,v,,2541
-菜,na,g,,2542
-長崎,nagasaki,N,,2543
+菜,na,g; r,,2542
+長崎,nagasaki,N; a,,2543
 悲惨,hisan,d,,2544
 惨事,sanji,d,,2545
 生産,seisan,p,,2546
@@ -2550,117 +2550,117 @@
 不動産,fudousan,r,,2549
 斬新,zanshin,n,,2550
 無視,mushi,d,,2551
-視聴,shichou,l,,2552
+視聴,shichou,l; a,,2552
 重視,juushi,r,,2553
 監視,kanshi,m,,2554
 鹿,shika,d,,2555
 執筆,shippitsu,w,,2556
-執行,shikkou,e,,2557
-捨てる,suteru,t,,2558
-容赦,yousha,p,,2559
-斜め,naname,s,,2560
-蛇,hebi,s,,2561
+執行,shikkou,e; l,,2557
+捨てる,suteru,t; t,,2558
+容赦,yousha,p; l,,2559
+斜め,naname,s; d,,2560
+蛇,hebi,s; s,,2561
 解釈,kaishaku,e,,2562
 寂しい,sabishii,l,,2563
 授業,jugyou,l,,2564
 終わり,owari,t,,2565
 最終,saishuu,l,,2566
 終わる,owaru,t,,2567
-終える,oeru,t,,2568
+終える,oeru,t; t,,2568
 練習,renshuu,p,,2569
 学習,gakushuu,s,,2570
-習慣,shuukan,h,,2571
+習慣,shuukan,h; c,,2571
 講習,koushuu,s,,2572
 習得,shuutoku,l,,2573
 週間,shuukan,w,,2574
 今週,konshuu,t,,2575
 週,shuu,w,,2576
 渋滞,juutai,c,,2577
-宿,yado,l,,2578
-宿題,shukudai,h,,2579
+宿,yado,l; h,,2578
+宿題,shukudai,h; p,,2579
 合宿,gasshuku,l,,2580
 自粛,jishuku,s,,2581
 手術,shujutsu,s,,2582
-術,jutsu,a,,2583
+術,jutsu,a; m,,2583
 庶民,shomin,c,,2584
 合唱,gasshou,c,,2585
 提唱,teishou,a,,2586
 商店,shouten,s,,2587
-商,shou,q,,2588
+商,shou,q; d,,2588
 商業,shougyou,c,,2589
-章,shou,c,,2590
+章,shou,c; m,,2590
 楽章,gakushou,(,,2591
 訴訟,soshou,l,,2592
 過剰,kajou,e,,2593
 常に,tsuneni,a,,2594
 日常,nichijou,e,,2595
-情報,jouhou,i,,2596
+情報,jouhou,i; i,,2596
 感情,kanjou,e,,2597
 事情,jijou,c,,2598
-表情,hyoujou,f,,2599
+表情,hyoujou,f; l,,2599
 情熱,jounetsu,p,,2600
-深い,fukai,d,,2601
+深い,fukai,d; p,,2601
 興味深い,kyoumibukai,v,,2602
 紳士,shinshi,g,,2603
-進行,shinkou,m,,2604
-進む,susumu,t,,2605
-推進,suishin,p,,2606
+進行,shinkou,m; a,,2604
+進む,susumu,t; t,,2605
+推進,suishin,p; p,,2606
 進み,susumi,p,,2607
 推測,suisoku,g,,2608
-推定,suitei,p,,2609
+推定,suitei,p; e,,2609
 推奨,suishou,r,,2610
 推薦,suisen,r,,2611
 麻酔,masui,a,,2612
 清掃,seisou,c,,2613
-清潔,seiketsu,c,,2614
-盛り上がり,moriagari,c,,2615
-盛り,sakari,p,,2616
-盛ん,sakan,p,,2617
-盛り上がる,moriagaru,t,,2618
-惜しい,oshii,r,,2619
+清潔,seiketsu,c; p,,2614
+盛り上がり,moriagari,c; b,,2615
+盛り,sakari,p; p,,2616
+盛ん,sakan,p; p,,2617
+盛り上がる,moriagaru,t; t,,2618
+惜しい,oshii,r; p,,2619
 親戚,shinseki,r,,2620
 責め,seme,p,,2621
 無責任,musekinin,i,,2622
-接続,setsuzoku,c,,2623
+接続,setsuzoku,c; c,,2623
 面接,mensetsu,i,,2624
 接触,sesshoku,t,,2625
-接近,sekkin,g,,2626
-設置,setchi,e,,2627
+接近,sekkin,g; b,,2626
+設置,setchi,e; i,,2627
 雪,yuki,s,,2628
-船,fune,s,,2629
+船,fune,s; t,,2629
 措置,sochi,m,,2630
 番組,bangumi,p,,2631
-組織,soshiki,o,,2632
-組,kumi,s,,2633
-巣,su,n,,2634
-爽やか,sawayaka,f,,2635
+組織,soshiki,o; s,,2632
+組,kumi,s; g,,2633
+巣,su,n; d,,2634
+爽やか,sawayaka,f; c,,2635
 窓,mado,w,,2636
-側,soba,n,,2637
-側面,sokumen,s,,2638
+側,soba,n; t,,2637
+側面,sokumen,s; a,,2638
 内側,uchigawa,i,,2639
 民族,minzoku,p,,2640
-族,zoku,t,,2641
+族,zoku,t; (,,2641
 率,ritsu,r,,2642
 確率,kakuritsu,p,,2643
 比率,hiritsu,r,,2644
-税率,zeiritsu,t,,2645
-袋,fukuro,b,,2646
+税率,zeiritsu,t; t,,2645
+袋,fukuro,b; s,,2646
 手袋,tebukuro,g,,2647
 第,dai,p,,2648
-次第に,shidaini,g,,2649
-脱出,dasshutsu,e,,2650
+次第に,shidaini,g; i,,2649
+脱出,dasshutsu,e; p,,2650
 離脱,ridatsu,w,,2651
-脱線,dassen,d,,2652
-探す,sagasu,t,,2653
+脱線,dassen,d; d,,2652
+探す,sagasu,t; t,,2653
 探偵,tantei,d,,2654
-淡々,tantan,u,,2655
+淡々,tantan,u; p,,2655
 診断,shindan,d,,2656
 決断,ketsudan,d,,2657
 断念,dannen,a,,2658
 中断,chuudan,i,,2659
 著者,chosha,a,,2660
 著作,chosaku,w,,2661
-著,cho,w,,2662
+著,cho,w; (,,2662
 著書,chosho,(,,2663
 顕著,kencho,r,,2664
 手帳,techou,n,,2665
@@ -2668,86 +2668,86 @@
 頑張り,ganbari,t,,2667
 出張,shutchou,o,,2668
 眺め,nagame,s,,2669
-眺める,nagameru,t,,2670
-釣り,tsuri,f,,2671
-頂く,itadaku,t,,2672
-頂ける,itadakeru,t,,2673
+眺める,nagameru,t; t,,2670
+釣り,tsuri,f; t,,2671
+頂く,itadaku,t; t,,2672
+頂ける,itadakeru,t; t,,2673
 山頂,sanchou,s,,2674
-頂点,chouten,t,,2675
-頂戴,choudai,r,,2676
-鳥,tori,b,,2677
+頂点,chouten,t; v,,2675
+頂戴,choudai,r; e,,2676
+鳥,tori,b; b,,2677
 停電,teiden,p,,2678
 バス停,basutei,b,,2679
 停滞,teitai,s,,2680
-笛,fue,f,,2681
+笛,fue,f; w,,2681
 添付,tenpu,a,,2682
 添加,tenka,a,,2683
-運転,unten,o,,2684
+運転,unten,o; d,,2684
 回転,kaiten,r,,2685
 転換,tenkan,c,,2686
-都,miyako,c,,2687
-動き,ugoki,m,,2688
-堂,dou,t,,2689
-堂々,doudou,m,,2690
-食堂,shokudou,d,,2691
-得,toku,p,,2692
-得る,uru,t,,2693
+都,miyako,c; c,,2687
+動き,ugoki,m; t,,2688
+堂,dou,t; h,,2689
+堂々,doudou,m; f,,2690
+食堂,shokudou,d; r,,2691
+得,toku,p; r,,2692
+得る,uru,t; t,,2693
 獲得,kakutoku,a,,2694
-豚,buta,p,,2695
+豚,buta,p; p,,2695
 豚肉,butaniku,p,,2696
-脳,nou,b,,2697
+脳,nou,b; b,,2697
 排出,haishutsu,e,,2698
-排気,haiki,e,,2699
-市販,shihan,s,,2700
-票,hyou,v,,2701
-描く,egaku,t,,2702
-猫,neko,c,,2703
-貧しい,mazushii,p,,2704
+排気,haiki,e; e,,2699
+市販,shihan,s; c,,2700
+票,hyou,v; l,,2701
+描く,egaku,t; t,,2702
+猫,neko,c; s,,2703
+貧しい,mazushii,p; l,,2704
 瓶,bin,b,,2705
 主婦,shufu,h,,2706
 婦人,fujin,w,,2707
 切符,kippu,t,,2708
-部,bu,d,,2709
-一部,ichibu,o,,2710
-副,fuku,a,,2711
+部,bu,d; c,,2709
+一部,ichibu,o; o,,2710
+副,fuku,a; d,,2711
 副作用,fukusayou,s,,2712
 閉鎖,heisa,c,,2713
-閉店,heiten,c,,2714
+閉店,heiten,c; s,,2714
 閉じる,tojiru,t,,2715
 偏見,henken,p,,2716
-崩壊,houkai,c,,2717
-崩れ,kuzure,c,,2718
+崩壊,houkai,c; (,,2717
+崩れ,kuzure,c; h,,2718
 訪問,houmon,c,,2719
-訪れ,otozure,v,,2720
-訪れる,otozureru,t,,2721
+訪れ,otozure,v; a,,2720
+訪れる,otozureru,t; t,,2721
 要望,youbou,d,,2722
 絶望,zetsubou,d,,2723
-望む,nozomu,t,,2724
-望み,nozomi,w,,2725
+望む,nozomu,t; t,,2724
+望み,nozomi,w; p,,2725
 麻痺,mahi,p,,2726
 麻薬,mayaku,n,,2727
-麻,asa,c,,2728
+麻,asa,c; h,,2728
 密度,mitsudo,d,,2729
 厳密,genmitsu,s,,2730
 密か,hisoka,s,,2731
-密接,missetsu,c,,2732
+密接,missetsu,c; c,,2732
 業務,gyoumu,b,,2733
 事務,jimu,o,,2734
 勤務,kinmu,s,,2735
 義務,gimu,d,,2736
-問題,mondai,q,,2737
+問題,mondai,q; p,,2737
 質問,shitsumon,q,,2738
 疑問,gimon,d,,2739
 問い合わせ,toiawase,e,,2740
 分野,bun'ya,f,,2741
-野,no,p,,2742
-視野,shiya,f,,2743
+野,no,p; h,,2742
+視野,shiya,f; o,,2743
 訳,wake,c,,2744
-翻訳,hon'yaku,t,,2745
-言い訳,iiwake,e,,2746
-通訳,tsuuyaku,i,,2747
+翻訳,hon'yaku,t; d,,2745
+言い訳,iiwake,e; e,,2746
+通訳,tsuuyaku,i; i,,2747
 唯一,yuiitsu,o,,2748
-欲しい,hoshii,w,,2749
+欲しい,hoshii,w; I,,2749
 欲,yoku,g,,2750
 食欲,shokuyoku,a,,2751
 意欲,iyoku,w,,2752
@@ -2755,35 +2755,35 @@
 翌朝,yokuasa,n,,2754
 理解,rikai,u,,2755
 管理,kanri,c,,2756
-無理,muri,u,,2757
-大陸,tairiku,c,,2758
+無理,muri,u; i,,2757
+大陸,tairiku,c; c,,2758
 陸,riku,l,,2759
 陸上,rikujou,(,,2760
 戦略,senryaku,s,,2761
 略,hobo,a,,2762
 中略,chuuryaku,o,,2763
-粒,tsubu,g,,2764
-涼しい,suzushii,c,,2765
-握り,nigiri,g,,2766
+粒,tsubu,g; c,,2764
+涼しい,suzushii,c; c,,2765
+握り,nigiri,g; h,,2766
 握手,akushu,h,,2767
-嵐,arashi,s,,2768
+嵐,arashi,s; s,,2768
 偉大,idai,g,,2769
-偉い,erai,g,,2770
+偉い,erai,g; v,,2770
 偉,i,g,,2771
-椅子,isu,c,,2772
-飲む,nomu,t,,2773
+椅子,isu,c; p,,2772
+飲む,nomu,t; t,,2773
 飲み物,nomimono,d,,2774
 飲食,inshoku,f,,2775
 飲料,inryou,b,,2776
-運動,undou,e,,2777
+運動,undou,e; a,,2777
 運営,un'ei,m,,2778
 運,un,f,,2779
-運用,un'you,m,,2780
+運用,un'you,m; o,,2780
 雲,kumo,c,,2781
-営業,eigyou,b,,2782
+営業,eigyou,b; s,,2782
 営利,eiri,m,,2783
-越し,goshi,a,,2784
-越える,koeru,t,,2785
+越し,goshi,a; t,,2784
+越える,koeru,t; t,,2785
 義援金,gienkin,d,,2786
 奥,oku,i,,2787
 奥さん,okusan,w,,2788
@@ -2792,73 +2792,73 @@
 温度,ondo,t,,2791
 温暖,ondan,w,,2792
 体温,taion,t,,2793
-過ぎ,sugi,p,,2794
+過ぎ,sugi,p; t,,2794
 過程,katei,p,,2795
-過ぎる,sugiru,t,,2796
+過ぎる,sugiru,t; t,,2796
 年賀状,nengajou,N,,2797
-絵,e,p,,2798
+絵,e,p; (,,2798
 絵画,kaiga,p,,2799
 絵本,ehon,p,,2800
-絵文字,emoji,e,,2801
+絵文字,emoji,e; p,,2801
 開催,kaisai,h,,2802
-階,kai,s,,2803
+階,kai,s; s,,2803
 階層,kaisou,c,,2804
 街,gai,.,,2805
-街道,kaidou,h,,2806
+街道,kaidou,h; h,,2806
 覚え,oboe,m,,2807
 感覚,kankaku,s,,2808
-覚える,oboeru,t,,2809
+覚える,oboeru,t; t,,2809
 自覚,jikaku,s,,2810
-割,wari,r,,2811
-割合,wariai,r,,2812
+割,wari,r; p,,2811
+割合,wariai,r; c,,2812
 分割,bunkatsu,p,,2813
 葛藤,kattou,c,,2814
-寒い,samui,c,,2815
+寒い,samui,c; u,,2815
 寒,kan,m,,2816
-堪能,tannou,p,,2817
-変換,henkan,c,,2818
-敢えて,aete,p,,2819
-間,aida,s,,2820
+堪能,tannou,p; e,,2817
+変換,henkan,c; t,,2818
+敢えて,aete,p; n,,2819
+間,aida,s; t,,2820
 喜び,yorokobi,j,,2821
-喜ぶ,yorokobu,t,,2822
-幾つ,ikutsu,h,,2823
-幾,iku,s,,2824
+喜ぶ,yorokobu,t; t,,2822
+幾つ,ikutsu,h; h,,2823
+幾,iku,s; m,,2824
 発揮,hakki,s,,2825
 指揮,shiki,c,,2826
 期間,kikan,p,,2827
-期,ki,p,,2828
-貴方,anata,y,,2829
+期,ki,p; a,,2828
+貴方,anata,y; d,,2829
 詐欺,sagi,f,,2830
 喫煙,kitsuen,s,,2831
-満喫,mankitsu,h,,2832
+満喫,mankitsu,h; f,,2832
 喫茶,kissa,t,,2833
 給料,kyuuryou,s,,2834
 補給,hokyuu,s,,2835
 支給,shikyuu,p,,2836
 距離,kyori,d,,2837
 長距離,choukyori,l,,2838
-御,go,h,,2839
-制御,seigyo,c,,2840
+御,go,h; h,,2839
+制御,seigyo,c; c,,2840
 積極,sekkyoku,p,,2841
 極めて,kiwamete,e,,2842
 極端,kyokutan,e,,2843
-極,goku,q,,2844
+極,goku,q; 1,,2844
 通勤,tsuukin,c,,2845
 出勤,shukkin,g,,2846
-勤め,tsutome,s,,2847
-筋,suji,m,,2848
-腹筋,harasuji,s,,2849
+勤め,tsutome,s; B,,2847
+筋,suji,m; v,,2848
+腹筋,harasuji,s; a,,2849
 遭遇,souguu,e,,2850
 隅,sumi,c,,2851
 尊敬,sonkei,r,,2852
 敬意,keii,r,,2853
-景気,keiki,b,,2854
-軽い,karui,l,,2855
-気軽,kigaru,c,,2856
+景気,keiki,b; g,,2854
+軽い,karui,l; l,,2855
+気軽,kigaru,c; e,,2856
 手軽,tegaru,e,,2857
 軽,kei,l,,2858
 軽減,keigen,a,,2859
-結構,kekkou,s,,2860
+結構,kekkou,s; s,,2860
 結論,ketsuron,c,,2861
 圏内,kennai,(,,2862
 検証,kenshou,v,,2863
@@ -2866,24 +2866,24 @@
 減少,genshou,d,,2865
 減らす,herasu,t,,2866
 減る,heru,t,,2867
-加減,kagen,d,,2868
+加減,kagen,d; (,,2868
 湖,mizuumi,l,,2869
 雇用,koyou,e,,2870
-喉,nodo,t,,2871
+喉,nodo,t; s,,2871
 港,minato,h,,2872
-硬い,katai,h,,2873
-絞り,shibori,t,,2874
+硬い,katai,h; s,,2873
+絞り,shibori,t; a,,2874
 事項,jikou,m,,2875
 裁判所,saibansho,c,,2876
 独裁,dokusai,d,,2877
 対策,taisaku,m,,2878
-策,saku,p,,2879
+策,saku,p; f,,2879
 散策,sansaku,w,,2880
 酢,su,v,,2881
-傘,kasa,u,,2882
-解散,kaisan,b,,2883
-分散,bunsan,d,,2884
-紫,murasaki,p,,2885
+傘,kasa,u; s,,2882
+解散,kaisan,b; d,,2883
+分散,bunsan,d; v,,2884
+紫,murasaki,p; L,,2885
 紫外線,shigaisen,u,,2886
 歌詞,kashi,s,,2887
 台詞,serifu,s,,2888
@@ -2891,7 +2891,7 @@
 歯,ha,t,,2890
 歯医者,haisha,d,,2891
 歯科,shika,d,,2892
-軸,jiku,a,,2893
+軸,jiku,a; c,,2893
 湿度,shitsudo,l,,2894
 雑煮,zouni,s,,2895
 就職,shuushoku,f,,2896
@@ -2900,39 +2900,39 @@
 公衆,koushuu,t,,2899
 編集,henshuu,e,,2900
 集,shuu,c,,2901
-募集,boshuu,r,,2902
+募集,boshuu,r; r,,2902
 循環,junkan,c,,2903
 手順,tejun,p,,2904
 順番,junban,t,,2905
-順,jun,o,,2906
+順,jun,o; o,,2906
 順調,junchou,f,,2907
-暑い,atsui,h,,2908
+暑い,atsui,h; p,,2908
 優勝,yuushou,o,,2909
 勝ち,kachi,w,,2910
 燃焼,nenshou,b,,2911
-焼く,yaku,t,,2912
-日焼け,hiyake,s,,2913
-焼肉,yakiniku,y,,2914
+焼く,yaku,t; t,,2912
+日焼け,hiyake,s; b,,2913
+焼肉,yakiniku,y; r,,2914
 焦点,shouten,f,,2915
 焦り,aseri,i,,2916
-認証,ninshou,c,,2917
+認証,ninshou,c; I,,2917
 現象,genshou,p,,2918
 象徴,shouchou,(,,2919
-場,ba,p,,2920
-登場,toujou,e,,2921
+場,ba,p; f,,2920
+登場,toujou,e; e,,2921
 畳,jou,t,,2922
 植物,shokubutsu,p,,2923
 植民,shokumin,c,,2924
 繁殖,hanshoku,b,,2925
 増殖,zoushoku,i,,2926
-森,mori,f,,2927
+森,mori,f; s,,2927
 診察,shinsatsu,m,,2928
 診療,shinryou,d,,2929
-遂に,tsuini,f,,2930
+遂に,tsuini,f; i,,2930
 遂行,suikou,a,,2931
-随分,zuibun,v,,2932
-随時,zuiji,a,,2933
-晴れ,hare,c,,2934
+随分,zuibun,v; t,,2932
+随時,zuiji,a; a,,2933
+晴れ,hare,c; f,,2934
 税金,zeikin,t,,2935
 課税,kazei,t,,2936
 増税,zouzei,t,,2937
@@ -2941,16 +2941,16 @@
 絶賛,zessan,h,,2940
 善,zen,g,,2941
 最善,saizen,t,,2942
-全然,zenzen,n,,2943
+全然,zenzen,n; w,,2943
 訴え,uttae,l,,2944
-訴える,uttaeru,t,,2945
-創作,sousaku,c,,2946
+訴える,uttaeru,t; t,,2945
+創作,sousaku,c; f,,2946
 喪失,soushitsu,l,,2947
 葬儀,sougi,f,,2948
 葬式,soushiki,f,,2949
 装着,souchaku,e,,2950
 装備,soubi,e,,2951
-装置,souchi,e,,2952
+装置,souchi,e; s,,2952
 測定,sokutei,m,,2953
 予測,yosoku,p,,2954
 観測,kansoku,o,,2955
@@ -2961,116 +2961,116 @@
 金属,kinzoku,m,,2960
 属する,zokusuru,t,,2961
 尊重,sonchou,r,,2962
-替え,kae,c,,2963
-代替,daitai,s,,2964
+替え,kae,c; r,,2963
+代替,daitai,s; a,,2964
 着替え,kigae,c,,2965
-入れ替え,irekae,r,,2966
-貸し,kashi,l,,2967
+入れ替え,irekae,r; s,,2966
+貸し,kashi,l; f,,2967
 賃貸,chintai,l,,2968
-自衛隊,jieitai,s,,2969
+自衛隊,jieitai,s; J,,2969
 部隊,butai,f,,2970
 隊員,taiin,t,,2971
 達,tachi,p,,2972
 達成,tassei,a,,2973
 達し,tasshi,o,,2974
-棚,tana,s,,2975
+棚,tana,s; t,,2975
 本棚,hondana,b,,2976
 短い,mijikai,s,,2977
 短期,tanki,s,,2978
 短歌,tanka,t,,2979
 短時間,tanjikan,s,,2980
 短期間,tankikan,s,,2981
-爆弾,bakudan,b,,2982
-弾き,hajiki,g,,2983
-弾く,hajiku,t,,2984
+爆弾,bakudan,b; a,,2982
+弾き,hajiki,g; t,,2983
+弾く,hajiku,t; t,,2984
 遅れ,okure,d,,2985
-遅い,osoi,s,,2986
+遅い,osoi,s; l,,2986
 遅れる,okureru,t,,2987
-着,chaku,c,,2988
-着く,tsuku,t,,2989
-着る,kiru,t,,2990
-貯金,chokin,p,,2991
+着,chaku,c; a,,2988
+着く,tsuku,t; t,,2989
+着る,kiru,t; t,,2990
+貯金,chokin,p; a,,2991
 貯蓄,chochiku,s,,2992
 朝,asa,m,,2993
 今朝,kesa,t,,2994
 朝食,choushoku,b,,2995
-超,chou,s,,2996
-痛み,itami,p,,2997
-痛い,itai,p,,2998
+超,chou,s; e,,2996
+痛み,itami,p; d,,2997
+痛い,itai,p; c,,2998
 頭痛,zutsuu,h,,2999
 苦痛,kutsuu,p,,3000
 腰痛,youtsuu,l,,3001
 堤,tsutsumi,b,,3002
-前提,zentei,c,,3003
+前提,zentei,c; i,,3003
 提出,teishutsu,p,,3004
 提示,teiji,p,,3005
-程,hodo,d,,3006
+程,hodo,d; u,,3006
 日程,nittei,s,,3007
 工程,koutei,p,,3008
-渡し,watashi,f,,3009
-渡す,watasu,t,,3010
-渡り,watari,c,,3011
-渡る,wataru,t,,3012
+渡し,watashi,f; d,,3009
+渡す,watasu,t; t,,3010
+渡り,watari,c; i,,3011
+渡る,wataru,t; t,,3012
 譲渡,jouto,t,,3013
 塔,tou,t,,3014
-搭載,tousai,l,,3015
-棟,mune,r,,3016
-湯,yu,h,,3017
+搭載,tousai,l; e,,3015
+棟,mune,r; b,,3016
+湯,yu,h; h,,3017
 登録,touroku,r,,3018
 答え,kotae,a,,3019
 回答,kaitou,r,,3020
 答える,kotaeru,t,,3021
 応答,outou,r,,3022
 返答,hentou,r,,3023
-等,nado,e,,3024
+等,nado,e; o,,3024
 等々,toutou,e,,3025
 同等,doutou,e,,3026
 平等,byoudou,e,,3027
 高等,koutou,h,,3028
-大統領,daitouryou,p,,3029
+大統領,daitouryou,p; b,,3029
 統合,tougou,i,,3030
 統計,toukei,s,,3031
 統一,touitsu,u,,3032
-道,michi,r,,3033
-報道,houdou,i,,3034
+道,michi,r; r,,3033
+報道,houdou,i; t,,3034
 道路,douro,r,,3035
-廃棄,haiki,d,,3036
+廃棄,haiki,d; a,,3036
 廃止,haishi,a,,3037
 媒体,baitai,m,,3038
-買う,kau,t,,3039
-買い,kai,b,,3040
+買う,kau,t; t,,3039
+買い,kai,b; b,,3040
 売買,baibai,t,,3041
 博物館,hakubutsukan,m,,3042
-ご飯,gohan,c,,3043
-飯,meshi,c,,3044
-晩,ban,e,,3045
+ご飯,gohan,c; m,,3043
+飯,meshi,c; m,,3044
+晩,ban,e; c,,3045
 毎晩,maiban,e,,3046
 晩年,bannen,o,,3047
 今晩,konban,t,,3048
-番,ban,n,,3049
-番目,banme,i,,3050
-悲しい,kanashii,s,,3051
-悲劇,higeki,t,,3052
+番,ban,n; (,,3049
+番目,banme,i; d,,3050
+悲しい,kanashii,s; s,,3051
+悲劇,higeki,t; t,,3052
 悲しみ,kanashimi,s,,3053
-扉,tobira,d,,3054
+扉,tobira,d; t,,3054
 費,hi,c,,3055
 費用,hiyou,c,,3056
 経費,keihi,e,,3057
 出費,shuppi,e,,3058
 準備,junbi,p,,3059
-整備,seibi,m,,3060
+整備,seibi,m; p,,3060
 備え,sonae,p,,3061
 設備,setsubi,e,,3062
-筆,fude,w,,3063
+筆,fude,w; w,,3063
 鉛筆,enpitsu,p,,3064
 評論,hyouron,c,,3065
 豊富,houfu,a,,3066
-富,tomi,r,,3067
+富,tomi,r; r,,3067
 普遍,fuhen,u,,3068
-幅,haba,w,,3069
-大幅,oohaba,b,,3070
+幅,haba,w; f,,3069
+大幅,oohaba,b; f,,3070
 幅広い,habahiroi,e,,3071
-増幅,zoufuku,a,,3072
+増幅,zoufuku,a; m,,3072
 復興,fukkou,r,,3073
 補正,hosei,c,,3074
 募金,bokin,f,,3075
@@ -3081,23 +3081,23 @@
 相棒,aibou,p,,3080
 不満,fuman,d,,3081
 満載,mansai,f,,3082
-無い,nai,n,,3083
+無い,nai,n; u,,3083
 無事,buji,s,,3084
 無駄,muda,f,,3085
-遊び,asobi,p,,3086
-遊ぶ,asobu,t,,3087
+遊び,asobi,p; p,,3086
+遊ぶ,asobu,t; t,,3087
 雄,osu,m,,3088
 揚げ,age,f,,3089
 揺れる,yureru,t,,3090
 葉,ha,l,,3091
-葉っぱ,happa,l,,3092
-陽,you,y,,3093
-陽気,youki,c,,3094
+葉っぱ,happa,l; m,,3092
+陽,you,y; t,,3093
+陽気,youki,c; w,,3094
 絡み,karami,l,,3095
-落ち,ochi,s,,3096
-落ちる,ochiru,t,,3097
-落とす,otosu,t,,3098
-落ち着き,ochitsuki,c,,3099
+落ち,ochi,s; o,,3096
+落ちる,ochiru,t; t,,3097
+落とす,otosu,t; t,,3098
+落ち着き,ochitsuki,c; s,,3099
 落下,rakka,f,,3100
 下痢,geri,d,,3101
 量,ryou,q,,3102
@@ -3107,42 +3107,42 @@
 分裂,bunretsu,s,,3106
 廊下,rouka,c,,3107
 湾,wan,b,,3108
-腕,ude,a,,3109
-愛,ai,l,,3110
+腕,ude,a; s,,3109
+愛,ai,l; a,,3110
 愛する,aisuru,t,,3111
 愛情,aijou,l,,3112
-暗い,kurai,d,,3113
-真っ暗,makkura,t,,3114
+暗い,kurai,d; d,,3113
+真っ暗,makkura,t; b,,3114
 暗闇,kurayami,d,,3115
-意識,ishiki,c,,3116
-違う,chigau,t,,3117
-違い,chigai,d,,3118
-間違い,machigai,m,,3119
-園,sono,g,,3120
+意識,ishiki,c; b,,3116
+違う,chigau,t; t,,3117
+違い,chigai,d; m,,3118
+間違い,machigai,m; a,,3119
+園,sono,g; p,,3120
 学園,gakuen,e,,3121
 煙,kemuri,s,,3122
-禁煙,kin'en,a,,3123
-猿,saru,m,,3124
+禁煙,kin'en,a; N,,3123
+猿,saru,m; s,,3124
 遠く,tooku,f,,3125
-遠い,tooi,f,,3126
-遠慮,enryo,r,,3127
-塩,shio,s,,3128
-嫁,yome,w,,3129
-暇,hima,s,,3130
+遠い,tooi,f; d,,3126
+遠慮,enryo,r; d,,3127
+塩,shio,s; s,,3128
+嫁,yome,w; (,,3129
+暇,hima,s; t,,3130
 休暇,kyuuka,h,,3131
 靴,kutsu,s,,3132
 靴下,kutsushita,s,,3133
 優雅,yuuga,e,,3134
-塊,katamari,l,,3135
+塊,katamari,l; g,,3135
 解説,kaisetsu,e,,3136
 感慨,kangai,d,,3137
 蓋,futa,c,,3138
 該当,gaitou,c,,3139
 当該,tougai,a,,3140
-間隔,kankaku,s,,3141
-楽しみ,tanoshimi,e,,3142
+間隔,kankaku,s; s,,3141
+楽しみ,tanoshimi,e; a,,3142
 楽しい,tanoshii,e,,3143
-楽,raku,c,,3144
+楽,raku,c; e,,3144
 楽しむ,tanoshimu,t,,3145
 滑り,numeri,s,,3146
 勧め,susume,r,,3147
@@ -3155,36 +3155,36 @@
 感じる,kanjiru,t,,3154
 感謝,kansha,t,,3155
 感動,kandou,b,,3156
-頑張る,ganbaru,t,,3157
+頑張る,ganbaru,t; t,,3157
 放棄,houki,a,,3158
 定義,teigi,d,,3159
 講義,kougi,l,,3160
 正義,seigi,j,,3161
-事業,jigyou,p,,3162
+事業,jigyou,p; a,,3162
 僅か,wazuka,o,,3163
-解禁,kaikin,l,,3164
-愚痴,guchi,i,,3165
-群,gun,g,,3166
+解禁,kaikin,l; p,,3164
+愚痴,guchi,i; m,,3165
+群,gun,g; g,,3166
 群れ,mure,g,,3167
 連携,renkei,c,,3168
 提携,teikei,c,,3169
 継続,keizoku,c,,3170
 中継,chuukei,r,,3171
-後継,koukei,s,,3172
-隙間,sukima,c,,3173
-隙,suki,g,,3174
-傑作,kessaku,m,,3175
+後継,koukei,s; s,,3172
+隙間,sukima,c; s,,3173
+隙,suki,g; b,,3174
+傑作,kessaku,m; a,,3175
 嫌,iya,d,,3176
-嫌い,kirai,d,,3177
-機嫌,kigen,h,,3178
+嫌い,kirai,d; t,,3177
+機嫌,kigen,h; s,,3178
 嫌悪,ken'o,d,,3179
 文献,bunken,l,,3180
-電源,dengen,s,,3181
-源,minamoto,s,,3182
+電源,dengen,s; p,,3181
+源,minamoto,s; s,,3182
 資源,shigen,r,,3183
 誇り,hokori,p,,3184
 誇る,hokoru,t,,3185
-溝,mizo,d,,3186
+溝,mizo,d; g,,3186
 債務,saimu,d,,3187
 国債,kokusai,n,,3188
 債,sai,d,,3189
@@ -3192,11 +3192,11 @@
 歳,sai,-,,3191
 記載,kisai,m,,3192
 連載,rensai,s,,3193
-罪,tsumi,c,,3194
+罪,tsumi,c; p,,3194
 謝罪,shazai,a,,3195
 試し,tameshi,t,,3196
-試験,shiken,e,,3197
-試み,kokoromi,a,,3198
+試験,shiken,e; t,,3197
+試み,kokoromi,a; e,,3198
 試行錯誤,shikousakugo,t,,3199
 詩,shi,p,,3200
 詩人,shijin,p,,3201
@@ -3208,154 +3208,154 @@
 準,jun,s,,3207
 署名,shomei,s,,3208
 部署,busho,o,,3209
-傷,kizu,w,,3210
+傷,kizu,w; c,,3210
 損傷,sonshou,d,,3211
 照明,shoumei,i,,3212
 対照,taishou,c,,3213
-詳しい,kuwashii,d,,3214
+詳しい,kuwashii,d; k,,3214
 蒸し,mushi,s,,3215
 飾り,kazari,d,,3216
 装飾,soushoku,o,,3217
-触れる,fureru,t,,3218
+触れる,fureru,t; t,,3218
 感触,kanshoku,f,,3219
 触る,sawaru,t,,3220
 寝,ne,s,,3221
-寝る,neru,t,,3222
+寝る,neru,t; t,,3222
 慎重,shinchou,c,,3223
 新しい,atarashii,n,,3224
-新,shin,n,,3225
+新,shin,n; n,,3225
 新た,arata,n,,3226
 新聞,shinbun,n,,3227
 数,kazu,n,,3228
 複数,fukusuu,p,,3229
-人数,ninzuu,t,,3230
-勢い,ikioi,f,,3231
+人数,ninzuu,t; m,,3230
+勢い,ikioi,f; i,,3231
 勢力,seiryoku,i,,3232
-大勢,oozei,c,,3233
+大勢,oozei,c; i,,3233
 情勢,jousei,s,,3234
 聖書,seisho,B,,3235
 神聖,shinsei,h,,3236
 誠に,makotoni,i,,3237
 誠実,seijitsu,s,,3238
-誠,makoto,t,,3239
-跡,ato,t,,3240
+誠,makoto,t; s,,3239
+跡,ato,t; s,,3240
 遺跡,iseki,h,,3241
-足跡,ashiato,f,,3242
-節,setsu,o,,3243
+足跡,ashiato,f; r,,3242
+節,setsu,o; s,,3243
 節電,setsuden,c,,3244
 節約,setsuyaku,e,,3245
 調節,chousetsu,r,,3246
 戦,ikusa,w,,3247
 戦闘,sentou,b,,3248
-羨ましい,urayamashii,e,,3249
+羨ましい,urayamashii,e; e,,3249
 所詮,shosen,a,,3250
-実践,jissen,p,,3251
+実践,jissen,p; p,,3251
 想像,souzou,i,,3252
 感想,kansou,i,,3253
 理想,risou,i,,3254
 想定,soutei,h,,3255
 海賊,kaizoku,p,,3256
 続ける,tsuzukeru,t,,3257
-続く,tsuzuku,t,,3258
-続き,tsuzuki,c,,3259
-損,son,l,,3260
+続く,tsuzuku,t; t,,3258
+続き,tsuzuki,c; f,,3259
+損,son,l; d,,3260
 滝,taki,w,,3261
-暖かい,atatakai,w,,3262
-置く,oku,t,,3263
+暖かい,atatakai,w; c,,3262
+置く,oku,t; t,,3263
 蓄積,chikuseki,a,,3264
 腸,chou,g,,3265
-賃金,chingin,w,,3266
+賃金,chingin,w; c,,3266
 家賃,yachin,r,,3267
 地下鉄,chikatetsu,u,,3268
 鉄道,tetsudou,r,,3269
-鉄,tetsu,i,,3270
+鉄,tetsu,i; s,,3270
 殿,dono,M,,3271
 電話,denwa,t,,3272
-電気,denki,e,,3273
+電気,denki,e; (,,3273
 発電,hatsuden,g,,3274
-働き,hataraki,w,,3275
-働く,hataraku,t,,3276
+働き,hataraki,w; a,,3275
+働く,hataraku,t; t,,3276
 稼働,kadou,o,,3277
-監督,kantoku,s,,3278
+監督,kantoku,s; d,,3278
 農業,nougyou,a,,3279
-農家,nouka,f,,3280
+農家,nouka,f; f,,3280
 農薬,nouyaku,a,,3281
-鉢,hachi,b,,3282
+鉢,hachi,b; f,,3282
 福,fuku,g,,3283
 お腹,onaka,b,,3284
-腹,hara,a,,3285
-満腹,manpuku,f,,3286
+腹,hara,a; w,,3285
+満腹,manpuku,f; c,,3286
 空腹,kuufuku,e,,3287
 墓,haka,g,,3288
-豊か,yutaka,a,,3289
+豊か,yutaka,a; v,,3289
 飽き,aki,w,,3290
 字幕,jimaku,s,,3291
-幕,maku,c,,3292
-開幕,kaimaku,r,,3293
+幕,maku,c; a,,3292
+開幕,kaimaku,r; o,,3293
 夢,yume,d,,3294
-夢中,muchuu,a,,3295
+夢中,muchuu,a; f,,3295
 同盟,doumei,a,,3296
 連盟,renmei,l,,3297
-消滅,shoumetsu,e,,3298
-滅多,metta,t,,3299
+消滅,shoumetsu,e; a,,3298
+滅多,metta,t; s,,3299
 名誉,meiyo,h,,3300
 預け,azuke,c,,3301
 預金,yokin,d,,3302
-腰,koshi,b,,3303
-裸,hadaka,n,,3304
-雷,kaminari,l,,3305
-裏,ura,o,,3306
+腰,koshi,b; b,,3303
+裸,hadaka,n; b,,3304
+雷,kaminari,l; g,,3305
+裏,ura,o; r,,3306
 裏側,uragawa,t,,3307
-回路,kairo,c,,3308
-路線,rosen,r,,3309
+回路,kairo,c; c,,3308
+路線,rosen,r; l,,3309
 路面,romen,r,,3310
-路地,roji,a,,3311
-話,hanashi,t,,3312
+路地,roji,a; b,,3311
+話,hanashi,t; (,,3312
 お話,ohanashi,s,,3313
 話題,wadai,t,,3314
 会話,kaiwa,c,,3315
 繊維,sen'i,f,,3316
 隠す,kakusu,t,,3317
-駅,eki,r,,3318
+駅,eki,r; s,,3318
 駅前,ekimae,i,,3319
 出演,shutsuen,p,,3320
 演出,enshutsu,p,,3321
 講演,kouen,l,,3322
-歌,uta,s,,3323
-歌う,utau,t,,3324
+歌,uta,s; c,,3323
+歌う,utau,t; t,,3324
 歌手,kashu,s,,3325
 箇所,kasho,p,,3326
 概要,gaiyou,o,,3327
 内閣,naikaku,c,,3328
 慣れ,nare,p,,3329
-慣れる,nareru,t,,3330
+慣れる,nareru,t; t,,3330
 管,kan,p,,3331
 保管,hokan,c,,3332
 に関して,nikanshite,r,,3333
-機関,kikan,e,,3334
-旗,hata,f,,3335
+機関,kikan,e; a,,3334
+旗,hata,f; p,,3335
 容疑,yougi,s,,3336
 疑い,utagai,d,,3337
-質疑,shitsugi,q,,3338
+質疑,shitsugi,q; i,,3338
 環境,kankyou,e,,3339
 国境,kokkyou,n,,3340
 境界,kyoukai,b,,3341
-境,sakai,b,,3342
+境,sakai,b; t,,3342
 心境,shinkyou,s,,3343
 銀行,ginkou,b,,3344
-銀,gin,s,,3345
-駆使,kushi,f,,3346
+銀,gin,s; s,,3345
+駆使,kushi,f; t,,3346
 駆動,kudou,d,,3347
 熊,kuma,b,,3348
 日本語,nihongo,J,,3349
-語,go,l,,3350
+語,go,l; w,,3350
 誤解,gokai,m,,3351
 誤り,ayamari,e,,3352
 構築,kouchiku,c,,3353
 機構,kikou,m,,3354
 発酵,hakkou,f,,3355
 酵母,koubo,y,,3356
-酷い,hidoi,c,,3357
+酷い,hidoi,c; v,,3357
 過酷,kakoku,s,,3358
 残酷,zankoku,c,,3359
 地獄,jigoku,h,,3360
@@ -3368,15 +3368,15 @@
 視察,shisatsu,i,,3367
 雑誌,zasshi,j,,3368
 複雑,fukuzatsu,c,,3369
-雑,zatsu,r,,3370
+雑,zatsu,r; m,,3370
 換算,kansan,c,,3371
 決算,kessan,s,,3372
-酸,san,a,,3373
+酸,san,a; s,,3373
 酸素,sanso,o,,3374
 酸味,sanmi,s,,3375
 酸化,sanka,o,,3376
-種類,shurui,v,,3377
-種,tane,s,,3378
+種類,shurui,v; c,,3377
+種,tane,s; m,,3378
 機種,kishu,t,,3379
 一種,isshu,s,,3380
 需要,juyou,d,,3381
@@ -3386,39 +3386,39 @@
 精度,seido,p,,3385
 製,sei,-,,3386
 製作,seisaku,m,,3387
-静か,shizuka,q,,3388
+静か,shizuka,q; s,,3388
 静止,seishi,s,,3389
-説,setsu,t,,3390
+説,setsu,t; o,,3390
 説得,settoku,p,,3391
 金銭,kinsen,m,,3392
-一層,issou,m,,3393
+一層,issou,m; s,,3393
 総,sou,w,,3394
-総合,sougou,s,,3395
+総合,sougou,s; c,,3395
 総理,souri,l,,3396
 総務,soumu,g,,3397
 総額,sougaku,s,,3398
-像,zou,i,,3399
+像,zou,i; f,,3399
 解像度,kaizoudo,r,,3400
 増える,fueru,t,,3401
 増やし,fuyashi,i,,3402
-増し,mashi,b,,3403
+増し,mashi,b; m,,3403
 増やす,fuyasu,t,,3404
-駄目,dame,n,,3405
+駄目,dame,n; h,,3405
 事態,jitai,s,,3406
 態度,taido,a,,3407
 実態,jittai,t,,3408
-端,hashi,e,,3409
-端子,tanshi,t,,3410
+端,hashi,e; b,,3409
+端子,tanshi,t; p,,3410
 徴収,choushuu,c,,3411
-点滴,tenteki,r,,3412
-適当,tekitou,s,,3413
+点滴,tenteki,r; i,,3412
+適当,tekitou,s; p,,3413
 適用,tekiyou,a,,3414
 最適,saiteki,m,,3415
 適切,tekisetsu,p,,3416
 稲,ine,r,,3417
 道徳,doutoku,m,,3418
 読み,yomi,r,,3419
-読む,yomu,t,,3420
+読む,yomu,t; t,,3420
 読書,dokusho,r,,3421
 確認,kakunin,c,,3422
 認識,ninshiki,r,,3423
@@ -3426,15 +3426,15 @@
 認知,ninchi,a,,3425
 髪,kami,h,,3426
 鼻,hana,n,,3427
-漂う,tadayou,t,,3428
+漂う,tadayou,t; t,,3428
 複合,fukugou,c,,3429
-聞く,kiku,t,,3430
-聞こえ,kikoe,b,,3431
-聞こえる,kikoeru,t,,3432
+聞く,kiku,t; t,,3430
+聞こえ,kikoe,b; r,,3431
+聞こえる,kikoeru,t; t,,3432
 暮らし,kurashi,l,,3433
-暮らす,kurasu,t,,3434
-暮れ,kure,s,,3435
-僕,boku,I,,3436
+暮らす,kurasu,t; t,,3434
+暮れ,kure,s; e,,3435
+僕,boku,I; y,,3436
 僕ら,bokura,w,,3437
 膜,maku,m,,3438
 自慢,jiman,p,,3439
@@ -3443,44 +3443,44 @@
 鳴る,naru,t,,3442
 鳴り,nari,r,,3443
 共鳴,kyoumei,r,,3444
-模様,moyou,p,,3445
+模様,moyou,p; s,,3445
 模型,mokei,m,,3446
-網,ami,n,,3447
+網,ami,n; w,,3447
 誘導,yuudou,g,,3448
-誘い,sasoi,i,,3449
-様,sama,M,,3450
+誘い,sasoi,i; t,,3449
+様,sama,M; s,,3450
 様々,samazama,v,,3451
 踊り,odori,d,,3452
 踊る,odoru,t,,3453
 同僚,douryou,c,,3454
-緑,midori,g,,3455
+緑,midori,g; g,,3455
 緑色,midoriiro,g,,3456
 暦,koyomi,c,,3457
-履歴,rireki,p,,3458
+履歴,rireki,p; l,,3458
 遺産,isan,i,,3459
 遺体,itai,c,,3460
 遺伝,iden,h,,3461
-影響,eikyou,i,,3462
+影響,eikyou,i; t,,3462
 撮影,satsuei,p,,3463
-影,kage,s,,3464
+影,kage,s; r,,3464
 悪影響,akueikyou,b,,3465
-鋭い,surudoi,s,,3466
-閲覧,etsuran,i,,3467
+鋭い,surudoi,s; s,,3466
+閲覧,etsuran,i; b,,3467
 縁,fuchi,r,,3468
-無縁,muen,u,,3469
-横,yoko,h,,3470
-横断,oudan,c,,3471
+無縁,muen,u; w,,3469
+横,yoko,h; s,,3470
+横断,oudan,c; t,,3471
 億,oku,1,,3472
-稼ぐ,kasegu,t,,3473
+稼ぐ,kasegu,t; t,,3473
 稼ぎ,kasegi,e,,3474
-課題,kadai,s,,3475
-課,ka,l,,3476
+課題,kadai,s; h,,3475
+課,ka,l; s,,3476
 課長,kachou,s,,3477
-確か,tashika,s,,3478
+確か,tashika,s; r,,3478
 確実,kakujitsu,c,,3479
 新潟,niigata,N,,3480
 緩和,kanwa,r,,3481
-器,utsuwa,b,,3482
+器,utsuwa,b; a,,3482
 機器,kiki,d,,3483
 楽器,gakki,m,,3484
 輝き,kagayaki,b,,3485
@@ -3491,27 +3491,27 @@
 劇,geki,d,,3490
 劇場,gekijou,t,,3491
 演劇,engeki,d,,3492
-劇的,gekiteki,d,,3493
+劇的,gekiteki,d; e,,3493
 衝撃,shougeki,s,,3494
 目撃,mokugeki,w,,3495
 簡潔,kanketsu,b,,3496
-権,ken,r,,3497
+権,ken,r; a,,3497
 権力,kenryoku,(,,3498
 権限,kengen,p,,3499
 原稿,genkou,m,,3500
 稿,kou,m,,3501
-駒,koma,p,,3502
-撮る,toru,t,,3503
+駒,koma,p; b,,3502
+撮る,toru,t; t,,3503
 賛成,sansei,a,,3504
 賛同,sandou,a,,3505
-暫く,shibaraku,f,,3506
+暫く,shibaraku,f; f,,3506
 暫定,zantei,p,,3507
 真摯,shinshi,s,,3508
-餌,esa,(,,3509
-質,shitsu,q,,3510
+餌,esa,(; b,,3509
+質,shitsu,q; n,,3510
 本質,honshitsu,e,,3511
 趣向,shukou,p,,3512
-趣,omomuki,m,,3513
+趣,omomuki,m; e,,3513
 成熟,seijuku,m,,3514
 諸国,shokoku,v,,3515
 諸,sho,v,,3516
@@ -3521,13 +3521,13 @@
 鑑賞,kanshou,a,,3520
 受賞,jushou,w,,3521
 審議,shingi,d,,3522
-要請,yousei,a,,3523
+要請,yousei,a; a,,3523
 潜在,senzai,p,,3524
-線,sen,l,,3525
-無線,musen,r,,3526
+線,sen,l; l,,3525
+無線,musen,r; w,,3526
 回線,kaisen,c,,3527
 選ぶ,erabu,t,,3528
-水槽,suisou,w,,3529
+水槽,suisou,w; f,,3529
 内蔵,naizou,i,,3530
 蔵,kura,w,,3531
 誰,dare,w,,3532
@@ -3535,236 +3535,236 @@
 誕生,tanjou,b,,3534
 対談,taidan,t,,3535
 会談,kaidan,c,,3536
-調べ,shirabe,i,,3537
+調べ,shirabe,i; t,,3537
 調整,chousei,a,,3538
-調子,choushi,t,,3539
+調子,choushi,t; v,,3539
 体調,taichou,p,,3540
-締め,shime,t,,3541
-締め切り,shimekiri,d,,3542
+締め,shime,t; s,,3541
+締め切り,shimekiri,d; c,,3542
 取締役,torishimariyaku,c,,3543
-敵,teki,o,,3544
+敵,teki,o; m,,3544
 徹夜,tetsuya,s,,3545
-撤去,tekkyo,w,,3546
-踏む,fumu,t,,3547
+撤去,tekkyo,w; d,,3546
+踏む,fumu,t; t,,3547
 導入,dounyuu,i,,3548
 主導,shudou,l,,3549
-導く,michibiku,t,,3550
-熱,netsu,h,,3551
-熱い,atsui,h,,3552
+導く,michibiku,t; t,,3550
+熱,netsu,h; f,,3551
+熱い,atsui,h; p,,3552
 熱心,nesshin,z,,3553
 熱中,netchuu,b,,3554
 先輩,senpai,s,,3555
 後輩,kouhai,j,,3556
 賠償,baishou,c,,3557
-箱,hako,b,,3558
+箱,hako,b; c,,3558
 箸,hashi,c,,3559
-盤,ban,d,,3560
+盤,ban,d; t,,3560
 中盤,chuuban,m,,3561
 終盤,shuuban,e,,3562
 鍵盤,kenban,k,,3563
-膝,hiza,k,,3564
+膝,hiza,k; l,,3564
 指標,shihyou,i,,3565
 座標,zahyou,c,,3566
 標高,hyoukou,e,,3567
 敷地,shikichi,s,,3568
 屋敷,yashiki,r,,3569
 敷居,shikii,t,,3570
-見舞い,mimai,v,,3571
+見舞い,mimai,v; g,,3571
 舞,mai,d,,3572
 弊社,heisha,o,,3573
 餅,mochi,m,,3574
-編,hen,c,,3575
+編,hen,c; v,,3575
 再編,saihen,r,,3576
 編成,hensei,c,,3577
 続編,zokuhen,c,,3578
 暴力,bouryoku,v,,3579
 相撲,sumou,s,,3580
-魅了,miryou,f,,3581
+魅了,miryou,f; t,,3581
 養成,yousei,t,,3582
 考慮,kouryo,c,,3583
 配慮,hairyo,c,,3584
 寮,ryou,h,,3585
-輪,wa,r,,3586
+輪,wa,r; h,,3586
 指輪,yubiwa,(,,3587
 霊,rei,s,,3588
 議論,giron,a,,3589
 論文,ronbun,t,,3590
 理論,riron,t,,3591
 勿論,mochiron,o,,3592
-経緯,ikisatsu,d,,3593
+経緯,ikisatsu,d; l,,3593
 衛生,eisei,h,,3594
-前衛,zen'ei,a,,3595
+前衛,zen'ei,a; a,,3595
 穏やか,odayaka,c,,3596
 懐かしい,natsukashii,d,,3597
-懐,futokoro,b,,3598
-還元,kangen,r,,3599
-帰還,kikan,r,,3600
+懐,futokoro,b; (,,3598
+還元,kangen,r; r,,3599
+帰還,kikan,r; (,,3600
 会館,kaikan,m,,3601
 大使館,taishikan,e,,3602
 橋,hashi,b,,3603
-激しい,hageshii,v,,3604
+激しい,hageshii,v; e,,3604
 感激,kangeki,d,,3605
 過激,kageki,e,,3606
 賢い,kashikoi,w,,3607
 興奮,koufun,e,,3608
 新興,shinkou,r,,3609
-錯覚,sakkaku,o,,3610
+錯覚,sakkaku,o; m,,3610
 獣,kemono,b,,3611
-縦,tate,t,,3612
-土壌,dojou,s,,3613
-嬢,jou,u,,3614
-薪,maki,f,,3615
-親,oya,p,,3616
+縦,tate,t; f,,3612
+土壌,dojou,s; b,,3613
+嬢,jou,u; M,,3614
+薪,maki,f; p,,3615
+親,oya,p; d,,3616
 親切,shinsetsu,k,,3617
-整理,seiri,s,,3618
-整形,seikei,o,,3619
-整える,totonoeru,t,,3620
+整理,seiri,s; l,,3618
+整形,seikei,o; s,,3619
+整える,totonoeru,t; t,,3620
 面積,menseki,s,,3621
 積み重ね,tsumikasane,p,,3622
-操作,sousa,o,,3623
+操作,sousa,o; m,,3623
 体操,taisou,g,,3624
 賭け,kake,b,,3625
 糖,tou,s,,3626
 頭,tou,c,,3627
-店頭,tentou,s,,3628
+店頭,tentou,s; o,,3628
 先頭,sentou,h,,3629
-曇り,kumori,c,,3630
+曇り,kumori,c; f,,3630
 燃料,nenryou,f,,3631
 燃費,nenpi,f,,3632
-濃い,koi,d,,3633
-濃度,noudo,c,,3634
-薄い,usui,t,,3635
+濃い,koi,d; s,,3633
+濃度,noudo,c; c,,3634
+薄い,usui,t; p,,3635
 薄,susuki,J,,3636
 頻繁,hinpan,f,,3637
 避難,hinan,t,,3638
 回避,kaihi,e,,3639
-避ける,sakeru,t,,3640
-壁,kabe,w,,3641
-膨大,boudai,h,,3642
+避ける,sakeru,t; t,,3640
+壁,kabe,w; b,,3641
+膨大,boudai,h; s,,3642
 磨き,migaki,p,,3643
 麺,men,n,,3644
-薬,kusuri,m,,3645
-輸入,yunyuu,i,,3646
-輸出,yushutsu,e,,3647
+薬,kusuri,m; e,,3645
+輸入,yunyuu,i; a,,3646
+輸出,yushutsu,e; e,,3647
 輸送,yusou,t,,3648
 融合,yuugou,a,,3649
 融資,yuushi,f,,3650
 頼り,tayori,r,,3651
-頼む,tanomu,t,,3652
-頼み,tanomi,r,,3653
-隣,tonari,n,,3654
+頼む,tanomu,t; t,,3652
+頼み,tanomi,r; r,,3653
+隣,tonari,n; h,,3654
 近隣,kinrin,n,,3655
 隣接,rinsetsu,a,,3656
 録画,rokuga,(,,3657
 一環,ikkan,l,,3658
-鍵,kagi,k,,3659
-厳しい,kibishii,s,,3660
+鍵,kagi,k; l,,3659
+厳しい,kibishii,s; i,,3660
 購買,koubai,p,,3661
 購読,koudoku,p,,3662
 懇親,konshin,f,,3663
-代謝,taisha,m,,3664
+代謝,taisha,m; r,,3664
 縮小,shukushou,r,,3665
 短縮,tanshuku,s,,3666
-無償,mushou,w,,3667
+無償,mushou,w; f,,3667
 補償,hoshou,c,,3668
 実績,jisseki,a,,3669
 成績,seiseki,r,,3670
 業績,gyouseki,a,,3671
-繊細,sensai,d,,3672
+繊細,sensai,d; s,,3672
 新鮮,shinsen,f,,3673
 朝鮮,chousen,K,,3674
-鮮やか,azayaka,v,,3675
+鮮やか,azayaka,v; s,,3675
 鮮明,senmei,v,,3676
-瞳,hitomi,p,,3677
-謎,nazo,r,,3678
-鍋,nabe,s,,3679
+瞳,hitomi,p; e,,3677
+謎,nazo,r; e,,3678
+鍋,nabe,s; s,,3679
 頻度,hindo,f,,3680
-闇,yami,d,,3681
+闇,yami,d; b,,3681
 優しい,yasashii,t,,3682
-翼,tsubasa,w,,3683
-左翼,sayoku,l,,3684
+翼,tsubasa,w; C,,3683
+左翼,sayoku,l; l,,3684
 ご覧,goran,s,,3685
-一覧,ichiran,l,,3686
+一覧,ichiran,l; s,,3686
 療法,ryouhou,t,,3687
 年齢,nenrei,a,,3688
 高齢,kourei,a,,3689
 齢,yowai,(,,3690
-額,gaku,p,,3691
+額,gaku,p; a,,3691
 金額,kingaku,a,,3692
 高額,kougaku,l,,3693
 全額,zengaku,t,,3694
 顎,ago,c,,3695
 簡易,kan'i,s,,3696
-観,kan,l,,3697
+観,kan,l; s,,3697
 観点,kanten,p,,3698
-顔,kao,f,,3699
+顔,kao,f; l,,3699
 美顔,bigan,b,,3700
 騎士,kishi,k,,3701
 実験,jikken,e,,3702
 受験,juken,t,,3703
-連鎖,rensa,c,,3704
+連鎖,rensa,c; (,,3704
 瞬間,shunkan,m,,3705
 一瞬,isshun,i,,3706
 瞬時,shunji,m,,3707
 職場,shokuba,o,,3708
 職員,shokuin,s,,3709
-職,shoku,j,,3710
+職,shoku,j; d,,3710
 職業,shokugyou,o,,3711
 騒ぎ,sawagi,u,,3712
 大騒ぎ,oosawagi,c,,3713
 贈り物,okurimono,p,,3714
 放題,houdai,(,,3715
-題,dai,t,,3716
+題,dai,t; p,,3716
 格闘,kakutou,h,,3717
-難しい,muzukashii,d,,3718
+難しい,muzukashii,d; f,,3718
 難い,katai,d,,3719
 覆い,ooi,c,,3720
-癖,kuse,h,,3721
+癖,kuse,h; p,,3721
 日曜日,nichiyoubi,S,,3722
 金曜日,kin'youbi,F,,3723
 日曜,nichiyou,S,,3724
 月曜日,getsuyoubi,M,,3725
-臨時,rinji,t,,3726
-類,rui,k,,3727
+臨時,rinji,t; s,,3726
+類,rui,k; s,,3727
 人類,jinrui,m,,3728
 分類,bunrui,c,,3729
-艶,tsuya,g,,3730
+艶,tsuya,g; m,,3730
 お願い,onegai,r,,3731
 願い,negai,d,,3732
-願う,negau,t,,3733
+願う,negau,t; t,,3733
 願望,ganbou,d,,3734
 念願,nengan,o,,3735
-鏡,kagami,m,,3736
+鏡,kagami,m; b,,3736
 警備,keibi,d,,3737
-鶏,niwatori,(,,3738
+鶏,niwatori,(; c,,3738
 常識,joushiki,c,,3739
-無意識,muishiki,u,,3740
-心臓,shinzou,h,,3741
+無意識,muishiki,u; u,,3740
+心臓,shinzou,h; g,,3741
 内臓,naizou,i,,3742
-爆発,bakuhatsu,e,,3743
+爆発,bakuhatsu,e; e,,3743
 楽譜,gakufu,s,,3744
-霧,kiri,f,,3745
+霧,kiri,f; s,,3745
 分離,bunri,s,,3746
-離れる,hanareru,t,,3747
-綺麗,kirei,p,,3748
+離れる,hanareru,t; t,,3747
+綺麗,kirei,p; c,,3748
 会議,kaigi,m,,3749
 議会,gikai,c,,3750
 競合,kyougou,c,,3751
-響き,hibiki,e,,3752
+響き,hibiki,e; s,,3752
 音響,onkyou,s,,3753
-響く,hibiku,t,,3754
+響く,hibiku,t; t,,3754
 懸命,kenmei,e,,3755
 防護,bougo,p,,3756
 鐘,kane,b,,3757
-国籍,kokuseki,n,,3758
-欄,ran,s,,3759
+国籍,kokuseki,n; n,,3758
+欄,ran,s; f,,3759
 顧問,komon,a,,3760
 魔法,mahou,m,,3761
-魔,ma,d,,3762
+魔,ma,d; s,,3762
 魔女,majo,w,,3763
-飛躍,hiyaku,l,,3764
-露出,roshutsu,e,,3765
-露,tsuyu,d,,3766
+飛躍,hiyaku,l; l,,3764
+露出,roshutsu,e; p,,3765
+露,tsuyu,d; t,,3766
 驚き,odoroki,s,,3767
 驚く,odoroku,t,,3768
 籠,kago,b,,3769
