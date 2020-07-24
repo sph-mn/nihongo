@@ -35,7 +35,7 @@ get_example_words_f = (config) ->
       break if config.example_words_limit is result.length
     result.map (word) ->
       # get the first word of each sense
-      meaning = word[2].map (a) -> a[0]
+      meaning = word[2]
       if config.example_meanings_limit < meaning.length
         meaning = meaning.slice(0, config.example_meanings_limit)
       [word[0], word[1], meaning]
