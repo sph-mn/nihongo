@@ -6,6 +6,7 @@ csv_parse = require "csv-parse"
 csv_stringify = require "csv-stringify"
 nodeStream = require "stream"
 wanakana = require "wanakana"
+object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
 
 helper =
   streamToString: (a, c) ->
@@ -49,6 +50,28 @@ csv_filter_by_list = (list_path, column_index) ->
   helper.process_csv (a) ->
     a if list.includes a[column_index]
 
+add_translations = (column_index) ->
+  config =
+    dictionary_path: "data/jmdict-translations.json"
+    output_path: "download/jouyou-by-stroke-count.csv"
+  dictionary = object_from_json_file config.dictionary_path
+  helper.process_csv (a) ->
+    b = a[column_index]
+    c = dictionary[a]
+    unless b
+      c = dictionary[wanakana.toKatakana(b)]
+    else
+      c = dictionary[wanakana.toHiragana(b)]
+    if c
+      b = wanakana.toRomaji(b)
+      c = c[1].join("; ")
+      [b, c]
+    else
+      b = wanakana.toRomaji(b)
+      [b]
+
+
 #csv_filter_by_list "newline_list.txt", 1
 #csv_delete_kana_rows 3
-csv_kana_to_romaji 1
+#csv_kana_to_romaji 1
+add_translations 0
