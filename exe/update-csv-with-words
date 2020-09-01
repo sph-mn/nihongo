@@ -7,7 +7,7 @@ config =
   word_frequency_limit: 10000
   dictionary_path: "data/jmdict-translations.json"
   kanji_path: "data/jouyou-by-stroke-count.txt"
-  meanings_path: "data/joyo-meanings.csv"
+  meanings_path: "data/jouyou-meanings.csv"
   output_path: "download/jouyou-by-stroke-count-with-words.csv"
   word_frequency_path: "data/wordlex-2011.txt"
 

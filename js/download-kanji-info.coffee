@@ -94,5 +94,5 @@ multiple_kanji_to_reading_csv = () ->
     console.log csv_stringify result
 
 #multiple_kanji_to_reading_csv()
-kanji_radicals_csv()
-#jouyou_info_csv()
+#kanji_radicals_csv()
+jouyou_info_csv()

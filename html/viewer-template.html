@@ -119,6 +119,10 @@
       #filter label {
           white-space: nowrap;
       }
+      #word-search-translation {
+          margin: 0;
+          margin-right: 3px;
+      }
       @media (max-width: 700px) {
         html {
             font-size: 14px;
@@ -161,19 +165,17 @@
         <li>includes over 30000 translations with words sorted by frequency of use</li>
         <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway.
           this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
-        <li>to keep the search simple and fast, katakana words (8000) are excluded and it doesnt search words much longer than input</li>
+        <li>to keep the search simple and fast, katakana words (8000) are not included. there is also a limit on the length of words returned, relative to the length of what has been entered, so that small word searches dont list all longer words where it is contained</li>
         <li>supports regexp syntax. for example, word$ for only searching at the end, ^word for only searching at the beginning or . for wildcards</li>
         <li>translations from <a href="http://www.edrdg.org/jmdict/j_jmdict.html">jmdict</a>, word frequency from <a href="http://www.lexique.org/?page_id=250">gimenes, m., & new, b. (2015) wordlex</a></li>
       </ul>
     </div>
     <div id="filter">
       <div class="row">
-        <input id="kanji-input" placeholder="kanji search..."/>
-        <button id="kanji-reset">reset</button>
+        <input id="kanji-input" placeholder="kanji search..."/><button id="kanji-reset">reset</button>
       </div>
       <div class="row">
-        <input id="word-input" placeholder="word search..."/>
-        <button id="word-reset">reset</button>
+        <input id="word-input" placeholder="word search..."/><button id="word-reset">reset</button>
         <label><input id="word-search-translation" type="checkbox"/>extended</label>
       </div>
     </div>

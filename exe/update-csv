@@ -3,6 +3,6 @@
 config =
   kanji_order_path: "data/jouyou-by-stroke-count.txt"
   output_path: "download/jouyou-by-stroke-count.csv"
-  meanings_path: "data/joyo-meanings.csv"
+  meanings_path: "data/jouyou-meanings.csv"
 
 require("../js/csv").update_csv config
