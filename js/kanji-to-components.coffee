@@ -37,11 +37,11 @@ invert_flat = (flat) ->
   result
 
 get_tree = (data) ->
-  data.jouyou.map (kanji) ->
-    parts = data.composition[kanji]
-    return [kanji, []] unless parts
+  data.kanji_data.map (kanji) ->
+    parts = data.composition[kanji[0]]
+    return [kanji[0], []] unless parts
     parts = find_parts(data.composition, parts)
-    [kanji, parts]
+    [kanji[0], parts]
 
 get_flat = (data) ->
   tree = get_tree data
@@ -59,7 +59,7 @@ flat_to_csv = (flat) ->
   result.join("\n")
 
 get_data = (config) ->
-  jouyou: read_csv_file(config.kanji_path)
+  kanji_data: read_csv_file config.kanji_path
   composition: parse_composition_map(config.composition_path)
 
 get_flat_inverted = (data) -> invert_flat get_flat data
