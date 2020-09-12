@@ -17,6 +17,7 @@ under download/
 * multiple-kanji-to-reading.csv
 
 # kanji viewer
+kanji and fuzzy search word translation dictionary.
 single-file browser page at download/kanji-viewer.html for kanji stroke order and meaning lookup and a top 30000 fuzzy search for words that finds words with similar pronunciation.
 the file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
 
@@ -25,11 +26,10 @@ the file can be downloaded and viewed in a browser but is also hosted [here](htt
 * word frequency: [gimenes, m., & new, b. (2015) wordlex](http://www.lexique.org/?page_id=250)
 * word translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0)
 * stroke order graphics: [kanjisvg](https://github.com/KanjiVG/kanjivg/releases)
-* extras
-  * kanji to component mapping: [kanji bakuhatsu](https://github.com/ScottOglesby/kanji-bakuhatsu) (gpl3)
-  * component names: [kanji alive](https://github.com/kanjialive/kanji-data-media) language data (cc-by-4.0)
-  * [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
-  * unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
+* kanji to component mapping: [kanji bakuhatsu](https://github.com/ScottOglesby/kanji-bakuhatsu) (gpl3)
+* component names: [kanji alive](https://github.com/kanjialive/kanji-data-media) language data (cc-by-4.0)
+* [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
+* unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
 
 data is included, except for kanjisvg. all other data of this project is cc-by-sa-4.0.
 

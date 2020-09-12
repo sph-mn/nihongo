@@ -67,9 +67,9 @@ update_kanji_data = (config) ->
   kanji = read_kanji config.kanji_path
   # load all svg files asynchronously
   result_promises = kanji.map (a) ->
-    [id, meaning] = a
+    [id, meaning, readings] = a
     new Promise (resolve, reject) ->
-      resolver = (svg) -> resolve [id, meaning, svg]
+      resolver = (svg) -> resolve [id, meaning, readings, svg]
       stroke_order_svg(a[0]).then resolver
   Promise.all(result_promises).then (result) ->
     fs.writeFileSync config.output_path, JSON.stringify(result)

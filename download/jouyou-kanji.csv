@@ -17,7 +17,7 @@
 丸,circle,gan/maru/maru-i/maru-meru
 久,long time,kyuu/hisa-shii
 及,reach out,kyuu/oyo-bu/oyo-bi/oyo-bosu
-弓,"bow (archery, violin)",kyuu/yumi
+弓,bow,kyuu/yumi
 巾,towel,kin
 己,self,ko/ki/onore
 口,mouth,kou/ku/kuchi
@@ -44,7 +44,7 @@
 万,ten thousand,man/ban
 与,give,yo/ata-eru
 引,pull,in/hi-ku/hi-keru
-円,"round, yen",en/maru-i
+円,round,en/maru-i
 王,king,ou
 化,change,ka/ke/ba-keru/ba-kasu
 火,fire,ka/hi
@@ -56,7 +56,7 @@
 斤,axe,kin
 区,ward,ku
 欠,lack,ketsu/ka-keru/ka-ku
-月,"month, moon",getsu/gatsu/tsuki
+月,moon,getsu/gatsu/tsuki
 犬,dog,ken/inu
 元,origin,gen/gan/moto
 幻,phantasm,gen/maboroshi
@@ -101,7 +101,7 @@
 夫,husband,fu/otto
 父,father,fu/chichi
 仏,Buddha,butsu/hotoke
-分,"part, minute of time",bun/fun/bu/wa-keru/wa-kareru/wa-karu/wa-katsu
+分,part,bun/fun/bu/wa-keru/wa-kareru/wa-karu/wa-katsu
 文,writing,bun/mon/fumi
 片,one-sided,hen/kata
 方,direction,hou/kata
@@ -295,7 +295,7 @@
 竹,bamboo,chiku/take
 仲,relationship,chuu/naka
 虫,insect,chuu/mushi
-兆,"portent, trillion",chou/kiza-su/kiza-shi
+兆,portent,chou/kiza-su/kiza-shi
 伝,transmit,den/tsuta-waru/tsuta-eru/tsuta-u
 吐,spit,to/ha-ku
 灯,lamp,tou/hi
@@ -778,7 +778,7 @@
 城,castle,jou/shiro
 浄,clean,jou
 拭,wipe,shoku/fu-ku/nugu-u
-食,"eat, meal",shoku/ku-u/ku-rau/ta-beru
+食,eat,shoku/ku-u/ku-rau/ta-beru
 侵,encroach,shin/oka-su
 信,trust,shin
 津,haven,shin/tsu
@@ -887,7 +887,7 @@
 宴,banquet,en
 桜,cherry tree,ou/sakura
 翁,venerable old man,ou
-俺,"I, we",ore
+俺,i,ore
 恩,grace,on
 夏,summer,ka/natsu
 家,house,ka/ke/ie/ya
@@ -932,7 +932,7 @@
 航,cruise,kou
 貢,tribute,kou/mitsu-gu
 降,descend,kou/o-riru/o-rosu/fu-ru
-高,"tall, expensive",kou/taka-i/taka/taka-maru/taka-meru
+高,tall,kou/taka-i/taka/taka-maru/taka-meru
 剛,sturdy,gou
 骨,bone,kotsu/hone
 根,root,kon/ne

@@ -35,11 +35,11 @@
           display: flex;
           flex-wrap: wrap;
       }
-      #kanji-results > * {
-          width: 25rem;
-      }
       #kanji-results > *:not(.mini) + * {
           clear: left;
+      }
+      #kanji-results > * {
+          min-width: 25rem;
       }
       #kanji-results > * >* {
           float: left;
@@ -73,9 +73,12 @@
           text-align: center;
           display: none;
       }
-      #kanji-results > * .m>div {
+      #kanji-results > * .m > div {
           position: relative;
           top: 7rem;
+      }
+      #kanji-results > * .m .r {
+          color: #aaa;
       }
       #kanji-results > *.mini {
           clear: none;
@@ -189,7 +192,7 @@
         var input = document.getElementById("kanji-input")
         var button = document.getElementById("kanji-reset")
         var results = document.getElementById("kanji-results")
-        function make_result(kanji, meaning, svg) {
+        function make_result(kanji, meaning, readings, svg) {
           var result = document.createElement("div")
           var k = document.createElement("div")
           var k1 = document.createElement("span")
@@ -202,7 +205,7 @@
           m.className = "m"
           k1.innerHTML = svg
           k2.innerHTML = kanji
-          m_content.innerHTML = meaning
+          m_content.innerHTML = "<div>" + meaning + "</div><div class=\"r\">" + readings + "</div>"
           k.appendChild(k1)
           k.appendChild(k2)
           m.appendChild(m_content)
