@@ -304,8 +304,9 @@
               }
             }
           } else {
+            var regexp = new RegExp(value)
             for (var i = 0; (i < word_data.length && matches.length < result_limit); i += 1) {
-              if (word_data[i][0].includes(value)) matches.push(make_result_line(word_data[i]))
+              if (regexp.test(word_data[i][0])) matches.push(make_result_line(word_data[i]))
             }
           }
           results.innerHTML = matches.join("<br/>")

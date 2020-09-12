@@ -1,8 +1,0 @@
-#!/usr/bin/env coffee
-
-config =
-  kanji_path: "data/jouyou-by-stroke-count.txt"
-  composition_path: "data/extras/kanji-composition-map.txt"
-  output_path: "download/extras/jouyou-two-shared-components.csv"
-
-require("../js/shared-components").update_csv config

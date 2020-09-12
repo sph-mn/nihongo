@@ -1,4 +1,4 @@
-# this code writes the html file for the single-file viewer page built from
+# this code compiles the html file for the single-file viewer page built from
 # html/viewer-template.html and kanjivg stroke images.
 # https://github.com/KanjiVG/kanjivg/releases
 
@@ -54,7 +54,7 @@ clean_svg = (xml, c) ->
     builder = new xml2js.Builder({renderOpts: {pretty: false}, headless: true})
     c builder.buildObject data
 
-update_kanji_info = (config) ->
+update_kanji_data = (config) ->
   stroke_order_svg = (id) ->
     filename = "0" + id.charCodeAt(0).toString(16) + ".svg"
     path = config.kanjivg_path + "/" + filename
@@ -75,14 +75,14 @@ update_kanji_info = (config) ->
     fs.writeFileSync config.output_path, JSON.stringify(result)
 
 update_viewer = (config) ->
-  kanji = fs.readFileSync(config.kanji_info_path, "utf8")
-  words = fs.readFileSync config.word_info_path, "utf8"
+  kanji = fs.readFileSync(config.kanji_data_path, "utf8")
+  words = fs.readFileSync config.word_data_path, "utf8"
   html = fs.readFileSync config.html_path, "utf8"
   html = html.replace("{kanji-data}", kanji).replace("{word-data}", words)
   on_error = (a) -> if a then console.error a
   fs.writeFile config.output_path, html, on_error
 
-for_each_word_info = (config, f) ->
+for_each_word_data = (config, f) ->
   dictionary = object_from_json_file config.dictionary_path
   by_reading = {}
   for key in Object.keys dictionary
@@ -107,12 +107,12 @@ for_each_word_info = (config, f) ->
     romaji = wanakana.toRomaji entry[0]
     f [word, romaji, meanings]
 
-update_word_info = (config) ->
+update_word_data = (config) ->
   result = []
-  for_each_word_info config, (a) -> result.push a
+  for_each_word_data config, (a) -> result.push a
   fs.writeFileSync config.output_path, JSON.stringify result
 
 module.exports =
-  update_word_info: update_word_info
-  update_kanji_info: update_kanji_info
+  update_word_data: update_word_data
+  update_kanji_data: update_kanji_data
   update_viewer: update_viewer

@@ -36,6 +36,7 @@ update_json = (config) ->
       return if result[word]
       reading = find_reading entry.R_ELE, config.frequency_tags
       return unless reading
+      reading = wanakana.toRomaji reading
       # select meanings
       translations = []
       entry.SENSE.forEach (a) ->

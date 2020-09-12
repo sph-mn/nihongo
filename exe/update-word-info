@@ -1,9 +1,0 @@
-#!/usr/bin/env coffee
-
-config =
-  output_path: "data/extras/word-info.json"
-  dictionary_path: "data/jmdict-translations.json"
-  word_frequency_path: "data/wordlex-2011.txt"
-  word_frequency_limit: false
-
-require("../js/viewer.coffee").update_word_info config

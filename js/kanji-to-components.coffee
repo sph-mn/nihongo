@@ -1,6 +1,8 @@
 # uses the component data from kanji bakuhatsu https://github.com/ScottOglesby/kanji-bakuhatsu.
 
 fs = require "fs"
+csv_parse = require "csv-parse/lib/sync"
+read_csv_file = (path) -> csv_parse fs.readFileSync(path, "utf-8"), {delimiter: ","}
 array_delete_duplicates = (a) -> a.filter (b, i) -> i is a.indexOf b
 
 parse_composition_map = (path) ->
@@ -57,7 +59,7 @@ flat_to_csv = (flat) ->
   result.join("\n")
 
 get_data = (config) ->
-  jouyou: fs.readFileSync(config.kanji_path, "utf-8").split("\n")
+  jouyou: read_csv_file(config.kanji_path)
   composition: parse_composition_map(config.composition_path)
 
 get_flat_inverted = (data) -> invert_flat get_flat data

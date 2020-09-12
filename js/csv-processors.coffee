@@ -63,8 +63,15 @@ sort_by_katakana = (column_index) ->
       bn = wanakana.isKatakana b[column_index]
       bn - an
 
+csv_replace_non_ascii = (column_index) ->
+  csv_delimiter = ","
+  process_csv_lines_stdin (a) ->
+    a[2] = a[2].replace("ō", "ou").replace("ū", "uu")
+    a
+
 #csv_filter_by_list "newline_list.txt", 1
 #csv_delete_kana_rows 3
 #csv_kana_to_romaji 1
 #add_translations 0
-sort_by_katakana 1
+#sort_by_katakana 1
+csv_replace_non_ascii 2

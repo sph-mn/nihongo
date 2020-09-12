@@ -1,8 +1,29 @@
 #!/usr/bin/env coffee
 
-config =
-  kanji_order_path: "data/jouyou-by-stroke-count.txt"
-  output_path: "download/jouyou-by-stroke-count.csv"
-  meanings_path: "data/jouyou-meanings.csv"
+config_jouyou_words =
+  example_word_separator: "\n"
+  example_word_limit: 5
+  example_meanings_limit: 3
+  word_frequency_limit: 10000
+  dictionary_path: "data/jmdict-translations-examples.json"
+  kanji_path: "download/jouyou-kanji.csv"
+  output_path: "download/jouyou-kanji-with-words.csv"
+  word_frequency_path: "data/wordlex-2011.txt"
 
-require("../js/csv").update_csv config
+config_kanji_components =
+  kanji_path: "download/jouyou-kanji.csv"
+  composition_path: "data/kanji-composition-map.txt"
+  output_path: "download/components-kc.csv"
+  output_path_inverted: "download/components-ck.csv"
+
+config_shared_components =
+  kanji_path: "download/jouyou-kanji.csv"
+  composition_path: "data/kanji-composition-map.txt"
+  output_path: "download/jouyou-two-shared-components.csv"
+
+csv_lib = require("../js/csv")
+csv_lib.update_jouyou_with_words config_jouyou_words
+config_jouyou_words.output_path = "download/jouyou-kanji-only-words.csv"
+csv_lib.update_jouyou_only_words config_jouyou_words
+require("../js/kanji-to-components").update_csv config_kanji_components
+require("../js/shared-components").update_csv config_shared_components

@@ -1,35 +1,37 @@
-# features
-* anki deck for kanji and one-word meaning. the characters are sorted by stroke count, which is a natural order that roughly corresponds to complexity, where parts come before compounds and learning progress is apparent
-* csv file with kanji meaning
-* single-file kanji stroke order and meaning lookup, plus top 15000 words fuzzy search at `download/kanji-viewer.html`. finds words with similar pronunciation. this html file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html)
-* csv file with kanji and example words. words in the top 10000, sensitive words excluded
-* csv file with frequently used example words for the jouyou kanji. currently up to 5 words per kanji, freely adjustable
-* csv files have a sort index field at the end that can be used as a sort field in anki
-* some additional files for kanji components and other things under download/extras and data/extras
-  * list of components for each kanji and the inverse. alternative to kradfile and radfile
-  * list of kanji that share at least two components
-* uses the 2136 jouyou kanji as of 2020
+lists related to kanji and scripts to compile the lists.
 
-# about the anki deck
-* contains less information than many other decks, which means familiarity with the whole set is reached in a shorter period of time
-* uses a font that looks hand-drawn and makes individual strokes more apparent. this can also help with differentiating components. note: it is not clear if the font needs to be included with the anki deck, currently it is not included
-* some meanings use relatively uncommon english words. examples: acquiesce, adroit, ardent, beckon, confer, consign, consort, consummate, portent
-* the jouyou kanji in general exclude some commonly seen kanji. examples: 嬉萌伊綺嘘菅貰縺繋呟也
-* the deck is not on ankiweb because ankiweb deletes decks that dont get popular enough in a period of a few weeks. there are apparently not enough people interested in such a deck for it to not get deleted
+# csv lists
+under download/
+* components-ck.csv: [components, kanji], alternative to radkfile
+* components-kc.csv: [kanji, components], alternative to kradfile
+* jouyou-kanji.csv: the 2136 jouyou kanji as of 2020 sorted by stroke count with single word meaning and common readings. [kanji, meaning, readings]
+  * some meanings use relatively uncommon english words, for example: acquiesce, adroit, ardent, beckon, confer, consign, consort, consummate, portent
+  * stroke count roughly corresponds to complexity, components come first
+  * the jouyou kanji in general exclude some commonly seen kanji, for example: 嬉萌伊綺嘘菅貰縺繋呟也
+* jouyou-kanji-only-words.csv: frequently used example words for the jouyou kanji. currently up to 5 words per kanji
+* jouyou-kanji-with-words.csv: like jouyou-kanji.csv but with an additional column for newline separated example words. [kanji, meaning, readings, words]
+* jouyou-stroke-count.csv: [kanji, stroke-count]
+* jouyou-two-shared-components.csv: list of kanji that share at least two components. [component, kanji]
+* jouyou-with-shared-readings.csv
+* kanji-radicals.csv
+* multiple-kanji-to-reading.csv
+
+# kanji viewer
+single-file browser page at download/kanji-viewer.html for kanji stroke order and meaning lookup and a top 30000 fuzzy search for words that finds words with similar pronunciation.
+the file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
 
 # data sources
-* [list of joyo kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
+* [list of jouyou kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
 * word frequency: [gimenes, m., & new, b. (2015) wordlex](http://www.lexique.org/?page_id=250)
 * word translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0)
 * stroke order graphics: [kanjisvg](https://github.com/KanjiVG/kanjivg/releases)
 * extras
   * kanji to component mapping: [kanji bakuhatsu](https://github.com/ScottOglesby/kanji-bakuhatsu) (gpl3)
   * component names: [kanji alive](https://github.com/kanjialive/kanji-data-media) language data (cc-by-4.0)
-  * [jlpt n5 words and meanings](http://www.passjapanesetest.com/jlpt-n5-vocabulary-list/)
   * [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
   * unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
 
-data is included, except for kanjisvg and the jlpt n5 wordlist. all other data of this project is cc-by-sa-4.0.
+data is included, except for kanjisvg. all other data of this project is cc-by-sa-4.0.
 
 # technical
 * code uses node.js and its package manager npm. code is written in [coffeescript](http://coffeescript.org), which is really just javascript reduced
