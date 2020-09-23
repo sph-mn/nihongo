@@ -5,8 +5,10 @@
 fs = require "fs"
 wanakana = require "wanakana"
 xml2js = require "xml2js"
+csv_parse = require "csv-parse/lib/sync"
 array_from_newline_file = (path) -> fs.readFileSync(path).toString().trim().split("\n")
 object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
+read_csv_file = (path) -> csv_parse fs.readFileSync(path, "utf-8"), {delimiter: " "}
 
 is_object = (a) ->
   type = typeof a
@@ -19,9 +21,6 @@ object_tree_foreach = (a, f) ->
       object_tree_foreach value, f
       f key, value
     else f key, value, a
-
-read_kanji = (path) ->
-  fs.readFileSync(path).toString().trim().split("\n").map (a) -> a.split ","
 
 clean_svg = (xml, c) ->
   # the kanjisvg xml has many attributes and styles that are irrelevant
@@ -64,7 +63,7 @@ update_kanji_data = (config) ->
           console.error error.toString(), "for character #{id}"
           resolve false
         else clean_svg xml, resolve
-  kanji = read_kanji config.kanji_path
+  kanji = read_csv_file config.kanji_path
   # load all svg files asynchronously
   result_promises = kanji.map (a) ->
     [id, meaning, readings] = a
