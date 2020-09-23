@@ -4,7 +4,8 @@ csv_stringify = require "csv-stringify"
 wanakana = require "wanakana"
 array_from_newline_file = (path) -> fs.readFileSync(path).toString().trim().split("\n")
 object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
-read_csv_file = (path) -> csv_parse fs.readFileSync(path, "utf-8"), {delimiter: ","}
+csv_delimiter = " "
+read_csv_file = (path) -> csv_parse fs.readFileSync(path, "utf-8"), {delimiter: csv_delimiter}
 
 example_words_to_string = (a, separator) ->
   a = a.map (a) ->
@@ -37,7 +38,7 @@ update_jouyou_with_words = (config) ->
   # kanji, meaning, readings, words
   kanji_data = read_csv_file config.kanji_path
   get_example_words = get_example_words_f config
-  csv_out = csv_stringify()
+  csv_out = csv_stringify({delimiter: csv_delimiter})
   csv_out.pipe fs.createWriteStream config.output_path
   for kanji, i in kanji_data
     examples = get_example_words kanji[0]
@@ -49,7 +50,7 @@ update_jouyou_only_words = (config) ->
   # word, pronounciation, meanings
   kanji_data = read_csv_file config.kanji_path
   get_example_words = get_example_words_f config
-  csv_out = csv_stringify()
+  csv_out = csv_stringify({delimiter: csv_delimiter})
   csv_out.pipe fs.createWriteStream config.output_path
   words = {}
   for kanji in kanji_data

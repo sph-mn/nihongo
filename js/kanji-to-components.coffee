@@ -2,7 +2,7 @@
 
 fs = require "fs"
 csv_parse = require "csv-parse/lib/sync"
-read_csv_file = (path) -> csv_parse fs.readFileSync(path, "utf-8"), {delimiter: ","}
+read_csv_file = (path) -> csv_parse fs.readFileSync(path, "utf-8"), {delimiter: " "}
 array_delete_duplicates = (a) -> a.filter (b, i) -> i is a.indexOf b
 
 parse_composition_map = (path) ->
