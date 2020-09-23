@@ -12,5 +12,5 @@ config_word_data =
   word_frequency_limit: false
 
 viewer_lib = require "../js/viewer.coffee"
-viewer_lib.update_word_data config_word_data
 viewer_lib.update_kanji_data config_kanji_data
+viewer_lib.update_word_data config_word_data

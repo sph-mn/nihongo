@@ -1,5 +1,5 @@
 一,one,ichi/itsu/hito/hito-tsu
-乙,the latter,otsu
+乙,latter,otsu
 九,nine,kyuu/ku/kokono/kokono-tsu
 七,seven,shichi/nana/nana-tsu
 十,ten,juu/ji'/too/to
@@ -9,7 +9,7 @@
 二,two,ni/futa/futa-tsu
 入,enter,nyuu/i-ru/i-reru/hai-ru
 八,eight,hachi/ya/ya-tsu/ya'-tsu
-又,or again,mata
+又,or,mata
 了,finish,ryou
 力,power,ryoku/riki/chikara
 下,below,ka/ge/shita/shimo/moto/sa-geru/sa-garu/kuda-ru/kuda-su/kuda-saru/o-rosu/o-riru
@@ -246,12 +246,12 @@
 件,affair,ken
 交,mix,kou/maji-waru/maji-eru/ma-jiru/ma-zaru/ma-zeru/ka-u/ka-wasu
 光,ray,kou/hika-ru/hikari
-向,over there,kou/mu-ku/mu-keru/mu-kau/mu-kō
+向,over there,kou/mu-ku/mu-keru/mu-kau/mu-kou
 后,empress,kou
 好,like,kou/kono-mu/su-ku
 江,inlet,kou/e
 考,think,kou/kanga-eru
-行,go,kou/gyō/i-ku/yu-ku/okona-u
+行,go,kou/gyou/i-ku/yu-ku/okona-u
 合,fit,gou/ga'/a-u/a-wasu/a-waseru
 再,again,sai/futata-bi
 在,exist,zai/a-ru
@@ -317,7 +317,7 @@
 朴,crude,boku
 毎,every,mai
 名,name,mei/myou/na
-妄,delusion,mou/bō
+妄,delusion,mou/bou
 有,have,yuu/u/a-ru
 羊,sheep,you/hitsuji
 吏,officer,ri
@@ -383,7 +383,7 @@
 志,intention,shi/kokoroza-su/kokorozashi
 私,me,shi/watakushi/watashi
 似,becoming,ji/ni-ru
-&,child,ji
+児,child,ji
 社,company,sha/yashiro
 車,car,sha/kuruma
 寿,longevity,ju/kotobuki
@@ -438,7 +438,7 @@
 把,grasp,ha
 売,sell,bai/u-ru/u-reru
 伯,chief,haku
-&,wheat,baku/mugi
+麦,wheat,baku/mugi
 抜,slip out,batsu/nu-ku/nu-keru/nu-kasu/nu-karu
 伴,consort,han/ban/tomona-u
 判,judge,han/ban
@@ -562,7 +562,7 @@
 侍,waiter,ji/samurai
 治,govern,ji/chi/osa-meru/osa-maru/nao-ru/nao-su
 実,truth,jitsu/mi/mino-ru
-&,cottage,sha
+舎,cottage,sha
 者,someone,sha/mono
 邪,wicked,ja
 若,young,jaku/waka-i/mo-shikuha
@@ -654,7 +654,7 @@
 奉,observance,hou/tatematsu-ru
 宝,treasure,hou/takara
 抱,embrace,hou/da-ku/ida-ku/kaka-eru
-放,release,hou/hana-su/hana-tsu/hana-reru/hō-ru
+放,release,hou/hana-su/hana-tsu/hana-reru/hou-ru
 法,method,hou
 泡,bubbles,hou/awa
 房,tassel,bou/fusa
@@ -740,7 +740,7 @@
 厚,thick,kou/atsu-i
 恒,constancy,kou
 洪,deluge,kou
-皇,emperor,kou/ō
+皇,emperor,kou/ou
 紅,deep red,kou/beni/kurenai
 荒,laid waste,kou/ara-i/a-reru/a-rasu
 郊,outskirts,kou
@@ -800,7 +800,7 @@
 前,in front,zen/mae
 祖,ancestor,so
 奏,play music,sou/kana-deru
-相,mutual,sou/shō/ai
+相,mutual,sou/shou/ai
 荘,villa,sou
 草,grass,sou/kusa
 送,send,sou/oku-ru
@@ -926,7 +926,7 @@
 庫,warehouse,ko
 娯,recreation,go
 悟,enlightenment,go/sato-ru
-候,climate,kou/sōrō
+候,climate,kou/sourou
 校,school,kou
 耕,till,kou/tagaya-su
 航,cruise,kou
@@ -1130,9 +1130,9 @@
 虚,void,kyo
 許,permit,kyo/yuru-su
 魚,fish,gyo/uo/sakana
-強,strong,kyou/gō/tsuyo-i/tsuyo-maru/tsuyo-meru/shi-iru
+強,strong,kyou/gou/tsuyo-i/tsuyo-maru/tsuyo-meru/shi-iru
 教,teach,kyou/oshi-eru/oso-waru
-郷,home town,kyou/gō
+郷,home town,kyou/gou
 菌,germ,kin
 惧,dread,gu
 偶,accidentally,guu
@@ -1149,7 +1149,7 @@
 康,health,kou
 控,withdraw,kou/hika-eru
 梗,close up,kou
-黄,yellow,kou/ō/ki
+黄,yellow,kou/ou/ki
 黒,black,koku/kuro/kuro-i
 頃,times,koro
 婚,marriage,kon
@@ -1284,7 +1284,7 @@
 偏,partial,hen/katayo-ru
 崩,crumble,hou/kuzu-reru/kuzu-su
 訪,visit,hou/otozu-reru/tazu-neru
-望,hope,bou/mō/nozo-mu
+望,hope,bou/mou/nozo-mu
 堀,ditch,hori
 麻,hemp,ma/asa
 密,secrecy,mitsu
@@ -1346,7 +1346,7 @@
 揮,brandish,ki
 期,period of time,ki
 棋,chess piece,ki
-貴,precious,ki/tatto-i/touto-i/tatto-bu/tōto-bu
+貴,precious,ki/tatto-i/touto-i/tatto-bu/touto-bu
 欺,deceit,gi/azamu-ku
 喫,consume,kitsu
 給,salary,kyuu
@@ -1404,7 +1404,7 @@
 粧,cosmetics,shou
 詔,imperial edict,shou/mikotonori
 証,evidence,shou
-象,elephant,shou/zō
+象,elephant,shou/zou
 場,place,jou/ba
 畳,tatami mat,jou/tata-mu/tatami
 植,plant,shoku/u-eru/u-waru
@@ -1418,7 +1418,7 @@
 婿,bridegroom,sei/muko
 晴,clear up,sei/ha-reru/ha-rasu
 税,tax,zei
-&,discontinue,zetsu/ta-eru/ta-yasu/ta-tsu
+絶,discontinue,zetsu/ta-eru/ta-yasu/ta-tsu
 善,good,zen/yo-i
 然,so,zen/nen
 疎,alienate,so/uto-i/uto-mu
@@ -1426,11 +1426,11 @@
 創,create,sou/tsuku-ru
 喪,miss,sou/mo
 痩,get thin,sou/ya-seru
-葬,interment,sou/hōmu-ru
-装,attire,sou/shō/yosoo-u
+葬,interment,sou/houmu-ru
+装,attire,sou/shou/yosoo-u
 測,fathom,soku/haka-ru
 属,belong,zoku
-尊,revered,son/tatto-i/touto-i/tatto-bu/tōto-bu
+尊,revered,son/tatto-i/touto-i/tatto-bu/touto-bu
 堕,degenerate,da
 惰,lazy,da
 替,exchange,tai/ka-eru/ka-waru
@@ -1472,7 +1472,7 @@
 博,Dr.,haku
 斑,blemish,han
 飯,meal,han/meshi
-&,nightfall,ban
+晩,nightfall,ban
 番,one's turn,ban
 蛮,barbarian,ban
 悲,sad,hi/kana-shii/kana-shimu
@@ -1558,7 +1558,7 @@
 義,righteousness,gi
 詰,packed,kitsu/tsu-meru/tsu-maru/tsu-mu
 嗅,smell,kyuu/ka-gu
-業,business,gyou/gō/waza
+業,business,gyou/gou/waza
 僅,a wee bit,kin/wazu-ka
 禁,prohibition,kin
 愚,foolish,gu/oro-ka
@@ -1602,7 +1602,7 @@
 準,standard,jun
 署,government office,sho
 傷,wound,shou/kizu/ita-mu/ita-meru
-&,exhort,shou
+奨,exhort,shou
 照,illuminate,shou/te-ru/te-rasu/te-reru
 詳,detailed,shou/kuwa-shii
 蒸,steam,jou/mu-su/mu-reru/mu-rasu
@@ -1950,7 +1950,7 @@
 憲,constitution,ken
 賢,intelligent,ken/kashiko-i
 錮,tie up,ko
-興,entertain,kou/kyō/oko-ru/oko-su
+興,entertain,kou/kyou/oko-ru/oko-su
 衡,equilibrium,kou
 鋼,steel,kou/hagane
 墾,ground-breaking,kon

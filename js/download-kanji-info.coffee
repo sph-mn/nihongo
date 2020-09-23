@@ -46,7 +46,9 @@ kanji_radicals = () ->
     console.log csv_stringify result
 
 jouyou_info = (c) ->
-  # display csv with data corresponding to the following header
+  # display csv with data corresponding to the following header.
+  # there are html entities and other html in wikidata, not fully usable as is,
+  # for example 児.
   header = ["stroke_count", "kanji", "meaning", "readings"]
   get_readings = (a) ->
     a  = a.split("<br>")[1]

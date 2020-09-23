@@ -1092,6 +1092,8 @@
 真似,mane,"imitating, copying, mimicry; behavior, behaviour, action, conduct"
 似合う,niau,"to suit, to match, to become, to be like"
 類似,ruiji,"resemblance, similarity, likeness, analogy"
+児童,jidou,"children, juvenile"
+育児,ikuji,"childcare, child-rearing, nursing, upbringing"
 社長,shachou,"company president, manager, director"
 社員,shain,"company employee; member of a corporation, company stockholder (esp. in legal contexts)"
 神社,jinja,Shinto shrine
@@ -1219,6 +1221,9 @@
 売り,uri,"sale, selling; selling point, gimmick"
 売る,uru,to sell
 商売,shoubai,"trade, business, commerce, transaction, occupation"
+蕎麦,soba,buckwheat (Fagopyrum esculentum); soba
+麦,mugi,"wheat, barley, oat (oats)"
+小麦粉,komugiko,wheat flour
 抜き,nuki,"without, not including, dispensed with; (beating) in succession"
 抜群,batsugun,"outstanding, excellent, exceptional, surpassing, extraordinary, distinguished; preeminence, distinction, extraordinariness"
 抜粋,bassui,"extract, excerpt, selection"
@@ -1481,6 +1486,7 @@
 実は,jitsuha,"as a matter of fact, by the way, to tell you the truth, to be honest, frankly"
 現実,genjitsu,"reality, actuality, hard fact"
 事実,jijitsu,"fact, truth, reality"
+舎,sha,"hut, house"
 者,mono,person
 作者,sakusha,"author, authoress, writer, composer, artist"
 読者,dokusha,reader
@@ -2383,7 +2389,6 @@
 敏感,binkan,"sensitive, alert, aware, susceptible"
 浮かぶ,ukabu,"to float, to be suspended; to rise to surface"
 粉,kona,"flour, meal, powder, dust"
-小麦粉,komugiko,wheat flour
 勉強,benkyou,study; diligence
 逮捕,taiho,"arrest, apprehension, capture"
 砲,hou,"gun, cannon, artillery, ordnance"
@@ -2933,6 +2938,7 @@
 増税,zouzei,tax increase
 税務,zeimu,taxation business
 納税,nouzei,payment of taxes
+絶賛,zessan,"high praise, great admiration, rave reviews"
 善,zen,"good, goodness, right, virtue"
 最善,saizen,"the very best, utmost"
 全然,zenzen,"not at all (with neg. verb); wholly, entirely, completely"
@@ -3025,7 +3031,6 @@
 統合,tougou,"integration, unification, unity, combination, consolidation, synthesis"
 統計,toukei,statistics
 統一,touitsu,"unity, consolidation, uniformity, unification, compatible"
-児童,jidou,"children, juvenile"
 道,michi,"road, path, street, lane, passage; route, way"
 報道,houdou,"information, report, journalism, news; to report"
 道路,douro,"road, highway"
@@ -3038,6 +3043,10 @@
 博物館,hakubutsukan,museum
 ご飯,gohan,cooked rice; meal
 飯,meshi,"cooked rice; meal, food"
+晩,ban,evening; counter for nights
+毎晩,maiban,every night
+晩年,bannen,"one's later years, final years (in life)"
+今晩,konban,"tonight, this evening"
 番,ban,number (in a series); (one's) turn
 番目,banme,indicates position in a sequence; divisions of a kabuki performance
 悲しい,kanashii,"sad, miserable, unhappy, sorrowful; sad, lamentable, deplorable, grievous"
@@ -3495,7 +3504,6 @@
 撮る,toru,"to take (a photo); to record (video, audio, etc.), to make (a film)"
 賛成,sansei,"approval, agreement, support, favour, favor"
 賛同,sandou,"approval, endorsement"
-絶賛,zessan,"high praise, great admiration, rave reviews"
 暫く,shibaraku,"for a moment, for a minute; for a while, for some time"
 暫定,zantei,"provisional, temporary, tentative"
 真摯,shinshi,"sincere, earnest, serious"
