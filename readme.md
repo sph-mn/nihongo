@@ -1,4 +1,10 @@
-lists related to kanji and scripts to compile the lists.
+a fast dictionary, lists related to kanji and scripts to compile the lists.
+
+# kanji viewer
+* kanji stroke order, meaning and common readings lookup
+* top 30000 words fuzzy search that searches for similar pronunciation and sorts results by frequency
+* single-file browser page. the file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html)
+* download/kanji-viewer.html
 
 # csv lists
 under download/
@@ -10,16 +16,12 @@ under download/
   * the jouyou kanji in general exclude some commonly seen kanji, for example: 嬉萌伊綺嘘菅貰縺繋呟也
 * jouyou-kanji-only-words.csv: frequently used example words for the jouyou kanji. currently up to 5 words per kanji
 * jouyou-kanji-with-words.csv: like jouyou-kanji.csv but with an additional column for newline separated example words. [kanji, meaning, readings, words]
+* jouyou-kanji-by-reading.csv: sorted by number of readings and reading, starting with kanji that have few common readings
 * jouyou-stroke-count.csv: [kanji, stroke-count]
 * jouyou-two-shared-components.csv: list of kanji that share at least two components. [component, kanji]
 * jouyou-with-shared-readings.csv
 * kanji-radicals.csv
 * multiple-kanji-to-reading.csv
-
-# kanji viewer
-kanji and fuzzy search word translation dictionary.
-single-file browser page at download/kanji-viewer.html for kanji stroke order and meaning lookup and a top 30000 fuzzy search for words that finds words with similar pronunciation.
-the file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html).
 
 # data sources
 * [list of jouyou kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
