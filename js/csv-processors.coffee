@@ -9,9 +9,10 @@ wanakana = require "wanakana"
 object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
 csv_delimiter = " "
 
-read_csv = (a) -> csv_parse a, {delimiter: csv_delimiter}
+read_csv = (a) -> csv_parse a, {delimiter: csv_delimiter, relax_column_count: true}
 write_csv = (a) -> csv_stringify a, {delimiter: csv_delimiter}
-process_csv_stdin = (f) -> console.log write_csv f read_csv fs.readFileSync(process.stdin.fd, "utf-8")
+process_csv_stdin = (f) ->
+  console.log write_csv f read_csv fs.readFileSync(process.stdin.fd, "utf-8")
 process_csv_lines_stdin = (f) ->
   process_csv_stdin (a) -> a.map(f).filter((a) -> a)
 
@@ -73,7 +74,16 @@ csv_replace_non_ascii = (column_index) ->
 csv_add_slash_count = (column_index) ->
   csv_delimiter = " "
   process_csv_lines_stdin (a) ->
-    a.push (a[column_index].split("/").length)
+    count = a[column_index].split("/").length
+    [count].concat a
+
+csv_converge_readings = (column_index) ->
+  csv_delimiter = " "
+  process_csv_lines_stdin (a) ->
+    readings = a[column_index].split("/")
+    readings = readings.map (a) -> a.split("-")[0].replace("'", "")
+    readings = readings.filter (a, i, self) -> self.indexOf(a) == i
+    a[column_index] = readings.join "/"
     a
 
 #csv_filter_by_list "newline_list.txt", 1
@@ -82,4 +92,5 @@ csv_add_slash_count = (column_index) ->
 #add_translations 0
 #sort_by_katakana 1
 #csv_replace_non_ascii 2
-csv_add_slash_count 2
+csv_add_slash_count 1
+#csv_converge_readings 1

@@ -22,6 +22,13 @@ object_tree_foreach = (a, f) ->
       f key, value
     else f key, value, a
 
+deduplicate_readings = (a) ->
+  # yoku/a-biru/a-biseru -> yoku/a
+  a = a.split("/")
+  a = a.map (a) -> a.split("-")[0].replace("'", "")
+  a = a.filter (a, i, self) -> self.indexOf(a) == i
+  a.join("/")
+
 clean_svg = (xml, c) ->
   # the kanjisvg xml has many attributes and styles that are irrelevant
   # and would bloat the result file size
@@ -67,6 +74,7 @@ update_kanji_data = (config) ->
   # load all svg files asynchronously
   result_promises = kanji.map (a) ->
     [id, meaning, readings] = a
+    readings = deduplicate_readings readings
     new Promise (resolve, reject) ->
       resolver = (svg) -> resolve [id, meaning, readings, svg]
       stroke_order_svg(a[0]).then resolver

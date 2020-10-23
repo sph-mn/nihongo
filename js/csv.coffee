@@ -14,6 +14,7 @@ example_words_to_string = (a, separator) ->
   a.join(separator)
 
 get_example_words_f = (config) ->
+  # f :: kanji -> [[kanji, readings, meanings], ...]
   dictionary = object_from_json_file config.dictionary_path
   words = array_from_newline_file config.word_frequency_path
   words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
@@ -64,7 +65,46 @@ update_jouyou_only_words = (config) ->
       csv_out.write a
   csv_out.end()
 
+remove_duplicate_readings = (a) ->
+  a = a.split("/")
+  a = a.map (a) -> a.split("-")[0].replace("'", "")
+  a = a.filter (a, i, self) -> self.indexOf(a) == i
+  a.join "/"
+
+update_jouyou_learning = (config) ->
+  # create csv of the format [kanji, meaning, readings, word, ...]
+  kanji_data = read_csv_file config.kanji_path
+  get_example_words = get_example_words_f config
+  csv_out = csv_stringify({delimiter: csv_delimiter})
+  csv_out.pipe fs.createWriteStream config.output_path
+  words = {}
+  csv_data = []
+  for a in kanji_data
+    kanji = a[0]
+    meaning = a[1]
+    readings = remove_duplicate_readings a[2]
+    examples = get_example_words kanji[0]
+    examples = examples.map (a) -> a[0]
+    # avoid previous words and single kanji words
+    if examples.length
+      difference = examples.filter((x) -> x.length > 1 && !words[x])
+      if (0 is difference.length) then examples = [examples[0]]
+      else examples = difference
+      if examples.length > config.example_word_limit_final
+        examples = examples.slice(0, config.example_word_limit_final)
+    else examples = [kanji]
+    examples_string = examples.join(config.example_word_separator)
+    csv_data.push [kanji, meaning, readings, examples_string]
+  csv_data = csv_data.sort (a, b) ->
+    diff = a[2].split("/").length - b[2].split("/").length
+    if 0 is diff then a[2].localeCompare(b[2])
+    else diff
+  for a in csv_data
+    csv_out.write a
+  csv_out.end()
+
 module.exports = {
+  update_jouyou_learning
   update_jouyou_with_words
   update_jouyou_only_words
 }

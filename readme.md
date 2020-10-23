@@ -16,7 +16,7 @@ under download/
   * the jouyou kanji in general exclude some commonly seen kanji, for example: 嬉萌伊綺嘘菅貰縺繋呟也
 * jouyou-kanji-only-words.csv: frequently used example words for the jouyou kanji. currently up to 5 words per kanji
 * jouyou-kanji-with-words.csv: like jouyou-kanji.csv but with an additional column for newline separated example words. [kanji, meaning, readings, words]
-* jouyou-kanji-by-reading.csv: sorted by number of readings and reading, starting with kanji that have few common readings
+* jouyou-kanji-by-reading.csv: sorted by number of readings and reading, starting with kanji that have few common readings. [kanji readings word]
 * jouyou-stroke-count.csv: [kanji, stroke-count]
 * jouyou-two-shared-components.csv: list of kanji that share at least two components. [component, kanji]
 * jouyou-with-shared-readings.csv
