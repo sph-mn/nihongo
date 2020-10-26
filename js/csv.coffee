@@ -72,7 +72,9 @@ remove_duplicate_readings = (a) ->
   a.join "/"
 
 update_jouyou_learning = (config) ->
-  # create csv of the format [kanji, meaning, readings, word, ...]
+  # create csv of the format [kanji, meaning, readings, word, ...].
+  # sorted by number-of-readings and readings alphabetically.
+  # tries to exclude words already included in previous lines and single-kanji words.
   kanji_data = read_csv_file config.kanji_path
   get_example_words = get_example_words_f config
   csv_out = csv_stringify({delimiter: csv_delimiter})
