@@ -14,7 +14,7 @@ config_jouyou_learning =
   example_word_separator: "/"
   example_word_limit: 10
   example_word_limit_final: 3
-  word_frequency_limit: 100000
+  word_frequency_limit: 0
   dictionary_path: "data/jmdict-translations-examples.json"
   kanji_path: "download/jouyou-kanji.csv"
   output_path: "download/jouyou-kanji-learning.csv"

@@ -17,17 +17,17 @@ get_example_words_f = (config) ->
   # f :: kanji -> [[kanji, readings, meanings], ...]
   dictionary = object_from_json_file config.dictionary_path
   words = array_from_newline_file config.word_frequency_path
-  words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
+  if config.word_frequency_limit
+    words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
   (kanji) ->
     # try to find limit number of words with kana and translations.
     result = []
-    return result unless config.example_word_limit
     for a in words
       continue unless a.includes kanji
       entry = dictionary[a]
       continue unless entry and entry[1].length
       result.push [a].concat entry
-      break if config.example_word_limit is result.length
+      break if config.example_word_limit <= result.length
     result.map (word) ->
       # get the first word of each sense
       meaning = word[2]
@@ -85,7 +85,7 @@ update_jouyou_learning = (config) ->
     kanji = a[0]
     meaning = a[1]
     readings = remove_duplicate_readings a[2]
-    examples = get_example_words kanji[0]
+    examples = get_example_words kanji
     examples = examples.map (a) -> a[0]
     # avoid previous words and single kanji words
     if examples.length
