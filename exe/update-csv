@@ -7,7 +7,6 @@ config_jouyou_words =
   word_frequency_limit: 10000
   dictionary_path: "data/jmdict-translations-examples.json"
   kanji_path: "download/jouyou-kanji.csv"
-  output_path: "download/jouyou-kanji-with-words.csv"
   word_frequency_path: "data/wordlex-2011.txt"
 
 config_jouyou_learning =
@@ -31,15 +30,29 @@ config_shared_components =
   composition_path: "data/kanji-composition-map.txt"
   output_path: "download/jouyou-two-shared-components.csv"
 
+config_jouyou_words_readings =
+  example_word_separator: "\n"
+  example_word_limit: 3
+  example_meanings_limit: 3
+  word_frequency_limit: 10000
+  dictionary_path: "data/jmdict-translations-examples.json"
+  kanji_path: "data/jouyou-kanji-by-readings.csv"
+  word_frequency_path: "data/wordlex-2011.txt"
+  output_path: "download/jouyou-kanji-with-words-by-readings.csv"
+
 csv_lib = require("../js/csv")
 
+config_jouyou_words.output_path = "download/jouyou-kanji-with-words.csv"
 csv_lib.update_jouyou_with_words config_jouyou_words
+
 config_jouyou_words.output_path = "download/jouyou-kanji-only-words.csv"
-
 csv_lib.update_jouyou_only_words config_jouyou_words
-config_jouyou_words.output_path = "download/jouyou-kanji-learning.csv"
 
+csv_lib.update_jouyou_only_words config_jouyou_words_readings
+
+config_jouyou_words.output_path = "download/jouyou-kanji-learning.csv"
 csv_lib.update_jouyou_learning config_jouyou_learning
+
 require("../js/kanji-to-components").update_csv config_kanji_components
 
 require("../js/shared-components").update_csv config_shared_components
