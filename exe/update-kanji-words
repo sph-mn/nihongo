@@ -4,10 +4,72 @@ kanji_words = require "../js/kanji-words"
 update_jouyou_learning = () ->
   config =
     output_path: "download/jouyou-kanji-learning.csv"
-    example_word_limit: 3
-    example_meanings_limit: 3
-    example_word_separator: "\n"
     sort_by_readings: true
+    kanji:
+      include: true
+      include_meaning: true
+      include_readings: true
+      reading_separator: "/"
+    words:
+      include: true
+      include_word: true
+      include_readings: true
+      include_meanings: true
+      limit: 3
+      meanings_limit: 3
+      readings_limit: 2
+      separator: "\n"
+      data_separator: " - "
+      meaning_separator: "; "
+      reading_separator: "/"
+  kanji_words.update_kanji_words_csv config
+
+update_jouyou_only_words = () ->
+  config =
+    output_path: "download/jouyou-kanji-only-words.csv"
+    sort_by_readings: false
+    only_words: true
+    kanji:
+      include: false
+      include_meaning: false
+      include_readings: false
+    words:
+      include: true
+      include_word: true
+      include_readings: true
+      include_meanings: true
+      limit: 3
+      meanings_limit: 3
+      readings_limit: 2
+      separator: "\n"
+      data_separator: " - "
+      meaning_separator: "; "
+      reading_separator: "/"
+  kanji_words.update_kanji_words_csv config
+
+update_jouyou_with_words = () ->
+  config =
+    output_path: "download/jouyou-kanji-with-words.csv"
+    sort_by_readings: false
+    only_words: false
+    kanji:
+      include: true
+      include_meaning: true
+      include_readings: true
+    words:
+      include: true
+      include_word: true
+      include_readings: true
+      include_meanings: true
+      limit: 3
+      meanings_limit: 3
+      readings_limit: 2
+      separator: "\n"
+      data_separator: " - "
+      meaning_separator: "; "
+      reading_separator: "/"
   kanji_words.update_kanji_words_csv config
 
 update_jouyou_learning()
+update_jouyou_only_words()
+update_jouyou_with_words()

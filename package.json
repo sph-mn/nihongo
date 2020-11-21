@@ -5,6 +5,7 @@
   "dependencies": {
     "coffeescript": "*",
     "csv": "*",
+    "deepmerge": "*",
     "table-scraper": "*",
     "underscore": "*",
     "wanakana": "*",
