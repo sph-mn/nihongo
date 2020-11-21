@@ -1,0 +1,13 @@
+#!/usr/bin/env coffee
+kanji_words = require "../js/kanji-words"
+
+update_jouyou_learning = () ->
+  config =
+    output_path: "download/jouyou-kanji-learning.csv"
+    example_word_limit: 3
+    example_meanings_limit: 3
+    example_word_separator: "\n"
+    sort_by_readings: true
+  kanji_words.update_kanji_words_csv config
+
+update_jouyou_learning()

@@ -13,27 +13,29 @@ example_words_to_string = (a, separator) ->
     "#{a[0]} (#{a[1]}): #{meaning}"
   a.join(separator)
 
+get_dictionary_entry = (word, dictionary, meanings_limit) ->
+  # get a dictionary entry with limited number of meanings and readings.
+  entry = dictionary[word]
+  return false unless entry and entry[1].length
+  reading = entry[1]
+  meanings = entry[2]
+  if meanings_limit < meaning.length
+    meanings = meanings.slice(0, config.example_meanings_limit)
+  [word, reading, meanings]
+
 get_example_words_f = (config) ->
-  # f :: kanji -> [[kanji, readings, meanings], ...]
+  # f :: kanji -> [[word, readings, meanings], ...]
   dictionary = object_from_json_file config.dictionary_path
   words = array_from_newline_file config.word_frequency_path
   if config.word_frequency_limit
     words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
   (kanji) ->
-    # try to find limit number of words with kana and translations.
     result = []
     for a in words
       continue unless a.includes kanji
-      entry = dictionary[a]
-      continue unless entry and entry[1].length
-      result.push [a].concat entry
+      result.push get_dictionary_entry(dictionary, config.example_meanings_limit)
       break if config.example_word_limit <= result.length
-    result.map (word) ->
-      # get the first word of each sense
-      meaning = word[2]
-      if config.example_meanings_limit < meaning.length
-        meaning = meaning.slice(0, config.example_meanings_limit)
-      [word[0], word[1], meaning]
+    result
 
 update_jouyou_with_words = (config) ->
   # kanji, meaning, readings, words
@@ -72,14 +74,12 @@ remove_duplicate_readings = (a) ->
   a.join "/"
 
 update_jouyou_learning = (config) ->
-  # create csv of the format [kanji, meaning, readings, word, ...].
+  # create csv of the format [kanji, meaning, reading/..., word/...].
   # sorted by number-of-readings and readings alphabetically.
-  # tries to exclude words already included in previous lines and single-kanji words.
   kanji_data = read_csv_file config.kanji_path
   get_example_words = get_example_words_f config
   csv_out = csv_stringify({delimiter: csv_delimiter})
   csv_out.pipe fs.createWriteStream config.output_path
-  words = {}
   csv_data = []
   for a in kanji_data
     kanji = a[0]
@@ -87,15 +87,15 @@ update_jouyou_learning = (config) ->
     readings = remove_duplicate_readings a[2]
     examples = get_example_words kanji
     examples = examples.map (a) -> a[0]
-    # avoid previous words and single kanji words
     if examples.length
-      difference = examples.filter((x) -> x.length > 1 && !words[x])
+      # exclude single kanji words
+      difference = examples.filter((x) -> x.length > 1)
       if (0 is difference.length) then examples = [examples[0]]
       else examples = difference
       if examples.length > config.example_word_limit_final
         examples = examples.slice(0, config.example_word_limit_final)
     else examples = [kanji]
-    examples_string = examples.join(config.example_word_separator)
+    examples_string = examples.join config.example_word_separator
     csv_data.push [kanji, meaning, readings, examples_string]
   csv_data = csv_data.sort (a, b) ->
     diff = a[2].split("/").length - b[2].split("/").length
