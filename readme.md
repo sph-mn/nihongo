@@ -15,7 +15,7 @@ under download/
   * stroke count roughly corresponds to complexity, components come first
   * the jouyou kanji in general exclude some commonly seen kanji, for example: 嬉萌伊綺嘘菅貰縺繋呟也
 * jouyou-kanji-learning.csv: [kanji, meaning, readings, words] one line per kanji, readings and words slash separated, up to three words, no word translations. can be opened in a browser and words looked up with a mouse hover dictionary
-* jouyou-kanji-only-words.csv: [word reading meanings] frequently used example words for the jouyou kanji. currently up to 5 words per kanji
+* jouyou-kanji-only-words.csv: [word, readings, meanings] frequently used example words for the jouyou kanji. currently up to 5 words per kanji
 * jouyou-kanji-with-words.csv: [kanji, meaning, readings, words] like jouyou-kanji.csv but with an additional column for newline separated example words
 * jouyou-kanji-by-reading.csv: [kanji, readings, word] sorted by number of readings and reading, starting with kanji that have few common readings
 * jouyou-stroke-count.csv: [kanji, stroke-count]
