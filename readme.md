@@ -7,7 +7,7 @@ a fast dictionary, lists related to kanji and scripts to compile the lists.
 * download/kanji-viewer.html
 
 # csv lists
-under [download](download)
+under [download](download):
 * components-ck.csv: [components, kanji] alternative to radkfile
 * components-kc.csv: [kanji, components] alternative to kradfile
 * jouyou-kanji.csv: [kanji, meaning, readings] the 2136 jouyou kanji as of 2020 sorted by stroke count with single word meaning and common readings
