@@ -7,10 +7,12 @@ update_jouyou_learning = () ->
     sort_by_readings: true
     kanji:
       include: true
+      include_kanji: true
       include_meaning: true
       include_readings: true
       reading_separator: "/"
     words:
+      as_column: false
       include: true
       include_word: true
       include_readings: true
@@ -28,12 +30,13 @@ update_jouyou_only_words = () ->
   config =
     output_path: "download/jouyou-kanji-only-words.csv"
     sort_by_readings: false
-    only_words: true
     kanji:
       include: false
+      include_kanji: false
       include_meaning: false
       include_readings: false
     words:
+      as_column: false
       include: true
       include_word: true
       include_readings: true
@@ -51,12 +54,13 @@ update_jouyou_with_words = () ->
   config =
     output_path: "download/jouyou-kanji-with-words.csv"
     sort_by_readings: false
-    only_words: false
     kanji:
       include: true
+      include_kanji: true
       include_meaning: true
       include_readings: true
     words:
+      as_column: true
       include: true
       include_word: true
       include_readings: true

@@ -24,14 +24,15 @@ default_config =
   dictionary_path: "data/jmdict-translations-examples.json"
   output_path: "download/jouyou-kanji-learning.csv"
   sort_by_readings: true
-  only_words: false
   kanji:
     include: true
+    include_kanji: true
     include_meaning: true
     include_readings: true
     path: "download/jouyou-kanji.csv"
     reading_separator: "/"
   words:
+    as_column: true
     include: true
     include_word: true
     include_readings: true
@@ -60,6 +61,7 @@ get_example_words = (kanji, dictionary, words, config) ->
   meanings_limit = config.words.meanings_limit
   readings_limit = config.words.readings_limit
   for a in words
+    continue unless a.length > 1
     continue unless a.includes kanji
     entry = dictionary[a]
     continue unless entry
@@ -94,10 +96,10 @@ join_words = (words, config) ->
     if config.words.include_meanings
       meanings = a[2].join(config.words.meaning_separator)
       b.push meanings
-    if config.only_words then b
-    else b.join(config.words.data_separator)
-  if config.only_words then words
-  else words.join(config.words.separator)
+    if config.words.as_column then b.join(config.words.data_separator)
+    else b
+  if config.words.as_column then words.join(config.words.separator)
+  else words
 
 get_kanji_words_csv_data = (config) ->
   # get kanji_words data with nested arrays joined for csv columns
@@ -109,19 +111,19 @@ get_kanji_words_csv_data = (config) ->
       if 0 is diff then a[2].join("/").localeCompare(b[2].join("/"))
       else diff
   for a in data
-    if config.only_words
-      result = result.concat join_words(a[3], config)
-    else
+    if config.kanji.include
       row = []
-      if config.kanji.include
+      if config.kanji.include_kanji
         row.push a[0]
       if config.kanji.include_meaning
         row.push a[1]
       if config.kanji.include_readings
         row.push a[2].join(config.kanji.reading_separator)
-      if config.words.include
+      if config.words.include && config.words.as_column
         row.push join_words(a[3], config)
       result.push row
+    if config.words.include && !config.words.as_column
+      result = result.concat join_words(a[3], config)
   result
 
 update_kanji_words_csv = (config) ->
