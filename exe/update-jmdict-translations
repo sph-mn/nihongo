@@ -2,16 +2,28 @@
 
 lib = require "../js/jmdict-translations"
 
-# used for the viewer dictionary
+# used for the viewer dictionary.
+# for possible misc_tag_exclusions see http://www.edrdg.org/jmdictdb/cgi-bin/edhelp.py?svc=jmdict&sid=#kw_misc
 config =
   jmdict_path: "data/JMdict_e"
   output_path: "data/jmdict-translations-viewer.json"
   only_words_with_kanji: false
-  translations_limit: 2
+  translations_limit: 4
   misc_tag_exclusions: [
     "abbr"
+    "arch"
+    "char"
+    "company"
+    "dei"
+    "fict"
+    "given"
+    "leg"
+    "myth"
+    "obs"
     "organization"
     "person"
+    "product"
+    "work"
   ]
   frequency_tags: []
 
@@ -26,11 +38,19 @@ config_kanji =
     # x: rude or x-rated terms
     "abbr"
     "arch"
+    "char"
+    "company"
+    "dei"
     "derog"
+    "fict"
+    "given"
+    "leg"
+    "myth"
     "obs"
     "obsc"
     "organization"
     "person"
+    "product"
     "vulg"
     "work"
     "x"

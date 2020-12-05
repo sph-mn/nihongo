@@ -168,8 +168,10 @@
         <li>includes over 30000 translations with words sorted by frequency of use</li>
         <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway.
           this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
-        <li>supports regexp syntax. for example, ^word for only searching at the beginning, word$ for only searching at the end, or . for wildcards</li>
-        <li>to keep the search simple and fast, katakana words (8000) are not included. there is also a limit on the length of words returned, relative to the length of what has been entered, so that small word searches dont list all longer words where it is contained</li>
+        <li>supports regexp syntax. for example, ^word for searching at the beginning, word$ for searching at the end, or . for wildcards</li>
+        <li>"word for searching exactly as typed</li>
+        <li>katakana words (~8000) are not included</li>
+        <li>there is a limit on the length of result words, relative to the length of input, so that small word searches dont list many longer words where it is contained</li>
         <li>translations from <a href="http://www.edrdg.org/jmdict/j_jmdict.html">jmdict</a>, word frequency from <a href="http://www.lexique.org/?page_id=250">gimenes, m., & new, b. (2015) wordlex</a></li>
       </ul>
     </div>
@@ -179,7 +181,7 @@
       </div>
       <div class="row">
         <input id="word-input" placeholder="word search..."/><button id="word-reset">reset</button>
-        <label><input id="word-search-translation" type="checkbox"/>extended</label>
+        <label title= "search inside translations"><input id="word-extended" type="checkbox"/>extended</label>
       </div>
     </div>
     <div id="kanji-results"></div>
@@ -256,6 +258,7 @@
 
       function word_search_init() {
         function make_search_regexp(word) {
+          if ("\"" == word[0]) return RegExp(word.replace("\"", ""))
           var replacements = [
             [/tts|ts|ss|s|z/g, "#1"],
             [/ou/g, "#2"],
@@ -280,7 +283,7 @@
         }
         var input = document.getElementById("word-input")
         var button = document.getElementById("word-reset")
-        var checkbox_search_translation = document.getElementById("word-search-translation")
+        var checkbox_extended = document.getElementById("word-extended")
         var results = document.getElementById("word-results")
         var result_limit = 150
         function make_result_line(a) {
@@ -295,13 +298,13 @@
           if (0 == value.length) return
           var matches = []
           if (abc_regexp.test(value)) {
-            var search_translation = checkbox_search_translation.checked
+            var extended = checkbox_extended.checked
             var translation_regexp = new RegExp("\\b" + value)
             var regexp = make_search_regexp(value)
             var length_limit = value.length + Math.pow(Math.max(0, value.length - 3), 2)
             for (var i = 0; (i < word_data.length && matches.length < result_limit); i += 1) {
-              if ((word_data[i][1].length <= length_limit && regexp.test(word_data[i][1].replace(/'/g, "")))
-                  || (search_translation && value.length > 2
+              if ((length_limit > word_data[i][1].length && regexp.test(word_data[i][1].replace(/'/g, "")))
+                  || (extended && value.length > 2
                       && word_data[i][2].some(a => translation_regexp.test(a)))) {
                 matches.push(make_result_line(word_data[i]))
               }
@@ -322,6 +325,7 @@
         input.addEventListener("keyup", on_filter)
         input.addEventListener("change", on_filter)
         button.addEventListener("click", on_reset)
+        checkbox_extended.addEventListener("change", on_filter)
       }
 
       function about_init() {
