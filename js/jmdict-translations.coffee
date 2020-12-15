@@ -42,7 +42,11 @@ update_json = (config) ->
       entry.SENSE.forEach (a) ->
         return unless translations.length < config.translations_limit
         unless a.MISC and a.MISC.some (a) -> exclusions.includes(a)
-          b = a.GLOSS.filter (a) -> "string" == typeof(a)
+          b = a.GLOSS.map (a) ->
+            if Array.isArray a then a.join("; ")
+            if "string" == typeof(a) then a
+            else null
+          b = b.filter (a) -> a
           translations.push b.join(", ") if b.length
       return if 0 == translations.length
       result[word] = [reading, translations]

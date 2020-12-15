@@ -260,10 +260,10 @@
         function make_search_regexp(word) {
           if ("\"" == word[0]) return RegExp(word.replace("\"", ""))
           var replacements = [
+            [/sh|tch|ch|j/g, "#0"],
             [/tts|ts|ss|s|z/g, "#1"],
             [/ou/g, "#2"],
             [/ei|e/g, "#3"],
-            [/sh|tch|ch|j/g, "#4"],
             [/iy|y/g, "#5"],
             [/ii|i/g, "(ii|i)"],
             [/uu|u/g, "(uu|u)"],
@@ -272,10 +272,10 @@
             [/kk|k|g/g, "(kk|k|g)"],
             [/pp|p|b/g, "(pp|p|b)"],
             [/nn|n/g, "(nn|n)"],
+            [/#0/g, "(sh|tch|ch|j)"],
             [/#1/g, "(tts|ts|ss|s|z)"],
             [/#2/g, "(ou|o)"],
             [/#3/g, "(ei|e)"],
-            [/#4/g, "(sh|tch|ch|j)"],
             [/#5/g, "(iy|y)"]
           ]
           replacements.forEach(function(a) {word = word.replace(a[0], a[1])})
@@ -303,7 +303,7 @@
             var regexp = make_search_regexp(value)
             var length_limit = value.length + Math.pow(Math.max(0, value.length - 3), 2)
             for (var i = 0; (i < word_data.length && matches.length < result_limit); i += 1) {
-              if ((length_limit > word_data[i][1].length && regexp.test(word_data[i][1].replace(/'/g, "")))
+              if ((length_limit >= word_data[i][1].length && regexp.test(word_data[i][1].replace(/'/g, "")))
                   || (extended && value.length > 2
                       && word_data[i][2].some(a => translation_regexp.test(a)))) {
                 matches.push(make_result_line(word_data[i]))
