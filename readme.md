@@ -24,6 +24,11 @@ under [download](download):
 * kanji-radicals.csv [stroke-count, radical, meaning, variants, note, is_new]
 * multiple-kanji-to-reading.csv [multiple-kanji, reading]
 
+some lists can be customized, see exe/update-kanji-words
+
+# anki deck
+* download/ja-kanji-learning.apkg: [kanji, readings, meaning, example words]
+
 # data sources
 * [list of jouyou kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
 * word frequency: [gimenes, m., & new, b. (2015) wordlex](http://www.lexique.org/?page_id=250)

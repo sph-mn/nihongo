@@ -110,7 +110,7 @@ get_kanji_words_csv_data = (config) ->
       diff = a[2].length - b[2].length
       if 0 is diff then a[2].join("/").localeCompare(b[2].join("/"))
       else diff
-  for a in data
+  for a, index in data
     if config.kanji.include
       row = []
       if config.kanji.include_kanji
@@ -121,6 +121,8 @@ get_kanji_words_csv_data = (config) ->
         row.push a[2].join(config.kanji.reading_separator)
       if config.words.include && config.words.as_column
         row.push join_words(a[3], config)
+      if config.include_sort_field
+        row.push index
       result.push row
     if config.words.include && !config.words.as_column
       result = result.concat join_words(a[3], config)

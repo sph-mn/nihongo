@@ -81,7 +81,7 @@ update_jouyou_learning_compact = () ->
     kanji:
       include: true
       include_kanji: true
-      include_meaning: false
+      include_meaning: true
       include_readings: true
       reading_separator: "/"
     words:
@@ -94,6 +94,32 @@ update_jouyou_learning_compact = () ->
       meanings_limit: 0
       readings_limit: 0
       separator: "/"
+      data_separator: " - "
+      meaning_separator: "; "
+      reading_separator: "/"
+  kanji_words.update_kanji_words_csv config
+
+update_jouyou_learning_compact = () ->
+  config =
+    output_path: "download/jouyou-kanji-learning-oneline.csv"
+    sort_by_readings: true
+    include_sort_field: true
+    kanji:
+      include: true
+      include_kanji: true
+      include_meaning: true
+      include_readings: true
+      reading_separator: "/"
+    words:
+      as_column: true
+      include: true
+      include_word: true
+      include_readings: true
+      include_meanings: true
+      limit: 3
+      meanings_limit: 3
+      readings_limit: 2
+      separator: "\n"
       data_separator: " - "
       meaning_separator: "; "
       reading_separator: "/"
