@@ -11,23 +11,24 @@ under [download](download):
 * components-ck.csv: [components, kanji] alternative to radkfile
 * components-kc.csv: [kanji, components] alternative to kradfile
 * jouyou-kanji.csv: [kanji, meaning, readings] the 2136 jouyou kanji as of 2020 sorted by stroke count with single word meaning and common readings
-  * some meanings use relatively uncommon english words, for example: acquiesce, adroit, ardent, beckon, confer, consign, consort, consummate, portent
+  * some meanings use relatively uncommon english words, for example: acquiesce, adroit, ardent, beckon, confer, consign, consort, consummate, portent. in a few cases the words are ambiguous. for example "vice" isnt meant in the sense of "shortcoming" but in the sense of "deputy"
   * stroke count roughly corresponds to complexity, components come first
   * the jouyou kanji in general exclude some commonly seen kanji, for example: 嬉萌伊綺嘘菅貰縺繋呟也
 * jouyou-kanji-learning.csv: [[kanji, meaning, readings], [word, reading, meanings]] kanji information and example words with translations. sorted by number of common readings and readings alphabetically. kanji with few common readings come first
 * jouyou-kanji-only-words.csv: [word, readings, meanings] frequently used example words for the jouyou kanji
 * jouyou-kanji-with-words.csv: [kanji, meaning, readings, words] like jouyou-kanji.csv but with an additional column for newline separated example words
-* jouyou-kanji-by-reading.csv: [kanji, readings, word] sorted by number of readings and reading, starting with kanji that have few common readings
 * jouyou-stroke-count.csv: [kanji, stroke-count]
 * jouyou-two-shared-components.csv: [component, kanji] list of kanji that share at least two components
-* jouyou-with-shared-readings.csv [kanji, readings, multiple-kanji-per-reading]
-* kanji-radicals.csv [stroke-count, radical, meaning, variants, note, is_new]
-* multiple-kanji-to-reading.csv [multiple-kanji, reading]
+* jouyou-with-shared-readings.csv: [kanji, readings, multiple-kanji-per-reading]
+* kanji-radicals.csv: [stroke-count, radical, meaning, variants, note, is_new]
+* multiple-kanji-to-reading.csv: [multiple-kanji, reading]
+* ideophones.csv: [romaji, meanings], onomatopoeia, sound symbolisms
+* jouyou-kanji-learning-oneline.csv: [kanji, meaning, readings, example-words], like jouyou-kanji-learning.csv but words in one separate column
 
 some lists can be customized, see exe/update-kanji-words
 
 # anki deck
-* download/ja-kanji-learning.apkg: [kanji, readings, meaning, example words]
+* download/ja-kanji-learning.apkg: [kanji, [readings, meaning, example words]] and reverse cards
 
 # data sources
 * [list of jouyou kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
