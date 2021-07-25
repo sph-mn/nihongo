@@ -160,7 +160,8 @@
         <li>when minimised, characters can be selected and copied</li>
         <li>multiple kanji, parts of meanings or multiple comma-separated parts of meanings can be used in the search field</li>
         <li>the page can be used offline after right click save page as. everything is contained in one html file</li>
-        <li>graphics and stroke order from <a href="https://kanjivg.tagaini.net/">kanjivg</a>. project homepage: <a href="https://github.com/sph-mn/kanji">kanji</a></li>
+        <li>graphics and stroke order from <a href="https://kanjivg.tagaini.net/">kanjivg</a></li>
+        <li>project homepage: <a href="https://github.com/sph-mn/kanji">kanji</a></li>
         <li>this page is under a cc-by-sa license and can be copied, modified and rehosted</li>
       </ul>
       word search
@@ -170,7 +171,7 @@
           this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
         <li>supports regexp syntax. for example, ^word for searching at the beginning, word$ for searching at the end, or . for wildcards</li>
         <li>"word for searching exactly as typed</li>
-        <li>katakana words (~8000) are not included</li>
+        <li>katakana words (~8000) are not included. they seem distracting if included</li>
         <li>there is a limit on the length of result words, relative to the length of input, so that small word searches dont list many longer words where it is contained</li>
         <li>translations from <a href="http://www.edrdg.org/jmdict/j_jmdict.html">jmdict</a>, word frequency from <a href="http://www.lexique.org/?page_id=250">gimenes, m., & new, b. (2015) wordlex</a></li>
       </ul>
@@ -301,7 +302,8 @@
             var extended = checkbox_extended.checked
             var translation_regexp = new RegExp("\\b" + value)
             var regexp = make_search_regexp(value)
-            var length_limit = value.length + Math.pow(Math.max(0, value.length - 3), 2)
+            var length_limit_subtraction = extended ? 2 : 3
+            var length_limit = value.length + Math.pow(Math.max(0, value.length - length_limit_subtraction), 2)
             for (var i = 0; (i < word_data.length && matches.length < result_limit); i += 1) {
               if ((length_limit >= word_data[i][1].length && regexp.test(word_data[i][1].replace(/'/g, "")))
                   || (extended && value.length > 2
