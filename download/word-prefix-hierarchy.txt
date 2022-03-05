@@ -1,4 +1,3 @@
-ＪＲ,jeiaaru,Japan Railways, JR Ｊ,jee,J, j,Japan,joule,jack (playing card) "百貨店; hyakkaten; (department) store, (department) stores"
 na
   名 na "name, given name; title; fame, renown, reputation; pretext, pretense, justification, appearance"
   菜 na "greens, vegetables; rape (Brassica napus), rapeseed"
@@ -1336,7 +1335,6 @@ ma
 ko
   子 ko "child; young (animal); young woman, young geisha; offshoot"
   個 ko "counter for articles; counter for military units; individual"
-  こりゃ korya "hey there, I say, see here"
   故 ko "the late (deceased)"
   仔 ko "young (animal)"
   胡 ko "barbarian tribes surrounding ancient China"
@@ -2480,6 +2478,8 @@ ko
     湖岸 kogan "lakeshore, lakeside"
     古楽 kogaku "ancient (early) music"
     小刀 kogatana "(small) knife; short sword, small sword"
+  korya
+    こりゃ korya "hey there, I say, see here"
   koda
     古代 kodai "ancient times"
     拘り kodawari "obsession, fixation, hangup, determination, fastidiousness, pickiness about (trait, style, etc.); complaining, criticizing; speciality (e.g. of restaurants)"
@@ -14140,7 +14140,6 @@ i
 a
   あっ a "ah, oh; hey!"
   亜 a "sub-; -ous (indicating a low oxidation state), -ite"
-  ありゃ arya "oh, ah, I'll be darned"
   圧着 atchaku "crimping, pressure bonding"
   ato
     後 ato "behind, rear; after, later; after one's death; remainder, the rest"
@@ -15031,6 +15030,8 @@ a
     鮎 ayu "sweetfish (Plecoglossus altivelis altivelis), ayu"
     歩み寄り ayumiyori "compromise, concession"
     歩み寄る ayumiyoru "to compromise, to meet halfway; to step up to, to walk up to, to approach"
+  arya
+    ありゃ arya "oh, ah, I'll be darned"
   aze
     唖然 azen "dumbfounded, in mute amazement"
     畦 aze "ridge of earth between rice fields; ridge between grooves in threshold or lintel"
@@ -34179,9 +34180,51 @@ pa
     ぱるる paruru "Postal Savings system"
   pata
     ぱたり patari "with a clink, with a flop; suddenly, all of a sudden"
+hya
+  hyakk
+    百貨店 hyakkaten "(department) store, (department) stores"
+    百科 hyakka "many objects (for study)"
+    百花 hyakka "all varieties of flowers, many flowers"
+    百花繚乱 hyakkaryouran "many flowers blooming in profusion, a gathering of many beautiful women (talented people), simultaneous emergence of many talents and achievements"
+  hyaku
+    百姓 hyakushou "farmer, peasant, country bumpkin; farming; the common people"
+    百聞 hyakubun "hearing a hundred times"
+    百害 hyakugai "great damage"
+    １１０番 hyakutooban "110, the police emergency telephone number"
+    百日咳 hyakunichizeki "whooping cough, pertussis"
+    百戦錬磨 hyakusenrenma "veteran, (someone) schooled by adversity in many battles, (someone) rich in life's experience gained through much adversity"
+    百出 hyakushutsu "arise in great numbers"
+    百薬 hyakuyaku "sundry remedies"
+    百物語 hyakumonogatari "round of ghost stories (trad. at night with a lamp or candle being extinguished after each story)"
+    百日草 hyakunichisou "zinnia"
+    百度参り hyakudomairi "hundred times worship (e.g. visiting a shrine or temple a hundred times for prayer, walking back and forth a hundred times before a shrine offering a prayer each time)"
+  hyapp
+    百般 hyappan "all, every, all kinds of"
+    百発百中 hyappatsuhyakuchuu "always hitting the bull's-eye, infallible"
 ss
   ssho
     っしょ ssho "I know, right?, don't you agree?, I thought you'd say that!"
+rya
+  ryaku
+    略奪 ryakudatsu "pillage, plunder, looting, robbery"
+    略称 ryakushou "abbreviation"
+    略歴 ryakureki "brief personal record, short curriculum vitae, short CV"
+    略す ryakusu "to abbreviate, to omit; to take, to capture"
+    略語 ryakugo "abbreviation, acronym"
+    略図 ryakuzu "rough sketch, rough map"
+    略式 ryakushiki "informal, simplified"
+    略画 ryakuga "rough sketch"
+    略号 ryakugou "code, mark, symbol"
+    掠 ryaku "sixth principle of the Eight Principles of Yong, tapering thinning curve, usually concave left"
+  ryakk
+    略記 ryakki "abbreviation"
+mya
+  myaku
+    脈 myaku "pulse; vein; chain (of mountains, etc.); hope"
+    脈絡 myakuraku "logical connection, chain of reasoning, coherence, context; blood vessel"
+    脈拍 myakuhaku "pulse, pulse rate, pulsation, stroke of pulse"
+    脈打つ myakuutsu "to pound (e.g. heart), to pulse (e.g. vein), to pulsate"
+    脈動 myakudou "pulsation, pulsatory motion"
 po
   potsu
     ぽつぽつ potsupotsu "dots, spots; bit by bit, little by little, gradually; here and there, scattered, dotted; in drops, (falling) lightly"
@@ -34221,3 +34264,18 @@ pu
     ぷっつり puttsuri "breaking off, snapping off; suddenly stopping"
   puku
     ぷくぷく pukupuku "bubblingly, foamingly, sinking or rising while giving off bubbles; cute and chubby, pudgy, puffed up"
+pyo
+  pyon
+    ぴょんぴょん pyonpyon "hopping, skipping, lightly and repeatedly jumping"
+    平壌 pyon'yan "Pyongyang (North Korea)"
+    ぴょん pyon "(jumping) nimbly, light-footed; boing; used at sentence end to affect cuteness"
+  pyoko
+    ぴょこぴょこ pyokopyoko "up and down, lightly, nimbly, moving in small leaps as a frog or rabbit; casually, (strolling about) without a care"
+    ぴょこん pyokon "quickly, in a bouncing way (e.g. for a bow)"
+bya
+  byaku
+    白し byakushi "bai zhi (Chinese name for angelica species Angelica dahurica), traditional Chinese cure made from the root of this plant; Heracleum nipponicum (species of hogweed)"
+    白夜 byakuya "night under the midnight sun, white night (at extreme latitudes), night during which the sun doesn't set"
+    白檀 byakudan "Indian sandalwood (Santalum album), white sandalwood"
+  byakk
+    白虎 byakko "White Tiger (god said to rule over the western heavens); seven mansions (Chinese constellations) of the western heavens"

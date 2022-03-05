@@ -21,7 +21,8 @@ syllables = [
   "pa", "pi", "pu", "pe", "po",
   "sha", "shu", "sho", "ja", "ju", "jo", "cho", "cha", "chu", "gya", "kya", "kyu", "gyu",
   "a", "i", "u", "e", "o", "n", "ou", "ei",
-  "kk", "pp", "tt", "ss", "jou", "tchu", "nya", "nyo", "myo", "kyo", "hyo", "ryo", "ryu", "byo", "gyo"
+  "kk", "pp", "tt", "ss", "jou", "tchu", "nya", "nyo", "myo", "mya", "kyo", "hyo", "hya", "ryo", "rya", "ryu", "byo", "gyo",
+  "pyo", "bya"
   ]
 
 group_by_prefix = (data, prefixes) ->
@@ -56,8 +57,8 @@ word_prefix_hierarchy = (config) ->
     word_data[key] = group_by_prefix value, produce_strings(key, syllables)
   lines = []
   if word_data.other
-    _.forEach word_data.other, (value, key) ->
-      lines.push translation_string 0, value
+    #_.forEach word_data.other.other, (value, key) ->
+    #  lines.push translation_string 0, value
     delete word_data.other
   _.forEach word_data, (value, key) ->
     lines.push key
