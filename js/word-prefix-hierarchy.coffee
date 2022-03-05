@@ -56,20 +56,19 @@ word_prefix_hierarchy = (config) ->
   _.forEach word_data, (value, key) ->
     word_data[key] = group_by_prefix value, produce_strings(key, syllables)
   lines = []
-  if word_data.other
-    #_.forEach word_data.other.other, (value, key) ->
-    #  lines.push translation_string 0, value
-    delete word_data.other
+  # only a few uninteresting words, like JR and facebook, were left in .other
+  if word_data.other then delete word_data.other
   _.forEach word_data, (value, key) ->
-    lines.push key
     if value.other
+      lines.push key + "*"
       _.forEach value.other, (value) ->
         lines.push translation_string 1, value
       delete value.other
     _.forEach value, (value2, key2) ->
-      lines.push "  " + key2
+      lines.push key2 + "*"
+      #console.log value2.length, key2
       _.forEach value2, (value3, key3) ->
-        lines.push translation_string 2, value3
+        lines.push translation_string 1, value3
   lines
 
 update_word_prefix_hierarchy = (config) ->
