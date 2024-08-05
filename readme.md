@@ -1,13 +1,13 @@
 a fast dictionary, lists related to kanji and scripts to compile the lists.
 
-# kanji viewer
+# nihongo dictionary
 * kanji stroke order, meaning and common readings lookup
 * top 30000 words fuzzy search that searches for similar pronunciation and sorts results by frequency
-* single-file browser page. the file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/kanji-viewer.html)
-* download/kanji-viewer.html
+* single-file browser page. the file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/japanese/nihongo-dictionary.html)
+* data/nihongo-dictionary.html
 
 # csv lists
-under [download](download):
+under [data](data):
 * components-ck.csv: [components, kanji] alternative to radkfile
 * components-kc.csv: [kanji, components] alternative to kradfile
 * jouyou-kanji.csv: [kanji, meaning, readings] the 2136 jouyou kanji as of 2020 sorted by stroke count with single word meaning and common readings
@@ -24,11 +24,12 @@ under [download](download):
 * multiple-kanji-to-reading.csv: [multiple-kanji, reading]
 * ideophones.csv: [romaji, meanings] onomatopoeia, sound symbolisms
 * jouyou-kanji-learning-oneline.csv: [kanji, meaning, readings, example-words] like jouyou-kanji-learning.csv but words in one separate column
+* chinese-japanese-overlap.csv: lists words with the same characters
 
 some lists can be customized, see exe/update-kanji-words
 
 # anki deck
-* download/ja-kanji-learning.apkg: [kanji, [readings, meaning, example words]] and reverse cards
+* data/ja-kanji-learning.apkg: [kanji, [readings, meaning, example words]] and reverse cards
 
 # data sources
 * [list of jouyou kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
@@ -48,9 +49,9 @@ data is included, except for kanjisvg. all other data of this project is cc-by-s
   * initialise the development environment once with "npm install" to install dependencies, which creates a node_modules directory in the current directory
   * see files under exe/, they are shell scripts and can be executed with ./exe/filename and contain configuration options
   * for other tools see "coffee js/filename"
-* how to recreate kanji-viewer
+* how to recreate nihongo-dictionary
   * requires the kanji directory from [kanjivg](https://github.com/KanjiVG/kanjivg) to have been downloaded and saved under data/kanjivg
-  * create data files with "./exe/update-viewer-data"
-  * execute "./exe/update-viewer"
-  * the result file is build from html/viewer-template.html
+  * create data files with "./exe/update-dictionary-data"
+  * execute "./exe/update-dictionary"
+  * the result file is build from html/dictionary-template.html
 * good to know regarding unicode: multiple kanji components/radicals and kanji that look exactly the same exist at separate codepoints. see [wikipedia: kangxi radical unicode](https://en.wikipedia.org/wiki/Kangxi_radical#Unicode)

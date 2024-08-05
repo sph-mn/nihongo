@@ -1,9 +1,0 @@
-#!/usr/bin/env coffee
-
-config =
-  html_path: "html/viewer-template.html"
-  kanji_data_path: "data/viewer-kanji-data.json"
-  word_data_path: "data/viewer-word-data.json"
-  output_path: "download/kanji-viewer.html"
-
-require("../js/viewer").update_viewer config

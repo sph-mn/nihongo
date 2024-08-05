@@ -1,0 +1,16 @@
+#!/usr/bin/env coffee
+
+config_kanji_data =
+  output_path: "data/dictionary-kanji-data.json"
+  kanjivg_path: "data/kanjivg"
+  kanji_path: "data/jouyou-kanji.csv"
+
+config_word_data =
+  output_path: "data/dictionary-word-data.json"
+  dictionary_path: "data/jmdict-translations-dictionary.json"
+  word_frequency_path: "data/wordlex-2011.txt"
+  word_frequency_limit: false
+
+lib = require "../js/dictionary.coffee"
+lib.update_kanji_data config_kanji_data
+lib.update_word_data config_word_data

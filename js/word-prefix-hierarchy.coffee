@@ -3,7 +3,7 @@ _ = require "underscore"
 object_merge = require "deepmerge"
 
 default_config =
-  viewer_word_data: "data/viewer-word-data.json"
+  dictionary_word_data: "data/dictionary-word-data.json"
 
 object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
 
@@ -51,7 +51,7 @@ translation_string = (indent, a) ->
 
 word_prefix_hierarchy = (config) ->
   config = object_merge.all [{}, default_config, config]
-  word_data = object_from_json_file config.viewer_word_data
+  word_data = object_from_json_file config.dictionary_word_data
   word_data = group_by_prefix word_data, syllables
   _.forEach word_data, (value, key) ->
     word_data[key] = group_by_prefix value, produce_strings(key, syllables)

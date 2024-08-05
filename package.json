@@ -1,11 +1,12 @@
 {
-  "name": "jouyou-kanji-csv",
-  "version": "1.0.0",
+  "name": "jouyou-kanji-learning",
+  "version": "1.1.0",
   "license": "cc-by-sa",
   "dependencies": {
     "coffeescript": "*",
     "csv": "*",
     "deepmerge": "*",
+    "hanzi-tools": "*",
     "table-scraper": "*",
     "underscore": "*",
     "wanakana": "*",

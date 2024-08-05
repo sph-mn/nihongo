@@ -2,7 +2,7 @@
 wph = require "../js/word-prefix-hierarchy"
 
 config =
-  output_path: "download/word-prefix-hierarchy.txt"
+  output_path: "data/word-prefix-hierarchy.txt"
 
 
 wph.update_word_prefix_hierarchy(config)

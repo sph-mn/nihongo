@@ -1,15 +1,15 @@
 #!/usr/bin/env coffee
 
 config_kanji_components =
-  kanji_path: "download/jouyou-kanji.csv"
+  kanji_path: "data/jouyou-kanji.csv"
   composition_path: "data/kanji-composition-map.txt"
-  output_path: "download/components-kc.csv"
-  output_path_inverted: "download/components-ck.csv"
+  output_path: "data/components-kc.csv"
+  output_path_inverted: "data/components-ck.csv"
 
 config_shared_components =
-  kanji_path: "download/jouyou-kanji.csv"
+  kanji_path: "data/jouyou-kanji.csv"
   composition_path: "data/kanji-composition-map.txt"
-  output_path: "download/jouyou-two-shared-components.csv"
+  output_path: "data/jouyou-two-shared-components.csv"
 
 require("../js/kanji-to-components").update_csv config_kanji_components
 require("../js/shared-components").update_csv config_shared_components

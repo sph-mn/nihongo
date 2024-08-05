@@ -4,6 +4,8 @@ fs = require "fs"
 parse_xml = require("xml2js").parseString
 wanakana = require "wanakana"
 
+object_array_add = (object, key, value) -> if object[key] then object[key].push value else object[key] = [value]
+
 array_contains_any = (a, b) ->
   b.some (b) -> a.includes(b)
 
@@ -33,7 +35,6 @@ update_json = (config) ->
       else
         return if config.only_words_with_kanji
         word = entry.R_ELE[0].REB[0]
-      return if result[word]
       reading = find_reading entry.R_ELE, config.frequency_tags
       return unless reading
       reading = wanakana.toRomaji reading
@@ -49,7 +50,7 @@ update_json = (config) ->
           b = b.filter (a) -> a
           translations.push b.join(", ") if b.length
       return if 0 == translations.length
-      result[word] = [reading, translations]
+      object_array_add result, word, [reading, translations]
     fs.writeFileSync config.output_path, JSON.stringify result
 
 module.exports =

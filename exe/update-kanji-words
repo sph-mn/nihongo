@@ -3,7 +3,7 @@ kanji_words = require "../js/kanji-words"
 
 update_jouyou_learning = () ->
   config =
-    output_path: "download/jouyou-kanji-learning.csv"
+    output_path: "data/jouyou-kanji-learning.csv"
     sort_by_readings: true
     kanji:
       include: true
@@ -28,7 +28,7 @@ update_jouyou_learning = () ->
 
 update_jouyou_only_words = () ->
   config =
-    output_path: "download/jouyou-kanji-only-words.csv"
+    output_path: "data/jouyou-kanji-only-words.csv"
     sort_by_readings: false
     kanji:
       include: false
@@ -52,7 +52,7 @@ update_jouyou_only_words = () ->
 
 update_jouyou_with_words = () ->
   config =
-    output_path: "download/jouyou-kanji-with-words.csv"
+    output_path: "data/jouyou-kanji-with-words.csv"
     sort_by_readings: false
     kanji:
       include: true
@@ -76,7 +76,7 @@ update_jouyou_with_words = () ->
 
 update_jouyou_learning_compact = () ->
   config =
-    output_path: "download/jouyou-kanji-learning-compact.csv"
+    output_path: "data/jouyou-kanji-learning-compact.csv"
     sort_by_readings: true
     kanji:
       include: true
@@ -101,7 +101,7 @@ update_jouyou_learning_compact = () ->
 
 update_jouyou_learning_compact = () ->
   config =
-    output_path: "download/jouyou-kanji-learning-oneline.csv"
+    output_path: "data/jouyou-kanji-learning-oneline.csv"
     sort_by_readings: true
     include_sort_field: true
     kanji:
