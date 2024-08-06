@@ -24,7 +24,7 @@ under [data](data):
 * multiple-kanji-to-reading.csv: [multiple-kanji, reading]
 * ideophones.csv: [romaji, meanings] onomatopoeia, sound symbolisms
 * jouyou-kanji-learning-oneline.csv: [kanji, meaning, readings, example-words] like jouyou-kanji-learning.csv but words in one separate column
-* chinese-japanese-overlap.csv: lists words with the same characters
+* chinese-japanese-overlap.csv: sino-japanese cognates, words with the same characters in both languages
 
 some lists can be customized, see exe/update-kanji-words
 

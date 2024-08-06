@@ -28,8 +28,40 @@ ja_overlap = () ->
     shared.push [a, cn[0][1], ja[0][0], readings]
   write_csv_file "data/chinese-japanese-overlap.csv", shared
 
+pinyin_to_alphanumeric_ascii = (a) ->
+  pinyin_map =
+    "ā": "a", "á": "a", "ǎ": "a", "à": "a",
+    "ē": "e", "é": "e", "ě": "e", "è": "e",
+    "ī": "i", "í": "i", "ǐ": "i", "ì": "i",
+    "ō": "o", "ó": "o", "ǒ": "o", "ò": "o",
+    "ū": "u", "ú": "u", "ǔ": "u", "ù": "u",
+    "ǖ": "u", "ǘ": "u", "ǚ": "u", "ǜ": "u",
+    "ü": "u", "1": "", "2": "", "3": "", "4": "", "5": "",
+  a.split("").map((a) -> if a of pinyin_map then pinyin_map[a] else a).join("")
+
+sorensen_dice = (a, b) ->
+  a = new Set a
+  b = new Set b
+  intersection = new Set([...a].filter (c) -> b.has c)
+  (2 * intersection.size) / (a.size + b.size)
+
+delete_duplicates = (a) -> [...new Set(a)]
+
+sort_ja_overlap_by_similarity = () ->
+  a = read_csv_file "data/chinese-japanese-overlap.csv"
+  c = for b in a
+    cn = pinyin_to_alphanumeric_ascii b[1]
+    ja = delete_duplicates b[3].split "/"
+    ja = ja.map((a) -> [a, sorensen_dice(cn, a)]).sort((a, b) -> b[1] - a[1])
+    b[3] = ja.map((a) -> a[0]).join "/"
+    [ja[0][1]].concat b
+  c = c.sort((a, b) -> (a[1].length - b[1].length) || (b[0] - a[0]))
+  a = (b.slice(1) for b in c)
+  write_csv_file "data/chinese-japanese-overlap-sorted.csv", a
+
 run = () ->
-  ja_overlap()
+  #ja_overlap()
+  sort_ja_overlap_by_similarity()
 
 module.exports = {
   run
