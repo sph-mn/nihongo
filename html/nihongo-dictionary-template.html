@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1"/>
+    <title>nihongo dictionary</title>
+    <style>
+      html{font-size:16px}
+      body{background-color:#000;color:#ddd}
+      body a{color:#ddd}
+      #filter, #kanji-results, #word-results{margin-top:.5rem}
+      h1{font-size:1rem;display:inline-block;margin:0}
+      #description{font-size:.5rem}
+      #filter input{border:0;background-color:#eee}
+      #kanji-results{width:100%;display:flex;flex-wrap:wrap}
+      #kanji-results > :not(.mini) + * {clear:left}
+      #kanji-results > * {min-width:25rem}
+      #kanji-results > * > * {float:left}
+      #kanji-results > * .k .k1{display:inline}
+      #kanji-results > * .k .k2{font-size:1.5rem;display:none}
+      #kanji-results > * .k svg{width:15rem;height:15rem}
+      #kanji-results > * .k svg path{stroke-width:2;stroke:#fff}
+      #kanji-results > * .k svg text{visibility:hidden}
+      #kanji-results > * .k:hover svg text{visibility:visible;color:grey}
+      #kanji-results > * .k:hover + .m{display:block}
+      #kanji-results > * .m{text-align:center;display:none}
+      #kanji-results > * .m > div{position:relative;top:7rem}
+      #kanji-results > * .m .r{color:#aaa}
+      #kanji-results > .mini{clear:none}
+      #kanji-results > .mini > * {height:1.5rem}
+      #kanji-results > .mini .k1{display:none}
+      #kanji-results > .mini .k2{display:inline}
+      #kanji-results > .mini .m{text-align:left;margin-right:.25rem;width:initial}
+      #kanji-results > .mini .m > div{top:2px}
+      #kanji-results > :first-child{padding-top:0}
+      #word-results{font-size:1.75rem}
+      #about-link{cursor:pointer;display:inline-block;margin-left:2ch;text-decoration:underline;font-size:.75rem}
+      #about.hidden{display:none}
+      #filter .row{display:inline-block}
+      #filter label{white-space:nowrap}
+      #word-search-translation{margin:0;margin-right:3px}
+      @media (max-width:700px){
+        html{font-size:14px}
+        input{height:3rem;margin:5px;font-size:120%}
+        button{padding:10px;margin:5px}
+        body > :first-child ~ * {margin-top:0}
+        #word-results{font-size:1.5rem}
+      }
+    </style>
+  </head>
+  <body>
+    <h1>japanese kanji lookup and fuzzy word search</h1>
+    <div id="about-link">about</div>
+    <div id="about" class="hidden">
+      kanji search
+      <ul>
+        <li>the jouyou kanji sorted by stroke order</li>
+        <li>hover or tap over kanji shows stroke order and meaning</li>
+        <li>middle mouse button click or double tap minimizes row</li>
+        <li>when minimized, characters can be selected and copied</li>
+        <li>multiple kanji, parts of meanings or multiple comma-separated parts of meanings can be used in the search field</li>
+        <li>the page can be used offline after right click save page as. everything is contained in one html file</li>
+        <li>graphics and stroke order from <a href="https://kanjivg.tagaini.net/">kanjivg</a></li>
+        <li><a href="https://github.com/sph-mn/kanji">project homepage</a></li>
+        <li>this page is under a cc-by-sa license and can be copied, modified and rehosted</li>
+      </ul>
+      word search
+      <ul>
+        <li>includes over 30000 translations with words sorted by frequency of use</li>
+        <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway.
+          this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
+        <li>supports regexp syntax. for example, ^word for searching at the beginning, word$ for searching at the end, or . for wildcards</li>
+        <li>"word for searching exactly as typed</li>
+        <li>katakana words (~8000) are not included. they seem distracting if included</li>
+        <li>there is a limit on the length of result words, relative to the length of input, so that small word searches dont list many longer words where it is contained</li>
+        <li>translations from <a href="http://www.edrdg.org/jmdict/j_jmdict.html">jmdict</a>, word frequency from <a href="http://www.lexique.org/?page_id=250">gimenes, m., & new, b. (2015) wordlex</a></li>
+      </ul>
+    </div>
+    <div id="filter">
+      <div class="row">
+        <input id="kanji-input" placeholder="kanji search..."/><button id="kanji-reset">reset</button>
+      </div>
+      <div class="row">
+        <input id="word-input" placeholder="word search..."/><button id="word-reset">reset</button>
+        <label title= "search inside translations"><input id="word-extended" type="checkbox"/>extended</label>
+      </div>
+    </div>
+    <div id="kanji-results"></div>
+    <div id="word-results"></div>
+    <script>
+      __script__
+    </script>
+  </body>
+</html>

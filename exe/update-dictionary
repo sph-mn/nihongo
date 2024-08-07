@@ -1,9 +1,3 @@
-#!/usr/bin/env coffee
-
-config =
-  html_path: "html/dictionary-template.html"
-  kanji_data_path: "data/dictionary-kanji-data.json"
-  word_data_path: "data/dictionary-word-data.json"
-  output_path: "data/nihongo-dictionary.html"
-
-require("../js/dictionary").update_dictionary config
+#!./node_modules/coffeescript/bin/coffee
+main = require "../js/main"
+main.update_dictionary()

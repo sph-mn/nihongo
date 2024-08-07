@@ -1,119 +1,169 @@
-# this code compiles the html file for the single-file dictionary page built from
-# html/dictionary-template.html and kanjivg stroke images.
-# https://github.com/KanjiVG/kanjivg/releases
+kanji_data = __kanji_data__
+word_data = __word_data__
+abc_regexp = /[a-z]/
 
-fs = require "fs"
-wanakana = require "wanakana"
-xml2js = require "xml2js"
-csv_parse = require "csv-parse/sync"
-array_from_newline_file = (path) -> fs.readFileSync(path).toString().trim().split("\n")
-object_from_json_file = (path) -> JSON.parse(fs.readFileSync(path))
-read_csv_file = (path, delimiter) -> csv_parse.parse fs.readFileSync(path, "utf-8"), {delimiter: delimiter || " ", relax_column_count: true}
-object_array_add = (object, key, value) -> if object[key] then object[key].push value else object[key] = [value]
+kanji_search_init = ->
+  input = document.getElementById('kanji-input')
+  button = document.getElementById('kanji-reset')
+  results = document.getElementById('kanji-results')
 
-is_object = (a) ->
-  type = typeof a
-  type == "function" || type == "object" && !!a
+  make_result = (kanji, meaning, readings, svg) ->
+    result = document.createElement('div')
+    k = document.createElement('div')
+    k1 = document.createElement('span')
+    k2 = document.createElement('span')
+    m = document.createElement('div')
+    m_content = document.createElement('div')
+    k.className = 'k'
+    k1.className = 'k1'
+    k2.className = 'k2'
+    m.className = 'm'
+    k1.innerHTML = svg
+    k2.innerHTML = kanji
+    m_content.innerHTML = '<div>' + meaning + '</div><div class="r">' + readings + '</div>'
+    k.appendChild k1
+    k.appendChild k2
+    m.appendChild m_content
+    result.appendChild k
+    result.appendChild m
+    result
 
-object_tree_foreach = (a, f) ->
-  Object.keys(a).forEach (key) ->
-    value = a[key]
-    if is_object value
-      object_tree_foreach value, f
-      f key, value
-    else f key, value, a
+  match_values = (meaning, values) ->
+    values.some (a) ->
+      a.test meaning
 
-deduplicate_readings = (a) ->
-  # yoku/a-biru/a-biseru -> yoku/a
-  a = a.split("/")
-  a = a.map (a) -> a.split("-")[0].replace("'", "")
-  a = a.filter (a, i, self) -> self.indexOf(a) == i
-  a.join("/")
-
-clean_svg = (xml, c) ->
-  # the kanjisvg xml has many attributes and styles that are irrelevant
-  # and would bloat the result file size
-  xml = xml.replace(/\n|\t|\r/g, "").replace(/>\\s+</, "")
-  xml2js.parseString xml, {trim: true}, (error, data) ->
-    if error
-      console.error error.toString()
-      c false
+  on_filter = ->
+    results.innerHTML = ''
+    temp = input.value.split(',')
+    values = []
+    i = 0
+    while i < temp.length
+      value = temp[i].trim()
+      if 0 < value.length
+        if 4 > value.length
+          value = '\\b' + value + '\\b'
+        else if 5 > value.length
+          value = '\\b' + value
+        values.push new RegExp(value)
+      i += 1
+    if 0 == values.length
       return
-    object_tree_foreach data, (key, value, object) ->
-      if "$" is key
-        delete value.id
-        delete value["kvg:type"]
-        delete value["kvg:variant"]
-        delete value["kvg:position"]
-        delete value["kvg:phon"]
-        delete value["kvg:element"]
-        delete value["kvg:radical"]
-        delete value["kvg:part"]
-        delete value["kvg:original"]
-        delete value["xmlns"]
-        excludedStyles = ["stroke-width", "stroke", "font-size"]
-        if value.style
-          style = value.style.split ";"
-          style = style.filter (a) ->
-            property = a.split ":"
-            not excludedStyles.includes property[0]
-          value.style = style.join ";"
-    builder = new xml2js.Builder({renderOpts: {pretty: false}, headless: true})
-    c builder.buildObject data
+    temp = []
+    i = 0
+    while i < kanji_data.length
+      if input.value.includes(kanji_data[i][0]) or match_values(kanji_data[i][1], values)
+        result = make_result.apply(null, kanji_data[i])
+        result.addEventListener 'dblclick', ((a) ->
+          ->
+            a.classList.toggle 'mini'
+            return
+        )(result)
+        temp.push result
+      i += 1
+    # seems to display a bit quicker using the temp array
+    i = 0
+    while i < temp.length
+      results.appendChild temp[i]
+      i += 1
+    if 0 == temp.length
+      results.innerHTML = 'no kanji results'
+    return
 
-update_kanji_data = (config) ->
-  stroke_order_svg = (id) ->
-    filename = "0" + id.charCodeAt(0).toString(16) + ".svg"
-    path = config.kanjivg_path + "/" + filename
-    new Promise (resolve, reject) ->
-      fs.readFile path, "utf8", (error, xml) ->
-        if error
-          console.error error.toString(), "for character #{id}"
-          resolve false
-        else clean_svg xml, resolve
-  kanji = read_csv_file config.kanji_path
-  # load all svg files asynchronously
-  result_promises = kanji.map (a) ->
-    [id, meaning, readings] = a
-    readings = deduplicate_readings readings
-    new Promise (resolve, reject) ->
-      resolver = (svg) -> resolve [id, meaning, readings, svg]
-      stroke_order_svg(a[0]).then resolver
-  Promise.all(result_promises).then (result) ->
-    fs.writeFileSync config.output_path, JSON.stringify(result)
+  on_reset = ->
+    input.value = ''
+    results.innerHTML = ''
+    return
 
-update_dictionary = (config) ->
-  kanji = fs.readFileSync config.kanji_data_path, "utf8"
-  words = fs.readFileSync config.word_data_path, "utf8"
-  html = fs.readFileSync config.html_path, "utf8"
-  html = html.replace("{kanji-data}", kanji).replace("{word-data}", words)
-  on_error = (a) -> if a then console.error a
-  fs.writeFile config.output_path, html, on_error
+  input.addEventListener 'keyup', on_filter
+  input.addEventListener 'change', on_filter
+  button.addEventListener 'click', on_reset
+  return
 
-for_each_word_data = (config, f) ->
-  dictionary = object_from_json_file config.dictionary_path
-  by_reading = {}
-  for word in Object.keys dictionary
-    for b in dictionary[word]
-      object_array_add by_reading, b[0], word
-  words = array_from_newline_file config.word_frequency_path
-  words = words.filter (a) -> (a.length > 1 || !wanakana.isHiragana(a)) && !wanakana.isKatakana(a)
-  if config.word_frequency_limit
-    words = words.slice 0, Math.min(words.length, config.word_frequency_limit)
-  for word in words
-    entries = dictionary[word] || by_reading[word]
-    continue unless entries
-    for entry in entries
-      meanings = entry[1]
-      romaji = wanakana.toRomaji entry[0]
-      f [word, romaji, meanings]
+word_search_init = ->
+  input = document.getElementById('word-input')
+  button = document.getElementById('word-reset')
+  checkbox_extended = document.getElementById('word-extended')
+  results = document.getElementById('word-results')
+  result_limit = 150
 
-update_word_data = (config) ->
-  result = []
-  for_each_word_data config, (a) -> result.push a
-  fs.writeFileSync config.output_path, JSON.stringify result
+  make_search_regexp = (word) ->
+    if '"' == word[0]
+      return RegExp(word.replace('"', ''))
+    replacements = [
+      [/sh|tch|ch|j/g, '#0'], [/tts|ts|ss|s|z/g, '#1'], [/ou/g, '#2'], [/ei|e/g, '#3'],
+      [/iy|y/g, '#5'], [/ii|i/g, '(ii|i)'], [/uu|u/g, '(uu|u)'], [/o/g, '(ou|o)'],
+      [/tt|t|d/g, '(tt|t|d)'], [/kk|k|g/g, '(kk|k|g)'], [/pp|p|b/g, '(pp|p|b)'], [/nn|n/g, '(nn|n)'],
+      [/#0/g, '(sh|tch|ch|j)'], [/#1/g, '(tts|ts|ss|s|z)'], [/#2/g, '(ou|o)'], [/#3/g, '(ei|e)'],
+      [/#5/g, '(iy|y)']
+    ]
+    replacements.forEach (a) ->
+      word = word.replace(a[0], a[1])
+      return
+    new RegExp(word)
 
-module.exports =
-  update_word_data: update_word_data
-  update_kanji_data: update_kanji_data
-  update_dictionary: update_dictionary
+  make_result_line = (a) ->
+    b = a[0] + ' ' + a[1] + ' '
+    console.log a
+    if a[2].some(((a) ->
+        a.includes ' '
+      ))
+      b + '"' + a[2].join(' / ') + '"'
+    else
+      b + a[2].join('/')
+
+  on_filter = ->
+    `var regexp`
+    `var i`
+    results.innerHTML = ''
+    value = input.value.trim()
+    if 0 == value.length
+      return
+    matches = []
+    if abc_regexp.test(value)
+      extended = checkbox_extended.checked
+      translation_regexp = new RegExp('\\b' + value)
+      regexp = make_search_regexp(value)
+      length_limit_subtraction = if extended then 2 else 3
+      length_limit = value.length + Math.max(0, value.length - length_limit_subtraction) ** 2
+      i = 0
+      while i < word_data.length and matches.length < result_limit
+        if length_limit >= word_data[i][1].length and regexp.test(word_data[i][1].replace(/'/g, '')) or extended and value.length > 2 and word_data[i][2].some(((a) ->
+            translation_regexp.test a
+            return
+          ))
+          matches.push make_result_line(word_data[i])
+        i += 1
+    else
+      regexp = new RegExp(value)
+      i = 0
+      while i < word_data.length and matches.length < result_limit
+        if regexp.test(word_data[i][0])
+          matches.push make_result_line(word_data[i])
+        i += 1
+    results.innerHTML = matches.join('<br/>')
+    if 0 == matches.length
+      results.innerHTML = 'no word results'
+    return
+
+  on_reset = ->
+    input.value = ''
+    results.innerHTML = ''
+    return
+
+  input.addEventListener 'keyup', on_filter
+  input.addEventListener 'change', on_filter
+  button.addEventListener 'click', on_reset
+  checkbox_extended.addEventListener 'change', on_filter
+  return
+
+about_init = ->
+  about_link = document.getElementById('about-link')
+  about = document.getElementById('about')
+  about_link.addEventListener 'click', ->
+    about.classList.toggle 'hidden'
+    return
+  return
+
+kanji_search_init()
+word_search_init()
+about_init()
