@@ -1,0 +1,3 @@
+#!/usr/bin/coffee
+main = require "../js/main"
+main.update_ja_overlap()

@@ -35,13 +35,13 @@ some lists can be customized, see exe/update-kanji-words
 * [list of jouyou kanji](https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji) on wikipedia
 * word frequency: [gimenes, m., & new, b. (2015) wordlex](http://www.lexique.org/?page_id=250)
 * word translations: [jmdict](http://www.edrdg.org/jmdict/j_jmdict.html) (cc-by-sa-3.0)
-* stroke order graphics: [kanjisvg](https://github.com/KanjiVG/kanjivg/releases)
+* stroke order graphics: [kanjisvg](https://github.com/KanjiVG/kanjivg/releases) (cc-by-sa-3.0)
 * kanji to component mapping: [kanji bakuhatsu](https://github.com/ScottOglesby/kanji-bakuhatsu) (gpl3)
 * component names: [kanji alive](https://github.com/kanjialive/kanji-data-media) language data (cc-by-4.0)
 * [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
 * unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
 
-data is included, except for kanjisvg. all other data of this project is cc-by-sa-4.0.
+data is included. all other data of this project, including the source code, is cc-by-sa-4.0.
 
 # technical
 * the generator scripts uses node.js and its package manager npm. code is written in [coffeescript](http://coffeescript.org), which is javascript just with reduced syntax

@@ -172,14 +172,17 @@ sort_ja_overlap_by_similarity = () ->
     [ja[0][1]].concat b
   c = c.sort((a, b) -> (a[1].length - b[1].length) || (b[0] - a[0]))
   a = (b.slice(1) for b in c)
-  write_csv_file "data/chinese-japanese-overlap-sorted.csv", a
+  write_csv_file "data/chinese-japanese-overlap.csv", a
+
+update_ja_overlap = () ->
+  ja_overlap()
+  sort_ja_overlap_by_similarity()
 
 run = () ->
-  #ja_overlap()
-  sort_ja_overlap_by_similarity()
 
 module.exports = {
   update_dictionary_data,
   update_dictionary,
+  update_ja_overlap,
   run
 }
