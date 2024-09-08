@@ -1,5 +1,5 @@
 #!/usr/bin/env coffee
-wph = require "../js/word-prefix-hierarchy"
+wph = require "../src/word-prefix-hierarchy"
 
 config =
   output_path: "data/word-prefix-hierarchy.txt"

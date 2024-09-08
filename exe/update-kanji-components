@@ -11,5 +11,5 @@ config_shared_components =
   composition_path: "data/kanji-composition-map.txt"
   output_path: "data/jouyou-two-shared-components.csv"
 
-require("../js/kanji-to-components").update_csv config_kanji_components
-require("../js/shared-components").update_csv config_shared_components
+require("../src/kanji-to-components").update_csv config_kanji_components
+require("../src/shared-components").update_csv config_shared_components

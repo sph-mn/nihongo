@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1"/>
+    <title>nihongo dictionary</title>
+    <style>
+      @font-face {
+        font-family: 'Noto Sans JP';
+        src: url('data:font/ttf;base64,{{font}}') format('truetype');
+        font-weight: normal;font-style: normal;
+      }
+      html{font-family:"Noto Sans";font-size:24px;}
+      body{background-color:#000;color:#ddd}
+      body a{color:#ddd}
+      #filter, #kanji-results, #word-results{margin-top:.5rem}
+      h1{font-size:1rem;display:inline-block;margin:0}
+      #description{font-size:.5rem}
+      #filter input{border:0;background-color:#eee}
+      #kanji-results{width:100%;display:flex;flex-wrap:wrap}
+      #kanji-results > :not(.mini) + * {clear:left}
+      #kanji-results > * {min-width:25rem}
+      #kanji-results > * > * {float:left}
+      #kanji-results > * .k .k1{display:inline}
+      #kanji-results > * .k .k2{font-size:1.5rem;display:none}
+      #kanji-results > * .k svg{width:15rem;height:15rem}
+      #kanji-results > * .k svg path{stroke-width:2;stroke:#fff}
+      #kanji-results > * .k svg text{visibility:hidden}
+      #kanji-results > * .k:hover svg text{visibility:visible;color:grey}
+      #kanji-results > * .k:hover + .m{display:block}
+      #kanji-results > * .m{text-align:center;display:none}
+      #kanji-results > * .m > div{position:relative;top:7rem}
+      #kanji-results > * .m .r{color:#aaa}
+      #kanji-results > .mini{clear:none}
+      #kanji-results > .mini > * {height:1.5rem}
+      #kanji-results > .mini .k1{display:none}
+      #kanji-results > .mini .k2{display:inline}
+      #kanji-results > .mini .m{text-align:left;margin-right:.25rem;width:initial}
+      #kanji-results > .mini .m > div{top:2px}
+      #kanji-results > :first-child{padding-top:0}
+      #word-results{font-size:1.75rem}
+      #about-link{cursor:pointer;display:inline-block;margin-left:2ch;text-decoration:underline;font-size:.75rem}
+      #about.hidden{display:none}
+      #filter .row{display:inline-block}
+      #filter label{white-space:nowrap}
+      #word-search-translation{margin:0;margin-right:3px}
+      @media (max-width:700px){
+        html{font-size:14px}
+        input{height:3rem;margin:5px;font-size:120%}
+        button{padding:10px;margin:5px}
+        body > :first-child ~ * {margin-top:0}
+        #word-results{font-size:1.5rem}
+      }
+    </style>
+  </head>
+  <body>
+    <h1>japanese kanji lookup and fuzzy word search</h1>
+    <div id="about-link">about</div>
+    <div id="about" class="hidden">
+      kanji search
+      <ul>
+        <li>the jouyou kanji sorted by stroke order</li>
+        <li>hover or tap over kanji shows stroke order and meaning</li>
+        <li>double clink/tap minimizes entry</li>
+        <li>when minimized, characters can be selected and copied</li>
+        <li>multiple kanji, parts of meanings or multiple comma-separated parts of meanings can be used in the search field</li>
+        <li>the page can be used offline after right click save page as. everything is contained in one html file</li>
+        <li>graphics and stroke order from <a href="https://kanjivg.tagaini.net/">kanjivg</a></li>
+        <li><a href="https://github.com/sph-mn/kanji">project homepage</a></li>
+        <li>this page is under a cc-by-sa license and can be copied, modified and rehosted</li>
+      </ul>
+      word search
+      <ul>
+        <li>includes over 30000 translations with words sorted by frequency of use</li>
+        <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway.
+          this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
+        <li>supports regexp syntax. for example, ^word for searching at the beginning, word$ for searching at the end, or . for wildcards</li>
+        <li>"word for searching exactly as typed</li>
+        <li>katakana words (~8000) are not included. they seem distracting if included</li>
+        <li>there is a limit on the length of result words, relative to the length of input, so that small word searches dont list many longer words where it is contained</li>
+        <li>translations from <a href="http://www.edrdg.org/jmdict/j_jmdict.html">jmdict</a>, word frequency from <a href="http://www.lexique.org/?page_id=250">gimenes, m., & new, b. (2015) wordlex</a></li>
+      </ul>
+    </div>
+    <div id="filter">
+      <div class="row">
+        <input id="kanji-input" placeholder="kanji search..."/><button id="kanji-reset">reset</button>
+      </div>
+      <div class="row">
+        <input id="word-input" placeholder="word search..."/><button id="word-reset">reset</button>
+        <label title= "search inside translations"><input id="word-extended" type="checkbox"/>extended</label>
+      </div>
+    </div>
+    <div id="kanji-results"></div>
+    <div id="word-results"></div>
+    <script>
+      var abc_regexp, about_init, kanji_data, kanji_search_init, word_data, word_search_init;
+
+kanji_data = __kanji_data__;
+
+word_data = __word_data__;
+
+abc_regexp = /[a-z]/;
+
+kanji_search_init = function() {
+  var button, input, make_result, match_values, on_filter, on_reset, results;
+  input = document.getElementById("kanji-input");
+  button = document.getElementById("kanji-reset");
+  results = document.getElementById("kanji-results");
+  make_result = function(kanji, meaning, readings, svg) {
+    var k, k1, k2, m, m_content, result;
+    result = document.createElement("div");
+    k = document.createElement("div");
+    k1 = document.createElement("span");
+    k2 = document.createElement("span");
+    m = document.createElement("div");
+    m_content = document.createElement("div");
+    k.className = "k";
+    k1.className = "k1";
+    k2.className = "k2";
+    m.className = "m";
+    k1.innerHTML = svg;
+    k2.innerHTML = kanji;
+    m_content.innerHTML = "<div>" + meaning + "</div><div class=\"r\">" + readings + "</div>";
+    k.appendChild(k1);
+    k.appendChild(k2);
+    m.appendChild(m_content);
+    result.appendChild(k);
+    result.appendChild(m);
+    return result;
+  };
+  match_values = function(meaning, values) {
+    return values.some(function(a) {
+      return a.test(meaning);
+    });
+  };
+  on_filter = function() {
+    var i, result, temp, value, values;
+    results.innerHTML = "";
+    temp = input.value.split(",");
+    values = [];
+    i = 0;
+    while (i < temp.length) {
+      value = temp[i].trim();
+      if (0 < value.length) {
+        if (4 > value.length) {
+          value = "\\b" + value + "\\b";
+        } else if (5 > value.length) {
+          value = "\\b" + value;
+        }
+        values.push(new RegExp(value));
+      }
+      i += 1;
+    }
+    if (0 === values.length) {
+      return;
+    }
+    temp = [];
+    i = 0;
+    while (i < kanji_data.length) {
+      if (input.value.includes(kanji_data[i][0]) || match_values(kanji_data[i][1], values)) {
+        result = make_result.apply(null, kanji_data[i]);
+        result.addEventListener("dblclick", (function(a) {
+          return function() {
+            return a.classList.toggle("mini");
+          };
+        })(result));
+        temp.push(result);
+      }
+      i += 1;
+    }
+    // seems to display a bit quicker when using the temp array
+    i = 0;
+    while (i < temp.length) {
+      results.appendChild(temp[i]);
+      i += 1;
+    }
+    if (0 === temp.length) {
+      return results.innerHTML = "no kanji results";
+    }
+  };
+  on_reset = function() {
+    input.value = "";
+    return results.innerHTML = "";
+  };
+  input.addEventListener("keyup", on_filter);
+  input.addEventListener("change", on_filter);
+  return button.addEventListener("click", on_reset);
+};
+
+word_search_init = function() {
+  var button, checkbox_extended, input, make_result_line, make_search_regexp, on_filter, on_reset, result_limit, results;
+  input = document.getElementById("word-input");
+  button = document.getElementById("word-reset");
+  checkbox_extended = document.getElementById("word-extended");
+  results = document.getElementById("word-results");
+  result_limit = 150;
+  make_search_regexp = function(word) {
+    var replacements;
+    if ("\"" === word[0]) {
+      return RegExp(word.replace("\"", ""));
+    }
+    replacements = [[/sh|tch|ch|j/g, "#0"], [/tts|ts|ss|s|z/g, "#1"], [/ou/g, "#2"], [/ei|e/g, "#3"], [/iy|y/g, "#5"], [/ii|i/g, "(ii|i)"], [/uu|u/g, "(uu|u)"], [/o/g, "(ou|o)"], [/tt|t|d/g, "(tt|t|d)"], [/kk|k|g/g, "(kk|k|g)"], [/pp|p|b/g, "(pp|p|b)"], [/nn|n/g, "(nn|n)"], [/#0/g, "(sh|tch|ch|j)"], [/#1/g, "(tts|ts|ss|s|z)"], [/#2/g, "(ou|o)"], [/#3/g, "(ei|e)"], [/#5/g, "(iy|y)"]];
+    replacements.forEach(function(a) {
+      return word = word.replace(a[0], a[1]);
+    });
+    return new RegExp(word);
+  };
+  make_result_line = function(a) {
+    var b;
+    b = "<span>" + a[0] + "</span> " + a[1] + " ";
+    if (a[2].some(function(a) {
+      return a.includes(" ");
+    })) {
+      return b + "\"" + a[2].join(" / ") + "\"";
+    } else {
+      return b + a[2].join("/");
+    }
+  };
+  on_filter = function() {
+    var extended, i, length_limit, length_limit_subtraction, match, matches, regexp, translation_regexp, value;
+    results.innerHTML = "";
+    value = input.value.trim();
+    if (0 === value.length) {
+      return;
+    }
+    matches = [];
+    if (abc_regexp.test(value)) {
+      extended = checkbox_extended.checked;
+      translation_regexp = new RegExp("\\b" + value);
+      regexp = make_search_regexp(value);
+      length_limit_subtraction = extended ? 1 : 2;
+      length_limit = value.length + Math.max(0, value.length - length_limit_subtraction) ** 2;
+      i = 0;
+      match = function(a) {
+        if (length_limit >= a[1].length && regexp.test(a[1].replace(/"/g, ""))) {
+          return true;
+        }
+        if (extended && value.length > 2 && a[2].some(function(a) {
+          return translation_regexp.test(a);
+        })) {
+          return true;
+        }
+        return false;
+      };
+      while (i < word_data.length && matches.length < result_limit) {
+        if (match(word_data[i])) {
+          matches.push(make_result_line(word_data[i]));
+        }
+        i += 1;
+      }
+    } else {
+      regexp = new RegExp(value);
+      i = 0;
+      while (i < word_data.length && matches.length < result_limit) {
+        if (regexp.test(word_data[i][0])) {
+          matches.push(make_result_line(word_data[i]));
+        }
+        i += 1;
+      }
+    }
+    return results.innerHTML = matches.length ? matches.join("<br/>") : "no word results";
+  };
+  on_reset = function() {
+    input.value = "";
+    return results.innerHTML = "";
+  };
+  input.addEventListener("keyup", on_filter);
+  input.addEventListener("change", on_filter);
+  button.addEventListener("click", on_reset);
+  return checkbox_extended.addEventListener("change", on_filter);
+};
+
+about_init = function() {
+  var about, about_link;
+  about_link = document.getElementById("about-link");
+  about = document.getElementById("about");
+  return about_link.addEventListener("click", function() {
+    return about.classList.toggle("hidden");
+  });
+};
+
+kanji_search_init();
+
+word_search_init();
+
+about_init();
+    </script>
+  </body>
+</html>

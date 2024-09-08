@@ -1,5 +1,5 @@
 #!/usr/bin/env coffee
-kanji_words = require "../js/kanji-words"
+kanji_words = require "../src/kanji-words"
 
 update_jouyou_learning = () ->
   config =

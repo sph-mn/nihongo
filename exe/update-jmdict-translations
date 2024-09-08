@@ -1,6 +1,6 @@
 #!/usr/bin/env coffee
 
-lib = require "../js/jmdict-translations"
+lib = require "../src/jmdict-translations"
 
 # used for the dictionary.
 # for possible misc_tag_exclusions see http://www.edrdg.org/jmdictdb/cgi-bin/edhelp.py?svc=jmdict&sid=#kw_misc
