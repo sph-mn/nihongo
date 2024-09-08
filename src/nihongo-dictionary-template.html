@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
+    <link rel="icon" href="data:," />
     <meta charset="utf-8"/>
     <meta name="viewport" content="initial-scale=1"/>
     <title>nihongo dictionary</title>
@@ -55,40 +56,37 @@
     </style>
   </head>
   <body>
-    <h1>japanese kanji lookup and fuzzy word search</h1>
+    <h1>japanese to english dictionary with fuzzy word search and kanji stroke order lookup</h1>
     <div id="about-link">about</div>
     <div id="about" class="hidden">
       kanji search
       <ul>
         <li>the jouyou kanji sorted by stroke order</li>
         <li>hover or tap over kanji shows stroke order and meaning</li>
-        <li>double clink/tap minimizes entry</li>
-        <li>when minimized, characters can be selected and copied</li>
-        <li>multiple kanji, parts of meanings or multiple comma-separated parts of meanings can be used in the search field</li>
-        <li>the page can be used offline after right click save page as. everything is contained in one html file</li>
+        <li>double click/tap minimizes entry for copying</li>
+        <li>multiple kanji, parts of meanings, and multiple comma-separated parts of meanings can be used in the search field</li>
         <li>graphics and stroke order from <a href="https://kanjivg.tagaini.net/">kanjivg</a></li>
         <li><a href="https://github.com/sph-mn/kanji">project homepage</a></li>
-        <li>this page is under a cc-by-sa license and can be copied, modified and rehosted</li>
       </ul>
       word search
       <ul>
         <li>includes over 30000 translations with words sorted by frequency of use</li>
-        <li>finds words with similar spelling and pronunciation. for example, in case you hear a word and cant quite make out if it has a short or long vowel, or a "z" or "s", this search will find it anyway.
-          this is only done when entering readings in romaji, but searching words using kanji is also possible</li>
-        <li>supports regexp syntax. for example, ^word for searching at the beginning, word$ for searching at the end, or . for wildcards</li>
+        <li>when searching by romaji, it finds words with similar spelling and pronunciation. this is for when you hear a word and can not quite make out if it has a short or long vowel, or a "z" or "s" - this search may find it anyway</li>
+        <li>everything is contained in this html file. the file can be copied, modified, and rehosted under the cc-by-sa license</li>
+        <li>supports regular expressions. for example, '^word' searches at the beginning, 'word$' searches at the end, and '.' can be used as a wildcard</li>
         <li>"word for searching exactly as typed</li>
         <li>katakana words (~8000) are not included. they seem distracting if included</li>
-        <li>there is a limit on the length of result words, relative to the length of input, so that small word searches dont list many longer words where it is contained</li>
-        <li>translations from <a href="http://www.edrdg.org/jmdict/j_jmdict.html">jmdict</a>, word frequency from <a href="http://www.lexique.org/?page_id=250">gimenes, m., & new, b. (2015) wordlex</a></li>
+        <li>the length of result words is limited relative to the length of the input word, preventing short word searches from returning many longer words that contain it</li>
+        <li>translations are sourced from <a href="http://www.edrdg.org/jmdict/j_jmdict.html">jmdict</a>, word frequency data is sourced from <a href="http://www.lexique.org/?page_id=250">gimenes, m., & new, b. (2015) wordlex</a></li>
       </ul>
     </div>
     <div id="filter">
       <div class="row">
-        <input id="kanji-input" placeholder="kanji search..."/><button id="kanji-reset">reset</button>
+        <input id="kanji-input" placeholder="kanji search..."/><button id="kanji-reset">clear</button>
       </div>
       <div class="row">
-        <input id="word-input" placeholder="word search..."/><button id="word-reset">reset</button>
-        <label title= "search inside translations"><input id="word-extended" type="checkbox"/>extended</label>
+        <input id="word-input" placeholder="word search..."/><button id="word-reset">clear</button>
+        <label title= "search for longer words and inside translations"><input id="word-extended" type="checkbox"/>extended</label>
       </div>
     </div>
     <div id="kanji-results"></div>

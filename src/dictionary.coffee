@@ -26,7 +26,7 @@ kanji_search_init = ->
     result.appendChild k
     result.appendChild m
     result
-  match_values = (meaning, values) -> values.some (a) -> a.test meaning
+  match_values = (meaning, readings, values) -> values.some (a) -> a.test(meaning) || a.test(readings)
   on_filter = ->
     results.innerHTML = ""
     temp = input.value.split(",")
@@ -45,14 +45,15 @@ kanji_search_init = ->
     temp = []
     i = 0
     while i < kanji_data.length
-      if input.value.includes(kanji_data[i][0]) or match_values(kanji_data[i][1], values)
-        result = make_result.apply(null, kanji_data[i])
+      entry = kanji_data[i]
+      if input.value.includes(entry[0]) or match_values(entry[1], entry[2], values)
+        result = make_result.apply null, entry
         result.addEventListener "dblclick", ((a) ->
           -> a.classList.toggle "mini"
         )(result)
         temp.push result
       i += 1
-    # seems to display a bit quicker when using the temp array
+    # using the temp array seems to display a bit faster
     i = 0
     while i < temp.length
       results.appendChild temp[i]

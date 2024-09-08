@@ -13,10 +13,7 @@ read_csv_file = (path, delimiter) -> csv_parse.parse fs.readFileSync(path, "utf-
 read_text_file = (a) -> fs.readFileSync a, "utf8"
 write_text_file = (path, a) -> fs.writeFileSync path, a
 delete_duplicates = (a) -> [...new Set(a)]
-
-replace_placeholders = (text, mapping) ->
-  text = text.replace "{{#{a}}}", b for a, b of mapping
-  text
+replace_placeholders = (text, mapping) -> text.replace /{{(.*?)}}/g, (_, k) -> mapping[k] or ""
 
 write_csv_file = (path, data) ->
   csv = csv_stringify.stringify(data, {delimiter: " "}, on_error).trim()

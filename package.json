@@ -1,8 +1,8 @@
 {
-  "name": "jouyou-kanji-learning",
-  "version": "1.1.0",
+  "name": "nihongo",
+  "version": "2.0.0",
   "license": "cc-by-sa",
-  "dependencies": {
+  "devDependencies": {
     "coffeescript": "*",
     "csv": "*",
     "deepmerge": "*",
