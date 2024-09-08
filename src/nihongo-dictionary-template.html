@@ -6,16 +6,10 @@
     <meta name="viewport" content="initial-scale=1"/>
     <title>nihongo dictionary</title>
     <style>
-      @font-face {
-        font-family: "Noto Sans JP";
-        src: url("data:font/ttf;base64,{{font}}") format("truetype");
-        font-weight: normal;font-style: normal;
-      }
       html{font-family:"Noto Sans";font-size:24px;}
       body{background-color:#000;color:#ddd;margin:0}
       body a{color:#ddd}
       ul{margin-top:0}
-      #filter, #kanji-results, #word-results{margin-top:.5rem}
       h1{font-size:1rem;display:inline-block;margin:0}
       #description{font-size:.5rem}
       #filter input{border:0;background-color:#eee}
@@ -43,15 +37,14 @@
       #word-results > span{font-size:1.5rem;font-family:"Noto Sans JP"}
       #about-link{cursor:pointer;display:inline-block;margin-left:2ch;font-size:.75rem;float:right}
       #about.hidden{display:none}
+      #filter, #kanji-results, #word-results{margin-top:.5rem}
       #filter .row{display:inline-block}
       #filter label{white-space:nowrap}
-      #word-search-translation{margin:0;margin-right:3px}
       @media (max-width:700px){
         html{font-size:14px}
-        input{height:3rem;margin:5px;font-size:120%}
-        button{padding:10px;margin:5px}
+        input{height:3rem;margin:4px;font-size:120%}
+        button{padding:10px;margin:4px}
         body > :first-child ~ * {margin-top:0}
-        #word-results{font-size:1.5rem}
       }
     </style>
   </head>
@@ -70,13 +63,13 @@
       </ul>
       word search
       <ul>
-        <li>includes over 30000 translations with words sorted by frequency of use</li>
-        <li>when searching by romaji, it finds words with similar spelling and pronunciation. this is for when you hear a word and can not quite make out if it has a short or long vowel, or a "z" or "s" - this search may find it anyway</li>
-        <li>everything is contained in this html file. the file can be copied, modified, and rehosted under the cc-by-sa license</li>
-        <li>supports regular expressions. for example, '^word' searches at the beginning, 'word$' searches at the end, and '.' can be used as a wildcard</li>
+        <li>contains over 30000 translations, with words sorted by frequency of use. it is designed to cover the most essential words, not to serve as a comprehensive dictionary</li>
+        <li>when searching by romaji, the tool finds words with similar spelling and pronunciation. this is useful if you have heard a word but are unsure about details like short vs. long vowels or whether it contains a "z" or "s" - this search may still find the correct word</li>
+        <li>supports regular expressions. for example, ^word searches at the beginning, word$ searches at the end, and . can be used as a wildcard</li>
         <li>"word for searching exactly as typed</li>
         <li>katakana words (~8000) are not included. they seem distracting if included</li>
         <li>the length of result words is limited relative to the length of the input word, preventing short word searches from returning many longer words that contain it</li>
+        <li>everything is contained in this html file. the file can be copied, modified, and rehosted under the cc-by-sa license</li>
         <li>translations are sourced from <a href="http://www.edrdg.org/jmdict/j_jmdict.html">jmdict</a>, word frequency data is sourced from <a href="http://www.lexique.org/?page_id=250">gimenes, m., & new, b. (2015) wordlex</a></li>
       </ul>
     </div>
@@ -91,6 +84,15 @@
     </div>
     <div id="kanji-results"></div>
     <div id="word-results"></div>
+    <style>
+     @font-face {
+       font-family: "Noto Sans JP";
+       src: url("data:font/ttf;base64,{{font}}") format("truetype");
+       font-weight: normal;
+       font-style: normal;
+       font-display: swap;
+     }
+    </style>
     <script>
       {{script}}
     </script>
