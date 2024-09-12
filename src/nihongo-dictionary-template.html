@@ -12,7 +12,8 @@
       ul{margin-top:0}
       h1{font-size:1rem;display:inline-block;margin:0}
       #description{font-size:.5rem}
-      #filter input{border:0;background-color:#eee}
+      input, button{border:0;background-color:#eee;vertical-align:middle}
+      button:active{background-color: #ccc}
       #kanji-results{width:100%;display:flex;flex-wrap:wrap}
       #kanji-results > :not(.mini) + * {clear:left}
       #kanji-results > * {min-width:25rem}
@@ -35,16 +36,17 @@
       #kanji-results > .mini .m > div{top:2px}
       #kanji-results > :first-child{padding-top:0}
       #word-results > span{font-size:1.5rem;font-family:"Noto Sans JP"}
-      #about-link{cursor:pointer;display:inline-block;margin-left:2ch;font-size:.75rem;float:right}
+      #about-link{cursor:pointer;display:inline-block;margin-left:20px;position:absolute;top:0;right:0;font-size:0.8em}
       #about.hidden{display:none}
-      #filter, #kanji-results, #word-results{margin-top:.5rem}
+      #filter, #kanji-results, #word-results{margin-top:4px}
       #filter .row{display:inline-block}
       #filter label{white-space:nowrap}
-      @media (max-width:700px){
-        html{font-size:14px}
-        input{height:3rem;margin:4px;font-size:120%}
-        button{padding:10px;margin:4px}
-        body > :first-child ~ * {margin-top:0}
+      @media (max-width: 700px) {
+        html,input,button{font-size:0.8em}
+        input{height:30px;padding:0}
+        button{padding:2px;margin:2px}
+        body > *{margin-top:0}
+        #filter, #kanji-results, #word-results{margin-top:0}
       }
     </style>
   </head>
@@ -75,10 +77,10 @@
     </div>
     <div id="filter">
       <div class="row">
-        <input id="kanji-input" placeholder="kanji search..."/><button id="kanji-reset">clear</button>
+        <button id="kanji-reset">clear</button> <input id="kanji-input" placeholder="kanji search..."/>
       </div>
       <div class="row">
-        <input id="word-input" placeholder="word search..."/><button id="word-reset">clear</button>
+        <button id="word-reset">clear</button> <input id="word-input" placeholder="word search..."/>
         <label title= "search for longer words and inside translations"><input id="word-extended" type="checkbox"/>extended</label>
       </div>
     </div>
