@@ -14,31 +14,29 @@
       #description{font-size:.5rem}
       input, button{border:0;background-color:#eee;vertical-align:middle}
       button:active{background-color: #ccc}
-      #kanji-results{width:100%;display:flex;flex-wrap:wrap}
-      #kanji-results > :not(.mini) + * {clear:left}
-      #kanji-results > * {min-width:25rem}
-      #kanji-results > * > * {float:left}
-      #kanji-results > * .k .k1{display:inline}
-      #kanji-results > * .k .k2{font-size:1.5rem;display:none}
-      #kanji-results > * .k svg{width:15rem;height:15rem}
-      #kanji-results > * .k svg path{stroke-width:2;stroke:#fff}
-      #kanji-results > * .k svg text{visibility:hidden}
-      #kanji-results > * .k:hover svg text{visibility:visible;color:grey}
-      #kanji-results > * .k:hover + .m{display:block}
-      #kanji-results > * .m{text-align:center;display:none}
-      #kanji-results > * .m > div{position:relative;top:7rem}
-      #kanji-results > * .m .r{color:#aaa}
-      #kanji-results > .mini{clear:none}
-      #kanji-results > .mini > * {height:1.5rem}
-      #kanji-results > .mini .k1{display:none}
-      #kanji-results > .mini .k2{display:inline}
-      #kanji-results > .mini .m{text-align:left;margin-right:.25rem;width:initial}
-      #kanji-results > .mini .m > div{top:2px}
-      #kanji-results > :first-child{padding-top:0}
-      #word-results > span{font-size:1.5rem;font-family:"Noto Sans JP"}
-      #about-link{cursor:pointer;display:inline-block;margin-left:20px;position:absolute;top:0;right:0;font-size:0.8em}
+      #kanji_results{width:100%;display:flex;flex-wrap:wrap}
+      #kanji_results > :not(.mini) + * {clear:left}
+      #kanji_results > * .k .k1{display:inline}
+      #kanji_results > * .k .k2{font-size:1.5rem;display:none}
+      #kanji_results > * .k svg{width:13rem;height:13rem}
+      #kanji_results > * .k svg path{stroke-width:1;stroke:#fff}
+      #kanji_results > * .k svg text{visibility:hidden}
+      #kanji_results > * .k:hover svg text{visibility:visible;fill:#aaa;font-size:0.333rem}
+      #kanji_results > * .k:hover + .m{display:block}
+      #kanji_results > * .m{text-align:center;display:none}
+      #kanji_results > * .m .r{color:#aaa}
+      #kanji_results > .mini{clear:none}
+      #kanji_results > .mini > * {height:1.5rem}
+      #kanji_results > .mini .k1{display:none}
+      #kanji_results > .mini .k2{display:inline}
+      #kanji_results > .mini .m{text-align:left;margin-right:.25rem;width:initial}
+      #kanji_results > .mini .m > div{top:2px}
+      #kanji_results > :first-child{padding-top:0}
+      #word_results > span{font-size:1.5rem;font-family:"Noto Sans JP"}
+      #about_link{cursor:pointer;display:inline-block;margin-left:20px;position:absolute;top:0;right:0;font-size:0.8em}
+      #about_link:hover{text-decoration:underline}
       #about.hidden{display:none}
-      #filter, #kanji-results, #word-results{margin-top:4px}
+      #filter, #kanji_results, #word_results{margin-top:4px}
       #filter .row{display:inline-block}
       #filter label{white-space:nowrap}
       @media (max-width: 700px) {
@@ -46,13 +44,13 @@
         input{height:30px;padding:0}
         button{padding:2px;margin:2px}
         body > *{margin-top:0}
-        #filter, #kanji-results, #word-results{margin-top:0}
+        #filter, #kanji_results, #word_results{margin-top:0}
       }
     </style>
   </head>
   <body>
     <h1>japanese to english dictionary with fuzzy word search and kanji stroke order lookup</h1>
-    <div id="about-link">about</div>
+    <div id="about_link">about</div>
     <div id="about" class="hidden">
       kanji search
       <ul>
@@ -77,26 +75,26 @@
     </div>
     <div id="filter">
       <div class="row">
-        <button id="kanji-reset">clear</button> <input id="kanji-input" placeholder="kanji search..."/>
+        <button id="kanji_reset">clear</button> <input id="kanji_input" placeholder="kanji search..."/>
       </div>
       <div class="row">
-        <button id="word-reset">clear</button> <input id="word-input" placeholder="word search..."/>
-        <label title= "search for longer words and inside translations"><input id="word-extended" type="checkbox"/>extended</label>
+        <button id="word_reset">clear</button> <input id="word_input" placeholder="word search..."/>
+        <label title= "search for longer words and inside translations"><input id="word_extended" type="checkbox"/>extended</label>
       </div>
     </div>
-    <div id="kanji-results"></div>
-    <div id="word-results"></div>
+    <div id="kanji_results"></div>
+    <div id="word_results"></div>
     <style>
      @font-face {
        font-family: "Noto Sans JP";
-       src: url("data:font/ttf;base64,{{font}}") format("truetype");
+       src: url("data:font/ttf;base64,__font__") format("truetype");
        font-weight: normal;
        font-style: normal;
        font-display: swap;
      }
     </style>
     <script>
-      {{script}}
+      __script__
     </script>
   </body>
 </html>

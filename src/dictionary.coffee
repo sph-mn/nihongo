@@ -1,11 +1,43 @@
-kanji_data = {{kanji_data}}
-word_data = {{word_data}}
+kanji_data = __kanji_data__
+word_data = __word_data__
 abc_regexp = /[a-z]/
+dom = {}; (dom[a.id] = a for a in document.querySelectorAll("[id]"))
 
 kanji_search_init = ->
-  input = document.getElementById("kanji-input")
-  button = document.getElementById("kanji-reset")
-  results = document.getElementById("kanji-results")
+  input = dom.kanji_input
+  button = dom.kanji_reset
+  results = dom.kanji_results
+  make_svg = (svg_paths) ->
+    result = '<svg viewbox="0 0 100 100">'
+    result += "<path d=\"#{a}\"/>" for a in svg_paths
+    # create text elements while ensuring that they do not overlap with each other
+    min_distance = 5
+    placed_positions = []
+    for path, index in svg_paths
+      match = /M\s*(-?\d+\.?\d*),\s*(-?\d+\.?\d*)/.exec path
+      continue unless match
+      x = parseFloat match[1]
+      y = parseFloat match[2]
+      x += 1
+      y -= 1
+      is_overlapping = (current_x, current_y) ->
+        for pos in placed_positions
+          dx = current_x - pos[0]
+          dy = current_y - pos[1]
+          distance = Math.sqrt dx * dx + dy * dy
+          return true if distance < min_distance
+        false
+      original_y = y
+      offset_step = 10  # pixels to move vertically each attempt
+      max_attempts = 10
+      attempt = 0
+      while is_overlapping(x, y) and attempt < max_attempts
+        y += offset_step  # move the text down by offset_step pixels
+        attempt += 1
+      continue if is_overlapping x, y
+      result += "<text x=\"#{x}\" y=\"#{y}\">#{index + 1}</text>"
+      placed_positions.push([x, y])
+    result + "</svg>"
   make_result = (kanji, meaning, readings, svg) ->
     result = document.createElement("div")
     k = document.createElement("div")
@@ -17,7 +49,7 @@ kanji_search_init = ->
     k1.className = "k1"
     k2.className = "k2"
     m.className = "m"
-    k1.innerHTML = svg
+    k1.innerHTML = make_svg svg
     k2.innerHTML = kanji
     m_content.innerHTML = "<div>" + meaning + "</div><div class=\"r\">" + readings + "</div>"
     k.appendChild k1
@@ -67,10 +99,10 @@ kanji_search_init = ->
   button.addEventListener "click", on_reset
 
 word_search_init = ->
-  input = document.getElementById("word-input")
-  button = document.getElementById("word-reset")
-  checkbox_extended = document.getElementById("word-extended")
-  results = document.getElementById("word-results")
+  input = dom.word_input
+  button = dom.word_reset
+  checkbox_extended = dom.word_extended
+  results = dom.word_results
   result_limit = 150
   make_search_regexp = (word) ->
     return RegExp(word.replace("\"", "")) if "\"" == word[0]
@@ -124,8 +156,8 @@ word_search_init = ->
   checkbox_extended.addEventListener "change", on_filter
 
 about_init = ->
-  about_link = document.getElementById("about-link")
-  about = document.getElementById("about")
+  about_link = dom.about_link
+  about = dom.about
   about_link.addEventListener "click", -> about.classList.toggle "hidden"
 
 kanji_search_init()

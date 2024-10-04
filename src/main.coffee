@@ -13,7 +13,7 @@ read_csv_file = (path, delimiter) -> csv_parse.parse fs.readFileSync(path, "utf-
 read_text_file = (a) -> fs.readFileSync a, "utf8"
 write_text_file = (path, a) -> fs.writeFileSync path, a
 delete_duplicates = (a) -> [...new Set(a)]
-replace_placeholders = (text, mapping) -> text.replace /{{(.*?)}}/g, (_, k) -> mapping[k] or ""
+replace_placeholders = (text, mapping) -> text.replace /__(.*?)__/g, (_, k) -> mapping[k] or ""
 
 write_csv_file = (path, data) ->
   csv = csv_stringify.stringify(data, {delimiter: " "}, on_error).trim()
@@ -38,55 +38,39 @@ deduplicate_readings = (a) ->
   a = a.filter (a, i, self) -> self.indexOf(a) == i
   a.join("/")
 
-clean_svg = (xml, c) ->
-  # the kanjisvg xml has many attributes and styles that are irrelevant
-  # and would bloat the result file size
-  xml = xml.replace(/\n|\t|\r/g, "").replace(/>\\s+</, "")
-  xml2js.parseString xml, {trim: true}, (error, data) ->
-    if error
-      console.error error.toString()
-      c false
-      return
-    object_tree_foreach data, (key, value, object) ->
-      if "$" is key
-        delete value.id
-        delete value["kvg:type"]
-        delete value["kvg:variant"]
-        delete value["kvg:position"]
-        delete value["kvg:phon"]
-        delete value["kvg:element"]
-        delete value["kvg:radical"]
-        delete value["kvg:part"]
-        delete value["kvg:original"]
-        delete value["xmlns"]
-        excludedStyles = ["stroke-width", "stroke", "font-size"]
-        if value.style
-          style = value.style.split ";"
-          style = style.filter (a) ->
-            property = a.split ":"
-            not excludedStyles.includes property[0]
-          value.style = style.join ";"
-    builder = new xml2js.Builder({renderOpts: {pretty: false}, headless: true})
-    c builder.buildObject data
-
 update_dictionary_kanji_data = () ->
-  stroke_order_svg = (id) ->
-    filename = "0" + id.charCodeAt(0).toString(16) + ".svg"
+  xml_parser = new xml2js.Parser()
+  find_paths = (node) ->
+    d_values = []
+    if node?.path
+      for path in node.path
+        d_values.push path['$'].d
+    for key, value of node
+      if typeof value is 'object'
+        d_values = d_values.concat find_paths value
+    d_values
+  get_svg = (char) ->
+    filename = "0" + char.charCodeAt(0).toString(16) + ".svg"
     path = "data/kanjivg/#{filename}"
     new Promise (resolve, reject) ->
       fs.readFile path, "utf8", (error, xml) ->
         if error
-          console.error error.toString(), "for character #{id}"
+          console.error error.toString(), "for character #{char}"
           resolve false
-        else clean_svg xml, resolve
+        else
+          xml_parser.parseString xml, (error, result) ->
+            if error then resolve false
+            else
+              d_values = find_paths result.svg
+              console.log d_values
+              resolve d_values
   kanji = read_csv_file "data/jouyou-kanji.csv"
   # load all svg files asynchronously
   result_promises = kanji.map (a) ->
-    [id, meaning, readings] = a
+    [char, meaning, readings] = a
     readings = deduplicate_readings readings
     new Promise (resolve, reject) ->
-      resolver = (svg) -> resolve [id, meaning, readings, svg]
-      stroke_order_svg(a[0]).then resolver
+      get_svg(a[0]).then (svg) -> resolve [char, meaning, readings, svg]
   Promise.all(result_promises).then (result) ->
     write_text_file "data/dictionary-kanji-data.json", JSON.stringify(result)
 

@@ -3,7 +3,7 @@ a fast dictionary, lists related to kanji and scripts to compile the lists.
 # nihongo dictionary
 * kanji stroke order, meaning and common readings lookup
 * top 30000 words fuzzy search that searches for similar pronunciation and sorts results by frequency
-* single-file browser page. the file can be downloaded and viewed in a browser but is also hosted [here](http://sph.mn/other/japanese/nihongo-dictionary.html)
+* single-file browser application. the file under compiled/ can be downloaded and used offline in a browser but is also hosted [here](http://sph.mn/other/japanese/nihongo-dictionary.html)
 * data/nihongo-dictionary.html
 
 # csv lists
@@ -41,17 +41,16 @@ some lists can be customized, see exe/update-kanji-words
 * [list of kanji radicals by stroke count](https://en.wikipedia.org/wiki/List_of_kanji_radicals_by_stroke_count)
 * unicode kanji to radical mapping from [ocornut](https://gist.github.com/ocornut/18844be7446b63d936e4fab8fb5e6e01)
 
-data is included. all other data of this project, including the source code, is cc-by-sa-4.0.
+data is included. all other data of this project, including the source code, is licensed under cc-by-sa-4.0.
 
 # technical
-* the generator scripts uses node.js and its package manager npm. code is written in [coffeescript](http://coffeescript.org), which is javascript just with reduced syntax
+* the generator scripts uses node.js and its package manager npm. code is written in [coffeescript](http://coffeescript.org) which is javascript with a reduced syntax
 * how to recreate the csv files
   * initialise the development environment once with "npm install" to install dependencies, which creates a node_modules directory in the current directory
-  * see files under exe/, they are shell scripts and can be executed with ./exe/filename and contain configuration options
-  * for other tools see "coffee js/filename"
+  * see files under exe/, they are shell scripts and can be executed with ./exe/filename. some contain further configuration options
+  * for source code see src/, especially main.coffee and dictionary.coffe
 * how to recreate nihongo-dictionary
-  * requires the kanji directory from [kanjivg](https://github.com/KanjiVG/kanjivg) to have been downloaded and saved under data/kanjivg
   * create data files with "./exe/update-dictionary-data"
   * execute "./exe/update-dictionary"
-  * the result file is build from html/dictionary-template.html
+  * the result file is build from src/dictionary-template.html
 * good to know regarding unicode: multiple kanji components/radicals and kanji that look exactly the same exist at separate codepoints. see [wikipedia: kangxi radical unicode](https://en.wikipedia.org/wiki/Kangxi_radical#Unicode)
