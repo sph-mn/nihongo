@@ -38,7 +38,7 @@ deduplicate_readings = (a) ->
   a = a.filter (a, i, self) -> self.indexOf(a) == i
   a.join("/")
 
-update_dictionary_kanji_data = () ->
+update_dictionary_character_data = () ->
   xml_parser = new xml2js.Parser()
   find_paths = (node) ->
     d_values = []
@@ -60,10 +60,7 @@ update_dictionary_kanji_data = () ->
         else
           xml_parser.parseString xml, (error, result) ->
             if error then resolve false
-            else
-              d_values = find_paths result.svg
-              console.log d_values
-              resolve d_values
+            else resolve find_paths result.svg
   kanji = read_csv_file "data/jouyou-kanji.csv"
   # load all svg files asynchronously
   result_promises = kanji.map (a) ->
@@ -72,7 +69,7 @@ update_dictionary_kanji_data = () ->
     new Promise (resolve, reject) ->
       get_svg(a[0]).then (svg) -> resolve [char, meaning, readings, svg]
   Promise.all(result_promises).then (result) ->
-    write_text_file "data/dictionary-kanji-data.json", JSON.stringify(result)
+    write_text_file "data/dictionary-character-data.json", JSON.stringify(result)
 
 update_dictionary_word_data = () ->
   result = []
@@ -94,15 +91,15 @@ update_dictionary_word_data = () ->
   write_text_file "data/dictionary-word-data.json", JSON.stringify(result)
 
 update_dictionary_data = () ->
-  update_dictionary_kanji_data()
+  update_dictionary_character_data()
   update_dictionary_word_data()
 
 update_dictionary = () ->
-  kanji_data = read_text_file "data/dictionary-kanji-data.json"
+  character_data = read_text_file "data/dictionary-character-data.json"
   word_data = read_text_file "data/dictionary-word-data.json"
   font = read_text_file "src/NotoSansJP-Light.ttf.base64"
   script = read_text_file "src/dictionary.coffee"
-  script = replace_placeholders script, {kanji_data, word_data}
+  script = replace_placeholders script, {character_data, word_data}
   script = coffee.compile(script, bare: true).trim()
   html = read_text_file "src/nihongo-dictionary-template.html"
   html = replace_placeholders html, {script, font}

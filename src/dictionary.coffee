@@ -1,15 +1,26 @@
-kanji_data = __kanji_data__
-word_data = __word_data__
 abc_regexp = /[a-z]/
 dom = {}; (dom[a.id] = a for a in document.querySelectorAll("[id]"))
+word_data = __word_data__
 
-kanji_search_init = ->
-  input = dom.kanji_input
-  button = dom.kanji_reset
-  results = dom.kanji_results
-  make_svg = (svg_paths) ->
-    result = '<svg viewbox="0 0 100 100">'
-    result += "<path d=\"#{a}\"/>" for a in svg_paths
+debounce = (func, wait, immediate = false) ->
+  timeout = null
+  ->
+    context = this
+    args = arguments
+    later = ->
+      timeout = null
+      func.apply(context, args) unless immediate
+    call_now = immediate and not timeout
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    func.apply(context, args) if call_now
+
+class character_search_class
+  character_data: __character_data__
+  reset: ->
+    dom.character_input.value = ""
+    dom.character_results.innerHTML = ""
+  svg_text_positions: (svg_paths) ->
     # create text elements while ensuring that they do not overlap with each other
     min_distance = 5
     placed_positions = []
@@ -35,76 +46,65 @@ kanji_search_init = ->
         y += offset_step  # move the text down by offset_step pixels
         attempt += 1
       continue if is_overlapping x, y
-      result += "<text x=\"#{x}\" y=\"#{y}\">#{index + 1}</text>"
-      placed_positions.push([x, y])
-    result + "</svg>"
-  make_result = (kanji, meaning, readings, svg) ->
-    result = document.createElement("div")
-    k = document.createElement("div")
-    k1 = document.createElement("span")
-    k2 = document.createElement("span")
-    m = document.createElement("div")
-    m_content = document.createElement("div")
-    k.className = "k"
-    k1.className = "k1"
-    k2.className = "k2"
-    m.className = "m"
-    k1.innerHTML = make_svg svg
-    k2.innerHTML = kanji
-    m_content.innerHTML = "<div>" + meaning + "</div><div class=\"r\">" + readings + "</div>"
-    k.appendChild k1
-    k.appendChild k2
-    m.appendChild m_content
-    result.appendChild k
-    result.appendChild m
-    result
-  match_values = (meaning, readings, values) -> values.some (a) -> a.test(meaning) || a.test(readings)
-  on_filter = ->
-    results.innerHTML = ""
-    temp = input.value.split(",")
-    values = []
-    i = 0
-    while i < temp.length
-      value = temp[i].trim()
-      if 0 < value.length
-        if 4 > value.length
-          value = "\\b" + value + "\\b"
-        else if 5 > value.length
-          value = "\\b" + value
-        values.push new RegExp(value)
-      i += 1
-    return if 0 == values.length
-    temp = []
-    i = 0
-    while i < kanji_data.length
-      entry = kanji_data[i]
-      if input.value.includes(entry[0]) or match_values(entry[1], entry[2], values)
-        result = make_result.apply null, entry
-        result.addEventListener "dblclick", ((a) ->
-          -> a.classList.toggle "mini"
-        )(result)
-        temp.push result
-      i += 1
-    # using the temp array seems to display a bit faster
-    i = 0
-    while i < temp.length
-      results.appendChild temp[i]
-      i += 1
-    results.innerHTML = "no kanji results" if 0 == temp.length
-  on_reset = ->
-    input.value = ""
-    results.innerHTML = ""
-  input.addEventListener "keyup", on_filter
-  input.addEventListener "change", on_filter
-  button.addEventListener "click", on_reset
+      placed_positions.push [x, y, index + 1]
+    placed_positions
+  make_svg: (svg_paths) ->
+    html = "<svg viewbox=\"0 0 100 100\">"
+    html += "<path d=\"#{a}\"/>" for a in svg_paths
+    for [x, y, i] in @svg_text_positions svg_paths
+      html += "<text x=\"#{x}\" y=\"#{y}\">#{i}</text>"
+    html + "</svg>"
+  make_result_html: (char, meaning, latin, svg_paths) ->
+    html = ""
+    if svg_paths
+      svg = @make_svg svg_paths
+      html += "<div>"
+      html += "#{svg}<div class=\"m\"><div class=\"text_char\">#{char}</div><div class=\"latin\">#{latin}</div></div>"
+      html += "</div>"
+    else
+      html += "<div class=\"nosvg\">"
+      html += "<div class=\"text_char\">#{char}</div>"
+      html += "<div class=\"m\"><div class=\"latin\">#{latin}</div></div>"
+      html += "</div>"
+    html
+  match_values: (values, meaning, latin) -> values.some (a) -> a.test(meaning) || a.test(latin)
+  filter: =>
+    dom.character_results.innerHTML = ""
+    values = dom.character_input.value.split(",").map (a) -> a.trim()
+    values = for a in values
+      continue unless 0 < a.length
+      if 4 > a.length then a = "\\b#{a}\\b"
+      else if 5 > a.length then a = "\\b#{a}"
+      new RegExp a
+    return unless values.length
+    html = ""
+    for [char, meaning, latin, svg_paths] in @character_data
+      if dom.character_input.value.includes(char) or @match_values(values, meaning, latin)
+        html += @make_result_html char, meaning, latin, svg_paths
+    dom.character_results.innerHTML = html || "no character results"
+  constructor: (app) ->
+    dom.character_input.addEventListener "keyup", debounce(@filter, 300)
+    dom.character_input.addEventListener "change", @filter
+    dom.character_reset.addEventListener "click", @reset
+    dom.character_results.addEventListener "click", (event) =>
+      # make a word search when clicking on character
+      target = event.target
+      if "character_show_remaining" == target.id
+        @matches_limit = 1024
+        @filter()
+        return
+      if target.classList.contains("text_char") && !target.parentNode.classList.contains("nosvg")
+        char = target.innerHTML
+        return if dom.word_input.value.includes char
+        dom.word_input.value = char
+        app.word_search.filter()
 
-word_search_init = ->
-  input = dom.word_input
-  button = dom.word_reset
-  checkbox_extended = dom.word_extended
-  results = dom.word_results
-  result_limit = 150
-  make_search_regexp = (word) ->
+class word_search_class
+  result_limit: 150
+  reset: ->
+    dom.word_input.value = ""
+    dom.word_results.innerHTML = ""
+  make_search_regexp: (word) ->
     return RegExp(word.replace("\"", "")) if "\"" == word[0]
     replacements = [
       [/sh|tch|ch|j/g, "#0"], [/tts|ts|ss|s|z/g, "#1"], [/ou/g, "#2"], [/ei|e/g, "#3"],
@@ -115,51 +115,54 @@ word_search_init = ->
     ]
     replacements.forEach (a) -> word = word.replace(a[0], a[1])
     new RegExp word
-  make_result_line = (a) ->
+  make_result_html: (a) ->
     b = "<span>" + a[0] + "</span> " + a[1] + " "
     if a[2].some (a) -> a.includes " "
-      b + "\"" + a[2].join(" / ") + "\""
-    else b + a[2].join("/")
-  on_filter = ->
-    results.innerHTML = ""
-    value = input.value.trim()
+      b + "\"" + a[2].join(" / ") + "\"<br/>"
+    else b + a[2].join("/") + "<br/>"
+  filter: =>
+    dom.word_results.innerHTML = ""
+    value = dom.word_input.value.trim()
     return if 0 == value.length
-    matches = []
-    if abc_regexp.test(value)
-      extended = checkbox_extended.checked
+    matches_count = 0
+    html = ""
+    if abc_regexp.test value
+      extended = dom.search_extended.checked
       translation_regexp = new RegExp("\\b" + value)
-      regexp = make_search_regexp value
+      regexp = @make_search_regexp value
       length_limit_subtraction = if extended then 1 else 2
       length_limit = value.length + Math.max(0, value.length - length_limit_subtraction) ** 2
-      i = 0
       match = (a) ->
         return true if length_limit >= a[1].length and regexp.test(a[1].replace(/"/g, ""))
         return true if extended and value.length > 2 and a[2].some (a) -> translation_regexp.test a
         false
-      while i < word_data.length and matches.length < result_limit
-        matches.push make_result_line(word_data[i]) if match word_data[i]
-        i += 1
+      for a in word_data
+        break unless matches_count < @result_limit
+        if match a
+          html += @make_result_html a
+          matches_count += 1
     else
-      regexp = new RegExp(value)
-      i = 0
-      while i < word_data.length and matches.length < result_limit
-        if regexp.test(word_data[i][0])
-          matches.push make_result_line word_data[i]
-        i += 1
-    results.innerHTML = if matches.length then matches.join("<br/>") else "no word results"
-  on_reset = ->
-    input.value = ""
-    results.innerHTML = ""
-  input.addEventListener "keyup", on_filter
-  input.addEventListener "change", on_filter
-  button.addEventListener "click", on_reset
-  checkbox_extended.addEventListener "change", on_filter
+      regexp = new RegExp value
+      for a in word_data
+        break unless matches_count < @result_limit
+        if regexp.test a[0]
+          html += @make_result_html a
+          matches_count += 1
+    dom.word_results.innerHTML = html || "no word results"
+  constructor: (app) ->
+    dom.word_input.addEventListener "keyup", debounce(@filter, 150)
+    dom.word_input.addEventListener "change", @filter
+    dom.word_reset.addEventListener "click", @reset
+    dom.search_extended.addEventListener "change", @filter
 
-about_init = ->
-  about_link = dom.about_link
-  about = dom.about
-  about_link.addEventListener "click", -> about.classList.toggle "hidden"
+class app_class
+  constructor: ->
+    dom.toggle_search_type.checked = false
+    dom.about_link.addEventListener "click", -> dom.about.classList.toggle "hidden"
+    dom.about_link_close.addEventListener "click", -> dom.about.classList.toggle "hidden"
+    dom.toggle_search_type.addEventListener "change", (event) -> dom.filter.classList.toggle "search_character_active"
+    @url_params = new URLSearchParams window.location.search
+    @character_search = new character_search_class @
+    @word_search = new word_search_class @
 
-kanji_search_init()
-word_search_init()
-about_init()
+new app_class()
