@@ -1,16 +1,16 @@
-a fast dictionary, lists related to kanji and scripts to compile the lists.
+a fast dictionary, lists related to vocabulary and kanji, and scripts to compile the lists.
 
 # nihongo dictionary
-* kanji stroke order, meaning and common readings lookup
+* kanji stroke order, meaning, and common readings lookup
 * top 30000 words fuzzy search that searches for similar pronunciation and sorts results by frequency
 * single-file browser application. the file under compiled/ can be downloaded and used offline in a browser but is also hosted [here](http://sph.mn/other/japanese/nihongo-dictionary.html)
-* data/nihongo-dictionary.html
+* compiled/nihongo-dictionary.html
 
 # csv lists
 under [data](data):
 * components-ck.csv: [components, kanji] alternative to radkfile
 * components-kc.csv: [kanji, components] alternative to kradfile
-* jouyou-kanji.csv: [kanji, meaning, readings] the 2136 jouyou kanji as of 2020 sorted by stroke count with single word meaning and common readings
+* [jouyou-kanji.csv](data/jouyou-kanji.csv): [kanji, meaning, readings] the 2136 jouyou kanji as of 2020 sorted by stroke count with single word meaning and common readings
   * some meanings use relatively uncommon english words, for example: acquiesce, adroit, ardent, beckon, confer, consign, consort, consummate, portent. in a few cases the words are ambiguous. for example "vice" isnt meant in the sense of "shortcoming" but in the sense of "deputy"
   * order by stroke count roughly corresponds to complexity, components come first
   * the jouyou kanji in general exclude some commonly seen kanji, for example: 嬉萌伊綺嘘菅貰縺繋呟也
@@ -24,9 +24,9 @@ under [data](data):
 * multiple-kanji-to-reading.csv: [multiple-kanji, reading]
 * ideophones.csv: [romaji, meanings] onomatopoeia, sound symbolisms
 * jouyou-kanji-learning-oneline.csv: [kanji, meaning, readings, example-words] like jouyou-kanji-learning.csv but words in one separate column
-* chinese-japanese-overlap.csv: sino-japanese cognates, words with the same characters in both languages
+* [chinese-japanese-overlap.csv](data/chinese-japanese-overlap.csv): sino-japanese cognates, words with the same characters in both languages
 
-some lists can be customized, see exe/update-kanji-words
+some lists can be customized, see exe/update-kanji-words.
 
 # anki deck
 * data/ja-kanji-learning.apkg: [kanji, [readings, meaning, example words]] and reverse cards
