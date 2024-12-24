@@ -107,11 +107,11 @@ class word_search_class
   make_search_regexp: (word) ->
     return RegExp(word.replace("\"", "")) if "\"" == word[0]
     replacements = [
-      [/sh|tch|ch|j/g, "#0"], [/tts|ts|ss|s|z/g, "#1"], [/ou/g, "#2"], [/ei|e/g, "#3"],
+      [/sh|tch|ch|j/g, "#0"], [/tts|ts|ss|s|z/g, "#1"], [/ou/g, "#2"], [/ae|ai/g, "#6"], [/ei|e/g, "#3"],
       [/iy|y/g, "#5"], [/ii|i/g, "(ii|i)"], [/uu|u/g, "(uu|u)"], [/o/g, "(ou|o)"],
       [/tt|t|d/g, "(tt|t|d)"], [/kk|k|g/g, "(kk|k|g)"], [/pp|p|b/g, "(pp|p|b)"], [/nn|n/g, "(nn|n)"],
       [/#0/g, "(sh|tch|ch|j)"], [/#1/g, "(tts|ts|ss|s|z)"], [/#2/g, "(ou|o)"], [/#3/g, "(ei|e)"],
-      [/#5/g, "(iy|y)"]
+      [/#5/g, "(iy|y)"], [/#6/g, "(ae|ai)"]
     ]
     replacements.forEach (a) -> word = word.replace(a[0], a[1])
     new RegExp word
