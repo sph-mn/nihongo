@@ -1,4 +1,4 @@
-abc_regexp = /[a-z]/
+abc_regexp = /[a-zA-Z]/
 dom = {}; (dom[a.id] = a for a in document.querySelectorAll("[id]"))
 word_data = __word_data__
 
@@ -75,7 +75,7 @@ class character_search_class
       continue unless 0 < a.length
       if 4 > a.length then a = "\\b#{a}\\b"
       else if 5 > a.length then a = "\\b#{a}"
-      new RegExp a
+      new RegExp a, "i"
     return unless values.length
     html = ""
     for [char, meaning, latin, svg_paths] in @character_data
@@ -105,16 +105,16 @@ class word_search_class
     dom.word_input.value = ""
     dom.word_results.innerHTML = ""
   make_search_regexp: (word) ->
-    return RegExp(word.replace("\"", "")) if "\"" == word[0]
+    return RegExp(word.replace("\"", ""), "i") if "\"" == word[0]
     replacements = [
-      [/sh|tch|ch|j/g, "#0"], [/tts|ts|ss|s|z/g, "#1"], [/ou/g, "#2"], [/ae|ai/g, "#6"], [/ei|e/g, "#3"],
-      [/iy|y/g, "#5"], [/ii|i/g, "(ii|i)"], [/uu|u/g, "(uu|u)"], [/o/g, "(ou|o)"],
-      [/tt|t|d/g, "(tt|t|d)"], [/kk|k|g/g, "(kk|k|g)"], [/pp|p|b/g, "(pp|p|b)"], [/nn|n/g, "(nn|n)"],
-      [/#0/g, "(sh|tch|ch|j)"], [/#1/g, "(tts|ts|ss|s|z)"], [/#2/g, "(ou|o)"], [/#3/g, "(ei|e)"],
-      [/#5/g, "(iy|y)"], [/#6/g, "(ae|ai)"]
+      [/sh|tch|ch|j/gi, "#0"], [/tts|ts|ss|s|z/gi, "#1"], [/ou/gi, "#2"], [/ae|ai/gi, "#6"], [/ei|e/gi, "#3"],
+      [/iy|y/gi, "#5"], [/ii|i/gi, "(ii|i)"], [/uu|u/gi, "(uu|u)"], [/o/gi, "(ou|o)"],
+      [/tt|t|d/gi, "(tt|t|d)"], [/kk|k|g/gi, "(kk|k|g)"], [/pp|p|b/gi, "(pp|p|b)"], [/nn|n/gi, "(nn|n)"],
+      [/#0/gi, "(sh|tch|ch|j)"], [/#1/gi, "(tts|ts|ss|s|z)"], [/#2/gi, "(ou|o)"], [/#3/gi, "(ei|e)"],
+      [/#5/gi, "(iy|y)"], [/#6/gi, "(ae|ai)"]
     ]
     replacements.forEach (a) -> word = word.replace(a[0], a[1])
-    new RegExp word
+    new RegExp word, "i"
   make_result_html: (a) ->
     b = "<span>" + a[0] + "</span> " + a[1] + " "
     if a[2].some (a) -> a.includes " "
@@ -128,7 +128,7 @@ class word_search_class
     html = ""
     if abc_regexp.test value
       extended = dom.search_extended.checked
-      translation_regexp = new RegExp("\\b" + value)
+      translation_regexp = new RegExp("\\b" + value, "i")
       regexp = @make_search_regexp value
       length_limit_subtraction = if extended then 1 else 2
       length_limit = value.length + Math.max(0, value.length - length_limit_subtraction) ** 2
